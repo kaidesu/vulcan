@@ -24,7 +24,7 @@ class APIController extends Controller
      */
     public function respond(Request $request)
     {
-        $response = Rivescript::reply(null, $request->get('message'));
+        $response = Rivescript::reply(null, $request->get('text'));
 
         return response()->json(['response' => $response]);
     }
