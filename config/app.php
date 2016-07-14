@@ -159,6 +159,7 @@ return [
         Vulcan\Providers\RouteServiceProvider::class,
 
         Caffeinated\Modules\ModulesServiceProvider::class,
+        Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
 
     ],
 
@@ -206,7 +207,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
 
-        'Module'    => Caffeinated\Modules\Facades\Module::class,
+        'Module'     => Caffeinated\Modules\Facades\Module::class,
+        'Rivescript' => Vulcan\Rivescript\Laravel\Facades\Rivescript::class,
 
     ],
 
