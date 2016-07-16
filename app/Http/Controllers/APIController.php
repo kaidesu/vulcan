@@ -2,18 +2,22 @@
 
 namespace Vulcan\Http\Controllers;
 
-use Rivescript;
 use Illuminate\Http\Request;
-use Vulcan\Http\Requests;
+use Vulcan\Contracts\ResponseRepository;
 
 class APIController extends Controller
 {
     /**
+     * @var ResponseRepository
+     */
+    protected $response;
+
+    /**
      * Create a new APIController instance.
      */
-    public function __construct()
+    public function __construct(ResponseRepository $response)
     {
-        Rivescript::loadFile(storage_path('rivescript/test.rive'));
+        $this->response = $response;
     }
 
     /**
@@ -24,7 +28,7 @@ class APIController extends Controller
      */
     public function respond(Request $request)
     {
-        $response = Rivescript::reply(null, $request->get('text'));
+        $response = $this->response->process($request->get('text'));
 
         return response()->json(['response' => $response]);
     }

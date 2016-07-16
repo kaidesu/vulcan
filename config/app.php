@@ -161,6 +161,7 @@ return [
         Caffeinated\Modules\ModulesServiceProvider::class,
         Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
 
+        Vulcan\Providers\RepositoryServiceProvider::class,
     ],
 
     /*
