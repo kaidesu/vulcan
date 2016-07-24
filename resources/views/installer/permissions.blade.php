@@ -13,8 +13,12 @@
     </ul>
 
     @if(! isset($permissions['error']))
-        <div class="form-group pull-right">
-            <a href="/install/database" class="btn btn-primary btn-lg">Install</a>
-        </div>
+        <form action="/install" method="post">
+            {!! csrf_field() !!}
+            
+            <div class="form-group pull-right">
+                <button type="submit" class="btn btn-primary btn-lg">Install</a>
+            </div>
+        </form>
     @endif
 @endsection
