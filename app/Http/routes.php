@@ -14,6 +14,9 @@ Route::group(['prefix' => 'install'], function() {
 
     // Server Requirements
     Route::get('requirements', 'Installer\RequirementsController@index');
+
+    // Folder Permissions
+    Route::get('permissions', 'Installer\PermissionsController@index');
 });
 
 Route::get('/', 'DashboardController@index');
