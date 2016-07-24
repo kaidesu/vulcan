@@ -44,10 +44,11 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \Vulcan\Http\Middleware\Authenticate::class,
-        'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'can' => \Illuminate\Foundation\Http\Middleware\Authorize::class,
-        'guest' => \Vulcan\Http\Middleware\RedirectIfAuthenticated::class,
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'auth'             => \Vulcan\Http\Middleware\Authenticate::class,
+        'auth.basic'       => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+        'can'              => \Illuminate\Foundation\Http\Middleware\Authorize::class,
+        'guest'            => \Vulcan\Http\Middleware\RedirectIfAuthenticated::class,
+        'throttle'         => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'abortIfInstalled' => \Vulcan\Http\Middleware\AbortIfInstalled::class,
     ];
 }

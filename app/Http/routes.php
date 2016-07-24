@@ -4,7 +4,7 @@
  * Installer
  */
 
-Route::group(['prefix' => 'install'], function() {
+Route::group(['prefix' => 'install', 'middleware' => 'abortIfInstalled'], function() {
     // Welcome
     Route::get('/', 'Installer\InstallController@welcome');
     Route::post('/', 'Installer\InstallController@install');
