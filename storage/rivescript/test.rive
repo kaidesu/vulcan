@@ -41,11 +41,50 @@
     echo $result['weather'][0]['description'];
 < object
 
+> object laravel php
+    echo app_path();
+< object
+
+> object dns php
+    echo $arguments[0];
+< object
+
+> object test php
+    echo (true) ? 'Hello World!' : 'Boo!';
+< object
+
+> object encode php
+    echo ($arguments[0] === 'md5') ?
+        md5($arguments[1]) :
+        base64_encode($arguments[1]);
+< object
+
 // RANDOM TOPIC TRIGGERS
+
++ test
+- <call>test</call>
 
 + hello
 - Hello!
 - Hi there
+
++ what is the app path
+- <call>laravel</call>
+
++ dns *
+- <call>dns <star1></call>
+
++ dns * *
+- <call>dns <star1> <star2></call>
+
++ encode * in md5
+- The MD5 hash of "<star>" is: <call>encode md5 <star></call>
+
++ could you encode * in md5
+@ encode <star> in md5
+
++ please encode * in md5
+@ encode <star> in md5
 
 + what is your name
 - My name is <bot name>
