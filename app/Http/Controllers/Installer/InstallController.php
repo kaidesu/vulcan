@@ -29,6 +29,6 @@ class InstallController extends Controller
 
         file_put_contents(storage_path('installed'), '');
 
-        return view('installer.installed');
+        return redirect()->to('/');
     }
 }
