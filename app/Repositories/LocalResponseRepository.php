@@ -13,7 +13,7 @@ class LocalResponseRepository implements ResponseRepository
     public function __construct()
     {
         // Hard load this for the time being.
-        Rivescript::loadFile(storage_path('rivescript/test.rive'));
+        Rivescript::load(storage_path('rivescript/test.rive'));
     }
 
     /**
