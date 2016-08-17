@@ -27,8 +27,9 @@
 // OBJECTS
 
 > object weather php
+    $zip  = (isset($args[0])) ? $args[0] : 98104;
     $curl = curl_init();
-    $url  = 'api.openweathermap.org/data/2.5/weather?zip=98104,us&APPID=47a469f2bd6e9cb7b316b25c2cd91592';
+    $url  = 'api.openweathermap.org/data/2.5/weather?zip='.$zip.',us&APPID=47a469f2bd6e9cb7b316b25c2cd91592';
 
     curl_setopt($curl, CURLOPT_URL, $url);
     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
@@ -46,7 +47,7 @@
 < object
 
 > object dns php
-    echo $arguments[0];
+    echo $args[0];
 < object
 
 > object test php
@@ -54,9 +55,9 @@
 < object
 
 > object encode php
-    echo ($arguments[0] === 'md5') ?
-        md5($arguments[1]) :
-        base64_encode($arguments[1]);
+    echo ($args[0] === 'md5') ?
+        md5($args[1]) :
+        base64_encode($args[1]);
 < object
 
 // RANDOM TOPIC TRIGGERS
@@ -100,6 +101,11 @@
 + what does the weather look like
 @ weather
 
++ what is the weather in *
+- You should expect <call>weather <star></call> today.
+- Look's like you should expect <call>weather <star></call> today.
+- <call>weather <star></call>
+
 + what is the weather
 @ weather
 
@@ -132,6 +138,13 @@
 
 + my name is _
 - Nice to meet you, <star>!
+
++ i remember *
+- Do you often think of <star>?
+- Does thinking of <star> bring anything else to mind?
+- What made you remember that just now?
+- What in the present situation reminds you of <star>?
+- What else does <star> remind you of?
 
 + i hate you
 - Well then, I won't talk to you until you take that back. {topic=apology}
