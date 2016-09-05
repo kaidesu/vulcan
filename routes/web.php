@@ -20,4 +20,16 @@ Route::group(['prefix' => 'install', 'middleware' => 'abortIfInstalled'], functi
     Route::get('permissions', 'Installer\PermissionsController@index');
 });
 
-Route::get('/', 'DashboardController@index');
+/**
+ * Authentication
+ */
+
+Auth::routes();
+
+/**
+ * Application
+ */
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::get('/', 'DashboardController@index');
+});

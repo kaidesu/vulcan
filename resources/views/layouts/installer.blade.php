@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vulcan Server</title>
 
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/darkly.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
     </head>
     <body>
         <div class="container">
-            @yield('content')
+            <div class="panel-login">
+                @yield('content')
+            </div>
         </div>
 
         {{-- Scripts --}}
