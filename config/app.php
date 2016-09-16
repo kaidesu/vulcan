@@ -178,6 +178,7 @@ return [
         Vulcan\Providers\EventServiceProvider::class,
         Vulcan\Providers\RouteServiceProvider::class,
         Vulcan\Providers\RepositoryServiceProvider::class,
+        Spatie\GoogleSearch\GoogleSearchServiceProvider::class,
     ],
 
     /*
@@ -225,9 +226,9 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
-        'Module'     => Caffeinated\Modules\Facades\Module::class,
-        'Rivescript' => Vulcan\Rivescript\Laravel\Facades\Rivescript::class,
-
+        'Module'       => Caffeinated\Modules\Facades\Module::class,
+        'Rivescript'   => Vulcan\Rivescript\Laravel\Facades\Rivescript::class,
+        'GoogleSearch' => Spatie\GoogleSearch\Facades\GoogleSearch::class,
     ],
 
 ];

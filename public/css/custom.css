@@ -26,6 +26,26 @@ body {
      background-color: white;
  }
 
+ #search-wrapper {
+     margin-top: 15%;
+ }
+
+ #search-wrapper .form-control{
+	border-right: 0;
+	box-shadow: 0 0 0;
+	border-color: #ccc;
+}
+
+#search-wrapper .input-group-addon {
+    border: solid #ccc 2px;
+    border-left: none;
+}
+
+ #search-wrapper button{
+    border: 0;
+    background: transparent;
+}
+
  @media (min-width: 768px) {
      #page-wrapper {
          position: inherit;

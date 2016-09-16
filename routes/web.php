@@ -32,4 +32,7 @@ Auth::routes();
 
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'DashboardController@index');
+
+    Route::get('home', 'HomeController@index');
+    Route::get('home/search', 'HomeController@search');
 });
