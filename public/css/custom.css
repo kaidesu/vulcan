@@ -1,5 +1,10 @@
 body {
     background-color: #f8f8f8;
+    padding-top: 60px;
+}
+
+.navbar-fixed-top {
+    border: 0;
 }
 
 .panel-login {
@@ -7,76 +12,67 @@ body {
 }
 
 .page-header {
-    padding-bottom: 9px;
-    margin: 40px 0 20px;
+    padding-bottom: 10px;
     border-bottom: 1px solid #eee;
 }
 
-/**
- * Page Wrapper
- */
-
- #wrapper {
-     width: 100%;
+ .main {
+     padding: 20px;
  }
 
- #page-wrapper {
-     padding: 0;
-     min-height: 568px;
-     background-color: white;
- }
-
- #search-wrapper {
-     margin-top: 15%;
- }
-
- #search-wrapper .form-control{
-	border-right: 0;
-	box-shadow: 0 0 0;
-	border-color: #ccc;
+ .main .page-header {
+     margin-top: 0;
 }
 
-#search-wrapper .input-group-addon {
-    border: solid #ccc 2px;
-    border-left: none;
-}
-
- #search-wrapper button{
-    border: 0;
-    background: transparent;
-}
-
- @media (min-width: 768px) {
-     #page-wrapper {
-         position: inherit;
-         margin: 51px 0 0 250px;
-         padding: 0 30px;
-         border-left: 1px solid #e7e7e7;
+@media (min-width: 768px) {
+     .main {
+         padding-right: 40px;
+         padding-left: 40px;
      }
  }
 
-/**
- * Sidebar
- */
+/* Sidebar Navigation */
 
- @media (min-width: 768px) {
-     .sidebar {
-         z-index: 1;
-         position: absolute;
-         width: 250px;
-         margin-top: 9px;
-     }
- }
-
-.sidebar .sidebar-nav.navbar-collapse {
-    padding-left: 0;
-    padding-right: 0;
+.sidebar {
+    display: none;
 }
 
-.sidebar .sidebar-search {
-    padding: 15px;
+@media(min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 61px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
 }
 
-.sidebar ul li {
-    border-bottom: 1px solid #e7e7e7;
+.nav-sidebar {
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -21px;
+}
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-sidebar > li > a,
+.nav-sidebar > li > a:hover,
+.nav-sidebar > li > a:focus {
+    color: #2c3e50;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
 }

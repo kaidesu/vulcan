@@ -11,15 +11,14 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        <div id="wrapper">
-            @include('partials.nav')
 
+        @include('partials.nav')
+
+        <div class="container-fluid">
             @include('partials.sidebar')
 
-            <div id="page-wrapper">
-                <div class="container-fluid">
-                    @yield('content')
-                </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                @yield('content')
             </div>
         </div>
 
