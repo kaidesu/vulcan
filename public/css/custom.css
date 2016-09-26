@@ -76,3 +76,36 @@ body {
     color: #fff;
     background-color: #428bca;
 }
+
+/* Chat */
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-body {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+.chat li {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #B3A9A9;
+}
+
+.chat li.left .chat-message {
+    margin-left: 60px;
+}
+
+.chat li.right .chat-message {
+    margin-right: 60px;
+}
+
+
+.chat li .chat-message p {
+    margin: 0;
+    color: #777777;
+}

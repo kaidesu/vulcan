@@ -18,12 +18,32 @@
             @include('partials.sidebar')
 
             <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                @hasSection('form')
+                    @yield('form')
+                @endif
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">@yield('header')
+                            <span class="pull-right">@yield('actions')</span>
+                        </h1>
+                    </div>
+                </div>
+
+                @yield('before_content')
+
                 @yield('content')
+
+                @hasSection('form')
+                    {!! Form::close() !!}
+                @endif
+
+                @yield('after_content')
             </div>
         </div>
 
         {{-- Scripts --}}
-        <script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <script src="{{ asset('js/bootstrap.min.js') }}"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/metisMenu/2.5.2/metisMenu.min.js"></script>
         <script src="{{ asset('js/custom.js') }}"></script>

@@ -33,6 +33,16 @@ Auth::routes();
 Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'DashboardController@index');
 
+    // Agent
+    Route::group(['prefix' => 'agents'], function() {
+        Route::get('/', 'AgentController@index');
+        Route::get('create', 'AgentController@create');
+        Route::post('/', 'AgentController@store');
+        Route::get('{id}/edit', 'AgentController@edit');
+        Route::patch('{id}', 'AgentController@update');
+        Route::delete('{id}', 'AgentController@delete');
+    });
+
     Route::get('home', 'HomeController@index');
     Route::get('home/search', 'HomeController@search');
 });

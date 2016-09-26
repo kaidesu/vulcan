@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'My Application',
+    'name' => 'Vulcan',
 
     /*
     |--------------------------------------------------------------------------
@@ -166,8 +166,9 @@ return [
         /*
          * Package Service Providers...
          */
-         Caffeinated\Modules\ModulesServiceProvider::class,
-         Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
+        Collective\Html\HtmlServiceProvider::class,
+        Caffeinated\Modules\ModulesServiceProvider::class,
+        Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -226,9 +227,10 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
-        'Module'       => Caffeinated\Modules\Facades\Module::class,
-        'Rivescript'   => Vulcan\Rivescript\Laravel\Facades\Rivescript::class,
-        'GoogleSearch' => Spatie\GoogleSearch\Facades\GoogleSearch::class,
+        'Form'       => Collective\Html\FormFacade::class,
+        'Html'       => Collective\Html\HtmlFacade::class,
+        'Module'     => Caffeinated\Modules\Facades\Module::class,
+        'Rivescript' => Vulcan\Rivescript\Laravel\Facades\Rivescript::class
     ],
 
 ];

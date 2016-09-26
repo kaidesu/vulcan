@@ -10,7 +10,8 @@
         "caffeinated/modules": "^4.0",
         "vulcan/rivescript-laravel": "^0.3",
         "guzzlehttp/guzzle": "^6.2",
-        "spatie/googlesearch": "^2.0"
+        "spatie/googlesearch": "^2.0",
+        "laravelcollective/html": "^5.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
