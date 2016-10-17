@@ -43,6 +43,8 @@ Route::group(['middleware' => 'auth'], function() {
         Route::delete('{id}', 'AgentController@delete');
     });
 
+    Route::get('chat', 'ChatController@index');
+
     Route::get('home', 'HomeController@index');
     Route::get('home/search', 'HomeController@search');
 });

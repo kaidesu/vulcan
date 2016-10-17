@@ -2,7 +2,6 @@
 /bower_components
 /node_modules
 /public/storage
-/workbench
 Homestead.yaml
 Homestead.json
 .env

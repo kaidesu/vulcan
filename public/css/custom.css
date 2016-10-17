@@ -87,7 +87,16 @@ body {
 
 .chat-body {
     overflow-y: scroll;
-    height: 300px;
+}
+
+.panel-chat {
+    position: fixed;
+    top: 161px;
+    bottom: 40px;
+    right: 40px;
+    left: 340px;
+    z-index: 1000;
+    display: block;
 }
 
 .chat li {
