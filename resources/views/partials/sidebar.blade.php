@@ -6,12 +6,7 @@
         </ul>
 
         <ul class="nav nav-sidebar">
-            <li><a href="{{ url('agents') }}"><i class="fa fa-hand-spock-o fa-fw"></i> Agents</a></li>
-            <li><a href="{{ url('intents') }}"><i class="fa fa-sitemap fa-fw"></i> Intents</a></li>
-        </ul>
-
-        <ul class="nav nav-sidebar">
-            <li><a href="{{ url('crawlers') }}"><i class="fa fa-bug fa-fw"></i> Crawlers</a></li>
+            <li><a href="{{ url('domains') }}"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i> Domains</a></li>
         </ul>
     </div>
 </div>

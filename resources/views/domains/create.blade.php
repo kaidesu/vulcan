@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-    <i class="fa fa-hand-spock-o fa-fw"></i> Edit Existing Agent
+    <i class="fa fa-graduation-cap fa-fw"></i> Create a Domain
 @stop
 
 @section('actions')
@@ -9,9 +9,9 @@
 @stop
 
 @section('form')
-    {!! Form::open(['method' => 'PATCH', 'url' => 'agents/'.$agent->id]) !!}
+    {!! Form::open(['url' => 'domains']) !!}
 @stop
 
 @section('content')
-    @include('agents._form')
+    @include('domains._form')
 @endsection

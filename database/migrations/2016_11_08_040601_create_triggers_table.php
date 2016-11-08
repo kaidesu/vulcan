@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAgentsTable extends Migration
+class CreateTriggersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateAgentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('agents', function (Blueprint $table) {
+        Schema::create('triggers', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('description');
+            $table->integer('domain_id');
+            $table->string('trigger');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateAgentsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('agents');
+        Schema::dropIfExists('triggers');
     }
 }

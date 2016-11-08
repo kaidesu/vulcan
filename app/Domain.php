@@ -2,9 +2,10 @@
 
 namespace Vulcan;
 
+use Vulcan\Trigger;
 use Illuminate\Database\Eloquent\Model;
 
-class Agent extends Model
+class Domain extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -14,4 +15,12 @@ class Agent extends Model
     protected $fillable = [
         'name', 'description',
     ];
+
+    /**
+     * Get the triggers tied to the domain.
+     */
+    public function triggers()
+    {
+        return $this->hasMany(Trigger::class);
+    }
 }

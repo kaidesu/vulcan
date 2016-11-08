@@ -4,7 +4,7 @@ namespace Vulcan\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class AgentRequest extends FormRequest
+class TriggerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,7 +24,8 @@ class AgentRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|min:3'
+            'branch_id' => 'required',
+            'trigger'   => 'required'
         ];
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCrawlersTable extends Migration
+class CreateResponsesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class CreateCrawlersTable extends Migration
      */
     public function up()
     {
-        Schema::create('crawlers', function (Blueprint $table) {
+        Schema::create('responses', function(Blueprint $table) {
             $table->increments('id');
-            $table->string('name');
-            $table->string('description');
-            $table->string('seed_url');
+            $table->integer('trigger_id');
+            $table->string('response');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateCrawlersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('crawlers');
+        Schema::dropIfExists('responses');
     }
 }

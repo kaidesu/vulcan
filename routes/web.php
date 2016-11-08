@@ -34,17 +34,14 @@ Route::group(['middleware' => 'auth'], function() {
     Route::get('/', 'DashboardController@index');
 
     // Agent
-    Route::group(['prefix' => 'agents'], function() {
-        Route::get('/', 'AgentController@index');
-        Route::get('create', 'AgentController@create');
-        Route::post('/', 'AgentController@store');
-        Route::get('{id}/edit', 'AgentController@edit');
-        Route::patch('{id}', 'AgentController@update');
-        Route::delete('{id}', 'AgentController@delete');
+    Route::group(['prefix' => 'domains'], function() {
+        Route::get('/', 'DomainController@index');
+        Route::get('create', 'DomainController@create');
+        Route::post('/', 'DomainController@store');
+        Route::get('{id}/edit', 'DomainController@edit');
+        Route::patch('{id}', 'DomainController@update');
+        Route::delete('{id}', 'DomainController@delete');
     });
 
     Route::get('chat', 'ChatController@index');
-
-    Route::get('home', 'HomeController@index');
-    Route::get('home/search', 'HomeController@search');
 });
