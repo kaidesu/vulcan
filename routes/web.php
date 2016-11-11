@@ -3,7 +3,6 @@
 /**
  * Installer
  */
-
 Route::group(['prefix' => 'install', 'middleware' => 'abortIfInstalled'], function() {
     // Welcome
     Route::get('/', 'Installer\InstallController@welcome');
@@ -41,6 +40,15 @@ Route::group(['middleware' => 'auth'], function() {
         Route::get('{id}/edit', 'DomainController@edit');
         Route::patch('{id}', 'DomainController@update');
         Route::delete('{id}', 'DomainController@delete');
+
+        Route::group(['prefix' => '{domainID}/triggers'], function() {
+            Route::get('/', 'TriggerController@index');
+            Route::get('create', 'TriggerController@create');
+            Route::post('/', 'TriggerController@store');
+            Route::get('{id}/edit', 'TriggerController@edit');
+            Route::patch('{id}', 'TriggerController@update');
+            Route::delete('{id}', 'TriggerController@delete');
+        });
     });
 
     Route::get('chat', 'ChatController@index');

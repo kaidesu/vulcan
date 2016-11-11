@@ -5,6 +5,7 @@ namespace Vulcan\Http\Controllers;
 use Illuminate\Http\Request;
 use Vulcan\Http\Requests\TriggerRequest;
 use Vulcan\Trigger;
+use Vulcan\Domain;
 
 class TriggerController extends Controller
 {
@@ -13,11 +14,12 @@ class TriggerController extends Controller
      *
      * @return Response
      */
-    public function index()
+    public function index($domainID)
     {
-        $triggers = Trigger::all();
+        $domain   = Domain::findOrFail($domainID);
+        $triggers = $domain->triggers()->get();
 
-        return view('triggers.index', compact('triggers'));
+        return view('triggers.index', compact('domain', 'triggers'));
     }
 
     /**
@@ -25,9 +27,11 @@ class TriggerController extends Controller
      *
      * @return Response
      */
-    public function create()
+    public function create($domainID)
     {
-        return view('triggers.create');
+        $domain   = Domain::findOrFail($domainID);
+
+        return view('triggers.create', compact('domain'));
     }
 
     /**
@@ -36,9 +40,9 @@ class TriggerController extends Controller
      * @param  CreateTriggerRequest  $request
      * @return Response
      */
-    public function store(TriggerRequest $request)
+    public function store($domainID, TriggerRequest $request)
     {
-        Trigger::create($request->all());
+        Domain::findOrFail($domainID)->triggers()->create($request->all());
 
         return redirect('triggers');
     }
@@ -49,9 +53,10 @@ class TriggerController extends Controller
      * @param  integer  $id
      * @return Response
      */
-    public function edit($id)
+    public function edit($domainID, $id)
     {
-        $trigger = Trigger::findOrFail($id);
+        $domain  = Domain::findOrFail($domainID);
+        $trigger = $domain->triggers()->findOrFail($id);
 
         return view('triggers.edit', compact('trigger'));
     }
@@ -63,7 +68,7 @@ class TriggerController extends Controller
      * @param  TriggerRequest  $request
      * @return Response
      */
-    public function update($id, TriggerRequest $request)
+    public function update($domainID, $id, TriggerRequest $request)
     {
         $trigger = Trigger::findOrFail($id);
 
@@ -78,7 +83,7 @@ class TriggerController extends Controller
      * @param  integer  $id
      * @return Response
      */
-    public function delete($id)
+    public function delete($domainID, $id)
     {
         Trigger::destroy($id);
 

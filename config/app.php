@@ -179,7 +179,6 @@ return [
         Vulcan\Providers\EventServiceProvider::class,
         Vulcan\Providers\RouteServiceProvider::class,
         Vulcan\Providers\RepositoryServiceProvider::class,
-        Spatie\GoogleSearch\GoogleSearchServiceProvider::class,
     ],
 
     /*

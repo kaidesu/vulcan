@@ -80,41 +80,12 @@ body {
 /* Chat */
 
 .chat {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    padding-top: 10px;
+    overflow: auto;
+    height: 80vh;
 }
 
-.chat-body {
-    overflow-y: scroll;
-}
-
-.panel-chat {
-    position: fixed;
-    top: 161px;
-    bottom: 40px;
-    right: 40px;
-    left: 340px;
-    z-index: 1000;
-    display: block;
-}
-
-.chat li {
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px dotted #B3A9A9;
-}
-
-.chat li.left .chat-message {
-    margin-left: 60px;
-}
-
-.chat li.right .chat-message {
-    margin-right: 60px;
-}
-
-
-.chat li .chat-message p {
-    margin: 0;
-    color: #777777;
+.chat-footer {
+    position: absolute;
+    bottom: 0;
 }
