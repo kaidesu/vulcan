@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Vulcan</title>
 
-        <link rel="stylesheet" href="{{ asset('css/flatly.min.css')}}">
+        <link rel="stylesheet" href="{{ asset('css/darkly.min.css')}}">
         <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
