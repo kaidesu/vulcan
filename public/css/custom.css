@@ -5,12 +5,29 @@ body {
 }
 
 .form-control {
-    background-color: #eee;
+    background-color: #404040;
+    color: #fff;
 }
 
 .navbar-fixed-top {
     border: 0;
 }
+
+.navbar-inverse {
+    background-color: #303030;
+}
+
+.navbar-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #00bc8c;
+}
+
+.container-nav {
+    padding-left: 0 !important;
+}
+
+.navbar-brand {float:none;}
 
 .panel-login {
     margin-top: 25%;
@@ -54,7 +71,6 @@ body {
         overflow-x: hidden;
         overflow-y: auto;
         background-color: #303030;
-        /*border-right: 1px solid #353535;*/
     }
 }
 
