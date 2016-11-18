@@ -1,44 +1,44 @@
 @extends('layouts.app')
 
 @section('header')
-    <i class="fa fa-assistive-listening-systems fa-fw"></i> Triggers
+    <i class="fa fa-assistive-listening-systems fa-fw"></i> Listeners
 @stop
 
 @section('actions')
-    @if (count($triggers))
-        <a href="{{ url('domains/'.$domain->id.'/triggers/create') }}" class="btn btn-sm btn-primary">Create Trigger</a>
+    @if (count($listeners))
+        <a href="{{ url('domains/'.$domain->id.'/listeners/create') }}" class="btn btn-sm btn-primary">Create Listener</a>
     @endif
 @stop
 
 @section('content')
     <div class="row">
         <div class="col-lg-12">
-            @if (count($triggers))
+            @if (count($listeners))
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Triggers</h3>
+                        <h3 class="panel-title">Listeners</h3>
                     </div>
 
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>Trigger</th>
+                                <th>Listener</th>
                                 <th class="text-center">Responses</th>
                                 <th></th>
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach ($triggers as $trigger)
+                            @foreach ($listeners as $listener)
                                 <tr>
-                                    <td>{{ $trigger->trigger }}</td>
+                                    <td>{{ $listener->listener }}</td>
                                     <td class="text-center">
-                                        <span class="badge badge-info">{{ $trigger->responses->count() }}</span>
+                                        <span class="badge badge-info">{{ $listener->responses->count() }}</span>
                                     </td>
                                     <td class="text-right">
-                                        <a href="{{ url('domains/'.$domain->id.'triggers/'.$trigger->id.'/edit') }}" class="btn btn-primary btn-xs">Edit</a>
+                                        <a href="{{ url('domains/'.$domain->id.'listeners/'.$listener->id.'/edit') }}" class="btn btn-primary btn-xs">Edit</a>
 
-                                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-trigger-{{ $trigger->id}}">
+                                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-listener-{{ $listener->id}}">
                                             Delete
                                         </button>
                                     </td>
@@ -49,16 +49,16 @@
                 </div>
             @else
                 <div class="jumbotron text-center">
-                    <h2>Create a Trigger to get started!</h2>
+                    <h2>Create a Listener to get started!</h2>
 
                     <p>
                         <small>
-                            Triggers are mappings between a user's input and the output fulfilled by your bot.
+                            Listeners are mappings between a user's input and the output fulfilled by your bot.
                         </small>
                     </p>
 
                     <p>
-                        <a href="{{ url('domains/'.$domain->id.'/triggers/create') }}" class="btn btn-primary">Create a Trigger</a>
+                        <a href="{{ url('domains/'.$domain->id.'/listeners/create') }}" class="btn btn-primary">Create a Listener</a>
                     </p>
                 </div>
             @endif
@@ -67,24 +67,24 @@
 @stop
 
 @section('after_content')
-    @if (count($triggers))
-        @foreach ($triggers as $trigger)
-            <div class="modal fade" id="delete-trigger-{{ $trigger->id }}" tabindex="-1" role="dialog">
+    @if (count($listeners))
+        @foreach ($listeners as $listener)
+            <div class="modal fade" id="delete-listener-{{ $listener->id }}" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title">Delete Trigger</h4>
+                            <h4 class="modal-title">Delete Listener</h4>
                         </div>
 
                         <div class="modal-body text-center">
                             <p>
-                                Are you sure you wish to delete trigger <b>{{ $trigger->trigger }}</b>? This will destroy the trigger with all corresponding data and <b>cannot be undone</b>.
+                                Are you sure you wish to delete listener <b>{{ $listener->listener }}</b>? This will destroy the listener with all corresponding data and <b>cannot be undone</b>.
                             </p>
                         </div>
 
                         <div class="modal-footer">
-                            {!! Form::open(['method' => 'DELETE', 'url' => 'triggers/'.$trigger->id]) !!}
+                            {!! Form::open(['method' => 'DELETE', 'url' => 'listeners/'.$listener->id]) !!}
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="submit" class="btn btn-danger">Delete</button>
                             {!! Form::close() !!}

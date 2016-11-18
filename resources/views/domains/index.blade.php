@@ -24,7 +24,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Description</th>
-                                <th class="text-center">Triggers</th>
+                                <th class="text-center">Listeners</th>
                                 <th></th>
                             </tr>
                         </thead>
@@ -35,7 +35,7 @@
                                     <td>{{ $domain->name }}</td>
                                     <td>{{ $domain->description }}</td>
                                     <td class="text-center">
-                                        <a href="{{ url('domains/'.$domain->id.'/triggers') }}" class="btn btn-primary btn-xs"><i class="fa fa-assistive-listening-systems fa-fw" aria-hidden="true"></i> Manage Triggers <span class="badge">{{ $domain->triggers->count() }}</span></a>
+                                        <a href="{{ url('domains/'.$domain->id.'/listeners') }}" class="btn btn-primary btn-xs"><i class="fa fa-assistive-listening-systems fa-fw" aria-hidden="true"></i> Manage Listeners <span class="badge">{{ $domain->listeners->count() }}</span></a>
                                     </td>
                                     <td class="text-right">
                                         <a href="{{ url('domains/'.$domain->id.'/edit') }}" class="btn btn-primary btn-xs">Edit</a>
@@ -55,7 +55,7 @@
 
                     <p>
                         <small>
-                            Domains allow you to group related triggers together for easy organization.
+                            Domains allow you to group related listeners together for easy organization.
                         </small>
                     </p>
 

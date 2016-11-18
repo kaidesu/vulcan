@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-    <i class="fa fa-assistive-listening-systems fa-fw"></i> Create a Trigger
+    <i class="fa fa-assistive-listening-systems fa-fw"></i> Create a Listener
 @stop
 
 @section('actions')
@@ -9,9 +9,9 @@
 @stop
 
 @section('form')
-    {!! Form::open(['url' => 'domains/'.$domain->id.'/triggers']) !!}
+    {!! Form::open(['url' => 'domains/'.$domain->id.'/listeners']) !!}
 @stop
 
 @section('content')
-    @include('triggers._form')
+    @include('listeners._form')
 @endsection

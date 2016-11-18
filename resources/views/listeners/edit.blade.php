@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('header')
-    <i class="fa fa-graduation-cap fa-fw"></i> Edit Existing Domain
+    <i class="fa fa-graduation-cap fa-fw"></i> Edit Existing Listener
 @stop
 
 @section('actions')
@@ -9,9 +9,9 @@
 @stop
 
 @section('form')
-    {!! Form::open(['method' => 'PATCH', 'url' => 'domains/'.$domain->id]) !!}
+    {!! Form::open(['method' => 'PATCH', 'url' => 'listeners/'.$listener->id]) !!}
 @stop
 
 @section('content')
-    @include('domains._form')
+    @include('listeners._form')
 @endsection

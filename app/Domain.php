@@ -2,7 +2,7 @@
 
 namespace Vulcan;
 
-use Vulcan\Trigger;
+use Vulcan\Listener;
 use Illuminate\Database\Eloquent\Model;
 
 class Domain extends Model
@@ -19,8 +19,8 @@ class Domain extends Model
     /**
      * Get the triggers tied to the domain.
      */
-    public function triggers()
+    public function listeners()
     {
-        return $this->hasMany(Trigger::class);
+        return $this->hasMany(Listener::class);
     }
 }

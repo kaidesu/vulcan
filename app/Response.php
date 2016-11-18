@@ -2,7 +2,7 @@
 
 namespace Vulcan;
 
-use Vulcan\Trigger;
+use Vulcan\Listener;
 use Illuminate\Database\Eloquent\Model;
 
 class Response extends Model
@@ -13,14 +13,14 @@ class Response extends Model
      * @var array
      */
     protected $fillable = [
-        'trigger_id', 'response',
+        'listener_id', 'response',
     ];
 
     /**
      * Get the trigger that owns the response.
      */
-    public function trigger()
+    public function listener()
     {
-        return $this->belongsTo(Trigger::class);
+        return $this->belongsTo(Listener::class);
     }
 }

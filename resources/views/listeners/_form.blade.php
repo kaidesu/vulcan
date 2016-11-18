@@ -1,6 +1,6 @@
 <div class="form-group">
-    {!! Form::label('trigger', 'Trigger') !!}
-    {!! Form::text('trigger', isset($trigger) ? $trigger->name : null, ['class' => 'form-control']) !!}
+    {!! Form::label('listener', 'Listener') !!}
+    {!! Form::text('listener', isset($listener) ? $listener->name : null, ['class' => 'form-control']) !!}
 </div>
 
 <hr>

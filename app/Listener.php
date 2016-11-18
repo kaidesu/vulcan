@@ -6,7 +6,7 @@ use Vulcan\Domain;
 use Vulcan\Response;
 use Illuminate\Database\Eloquent\Model;
 
-class Trigger extends Model
+class Listener extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -14,11 +14,11 @@ class Trigger extends Model
      * @var array
      */
     protected $fillable = [
-        'domain_id', 'trigger',
+        'domain_id', 'for',
     ];
 
     /**
-     * Get the domain that owns the trigger.
+     * Get the domain that owns the listener.
      */
     public function domain()
     {
@@ -26,7 +26,7 @@ class Trigger extends Model
     }
 
     /**
-     * Get the responses tied to the trigger.
+     * Get the responses tied to the listener.
      */
     public function responses()
     {
