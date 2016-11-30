@@ -1,13 +1,6 @@
-<div class="form-group">
-    {!! Form::label('listener', 'Listener') !!}
-    {!! Form::text('listener', isset($listener) ? $listener->name : null, ['class' => 'form-control']) !!}
-</div>
-
-<hr>
-
-<h2>Responses</h2>
+{!! Form::hidden('domain_id', $domain->id) !!}
 
 <div class="form-group">
-    {!! Form::label('response[]', 'Response') !!}
-    {!! Form::text('response[]', null, ['class' => 'form-control']) !!}
+    {!! Form::label('for', 'Listen For') !!}
+    {!! Form::text('for', isset($listener) ? $listener->for : null, ['class' => 'form-control', 'placeholder' => 'When someone says...']) !!}
 </div>

@@ -11,11 +11,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     </head>
     <body>
-        <div class="container">
-            <div class="panel-login">
-                @yield('content')
-            </div>
-        </div>
+        @yield('content')
 
         {{-- Scripts --}}
         <script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>

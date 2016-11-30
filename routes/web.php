@@ -30,26 +30,35 @@ Auth::routes();
  */
 
 Route::group(['middleware' => 'auth'], function() {
-    Route::get('/', 'DashboardController@index');
+    Route::get('/', 'DashboardController@index')->name('dashboard');
 
     // Agent
     Route::group(['prefix' => 'domains'], function() {
-        Route::get('/', 'DomainController@index');
-        Route::get('create', 'DomainController@create');
-        Route::post('/', 'DomainController@store');
-        Route::get('{id}/edit', 'DomainController@edit');
-        Route::patch('{id}', 'DomainController@update');
-        Route::delete('{id}', 'DomainController@delete');
+        Route::get('/', 'DomainController@index')->name('domains.index');
+        Route::get('create', 'DomainController@create')->name('domains.create');;
+        Route::post('/', 'DomainController@store')->name('domains.store');;
+        Route::get('{id}/edit', 'DomainController@edit')->name('domains.edit');;
+        Route::patch('{id}', 'DomainController@update')->name('domains.update');;
+        Route::delete('{id}', 'DomainController@delete')->name('domains.delete');;
 
-        Route::group(['prefix' => '{domainID}/triggers'], function() {
-            Route::get('/', 'TriggerController@index');
-            Route::get('create', 'TriggerController@create');
-            Route::post('/', 'TriggerController@store');
-            Route::get('{id}/edit', 'TriggerController@edit');
-            Route::patch('{id}', 'TriggerController@update');
-            Route::delete('{id}', 'TriggerController@delete');
+        Route::group(['prefix' => '{domainID}/listeners'], function() {
+            Route::get('/', 'ListenerController@index')->name('listeners.index');
+            Route::get('create', 'ListenerController@create')->name('listeners.create');
+            Route::post('/', 'ListenerController@store')->name('listeners.store');
+            Route::get('{id}/edit', 'ListenerController@edit')->name('listeners.edit');
+            Route::patch('{id}', 'ListenerController@update')->name('listeners.update');
+            Route::delete('{id}', 'ListenerController@delete')->name('listeners.delete');
+
+            Route::group(['prefix' => '{listenerID}/responses'], function() {
+                Route::get('/', 'ResponseController@index')->name('responses.index');
+                Route::get('create', 'ResponseController@create')->name('responses.create');
+                Route::post('/', 'ResponseController@store')->name('responses.store');
+                Route::get('{id}/edit', 'ResponseController@edit')->name('responses.edit');
+                Route::patch('{id}', 'ResponseController@update')->name('responses.update');
+                Route::delete('{id}', 'ResponseController@delete')->name('responses.delete');
+            });
         });
     });
 
-    Route::get('chat', 'ChatController@index');
+    Route::get('chat', 'ChatController@index')->name('chat');
 });

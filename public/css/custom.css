@@ -109,7 +109,7 @@ body {
 .chat {
     padding-top: 10px;
     overflow: auto;
-    height: 80vh;
+    height: 75vh;
 }
 
 .chat-footer {

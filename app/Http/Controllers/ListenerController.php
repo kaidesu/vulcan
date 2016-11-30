@@ -29,7 +29,7 @@ class ListenerController extends Controller
      */
     public function create($domainID)
     {
-        $domain   = Domain::findOrFail($domainID);
+        $domain = Domain::findOrFail($domainID);
 
         return view('listeners.create', compact('domain'));
     }
@@ -44,7 +44,7 @@ class ListenerController extends Controller
     {
         Domain::findOrFail($domainID)->listeners()->create($request->all());
 
-        return redirect('listeners');
+        return redirect()->route('listeners.index', ['domainID' => $domainID]);
     }
 
     /**
@@ -74,7 +74,7 @@ class ListenerController extends Controller
 
         $listener->update($request->all());
 
-        return redirect('listeners');
+        return redirect()->route('listeners.index', ['domainID' => $domainID]);
     }
 
     /**
@@ -87,6 +87,6 @@ class ListenerController extends Controller
     {
         Listener::destroy($id);
 
-        return redirect('listeners');
+        return redirect()->route('listeners.index', ['domainID' => $domainID]);
     }
 }

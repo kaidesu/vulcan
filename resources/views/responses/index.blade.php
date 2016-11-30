@@ -1,44 +1,38 @@
 @extends('layouts.app')
 
 @section('header')
-    <i class="fa fa-assistive-listening-systems fa-fw"></i> Listeners
+    <i class="fa fa-commenting-o fa-fw"></i> Respond to "{{ $listener->for }}"
 @stop
 
 @section('actions')
-    @if (count($listeners))
-        <a href="{{ url('domains/'.$domain->id.'/listeners/create') }}" class="btn btn-sm btn-primary">Create Listener</a>
-    @endif
+        <a href="{{ url('domains/'.$listener->domain->id.'/listeners/create') }}" class="btn btn-sm btn-primary">Create Responses</a>
 @stop
 
 @section('content')
     <div class="row">
         <div class="col-lg-12">
-            @if (count($listeners))
+            @if (count($responses))
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <h3 class="panel-title">Listeners</h3>
+                        <h3 class="panel-title">Responses</h3>
                     </div>
 
                     <table class="table">
                         <thead>
                             <tr>
-                                <th>When someone says...</th>
-                                <th class="text-center">Responses</th>
+                                <th>Respond with...</th>
                                 <th></th>
                             </tr>
                         </thead>
 
                         <tbody>
-                            @foreach ($listeners as $listen)
+                            @foreach ($responses as $respond)
                                 <tr>
-                                    <td>{{ $listen->for }}</td>
-                                    <td class="text-center">
-                                        <span class="badge badge-info">{{ $listen->responses->count() }}</span> <a href="{{ route('responses.index', ['domainID' => $listen->domain->id, 'listenerID' => $listen->id]) }}" class="btn btn-primary btn-xs">Manage Responses</a>
-                                    </td>
+                                    <td>{{ $respond->with }}</td>
                                     <td class="text-right">
-                                        <a href="{{ url('domains/'.$domain->id.'listeners/'.$listen->id.'/edit') }}" class="btn btn-primary btn-xs">Edit</a>
+                                        <a href="{{ route('responses.edit', ['domainID' => $listener->domain->id, 'listenerID' => $listenerID]) }}" class="btn btn-primary btn-xs">Edit</a>
 
-                                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-listener-{{ $listen->id}}">
+                                        <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#delete-response-{{ $respond->id}}">
                                             Delete
                                         </button>
                                     </td>
@@ -49,7 +43,7 @@
                 </div>
             @else
                 <div class="jumbotron text-center">
-                    <h2>Create a Listener to get started!</h2>
+                    <h2>Create a Response to get started!</h2>
 
                     <p>
                         <small>
@@ -58,7 +52,7 @@
                     </p>
 
                     <p>
-                        <a href="{{ url('domains/'.$domain->id.'/listeners/create') }}" class="btn btn-primary">Create a Listener</a>
+                        {{-- <a href="{{ url('domains/'.$domain->id.'/listeners/create') }}" class="btn btn-primary">Create a Listener</a> --}}
                     </p>
                 </div>
             @endif
@@ -67,9 +61,9 @@
 @stop
 
 @section('after_content')
-    @if (count($listeners))
-        @foreach ($listeners as $listen)
-            <div class="modal fade" id="delete-listener-{{ $listen->id }}" tabindex="-1" role="dialog">
+    @if (count($responses))
+        @foreach ($responses as $response)
+            <div class="modal fade" id="delete-listener-{{ $respons->id }}" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -79,7 +73,7 @@
 
                         <div class="modal-body text-center">
                             <p>
-                                Are you sure you wish to delete listener <b>{{ $listen->listener }}</b>? This will destroy the listener with all corresponding data and <b>cannot be undone</b>.
+                                Are you sure you wish to delete response <b>{{ $response->with }}</b>? This will destroy the response with all corresponding data and <b>cannot be undone</b>.
                             </p>
                         </div>
 
