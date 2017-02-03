@@ -1,6 +1,6 @@
 <?php
 
-namespace Vulcan\Providers;
+namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

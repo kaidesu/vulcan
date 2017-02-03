@@ -1,9 +1,9 @@
 <?php
 
-namespace Vulcan\Repositories;
+namespace App\Repositories;
 
 use Rivescript;
-use Vulcan\Contracts\ResponseRepository;
+use App\Contracts\ResponseRepository;
 
 class LocalResponseRepository implements ResponseRepository
 {

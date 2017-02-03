@@ -1,7 +1,9 @@
 <?php
 
-namespace Vulcan\Providers;
+namespace App\Providers;
 
+use App\Contracts\ResponseRepository;
+use App\Repositories\LocalResponseRepository;
 use Illuminate\Support\ServiceProvider;
 
 class RepositoryServiceProvider extends ServiceProvider
@@ -15,7 +17,6 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         //
     }
-
     /**
      * Register the application services.
      *
@@ -23,9 +24,6 @@ class RepositoryServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(
-            \Vulcan\Contracts\ResponseRepository::class,
-            \Vulcan\Repositories\LocalResponseRepository::class
-        );
+        $this->app->bind(ResponseRepository::class, LocalResponseRepository::class);
     }
 }

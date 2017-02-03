@@ -1,12 +1,16 @@
-<div class="row">
-    <div class="col-sm-3 col-md-2 sidebar">
-        <ul class="nav nav-sidebar">
-            <li><a href="{{ url('/') }}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a></li>
-            <li><a href="{{ url('chat') }}"><i class="fa fa-commenting fa-fw"></i> Chat</a></li>
-        </ul>
-
-        <ul class="nav nav-sidebar">
-            <li><a href="{{ url('domains') }}"><i class="fa fa-graduation-cap fa-fw" aria-hidden="true"></i> Domains</a></li>
-        </ul>
-    </div>
-</div>
+<nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+    <ul class="nav nav-pills flex-column">
+        <li class="nav-item">
+            <router-link to="/" class="nav-link">Dashboard</router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="domains" class="nav-link">Domains</router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="logs" class="nav-link">Logs</router-link>
+        </li>
+        <li class="nav-item">
+            <router-link to="settings" class="nav-link">Settings</router-link>
+        </li>
+    </ul>
+</nav>

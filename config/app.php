@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Vulcan',
+    'name' => 'Laravel',
 
     /*
     |--------------------------------------------------------------------------
@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +120,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'daily'),
+    'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
@@ -166,19 +166,20 @@ return [
         /*
          * Package Service Providers...
          */
-        Collective\Html\HtmlServiceProvider::class,
-        Caffeinated\Modules\ModulesServiceProvider::class,
-        Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
+        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        Vulcan\Providers\AppServiceProvider::class,
-        Vulcan\Providers\AuthServiceProvider::class,
-        // Vulcan\Providers\BroadcastServiceProvider::class,
-        Vulcan\Providers\EventServiceProvider::class,
-        Vulcan\Providers\RouteServiceProvider::class,
-        Vulcan\Providers\RepositoryServiceProvider::class,
+        App\Providers\AppServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
+        // App\Providers\BroadcastServiceProvider::class,
+        App\Providers\EventServiceProvider::class,
+        App\Providers\RouteServiceProvider::class,
+        App\Providers\RepositoryServiceProvider::class,
+
+        Vulcan\Rivescript\Laravel\RivescriptServiceProvider::class,
+
     ],
 
     /*
@@ -198,6 +199,8 @@ return [
         'Artisan'      => Illuminate\Support\Facades\Artisan::class,
         'Auth'         => Illuminate\Support\Facades\Auth::class,
         'Blade'        => Illuminate\Support\Facades\Blade::class,
+        'Broadcast'    => Illuminate\Support\Facades\Broadcast::class,
+        'Bus'          => Illuminate\Support\Facades\Bus::class,
         'Cache'        => Illuminate\Support\Facades\Cache::class,
         'Config'       => Illuminate\Support\Facades\Config::class,
         'Cookie'       => Illuminate\Support\Facades\Cookie::class,
@@ -226,10 +229,7 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
-        'Form'       => Collective\Html\FormFacade::class,
-        'Html'       => Collective\Html\HtmlFacade::class,
-        'Module'     => Caffeinated\Modules\Facades\Module::class,
-        'Rivescript' => Vulcan\Rivescript\Laravel\Facades\Rivescript::class
+        'Rivescript'   => Vulcan\Rivescript\Laravel\Facades\Rivescript::class
     ],
 
 ];
