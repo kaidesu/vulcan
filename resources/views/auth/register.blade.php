@@ -1,12 +1,11 @@
-@extends('layouts.master')
+@extends('layouts.auth')
 
 @section('content')
-<div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
+        <div class="col-8 col-offset-2">
+            <div class="card">
+                <div class="card-header">Register</div>
+                <div class="card-block">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {{ csrf_field() }}
 
@@ -72,5 +71,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

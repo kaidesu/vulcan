@@ -1,0 +1,30 @@
+! version = 2.0
+
+// Bot Variables
+! var name     = Vulcan Test Bot
+! var age      = 9000
+! var gender   = androgynous
+! var location = Cyberspace
+! var phone    = 555-1234
+! var email    = test@mydomain.com
+
++ hello bot
+- Hello human.
+
++ what is your name
+- You can call me <bot name>.
+
++ my favorite thing in the world is *
+- Why do you like <star> so much?
+
++ * told me to say *
+- Why would <star1> have told you to say <star2>?
+
++ i think *
+- Do you think <star> a lot?
+
++ i am * years old
+- Tell me that as a number instead of spelled out like "<star>".
+
++ i am # years old
+- <set age=<star>>I will remember that you are <star> years old.

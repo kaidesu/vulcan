@@ -14,9 +14,14 @@
 
         <div class="col-sm-4 col-md-3 hidden-xs-down bg-faded chat-actions">
             <div class="input-group">
-                <input type="text" class="form-control" placeholder="Type a message" v-model="message" @keyup.enter="sendMessage()">
                 <span class="input-group-btn">
-                    <button class="btn btn-secondary" type="button" @click="sendMessage()">Send</button>
+                    <button class="btn" :class="{ 'btn-secondary': !listening, 'btn-danger': listening }" type="button" @click="toggleListening()"><i class="fa fa-fw" :class="{ 'fa-microphone-slash': !listening, 'fa-microphone': listening }"></i></button>
+                </span>
+
+                <input type="text" class="form-control" placeholder="Type a message" v-model="message" @keyup.enter="sendMessage()">
+
+                <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button" @click="sendMessage()"><i class="fa fa-paper-plane fa-fw"></i></button>
                 </span>
             </div>
         </div>
@@ -29,6 +34,8 @@
 
         data() {
             return {
+                listening: false,
+
                 message: '',
 
                 messages: []
@@ -70,6 +77,10 @@
                     var container = this.$el.querySelector(".chat");
                     container.scrollTop = (container.scrollHeight);
                 });
+            },
+
+            toggleListening() {
+                this.listening = !this.listening;
             }
         }
     }
