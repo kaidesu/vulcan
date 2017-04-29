@@ -3,8 +3,8 @@
 namespace App\Providers;
 
 use App\Contracts\ResponseRepository;
-use App\Repositories\LocalResponseRepository;
 use Illuminate\Support\ServiceProvider;
+use App\Repositories\LocalResponseRepository;
 
 class RepositoryServiceProvider extends ServiceProvider
 {
@@ -17,6 +17,7 @@ class RepositoryServiceProvider extends ServiceProvider
     {
         //
     }
+
     /**
      * Register the application services.
      *

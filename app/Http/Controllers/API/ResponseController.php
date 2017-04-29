@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\API;
 
-use App\Contracts\ResponseRepository;
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Contracts\ResponseRepository;
 
 class ResponseController extends Controller
 {

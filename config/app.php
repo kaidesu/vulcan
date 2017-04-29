@@ -230,7 +230,7 @@ return [
         'Validator'    => Illuminate\Support\Facades\Validator::class,
         'View'         => Illuminate\Support\Facades\View::class,
 
-        'Rivescript'   => Vulcan\Rivescript\Laravel\Facades\Rivescript::class
+        'Rivescript'   => Vulcan\Rivescript\Laravel\Facades\Rivescript::class,
     ],
 
 ];
