@@ -1,0 +1,39 @@
+.navbar {
+  // position: relative;
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 1);
+  transition: background-color .3s ease-out;
+
+  .navbar-brand {
+    line-height: 40px;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .navbar-nav {
+    > li {
+      position: relative;
+      display: inline-block;
+      padding: 0 2px;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 13px;
+      letter-spacing: 1px;
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      padding: 0 14px;
+      transition: color .2s
+        linear,line-height .2s
+        linear;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}

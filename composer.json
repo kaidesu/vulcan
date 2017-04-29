@@ -10,6 +10,7 @@
         "laravel/framework": "5.4.*",
         "laravel/passport": "^2.0",
         "laravel/tinker": "~1.0",
+        "vulcan/collections": "~1.0",
         "vulcan/rivescript-laravel": "^0.4"
     },
     "require-dev": {
@@ -27,7 +28,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Tests\\": "tests/",
+            "Vulcan\\Rivescript\\": "workbench/vulcan/rivescript-php/src/"
         }
     },
     "scripts": {

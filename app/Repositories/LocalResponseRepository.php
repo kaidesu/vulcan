@@ -2,7 +2,7 @@
 
 namespace App\Repositories;
 
-use Rivescript;
+use Vulcan\Rivescript\Rivescript;
 use App\Contracts\ResponseRepository;
 
 class LocalResponseRepository implements ResponseRepository
@@ -12,8 +12,8 @@ class LocalResponseRepository implements ResponseRepository
      */
     public function __construct()
     {
-        // Hard load this for the time being.
-        Rivescript::load(storage_path('rivescript/test.rive'));
+        $this->rivescript = new Rivescript;
+        $this->rivescript->load(storage_path('rivescript/atom.rive'));
     }
 
     /**
@@ -26,6 +26,6 @@ class LocalResponseRepository implements ResponseRepository
      */
     public function process($message, $user = null)
     {
-        return Rivescript::reply($user, $message);
+        return $this->rivescript->reply($message, $user);
     }
 }

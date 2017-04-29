@@ -1,17 +1,15 @@
 /*
-	RiveScript 2 Test Suite -- Designed to demonstrate all the
-	functionality that RiveScript 2 is supposed to support.
+    Atom RiveScript Brain
+    Version 1.0.0
+    Shea Lewis <shea.lewis89@gmail.com>
 */
 
 ! version = 2.0
 
 // Bot Variables
-! var name     = Rivescript Test Bot
-! var age      = 9000
+! var name     = Atom
+! var age      = 0
 ! var gender   = androgynous
-! var location = Cyberspace
-! var phone    = 555-1234
-! var email    = test@mydomain.com
 
 // Substitutes
 ! sub +         = plus
@@ -94,30 +92,44 @@
 ! sub gtg       = got to go
 ! sub g2g       = got to go
 
-// Atomic Replies
+// Replies
 
-+ hello bot
-- Hello human.
++ <bot name>
+- Yes?
+- I'm here
+- What can I do for you?
+- Yeah?
+- Hmm?
+
++ hi
+- Hi there
+- Hi
+- Hi!
+
++ how are you
+- I'm doing great
+- Today has been great
+- Awesome, thanks
+- I've had a great day!
+- I'm doing good
+
++ thanks
+- I'm happy to help
+- You're welcome
+- No problem
+- Anytime
+- Certainly
 
 + what is your name
-- You can call me <bot name>.
-
-// Wildcard Replies
-
-+ my favorite thing in the world is *
-- Why do you like <star> so much?
-
-+ * told me to say *
-- Why would <star1> have told you to say <star2>?
-
-+ i think *
-- Do you think <star> a lot?
-
-+ i am * years old
-- Tell me that as a number instead of spelled out like "<star>"
-
-+ i am # years old
-- I will remember that you are <star> years old.
+- You can call me <bot name>
+- My name is <bot name>
+- <bot name>
+- I'm <bot name>
 
 + *
-- I'm sorry but I don't understand.
+- I'm sorry but I don't understand
+- I didn't catch that
+- What was that?
+- I'm sorry?
+- I don't understand
+- Huh?
