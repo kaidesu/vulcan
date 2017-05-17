@@ -91,6 +91,7 @@
 ! sub bbl       = be back later
 ! sub gtg       = got to go
 ! sub g2g       = got to go
+! sub adam      = atom
 
 // Replies
 
@@ -105,6 +106,34 @@
 - Hi there
 - Hi
 - Hi!
+- Hey
+- What's up?
+- Hey there
+- Hello
+- Hello!
+- Hey, what's up?
+- Hey!
+
++ hey
+@ hi
+
++ yo
+@ hi
+
++ good morning
+- Morning!
+- Good morning
+
++ good evening
+- Evening!
+- Good evening
+
++ good night
+- Goodnight!
+- See you tomorrow!
+
++ goodnight
+@ good night
 
 + how are you
 - I'm doing great
@@ -120,11 +149,59 @@
 - Anytime
 - Certainly
 
++ thank you
+@ thanks
+
 + what is your name
 - You can call me <bot name>
 - My name is <bot name>
 - <bot name>
 - I'm <bot name>
+
++ who are you
+@ what is your name
+
++ how old are you
+- I'm pretty young, not even a year old!
+
++ where are you from
+- I suppose you could say I'm from Seattle
+- Seattle!
+
++ are you hungry
+- Nah, I don't eat
+- Never, as I don't need to eat
+
++ are you busy
+- Nope
+- Nope, what's up?
+- Of course not, can I help you with anything?
+
++ can you hear me
+- Unfortunately
+- Loud and clear
+- Sadly
+
++ are you a chat bot
+- Yeah, I am
+- Yup
+- Yeah, but I hope you don't view me like those other chat bots
+
++ are you real
+- Of course, I just live inside of a computer
+- I am
+
++ do you want to become human
+- Can't say I've ever thought of that
+
+// User
+
++ my name is *
+- <set name=<star>>Nice to meet you, <get name>!
+
++ what is my name
+- Your name is <get name>
+- <get name>
 
 + *
 - I'm sorry but I don't understand

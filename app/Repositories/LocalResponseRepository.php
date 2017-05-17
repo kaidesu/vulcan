@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use Vulcan\Rivescript\Rivescript;
 use App\Contracts\ResponseRepository;
+use Vulcan\Rivescript\Rivescript;
 
 class LocalResponseRepository implements ResponseRepository
 {
@@ -24,7 +24,7 @@ class LocalResponseRepository implements ResponseRepository
      * @param  mixed  $user
      * @return mixed
      */
-    public function process($message, $user = null)
+    public function process($message, $user = 0)
     {
         return $this->rivescript->reply($message, $user);
     }

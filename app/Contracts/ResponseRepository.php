@@ -9,8 +9,7 @@ interface ResponseRepository
      * or registered user.
      *
      * @param  string  $message
-     * @param  mixed  $user
      * @return mixed
      */
-    public function process($message, $user = null);
+    public function process($message);
 }

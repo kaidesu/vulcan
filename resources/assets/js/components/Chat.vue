@@ -18,7 +18,7 @@
                     <button class="btn" :class="{ 'btn-secondary': !listening, 'btn-danger': listening }" type="button" @click="toggleListening()"><i class="fa fa-fw" :class="{ 'fa-microphone-slash': !listening, 'fa-microphone': listening }"></i></button>
                 </span>
 
-                <input type="text" class="form-control" placeholder="Type a message" v-model="message" @keyup.enter="sendMessage()">
+                <input type="text" class="form-control" :placeholder="placeholder" v-model="message" @keyup.enter="sendMessage()">
 
                 <span class="input-group-btn">
                     <button class="btn btn-secondary" type="button" @click="sendMessage()"><i class="fa fa-paper-plane fa-fw"></i></button>
@@ -32,11 +32,22 @@
     export default {
         name: 'chat',
 
+        props: {
+            user: {
+                type: Number,
+                default: 0
+            }
+        },
+
         data() {
             return {
                 listening: false,
 
+                recognition: null,
+
                 message: '',
+
+                placeholder: 'Type a message',
 
                 messages: []
             }
@@ -46,16 +57,17 @@
             sendMessage() {
                 this.pushMessage('User', this.message);
 
-                this.fetchResponse(this.message);
+                this.fetchResponse(this.message, this.user);
 
                 this.message = '';
             },
 
-            fetchResponse(message) {
+            fetchResponse(message, user) {
                 var vm = this;
 
                 axios.post('/api/v1/response', {
-                    'text': message
+                    'text': message,
+                    'user': user
                 }).then(function(response) {
                     vm.pushMessage('Bot', response.data.response);
                 }).catch(function (error) {
@@ -81,6 +93,54 @@
 
             toggleListening() {
                 this.listening = !this.listening;
+            }
+        },
+
+        watch: {
+            listening: function(listening) {
+                if (listening === true) {
+                    this.recognition.start();
+
+                    this.placeholder = 'Speak your mind';
+                } else {
+                    console.log('I am not listening.');
+                    this.recognition.stop();
+
+                    this.placeholder = 'Type a message';
+                }
+            }
+        },
+
+        created() {
+            this.recognition = new webkitSpeechRecognition();
+            this.recognition.continuous = true;
+            this.recognition.interimResults = true;
+            this.recognition.lang = 'en-US';
+        },
+
+        mounted() {
+            var vm = this;
+
+            this.recognition.onresult = function(event) {
+                var last = event.results.length - 1;
+                var results = event.results[last];
+                var transcript = results[0].transcript;
+                var isFinal = results.isFinal;
+
+                vm.placeholder = transcript;
+
+                if (isFinal) {
+                    vm.message = transcript;
+                    vm.sendMessage();
+
+                    vm.message = '';
+                    vm.placeholder = 'Speak your mind';
+                }
+            };
+
+            this.recognition.onspeechend = function() {
+                // Don't stop listening
+                vm.recognition.start();
             }
         }
     }
