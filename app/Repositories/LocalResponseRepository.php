@@ -2,8 +2,8 @@
 
 namespace App\Repositories;
 
-use App\Contracts\ResponseRepository;
 use Vulcan\Rivescript\Rivescript;
+use App\Contracts\ResponseRepository;
 
 class LocalResponseRepository implements ResponseRepository
 {
