@@ -45,6 +45,12 @@
 
                 recognition: null,
 
+                synth: window.speechSynthesis,
+
+                speech: new window.SpeechSynthesisUtterance(),
+
+                voiceList: [],
+
                 message: '',
 
                 placeholder: 'Type a message',
@@ -62,6 +68,17 @@
                 this.message = '';
             },
 
+            speakMessage(message = '') {
+                this.speech.text = message;
+
+                this.speech.volume = 1;
+                this.speech.rate = 0.9;
+                this.speech.pitch = 0.2;
+                this.speech.voice = this.voiceList["Google US English"];
+
+                this.synth.speak(this.speech);
+            },
+
             fetchResponse(message, user) {
                 var vm = this;
 
@@ -70,6 +87,7 @@
                     'user': user
                 }).then(function(response) {
                     vm.pushMessage('Bot', response.data.response);
+                    vm.speakMessage(response.data.response);
                 }).catch(function (error) {
                     console.log(error);
                 });
@@ -141,6 +159,12 @@
             this.recognition.onspeechend = function() {
                 // Don't stop listening
                 vm.recognition.start();
+            }
+
+            this.voiceList = this.synth.getVoices();
+
+            this.synth.onvoiceschanged = () => {
+                this.voiceList = this.synth.getVoices();
             }
         }
     }

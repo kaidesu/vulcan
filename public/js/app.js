@@ -14856,6 +14856,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             recognition: null,
 
+            synth: window.speechSynthesis,
+
+            speech: new window.SpeechSynthesisUtterance(),
+
+            voiceList: [],
+
             message: '',
 
             placeholder: 'Type a message',
@@ -14873,6 +14879,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
             this.message = '';
         },
+        speakMessage: function speakMessage() {
+            var message = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+
+            this.speech.text = message;
+
+            this.speech.volume = 1;
+            this.speech.rate = 0.9;
+            this.speech.pitch = 0.2;
+            this.speech.voice = this.voiceList["Google US English"];
+
+            this.synth.speak(this.speech);
+        },
         fetchResponse: function fetchResponse(message, user) {
             var vm = this;
 
@@ -14881,6 +14899,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 'user': user
             }).then(function (response) {
                 vm.pushMessage('Bot', response.data.response);
+                vm.speakMessage(response.data.response);
             }).catch(function (error) {
                 console.log(error);
             });
@@ -14926,6 +14945,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         this.recognition.lang = 'en-US';
     },
     mounted: function mounted() {
+        var _this = this;
+
         var vm = this;
 
         this.recognition.onresult = function (event) {
@@ -14948,6 +14969,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         this.recognition.onspeechend = function () {
             // Don't stop listening
             vm.recognition.start();
+        };
+
+        this.voiceList = this.synth.getVoices();
+
+        this.synth.onvoiceschanged = function () {
+            _this.voiceList = _this.synth.getVoices();
         };
     }
 };
