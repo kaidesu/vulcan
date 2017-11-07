@@ -3,7 +3,6 @@
 namespace Tests\Unit;
 
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 
 class GrumpyTest extends TestCase
 {
@@ -12,7 +11,7 @@ class GrumpyTest extends TestCase
     {
         $this->assertTrue(true);
     }
-    
+
     /** @test */
     public function false_equals_false()
     {

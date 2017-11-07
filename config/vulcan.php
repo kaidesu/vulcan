@@ -13,11 +13,11 @@ return [
     |
     */
     'registration' => [
-        
+
         'enabled' => env('VULCAN_REGISTRATION_ENABLED', true),
-        
+
         'domain' => env('VULCAN_REGISTRATION_DOMAIN', ''),
-        
+
     ],
-    
+
 ];

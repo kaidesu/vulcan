@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Http\Controllers\Controller;
 use App\User;
 use Exception;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
 class RegisterConfirmationController extends Controller
 {
@@ -14,25 +14,25 @@ class RegisterConfirmationController extends Controller
         try {
             $user = User::where('confirmation_token', request('token'))
             ->firstOrFail();
-            
-            $user->confirmed          = true;
+
+            $user->confirmed = true;
             $user->confirmation_token = null;
             $user->save();
-            
+
             return redirect('/login')
                 ->with([
                     'flash' => [
                         'level'   => 'success',
-                        'message' => 'Your account has been successfully verified. You may now login.'
-                    ]
+                        'message' => 'Your account has been successfully verified. You may now login.',
+                    ],
                 ]);
         } catch (Exception $e) {
             return redirect('/login')
                 ->with([
                     'flash' => [
                         'level'   => 'danger',
-                        'message' => 'An invalid user confirmation token was submitted.'
-                    ]
+                        'message' => 'An invalid user confirmation token was submitted.',
+                    ],
                 ]);
         }
     }
