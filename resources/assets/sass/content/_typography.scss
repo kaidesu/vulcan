@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
 body {
   font-smoothing: antialiased;
   letter-spacing: .1px;
   font-weight: 300;
-  color: $gray-100;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -60,4 +61,8 @@ pre {
 	word-wrap: normal;
 	white-space: pre;
 	line-height: 1.5;
+}
+
+.text-logo {
+  vertical-align: bottom !important;
 }

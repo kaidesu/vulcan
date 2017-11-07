@@ -21,15 +21,7 @@
             @include('partials._navbar')
 
             <div class="container wrapper">
-                <div class="row">
-                    <div class="col-md-9">
-                        @yield('content')
-                    </div>
-                    
-                    <div class="col-md-3">
-                        @include('partials._sidebar')
-                    </div>
-                </div>
+                @yield('content')
             </div>
             
             <flash message="{{ session('flash.message') }}" level="{{ session('flash.level') ?? 'success' }}"></flash>
@@ -37,5 +29,6 @@
 
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/fontawesome.js') }}"></script>
     </body>
 </html>

@@ -1,9 +1,9 @@
-<b-navbar toggleable="md" type="dark" variant="light">
+<b-navbar toggleable="md" type="light" variant="white">
     <div class="container">
         <b-nav-toggle target="header-collapse"></b-nav-toggle>
         <div class="d-flex align-items-center justify-content-around">
-            <a class="navbar-brand" href="/">
-                <img src="/images/logo.png" class="d-inline-block align-middle" height="50">
+            <a class="navbar-brand text-logo" href="/">
+                <i class="fa fa-hand-spock fa-lg"></i>
             </a>
         </div>
         
@@ -20,16 +20,16 @@
     </div>
 </b-navbar>
 
-<b-navbar toggleable="md" type="dark" variant="dark">
+<b-navbar toggleable="md" type="light" variant="light">
     <div class="container">
         <div class="d-flex align-items-center justify-content-around">
-            <a class="navbar-brand" href="/">
+            <span class="navbar-brand">
                 @yield('title')
                 
                 @if (array_key_exists('subtitle', View::getSections()))
                     <small>@yield('subtitle')</small>
                 @endif
-            </a>
+            </span>
         </div>
     </div>
 </b-navbar>

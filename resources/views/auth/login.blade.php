@@ -4,9 +4,9 @@
 
 @section('content')
         <div class="login">
-            <p class="text-center mb-4">
-                <img src="/images/logo_text.png" height="75">
-            </p>
+            <h1 class="text-center mb-4 text-logo">
+                <i class="fa fa-hand-spock"></i> Vulcan
+            </h1>
 
             <div class="login-block">
                 <form class="form-horizontal mb-4" role="form" method="POST" action="{{ url('/login') }}">
@@ -26,7 +26,7 @@
                 </form>
 
                 <p class="text-center">
-                    @if (config('apollo.registration.enabled'))
+                    @if (config('vulcan.registration.enabled'))
                         <small><a href="{{ url('/register') }}">Register</a></small>
                         
                         <br>

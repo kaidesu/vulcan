@@ -4,9 +4,9 @@
 
 @section('content')
         <div class="login">
-            <p class="text-center mb-4">
-                <img src="/images/logo_text.png" height="75">
-            </p>
+            <h1 class="text-center mb-4 text-logo">
+                <i class="fa fa-hand-spock"></i> Vulcan
+            </h1>
             
             @if(config('vulcan.registration.domain'))
                 <div class="text-center mb-4">
