@@ -1,0 +1,22 @@
+@import "variables";
+
+// Utilities
+@import "utilities/functions";
+@import "utilities/mixins";
+
+// Vendor
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+@import "../../../node_modules/bootstrap-vue/dist/bootstrap-vue.css";
+
+// Components
+@import "components/alerts";
+@import "components/sidebar";
+
+// Content
+@import "content/global";
+@import "content/typography";
+
+// Pages
+@import "pages/auth";
+
+// Partials

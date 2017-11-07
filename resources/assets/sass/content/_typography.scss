@@ -1,0 +1,63 @@
+body {
+  font-smoothing: antialiased;
+  letter-spacing: .1px;
+  font-weight: 300;
+  color: $gray-100;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 500;
+  
+  > code {
+    padding: .3rem .5rem;
+  	margin: 0 0.1rem;
+    font-size: 100%;
+    color: inherit;
+  }
+}
+
+h2, .h2 {
+	color: theme-color("primary");
+	margin-bottom: rem(15px);
+	margin-top: rem(55px);
+}
+
+h3 {
+	margin-bottom: rem(10px);
+	margin-top: rem(45px);
+}
+
+p {
+	line-height: 2;
+	margin: rem(15px) 0 rem(15px);
+}
+
+input,
+button {
+  font-smoothing: antialiased;
+  letter-spacing: .1px;
+}
+
+a {
+  transition: all 0.2s;
+}
+
+hr {
+	background: $gray-100;
+}
+
+code {
+	padding: .3rem .5rem;
+	background: inherit;
+	margin: 0 0.1rem;
+	color: theme-color("info");
+}
+
+pre {
+	border: solid 1px $table-border-color;
+	overflow: auto;
+	word-wrap: normal;
+	white-space: pre;
+	line-height: 1.5;
+}
