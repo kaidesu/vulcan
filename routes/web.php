@@ -14,5 +14,5 @@
 Auth::routes();
 
 Route::middleware(['auth', 'auth.email'])->get('/', 'HomeController@index')->name('home');
-    
+
 Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index')->name('register.confirm');

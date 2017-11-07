@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
-use App\User;
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Auth\Events\Registered;
-use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class RegisterController extends Controller
 {
@@ -44,7 +44,8 @@ class RegisterController extends Controller
     /**
      * Get a validator for an incoming registration request.
      *
-     * @param  array  $data
+     * @param array $data
+     *
      * @return \Illuminate\Contracts\Validation\Validator
      */
     protected function validator(array $data)
@@ -54,14 +55,15 @@ class RegisterController extends Controller
             'email'    => 'required|string|email|max:255|unique:users',
             'password' => 'required|string|min:6|confirmed',
         ];
-        
+
         return Validator::make($data, $rules);
     }
-    
+
     /**
      * Handle a registration request for the application.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function register(Request $request)
@@ -72,11 +74,11 @@ class RegisterController extends Controller
                 ->with([
                     'flash' => [
                         'level'   => 'danger',
-                        'message' => 'Please use a valid domain to register with.'
-                    ]
+                        'message' => 'Please use a valid domain to register with.',
+                    ],
                 ]);
         }
-        
+
         $this->validator($request->all())->validate();
 
         event(new Registered($user = $this->create($request->all())));
@@ -90,30 +92,31 @@ class RegisterController extends Controller
     /**
      * Create a new user instance after a valid registration.
      *
-     * @param  array  $data
+     * @param array $data
+     *
      * @return \App\User
      */
     protected function create(array $data)
     {
         $token = str_limit(md5($data['email'].str_random()), 25, '');
-        
+
         return User::create([
             'name'               => $data['name'],
             'email'              => $data['email'],
             'password'           => bcrypt($data['password']),
-            'confirmation_token' => $token
+            'confirmation_token' => $token,
         ]);
     }
-    
+
     protected function notUsingRegistrationDomain($email)
     {
-        $userDomain   = strstr($email, '@');
+        $userDomain = strstr($email, '@');
         $configDomain = config('vulcan.registration.domain');
-        
+
         if ($configDomain and ($userDomain !== '@'.$configDomain)) {
             return true;
         }
-        
+
         return false;
     }
 }
