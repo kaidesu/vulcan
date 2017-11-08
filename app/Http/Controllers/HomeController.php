@@ -21,6 +21,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $quotes = config('vulcan.quotes');
+        $quote  = $quotes[array_rand($quotes)];
+        
+        return view('home', compact('quote'));
     }
 }

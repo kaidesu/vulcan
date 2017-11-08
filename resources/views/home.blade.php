@@ -3,5 +3,5 @@
 @section('title', 'Home')
 
 @section('content')
-    <h1 class="text-center">Hello World!</h1>
+    <h3 class="text-center">{{ $quote }}</h3>
 @endsection
