@@ -30,7 +30,7 @@
             "Tests\\": "tests/"
         },
         "files": [
-            "tests/utilities/functions.php"
+            "bootstrap/helpers/testing.php"
         ]
     },
     "extra": {
