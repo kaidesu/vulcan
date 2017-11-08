@@ -19,7 +19,7 @@ return [
         'domain' => env('VULCAN_REGISTRATION_DOMAIN', ''),
 
     ],
-    
+
     'quotes' => [
         'Live long and prosper.',
         'Peace and long life.',
