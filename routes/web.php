@@ -12,7 +12,10 @@
 */
 
 Auth::routes();
-
-Route::middleware(['auth', 'auth.email'])->get('/', 'HomeController@index')->name('home');
-
 Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index')->name('register.confirm');
+
+Route::middleware(['auth', 'auth.email'])->group(function () {
+    Route::get('/', 'HomeController@index')->name('home');
+    
+    Route::get('/modules', 'ModuleController@index')->name('modules.index');
+});
