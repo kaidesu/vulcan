@@ -3,5 +3,7 @@
 @section('title', 'Home')
 
 @section('content')
-    <h3 class="text-center">{{ $quote }}</h3>
+    <div class="jumbotron text-center">
+        <h3 class="mb-0 mt-0">{{ $quote }}</h3>
+    </div>
 @endsection
