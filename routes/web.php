@@ -16,6 +16,6 @@ Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index')->na
 
 Route::middleware(['auth', 'auth.email'])->group(function () {
     Route::get('/', 'HomeController@index')->name('home');
-    
+
     Route::get('/modules', 'ModuleController@index')->name('modules.index');
 });
