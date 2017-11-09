@@ -1,4 +1,4 @@
-<b-navbar toggleable="md" type="light" variant="white">
+<b-navbar toggleable="md" type="dark" variant="dark">
     <div class="container d-flex align-items-center justify-content-around">
         <b-nav-toggle target="header-collapse"></b-nav-toggle>
         
@@ -20,19 +20,5 @@
                 @endif
             </b-nav>
         </b-collapse>
-    </div>
-</b-navbar>
-
-<b-navbar toggleable="md" type="dark" variant="primary">
-    <div class="container d-flex align-items-center justify-content-between">
-        <h1 class="navbar-brand mb-0">
-            @yield('title')
-            
-            @if (array_key_exists('subtitle', View::getSections()))
-                <small>@yield('subtitle')</small>
-            @endif
-        </h1>
-            
-        <div>@yield('actions')</div>
     </div>
 </b-navbar>

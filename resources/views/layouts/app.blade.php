@@ -18,11 +18,31 @@
 
     <body>
         <div id="app" v-cloak>
-            @include('partials._navbar')
+            <div class="wrapper">
+                @include('partials._navbar')
 
-            <div class="container wrapper">
-                @yield('content')
+                <div class="container content-body">
+                    <div class="d-flex justify-content-between mb-4">
+                        <h1 class="h3">
+                            @yield('title')
+                            
+                            @if (array_key_exists('subtitle', View::getSections()))
+                                <small>@yield('subtitle')</small>
+                            @endif
+                        </h1>
+                        
+                        @if (array_key_exists('actions', View::getSections()))
+                            <div>
+                                @yield('actions')
+                            </div>
+                        @endif
+                    </div>
+                    
+                    @yield('content')
+                </div>
             </div>
+            
+            @include('partials._footer')
             
             <flash message="{{ session('flash.message') }}" level="{{ session('flash.level') ?? 'success' }}"></flash>
         </div>

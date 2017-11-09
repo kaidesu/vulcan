@@ -3,7 +3,7 @@
 @section('title', 'Quotes')
 
 @section('actions')
-    <a href="/quotes/create" class="btn btn-sm btn-light">Add Quote</a>
+    <a href="/quotes/create" class="btn btn-primary">Add Quote</a>
 @endsection
 
 @section('content')

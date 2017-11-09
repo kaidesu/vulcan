@@ -2,6 +2,10 @@
 
 @section('title', 'Journal')
 
+@section('actions')
+    <a href="/journal/create" class="btn btn-primary">Create Entry</a>
+@endsection
+
 @section('content')
     <div class="row no-gutters border">
         <div class="col-2">

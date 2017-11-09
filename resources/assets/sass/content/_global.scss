@@ -1,9 +1,16 @@
-body {
-	margin-bottom: 150px;
+html, body {
+  height: 100% !important;
 }
 
-.wrapper {
-	margin-top: $spacer*2;
+#app, .wrapper {
+  min-height: 100% !important;
+  height: 100%;
+}
+
+.content-body {
+	margin-top: $spacer * 2;
+  overflow: auto;
+  padding-bottom: 150px;
 }
 
 [v-cloak] {
