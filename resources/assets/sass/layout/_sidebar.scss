@@ -16,6 +16,11 @@
   min-width: 100%;
   flex-shrink: 0;
   height: 55px;
+  
+  > a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
 
 .sidebar__body {
