@@ -1,23 +1,58 @@
-@import "variables";
+/*
+ *
+	- Folder Table of Content -
+	
+	Components: Stand alone styles for specific html structures & elements.
+	Helpers:    Includes Sass functions & extends/placeholders.
+	JS:         Styles specifically related to a piece of Javascript, JS Library or Plugin.
+	Modules:    Styles for CMS module components or pages (eg. login, registration and user accounts, sitemap, search results, etc...).
+	            If these view tempates are copied into your theme for modification, still keep their styles in "Modules" directory.
 
-// Utilities
-@import "utilities/functions";
-@import "utilities/mixins";
+	Layout:     Containers & structures that make up the site's general layout.
+	Page:       Styles unique and specific to page templates or modules (eg. blog, services, homepage, etc...)
+	Vendor:     Styles that override or replace JS plugin stylesheets (eg. We provide our own slick theme file to start with)
+
+	- Other Files -
+	
+	_framework.scss:  Our build of bootstrap. Customize bootstrap build as needed.
+	_fonts.scss:      Include custom fonts here.
+	_globals.scss:    Global site styles.
+	_typography.scss: Header and text styles.
+	_variables.scss:  Override bootstarap variables here.
+
+	NOTES:
+	Included image & font paths are relative to scss folder. For Example:
+
+ 	background: url('../images/galaxy.png');
+
+ 	@font-face {
+		font-famly: 'Roboto';
+		src: url('../fonts/Roboto.eot');
+	}
+ *
+ */
+
+
+// Required
+@import "framework"; // Bootstrap 4 Framework
+
+// Helpers
+@import "helpers/functions";
+@import "helpers/mixins";
 
 // Vendor
-@import "../../../node_modules/bootstrap/scss/bootstrap";
-@import "../../../node_modules/bootstrap-vue/dist/bootstrap-vue.css";
+@import "~bootstrap-vue/dist/bootstrap-vue.css";
+
+// Globals
+@import "fonts";
+@import "globals";
+@import "typography";
 
 // Components
-@import "components/alerts";
-@import "components/footer";
-@import "components/sidebar";
+// @import "components/cards";
 
-// Content
-@import "content/global";
-@import "content/typography";
-
-// Pages
-@import "pages/auth";
-
-// Partials
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/containers";
+@import "layout/sidebar";
