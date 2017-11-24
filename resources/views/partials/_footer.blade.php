@@ -1,4 +1,4 @@
 <footer class="page-content__footer">
-    <p><a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a> <a href="#">Link</a></p>
-    <p>Intelligence Amplification System</p>
+    <p>An experimental open source life embetterment AI.</p>
+    <p>v1.0</p>
 </footer>

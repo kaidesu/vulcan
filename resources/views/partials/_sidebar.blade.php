@@ -16,6 +16,13 @@
                 </li>
                 
                 <li class="sidebar__item">
+                    <a href="/preface" class="sidebar__link">
+                        <span class="fas fa-leaf fa-fw sidebar__icon"></span>
+                        Preface
+                    </a>
+                </li>
+                
+                <li class="sidebar__item">
                     <a href="/modules" class="sidebar__link">
                         <span class="fas fa-microchip fa-fw sidebar__icon"></span>
                         Modules

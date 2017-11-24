@@ -8632,7 +8632,6 @@ body {
 }
 
 body {
-  overflow: hidden;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8703,11 +8702,20 @@ main {
 }
 
 .sidebar {
+  display: none;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   background: #1a1a1a;
   color: #f8f9fa;
   width: 240px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .sidebar__header {

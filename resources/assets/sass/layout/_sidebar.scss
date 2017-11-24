@@ -1,8 +1,15 @@
 .sidebar {
+  display: none;
   flex-shrink: 0;
   background: $gray-900;
   color: $gray-100;
   width: 240px;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    display: flex;
+  }
 }
 
 .sidebar__header {
