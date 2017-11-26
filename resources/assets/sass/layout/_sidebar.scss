@@ -3,7 +3,7 @@
   flex-shrink: 0;
   background: $gray-900;
   color: $gray-100;
-  width: 240px;
+  width: 200px;
 }
 
 @media (min-width: 768px) {
@@ -15,14 +15,16 @@
 .sidebar__header {
   background: $gray-900;
   color: $gray-100;
-  font-size: 1.3rem;
+  border-bottom: 1px solid $gray-800;
+  
+  font-size: 2rem;
   font-family: $font-family-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   min-width: 100%;
   flex-shrink: 0;
-  height: 55px;
+  height: 110px;
   
   > a {
     color: inherit;
@@ -40,6 +42,7 @@
 }
 
 .sidebar__menu {
+  margin-top: 1rem;
   padding: 0;
   list-style: none;
 }
@@ -58,6 +61,7 @@
   flex: 1;
   align-items: center;
   width: 100%;
+  font-size: .8rem;
   
   &:hover {
     color: $white;
@@ -66,5 +70,6 @@
 }
 
 .sidebar__icon {
-  margin-right: .5rem;
+  margin-right: 1rem;
+  font-size: 1.1rem !important;
 }
