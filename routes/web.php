@@ -11,12 +11,9 @@
 |
 */
 
-Auth::routes();
-Route::get('/register/confirm', 'Auth\RegisterConfirmationController@index')->name('register.confirm');
-
-Route::middleware(['auth', 'auth.email'])->group(function () {
-    Route::get('/', 'HomeController@index')->name('home');
-    Route::get('/preface', 'HomeController@preface')->name('preface');
-
-    Route::get('/modules', 'ModuleController@index')->name('modules.index');
-});
+// Route::middleware(['auth', 'auth.email'])->group(function () {
+//     Route::get('/', 'HomeController@index')->name('home');
+//     Route::get('/preface', 'HomeController@preface')->name('preface');
+//
+//     Route::get('/modules', 'ModuleController@index')->name('modules.index');
+// });

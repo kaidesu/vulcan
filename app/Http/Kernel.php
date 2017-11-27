@@ -54,6 +54,7 @@ class Kernel extends HttpKernel
         'auth'         => \Illuminate\Auth\Middleware\Authenticate::class,
         'auth.basic'   => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.email'   => \App\Http\Middleware\RedirectIfEmailNotConfirmed::class,
+        'auth.jwt'     => \Tymon\JWTAuth\Middleware\GetUserFromToken::class,
         'bindings'     => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'can'          => \Illuminate\Auth\Middleware\Authorize::class,
         'can.register' => \App\Http\Middleware\RedirectIfRegistrationDisabled::class,
