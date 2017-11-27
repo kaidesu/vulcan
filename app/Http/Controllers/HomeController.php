@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         return response()->json([
-            'data' => 'Home index'
+            'data' => 'Home index',
         ], 200);
     }
 }
