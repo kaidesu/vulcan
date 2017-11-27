@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\User;
+use Tymon\JWTAuth\JWTAuth;
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Tymon\JWTAuth\Exceptions\JWTException;
 use App\Http\Requests\Auth\LoginFormRequest;
 use App\Http\Requests\Auth\RegisterFormRequest;
-use App\User;
-use Illuminate\Http\Request;
-use Tymon\JWTAuth\Exceptions\JWTException;
-use Tymon\JWTAuth\JWTAuth;
 
 class AuthController extends Controller
 {
