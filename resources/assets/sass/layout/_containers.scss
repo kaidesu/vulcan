@@ -12,3 +12,9 @@
 .page-content {
   width: 100%;
 }
+
+.page-content__main {
+  flex: 1;
+  padding-top: 1rem;
+  background: $white;
+}

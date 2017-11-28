@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Vulcan | @yield('title')</title>
+        <title>Vulcan</title>
         
         {{-- Meta Tags --}}
         <meta charset="utf-8">

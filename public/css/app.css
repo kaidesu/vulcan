@@ -8626,12 +8626,8 @@ a.text-dark:hover {
   display: none;
 }
 
-html,
 body {
-  height: 100%;
-}
-
-body {
+  background: #1a1a1a;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8646,10 +8642,13 @@ body {
 }
 
 .page-content__banner {
+  border-top-left-radius: 5px;
+  border-color: transparent;
+  border-width: thick;
+  border-style: solid;
   background: #f7f7f9;
   padding-left: 1rem;
   height: 54px;
-  margin-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8679,6 +8678,7 @@ body {
           align-items: center;
   text-align: center;
   font-size: .8rem;
+  background: #fff;
 }
 
 #app,
@@ -8704,6 +8704,14 @@ main {
 
 .page-content {
   width: 100%;
+}
+
+.page-content__main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 1rem;
+  background: #fff;
 }
 
 .sidebar {

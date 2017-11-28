@@ -29,7 +29,7 @@
   &:after {
     background: $cyan;
     background: linear-gradient(left, $cyan 0%, $teal 50%,$cyan 100%);
-    content:'';
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;

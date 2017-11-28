@@ -17,9 +17,79 @@
                     </li>
                     
                     <li class="sidebar__item">
-                        <a href="/modules" class="sidebar__link">
-                            <span class="fas fa-microchip fa-fw sidebar__icon"></span>
-                            Modules
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-heartbeat fa-fw sidebar__icon"></span>
+                            Health
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-folder fa-fw sidebar__icon"></span>
+                            Files
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-file-alt fa-fw sidebar__icon"></span>
+                            Notes
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-users fa-fw sidebar__icon"></span>
+                            People
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-envelope fa-fw sidebar__icon"></span>
+                            Email
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-paper-plane fa-fw sidebar__icon"></span>
+                            Chat
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-music fa-fw sidebar__icon"></span>
+                            Music
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-tv fa-fw sidebar__icon"></span>
+                            Movies & TV
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-newspaper fa-fw sidebar__icon"></span>
+                            News
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-hand-spock fa-fw sidebar__icon"></span>
+                            Companion
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="fas fa-cog fa-fw sidebar__icon"></span>
+                            Settings
                         </a>
                     </li>
                 </ul>

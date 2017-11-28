@@ -7644,6 +7644,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Footer_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Banner_vue__ = __webpack_require__(/*! ./components/Banner.vue */ 331);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Banner_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Banner_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__router__ = __webpack_require__(/*! ./router */ 334);
+
+
 
 
 
@@ -7659,6 +7662,8 @@ Vue.component('app-footer', __WEBPACK_IMPORTED_MODULE_4__components_Footer_vue__
 
 window.app = new Vue({
     el: '#app',
+
+    router: __WEBPACK_IMPORTED_MODULE_6__router__["a" /* default */],
 
     components: {
         'app': __WEBPACK_IMPORTED_MODULE_1__components_App_vue___default.a
@@ -54480,6 +54485,7 @@ function removeBVPO(el) {
   !*** ./node_modules/vue-router/dist/vue-router.esm.js ***!
   \********************************************************/
 /*! exports provided: default */
+/*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -57105,7 +57111,7 @@ if (inBrowser && window.Vue) {
   window.Vue.use(VueRouter);
 }
 
-/* unused harmony default export */ var _unused_webpack_default_export = (VueRouter);
+/* harmony default export */ __webpack_exports__["a"] = (VueRouter);
 
 
 /***/ }),
@@ -57456,18 +57462,100 @@ var staticRenderFns = [
             ]),
             _vm._v(" "),
             _c("li", { staticClass: "sidebar__item" }, [
-              _c(
-                "a",
-                { staticClass: "sidebar__link", attrs: { href: "/modules" } },
-                [
-                  _c("span", {
-                    staticClass: "fas fa-microchip fa-fw sidebar__icon"
-                  }),
-                  _vm._v(
-                    "\n                        Modules\n                    "
-                  )
-                ]
-              )
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-heartbeat fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        Health\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-folder fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        Files\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-file-alt fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        Notes\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", { staticClass: "fas fa-users fa-fw sidebar__icon" }),
+                _vm._v("\n                        People\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-envelope fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        Email\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-paper-plane fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        Chat\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", { staticClass: "fas fa-music fa-fw sidebar__icon" }),
+                _vm._v("\n                        Music\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", { staticClass: "fas fa-tv fa-fw sidebar__icon" }),
+                _vm._v(
+                  "\n                        Movies & TV\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-newspaper fa-fw sidebar__icon"
+                }),
+                _vm._v("\n                        News\n                    ")
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", {
+                  staticClass: "fas fa-hand-spock fa-fw sidebar__icon"
+                }),
+                _vm._v(
+                  "\n                        Companion\n                    "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("li", { staticClass: "sidebar__item" }, [
+              _c("a", { staticClass: "sidebar__link", attrs: { href: "#" } }, [
+                _c("span", { staticClass: "fas fa-cog fa-fw sidebar__icon" }),
+                _vm._v(
+                  "\n                        Settings\n                    "
+                )
+              ])
             ])
           ])
         ])
@@ -57558,7 +57646,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("footer", { staticClass: "page-content__footer" }, [
-      _c("p", [_vm._v("An experimental open source life embetterment AI.")]),
+      _c("p", [
+        _vm._v("An experimental open source life embetterment personal cloud.")
+      ]),
       _vm._v(" "),
       _c("p", [_vm._v("v1.0")])
     ])
@@ -57607,6 +57697,76 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -57750,6 +57910,31 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-69b59e23", module.exports)
   }
 }
+
+/***/ }),
+/* 334 */
+/*!*********************************************!*\
+  !*** ./resources/assets/js/router/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(/*! vue-router */ 300);
+
+
+
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]);
+
+var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
+    routes: [],
+    mode: 'history'
+});
+
+/* harmony default export */ __webpack_exports__["a"] = (router);
 
 /***/ })
 /******/ ]);
