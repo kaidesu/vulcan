@@ -8727,7 +8727,7 @@ main {
   background-color: #1a1a1a;
   background: url(/images/diagmonds.png?b8d5aeba1645c6781d2081406510ddc9);
   color: #f8f9fa;
-  border-bottom: 1px solid #00bcd4;
+  position: relative;
   font-size: 2rem;
   font-family: "Rhodium Libre", serif;
   display: -webkit-box;
@@ -8743,6 +8743,18 @@ main {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   height: 110px;
+}
+
+.sidebar__header:after {
+  background: #00bcd4;
+  background: -webkit-gradient(linear, left top, right top, from(#00bcd4), color-stop(50%, #20c997), to(#00bcd4));
+  background: linear-gradient(left, #00bcd4 0%, #20c997 50%, #00bcd4 100%);
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
 }
 
 .sidebar__header > a {

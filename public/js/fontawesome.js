@@ -60,12 +60,12 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 307);
+/******/ 	return __webpack_require__(__webpack_require__.s = 313);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 307:
+/***/ 313:
 /*!**************************************************!*\
   !*** multi ./resources/assets/js/fontawesome.js ***!
   \**************************************************/
@@ -73,12 +73,12 @@
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/js/fontawesome.js */308);
+module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/js/fontawesome.js */314);
 
 
 /***/ }),
 
-/***/ 308:
+/***/ 314:
 /*!********************************************!*\
   !*** ./resources/assets/js/fontawesome.js ***!
   \********************************************/
@@ -88,15 +88,15 @@ module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fontawesome_packs_light__ = __webpack_require__(/*! ./fontawesome/packs/light */ 309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fontawesome_packs_light__ = __webpack_require__(/*! ./fontawesome/packs/light */ 315);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__fontawesome_packs_light___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__fontawesome_packs_light__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fontawesome_packs_regular__ = __webpack_require__(/*! ./fontawesome/packs/regular */ 310);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fontawesome_packs_regular__ = __webpack_require__(/*! ./fontawesome/packs/regular */ 316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__fontawesome_packs_regular___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__fontawesome_packs_regular__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fontawesome_packs_solid__ = __webpack_require__(/*! ./fontawesome/packs/solid */ 311);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fontawesome_packs_solid__ = __webpack_require__(/*! ./fontawesome/packs/solid */ 317);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__fontawesome_packs_solid___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__fontawesome_packs_solid__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fontawesome_packs_brands__ = __webpack_require__(/*! ./fontawesome/packs/brands */ 312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fontawesome_packs_brands__ = __webpack_require__(/*! ./fontawesome/packs/brands */ 318);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__fontawesome_packs_brands___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__fontawesome_packs_brands__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fontawesome_fontawesome__ = __webpack_require__(/*! ./fontawesome/fontawesome */ 313);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fontawesome_fontawesome__ = __webpack_require__(/*! ./fontawesome/fontawesome */ 319);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__fontawesome_fontawesome___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__fontawesome_fontawesome__);
 
 
@@ -106,7 +106,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 309:
+/***/ 315:
 /*!********************************************************!*\
   !*** ./resources/assets/js/fontawesome/packs/light.js ***!
   \********************************************************/
@@ -804,7 +804,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 310:
+/***/ 316:
 /*!**********************************************************!*\
   !*** ./resources/assets/js/fontawesome/packs/regular.js ***!
   \**********************************************************/
@@ -1502,7 +1502,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 311:
+/***/ 317:
 /*!********************************************************!*\
   !*** ./resources/assets/js/fontawesome/packs/solid.js ***!
   \********************************************************/
@@ -2201,7 +2201,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 312:
+/***/ 318:
 /*!*********************************************************!*\
   !*** ./resources/assets/js/fontawesome/packs/brands.js ***!
   \*********************************************************/
@@ -2589,7 +2589,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 313:
+/***/ 319:
 /*!********************************************************!*\
   !*** ./resources/assets/js/fontawesome/fontawesome.js ***!
   \********************************************************/

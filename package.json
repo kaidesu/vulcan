@@ -8,17 +8,18 @@
   },
   "devDependencies": {
     "axios": "^0.15.3",
+    "jquery": "^3.2.1",
     "laravel-mix": "^1.4.5",
-    "webpack": "^3.6.0",
-    "webpack-dashboard": "^1.0.0",
     "popper.js": "^1.12.6",
     "pretty-error": "^2.1.1",
-    "jquery": "^3.2.1"
+    "webpack": "^3.6.0",
+    "webpack-dashboard": "^1.0.0"
   },
   "dependencies": {
     "bootstrap": "4.0.0-beta",
     "bootstrap-vue": "^1.0.0-beta.9",
     "lodash": "^4.17.4",
-    "vue": "^2.4.4"
+    "vue": "^2.4.4",
+    "vue-router": "^3.0.1"
   }
 }

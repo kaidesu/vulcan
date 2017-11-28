@@ -16,8 +16,7 @@
   background-color: $gray-900;
   background: url(../../images/diagmonds.png);
   color: $gray-100;
-  border-bottom: 1px solid $cyan;
-  
+  position: relative;
   font-size: 2rem;
   font-family: $font-family-serif;
   display: flex;
@@ -26,6 +25,17 @@
   min-width: 100%;
   flex-shrink: 0;
   height: 110px;
+  
+  &:after {
+    background: $cyan;
+    background: linear-gradient(left, $cyan 0%, $teal 50%,$cyan 100%);
+    content:'';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
   
   > a {
     color: inherit;

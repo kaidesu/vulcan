@@ -11,9 +11,4 @@
 |
 */
 
-// Route::middleware(['auth', 'auth.email'])->group(function () {
-//     Route::get('/', 'HomeController@index')->name('home');
-//     Route::get('/preface', 'HomeController@preface')->name('preface');
-//
-//     Route::get('/modules', 'ModuleController@index')->name('modules.index');
-// });
+Route::get('/', 'ApplicationController@index')->name('app');
