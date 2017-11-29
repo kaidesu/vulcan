@@ -18,3 +18,16 @@
   padding-top: 1rem;
   background: $white;
 }
+
+.page-content__auth {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  
+  > svg {
+    height: 3rem;
+    width: 3rem;
+  }
+}

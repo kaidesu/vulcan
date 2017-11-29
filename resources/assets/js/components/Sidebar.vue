@@ -10,15 +10,6 @@
             <nav>
                 <ul class="sidebar__menu">
                     <li class="sidebar__item">
-                        <router-link :to="{ name: 'login' }" class="sidebar__link">
-                            <span class="sidebar__icon">
-                                <app-icon name="property-1"></app-icon>
-                            </span>
-                            Login
-                        </router-link>
-                    </li>
-                    
-                    <li class="sidebar__item">
                         <a href="/" class="sidebar__link">
                             <span class="sidebar__icon">
                                 <app-icon name="property-1"></app-icon>

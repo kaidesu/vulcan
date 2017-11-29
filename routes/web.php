@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'ApplicationController@index')->name('app');
+Route::get('/{vue?}', 'ApplicationController@index')
+    ->where('vue', '[\/\w\.-]*')
+    ->name('app');

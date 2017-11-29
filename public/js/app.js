@@ -79,7 +79,7 @@
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(/*! ./dom */ 5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__copyProps__ = __webpack_require__(/*! ./copyProps */ 89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lowerFirst__ = __webpack_require__(/*! ./lowerFirst */ 28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identity__ = __webpack_require__(/*! ./identity */ 13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identity__ = __webpack_require__(/*! ./identity */ 14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__loose_equal__ = __webpack_require__(/*! ./loose-equal */ 90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js__ = __webpack_require__(/*! vue-functional-data-merge/dist/lib.common.js */ 91);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js__);
@@ -90,8 +90,8 @@
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__plugins__ = __webpack_require__(/*! ./plugins */ 96);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__suffixPropName__ = __webpack_require__(/*! ./suffixPropName */ 97);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__unPrefixPropName__ = __webpack_require__(/*! ./unPrefixPropName */ 98);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__warn__ = __webpack_require__(/*! ./warn */ 15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__warn__ = __webpack_require__(/*! ./warn */ 16);
 /* unused harmony reexport addEventListenerOnce */
 /* unused harmony reexport array */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_4__copyProps__["a"]; });
@@ -4160,1553 +4160,6 @@ Popper.Defaults = Defaults;
 
 /***/ }),
 /* 12 */
-/*!********************************************!*\
-  !*** ./node_modules/axios/lib/defaults.js ***!
-  \********************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-var utils = __webpack_require__(/*! ./utils */ 6);
-var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ 67);
-
-var PROTECTION_PREFIX = /^\)\]\}',?\n/;
-var DEFAULT_CONTENT_TYPE = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-};
-
-function setContentTypeIfUnset(headers, value) {
-  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
-    headers['Content-Type'] = value;
-  }
-}
-
-function getDefaultAdapter() {
-  var adapter;
-  if (typeof XMLHttpRequest !== 'undefined') {
-    // For browsers use XHR adapter
-    adapter = __webpack_require__(/*! ./adapters/xhr */ 24);
-  } else if (typeof process !== 'undefined') {
-    // For node use HTTP adapter
-    adapter = __webpack_require__(/*! ./adapters/http */ 24);
-  }
-  return adapter;
-}
-
-var defaults = {
-  adapter: getDefaultAdapter(),
-
-  transformRequest: [function transformRequest(data, headers) {
-    normalizeHeaderName(headers, 'Content-Type');
-    if (utils.isFormData(data) ||
-      utils.isArrayBuffer(data) ||
-      utils.isStream(data) ||
-      utils.isFile(data) ||
-      utils.isBlob(data)
-    ) {
-      return data;
-    }
-    if (utils.isArrayBufferView(data)) {
-      return data.buffer;
-    }
-    if (utils.isURLSearchParams(data)) {
-      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-      return data.toString();
-    }
-    if (utils.isObject(data)) {
-      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
-      return JSON.stringify(data);
-    }
-    return data;
-  }],
-
-  transformResponse: [function transformResponse(data) {
-    /*eslint no-param-reassign:0*/
-    if (typeof data === 'string') {
-      data = data.replace(PROTECTION_PREFIX, '');
-      try {
-        data = JSON.parse(data);
-      } catch (e) { /* Ignore */ }
-    }
-    return data;
-  }],
-
-  timeout: 0,
-
-  xsrfCookieName: 'XSRF-TOKEN',
-  xsrfHeaderName: 'X-XSRF-TOKEN',
-
-  maxContentLength: -1,
-
-  validateStatus: function validateStatus(status) {
-    return status >= 200 && status < 300;
-  }
-};
-
-defaults.headers = {
-  common: {
-    'Accept': 'application/json, text/plain, */*'
-  }
-};
-
-utils.forEach(['delete', 'get', 'head'], function forEachMehtodNoData(method) {
-  defaults.headers[method] = {};
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-});
-
-module.exports = defaults;
-
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 22)))
-
-/***/ }),
-/* 13 */
-/*!*********************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/utils/identity.js ***!
-  \*********************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = identity;
-function identity(x) {
-    return x;
-}
-
-/***/ }),
-/* 14 */
-/*!***********************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/utils/upperFirst.js ***!
-  \***********************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = upperFirst;
-/**
- * @param {string} str
- */
-function upperFirst(str) {
-    if (typeof str !== "string") {
-        str = String(str);
-    }
-    return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
-/***/ }),
-/* 15 */
-/*!*****************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/utils/warn.js ***!
-  \*****************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/**
- * Log a warning message to the console with bootstrap-vue formatting sugar.
- * @param {string} message
- */
-function warn(message) {
-  console.warn("[Bootstrap-Vue warn]: " + message);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (warn);
-
-/***/ }),
-/* 16 */
-/*!*************************************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/components/button/button-close.js ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-var props = {
-    disabled: {
-        type: Boolean,
-        default: false
-    },
-    ariaLabel: {
-        type: String,
-        default: "Close"
-    },
-    textVariant: {
-        type: String,
-        default: null
-    }
-};
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    functional: true,
-    props: props,
-    render: function render(h, _ref) {
-        var props = _ref.props,
-            data = _ref.data,
-            listeners = _ref.listeners,
-            children = _ref.children;
-
-        var componentData = {
-            staticClass: "close",
-            class: _defineProperty({}, "text-" + props.textVariant, props.textVariant),
-            attrs: {
-                type: "button",
-                disabled: props.disabled,
-                "aria-label": props.ariaLabel ? String(props.ariaLabel) : null
-            },
-            on: {
-                click: function click(e) {
-                    // Ensure click on button HTML content is also disabled
-                    if (props.disabled && e instanceof Event) {
-                        e.stopPropagation();
-                        e.preventDefault();
-                    }
-                }
-            }
-        };
-        // Careful not to override the slot with innerHTML
-        if (!children.length) {
-            componentData.domProps = { innerHTML: "×" };
-        }
-        return h("button", Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, componentData), children);
-    }
-});
-
-/***/ }),
-/* 17 */
-/*!*******************************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/components/button/button.js ***!
-  \*******************************************************************/
-/*! exports provided: props, default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export props */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_array__ = __webpack_require__(/*! ../../utils/array */ 4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_dom__ = __webpack_require__(/*! ../../utils/dom */ 5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__link_link__ = __webpack_require__(/*! ../link/link */ 7);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-
-
-
-
-var btnProps = {
-    block: {
-        type: Boolean,
-        default: false
-    },
-    disabled: {
-        type: Boolean,
-        default: false
-    },
-    size: {
-        type: String,
-        default: null,
-        validator: function validator(size) {
-            return Object(__WEBPACK_IMPORTED_MODULE_1__utils_array__["a" /* arrayIncludes */])(["sm", "", "lg"], size);
-        }
-    },
-    variant: {
-        type: String,
-        default: null
-    },
-    type: {
-        type: String,
-        default: "button"
-    },
-    pressed: {
-        // tri-state prop: true, false or null
-        // => on, off, not a toggle
-        type: Boolean,
-        default: null
-    }
-};
-
-var linkProps = Object(__WEBPACK_IMPORTED_MODULE_4__link_link__["c" /* propsFactory */])();
-delete linkProps.href.default;
-delete linkProps.to.default;
-var linkPropKeys = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["e" /* keys */])(linkProps);
-
-var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */])(linkProps, btnProps);
-
-function handleFocus(evt) {
-    if (evt.type === "focusin") {
-        Object(__WEBPACK_IMPORTED_MODULE_3__utils_dom__["a" /* addClass */])(evt.target, "focus");
-    } else if (evt.type === "focusout") {
-        Object(__WEBPACK_IMPORTED_MODULE_3__utils_dom__["s" /* removeClass */])(evt.target, "focus");
-    }
-}
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    functional: true,
-    props: props,
-    render: function render(h, _ref) {
-        var _ref2;
-
-        var props = _ref.props,
-            data = _ref.data,
-            listeners = _ref.listeners,
-            children = _ref.children;
-
-        var isLink = Boolean(props.href || props.to);
-        var isToggle = typeof props.pressed === "boolean";
-        var on = {
-            click: function click(e) {
-                if (props.disabled && e instanceof Event) {
-                    e.stopPropagation();
-                    e.preventDefault();
-                } else if (isToggle) {
-                    // Concat will normalize the value to an array
-                    // without double wrapping an array value in an array.
-                    Object(__WEBPACK_IMPORTED_MODULE_1__utils_array__["b" /* concat */])(listeners["update:pressed"]).forEach(function (fn) {
-                        if (typeof fn === "function") {
-                            fn(!props.pressed);
-                        }
-                    });
-                }
-            }
-        };
-
-        if (isToggle) {
-            on.focusin = handleFocus;
-            on.focusout = handleFocus;
-        }
-
-        var componentData = {
-            staticClass: "btn",
-            class: [props.variant ? "btn-" + props.variant : "btn-secondary", (_ref2 = {}, _defineProperty(_ref2, "btn-" + props.size, Boolean(props.size)), _defineProperty(_ref2, "btn-block", props.block), _defineProperty(_ref2, "disabled", props.disabled), _defineProperty(_ref2, "active", props.pressed), _ref2)],
-            props: isLink ? Object(__WEBPACK_IMPORTED_MODULE_0__utils__["f" /* pluckProps */])(linkPropKeys, props) : null,
-            attrs: {
-                type: isLink ? null : props.type,
-                disabled: isLink ? null : props.disabled,
-                // Data attribute not used for js logic,
-                // but only for BS4 style selectors.
-                "data-toggle": isToggle ? "button" : null,
-                "aria-pressed": isToggle ? String(props.pressed) : null,
-                // Tab index is used when the component becomes a link.
-                // Links are tabable, but don't allow disabled,
-                // so we mimic that functionality by disabling tabbing.
-                tabindex: props.disabled && isLink ? "-1" : data.attrs ? data.attrs['tabindex'] : null
-            },
-            on: on
-        };
-
-        return h(isLink ? __WEBPACK_IMPORTED_MODULE_4__link_link__["a" /* default */] : "button", Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, componentData), children);
-    }
-});
-
-/***/ }),
-/* 18 */
-/*!***************************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/components/image/img.js ***!
-  \***************************************************************/
-/*! exports provided: props, default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export props */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-
-// Blank image with fill template
-var BLANK_TEMPLATE = '<svg width="%{w}" height="%{h}" ' + 'xmlns="http://www.w3.org/2000/svg" ' + 'viewBox="0 0 %{w} %{h}" preserveAspectRatio="none">' + '<rect width="100%" height="100%" style="fill:%{f};"></rect>' + '</svg>';
-
-function makeBlankImgSrc(width, height, color) {
-    var src = encodeURIComponent(BLANK_TEMPLATE.replace('%{w}', String(width)).replace('%{h}', String(height)).replace('%{f}', color));
-    return 'data:image/svg+xml;charset=UTF-8,' + src;
-}
-
-var props = {
-    src: {
-        type: String,
-        default: null
-    },
-    alt: {
-        type: String,
-        default: null
-    },
-    width: {
-        type: [Number, String],
-        default: null
-    },
-    height: {
-        type: [Number, String],
-        default: null
-    },
-    block: {
-        type: Boolean,
-        default: false
-    },
-    fluid: {
-        type: Boolean,
-        default: false
-    },
-    fluidGrow: {
-        // Gives fluid images class `w-100` to make them grow to fit container
-        type: Boolean,
-        default: false
-    },
-    rounded: {
-        // rounded can be:
-        //   false: no rounding of corners
-        //   true: slightly rounded corners
-        //   'top': top corners rounded
-        //   'right': right corners rounded
-        //   'bottom': bottom corners rounded
-        //   'left': left corners rounded
-        //   'circle': circle/oval
-        //   '0': force rounding off
-        type: [Boolean, String],
-        default: false
-    },
-    thumbnail: {
-        type: Boolean,
-        default: false
-    },
-    left: {
-        type: Boolean,
-        default: false
-    },
-    right: {
-        type: Boolean,
-        default: false
-    },
-    center: {
-        type: Boolean,
-        default: false
-    },
-    blank: {
-        type: Boolean,
-        default: false
-    },
-    blankColor: {
-        type: String,
-        default: 'transparent'
-    }
-};
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    functional: true,
-    props: props,
-    render: function render(h, _ref) {
-        var _class;
-
-        var props = _ref.props,
-            data = _ref.data;
-
-        var src = props.src;
-        var width = Boolean(parseInt(props.width, 10)) ? parseInt(props.width, 10) : null;
-        var height = Boolean(parseInt(props.height, 10)) ? parseInt(props.height, 10) : null;
-        var align = null;
-        var block = props.block;
-        if (props.blank) {
-            if (!height && Boolean(width)) {
-                height = width;
-            } else if (!width && Boolean(height)) {
-                width = height;
-            }
-            if (!width && !height) {
-                width = 1;
-                height = 1;
-            }
-            // Make a blank SVG image
-            src = makeBlankImgSrc(width, height, props.blankColor || 'transparent');
-        }
-        if (props.left) {
-            align = 'float-left';
-        } else if (props.right) {
-            align = 'float-right';
-        } else if (props.center) {
-            align = 'mx-auto';
-            block = true;
-        }
-        return h('img', Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, {
-            attrs: {
-                'src': src,
-                'alt': props.alt,
-                'width': width ? String(width) : null,
-                'height': height ? String(height) : null
-            },
-            class: (_class = {
-                'img-thumbnail': props.thumbnail,
-                'img-fluid': props.fluid || props.fluidGrow,
-                'w-100': props.fluidGrow,
-                'rounded': props.rounded === '' || props.rounded === true
-            }, _defineProperty(_class, 'rounded-' + props.rounded, typeof props.rounded === 'string' && props.rounded !== ''), _defineProperty(_class, align, Boolean(align)), _defineProperty(_class, 'd-block', block), _class)
-        }));
-    }
-});
-
-/***/ }),
-/* 19 */
-/*!********************************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/components/dropdown/index.js ***!
-  \********************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(/*! ./dropdown */ 147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(/*! ./dropdown-item */ 151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(/*! ./dropdown-item-button */ 152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(/*! ./dropdown-header */ 153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(/*! ./dropdown-divider */ 154);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils__ = __webpack_require__(/*! ../../utils */ 0);
-
-
-
-
-
-
-
-/* eslint-disable no-var, no-undef, guard-for-in, object-shorthand */
-
-var components = {
-  bDropdown: __WEBPACK_IMPORTED_MODULE_0__dropdown__["a" /* default */],
-  bDd: __WEBPACK_IMPORTED_MODULE_0__dropdown__["a" /* default */],
-  bDropdownItem: __WEBPACK_IMPORTED_MODULE_1__dropdown_item__["a" /* default */],
-  bDdItem: __WEBPACK_IMPORTED_MODULE_1__dropdown_item__["a" /* default */],
-  bDropdownItemButton: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
-  bDropdownItemBtn: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
-  bDdItemButton: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
-  bDdItemBtn: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
-  bDropdownHeader: __WEBPACK_IMPORTED_MODULE_3__dropdown_header__["a" /* default */],
-  bDdHeader: __WEBPACK_IMPORTED_MODULE_3__dropdown_header__["a" /* default */],
-  bDropdownDivider: __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__["a" /* default */],
-  bDdDivider: __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__["a" /* default */]
-};
-
-var VuePlugin = {
-  install: function install(Vue) {
-    Object(__WEBPACK_IMPORTED_MODULE_5__utils__["h" /* registerComponents */])(Vue, components);
-  }
-};
-
-Object(__WEBPACK_IMPORTED_MODULE_5__utils__["l" /* vueUse */])(VuePlugin);
-
-/* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
-
-/***/ }),
-/* 20 */
-/*!**************************************************************!*\
-  !*** ./node_modules/bootstrap-vue/es/utils/tooltip.class.js ***!
-  \**************************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(/*! ./object */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array__ = __webpack_require__(/*! ./array */ 4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(/*! ./dom */ 5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bv_event_class__ = __webpack_require__(/*! ./bv-event.class */ 51);
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-
-
-
-
-
-
-var NAME = 'tooltip';
-var CLASS_PREFIX = 'bs-tooltip';
-var BSCLS_PREFIX_REGEX = new RegExp('\\b' + CLASS_PREFIX + '\\S+', 'g');
-
-var TRANSITION_DURATION = 150;
-
-// Modal $root event (prepare for future evnt name change)
-var MODAL_CLOSE_EVENT = 'bv::modal::hidden';
-var MODAL_CLASS = '.modal';
-
-var AttachmentMap = {
-    AUTO: 'auto',
-    TOP: 'top',
-    RIGHT: 'right',
-    BOTTOM: 'bottom',
-    LEFT: 'left',
-    TOPLEFT: 'top',
-    TOPRIGHT: 'top',
-    RIGHTTOP: 'right',
-    RIGHTBOTTOM: 'right',
-    BOTTOMLEFT: 'bottom',
-    BOTTOMRIGHT: 'bottom',
-    LEFTTOP: 'left',
-    LEFTBOTTOM: 'left'
-};
-
-var OffsetMap = {
-    AUTO: 0,
-    TOPLEFT: -1,
-    TOP: 0,
-    TOPRIGHT: +1,
-    RIGHTTOP: -1,
-    RIGHT: 0,
-    RIGHTBOTTOM: +1,
-    BOTTOMLEFT: -1,
-    BOTTOM: 0,
-    BOTTOMRIGHT: +1,
-    LEFTTOP: -1,
-    LEFT: 0,
-    LEFTBOTTOM: +1
-};
-
-var HoverState = {
-    SHOW: 'show',
-    OUT: 'out'
-};
-
-var ClassName = {
-    FADE: 'fade',
-    SHOW: 'show'
-};
-
-var Selector = {
-    TOOLTIP: '.tooltip',
-    TOOLTIP_INNER: '.tooltip-inner',
-    ARROW: '.arrow'
-};
-
-var Trigger = {
-    HOVER: 'hover',
-    FOCUS: 'focus',
-    CLICK: 'click',
-    BLUR: 'blur',
-    MANUAL: 'manual'
-};
-
-var Defaults = {
-    animation: true,
-    template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
-    trigger: 'hover focus',
-    title: '',
-    delay: 0,
-    html: false,
-    placement: 'top',
-    offset: 0,
-    arrowPadding: 6,
-    container: false,
-    fallbackPlacement: 'flip',
-    callbacks: {}
-};
-
-// Transition Event names
-var TransitionEndEvents = {
-    WebkitTransition: ['webkitTransitionEnd'],
-    MozTransition: ['transitionend'],
-    OTransition: ['otransitionend', 'oTransitionEnd'],
-    transition: ['transitionend']
-};
-
-// Client Side Tip ID counter for aria-describedby attribute
-// Could use Alex's uid generator util
-// Each tooltip requires a unique client side ID
-var NEXTID = 1;
-function generateId(name) {
-    return '__BV_' + name + '_' + NEXTID++ + '__';
-}
-
-/*
- * ToolTip Class definition
- */
-
-var ToolTip = function () {
-
-    // Main constructor
-    function ToolTip(element, config, $root) {
-        _classCallCheck(this, ToolTip);
-
-        // New tooltip object
-        this.$fadeTimeout = null;
-        this.$hoverTimeout = null;
-        this.$visibleInterval = null;
-        this.$hoverState = '';
-        this.$activeTrigger = {};
-        this.$popper = null;
-        this.$element = element;
-        this.$tip = null;
-        this.$id = generateId(this.constructor.NAME);
-        this.$root = $root || null;
-        this.$routeWatcher = null;
-        this.updateConfig(config);
-    }
-
-    // NOTE: Overridden by PopOver class
-
-
-    _createClass(ToolTip, [{
-        key: 'updateConfig',
-
-
-        // Update config
-        value: function updateConfig(config) {
-            // Merge config into defaults. We use "this" here because PopOver overrides Default
-            var updatedConfig = Object(__WEBPACK_IMPORTED_MODULE_1__object__["a" /* assign */])({}, this.constructor.Default, config);
-
-            // Sanitize delay
-            if (config.delay && typeof config.delay === 'number') {
-                updatedConfig.delay = {
-                    show: config.delay,
-                    hide: config.delay
-                };
-            }
-
-            // Title for tooltip and popover
-            if (config.title && typeof config.title === 'number') {
-                updatedConfig.title = config.title.toString();
-            }
-
-            // Content only for popover
-            if (config.content && typeof config.content === 'number') {
-                updatedConfig.content = config.content.toString();
-            }
-
-            // Hide element original title if needed
-            this.fixTitle();
-            // Update the config
-            this.$config = updatedConfig;
-            // Stop/Restart listening
-            this.unListen();
-            this.listen();
-        }
-
-        // Destroy this instance
-
-    }, {
-        key: 'destroy',
-        value: function destroy() {
-            // Stop listening to trigger events
-            this.unListen();
-            // Disable while open listeners/watchers
-            this.setWhileOpenListeners(false);
-            // Clear any timouts
-            clearTimeout(this.$hoverTimeout);
-            this.$hoverTimeout = null;
-            clearTimeout(this.$fadeTimeout);
-            this.$fadeTimeout = null;
-            // Remove popper
-            if (this.$popper) {
-                this.$popper.destroy();
-            }
-            this.$popper = null;
-            // Remove tip from document
-            if (this.$tip && this.$tip.parentElement) {
-                this.$tip.parentElement.removeChild(this.$tip);
-            }
-            this.$tip = null;
-            // Null out other properties
-            this.$id = null;
-            this.$root = null;
-            this.$element = null;
-            this.$config = null;
-            this.$hoverState = null;
-            this.$activeTrigger = null;
-        }
-
-        // Click toggler
-
-    }, {
-        key: 'toggle',
-        value: function toggle(event) {
-            if (event) {
-                this.$activeTrigger.click = !this.$activeTrigger.click;
-
-                if (this.isWithActiveTrigger()) {
-                    this.enter(null);
-                } else {
-                    this.leave(null);
-                }
-            } else {
-                if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(this.getTipElement(), ClassName.SHOW)) {
-                    this.leave(null);
-                } else {
-                    this.enter(null);
-                }
-            }
-        }
-
-        // Show tooltip
-
-    }, {
-        key: 'show',
-        value: function show() {
-            var _this = this;
-
-            if (!document.body.contains(this.$element)) {
-                // If trigger element isn't in the DOM
-                return;
-            }
-
-            // Build tooltip element (also sets this.$tip)
-            var tip = this.getTipElement();
-            this.fixTitle();
-            this.setContent(tip);
-            if (!this.isWithContent(tip)) {
-                // if No content, dont bother showing
-                this.$tip = null;
-                return;
-            }
-
-            // Set ID on tip and aria-describedby on element
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(tip, 'id', this.$id);
-            this.addAriaDescribedby();
-
-            // Set animation on or off
-            if (this.$config.animation) {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(tip, ClassName.FADE);
-            } else {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
-            }
-
-            var placement = this.getPlacement();
-            var attachment = this.constructor.getAttachment(placement);
-            this.addAttachmentClass(attachment);
-
-            // Create a cancelable BvEvent
-            var showEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('show', {
-                cancelable: true,
-                target: this.$element,
-                relatedTarget: tip
-            });
-            this.emitEvent(showEvt);
-            if (showEvt.defaultPrevented) {
-                // Don't show if event cancelled
-                this.$tip = null;
-                return;
-            }
-
-            // Insert tooltip if needed
-            var container = this.getContainer();
-            if (!document.body.contains(tip)) {
-                container.appendChild(tip);
-            }
-
-            // Refresh popper
-            this.removePopper();
-            this.$popper = new __WEBPACK_IMPORTED_MODULE_0_popper_js__["a" /* default */](this.$element, tip, this.getPopperConfig(placement, tip));
-
-            // Transitionend Callback
-            var complete = function complete() {
-                if (_this.$config.animation) {
-                    _this.fixTransition(tip);
-                }
-                var prevHoverState = _this.$hoverState;
-                _this.$hoverState = null;
-                if (prevHoverState === HoverState.OUT) {
-                    _this.leave(null);
-                }
-                // Create a non-cancelable BvEvent
-                var shownEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('shown', {
-                    cancelable: false,
-                    target: _this.$element,
-                    relatedTarget: tip
-                });
-                _this.emitEvent(shownEvt);
-            };
-
-            // Enable while open listeners/watchers
-            this.setWhileOpenListeners(true);
-
-            // Show tip
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(tip, ClassName.SHOW);
-
-            // Start the transition/animation
-            this.transitionOnce(tip, complete);
-        }
-
-        // handler for periodic visibility check
-
-    }, {
-        key: 'visibleCheck',
-        value: function visibleCheck(on) {
-            var _this2 = this;
-
-            clearInterval(this.$visibleInterval);
-            this.$visibleInterval = null;
-            if (on) {
-                this.$visibleInterval = setInterval(function () {
-                    var tip = _this2.getTipElement();
-                    if (tip && !Object(__WEBPACK_IMPORTED_MODULE_3__dom__["m" /* isVisible */])(_this2.$element) && Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(tip, ClassName.SHOW)) {
-                        // Element is no longer visible, so force-hide the tooltip
-                        _this2.forceHide();
-                    }
-                }, 100);
-            }
-        }
-    }, {
-        key: 'setWhileOpenListeners',
-        value: function setWhileOpenListeners(on) {
-            // Modal close events
-            this.setModalListener(on);
-            // Periodic $element visibility check
-            // For handling when tip is in <keepalive>, tabs, carousel, etc
-            this.visibleCheck(on);
-            // Route change events
-            this.setRouteWatcher(on);
-            // Global hide events
-            this.setRootListener(on);
-            // Ontouch start listeners
-            this.setOnTouchStartListener(on);
-            if (on && /(focus|blur)/.test(this.$config.trigger)) {
-                // If focus moves between trigger element and tip container, dont close
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(this.$tip, 'focusout', this);
-            } else {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(this.$tip, 'focusout', this);
-            }
-        }
-
-        // force hide of tip (internal method)
-
-    }, {
-        key: 'forceHide',
-        value: function forceHide() {
-            // Disable while open listeners/watchers
-            this.setWhileOpenListeners(false);
-            if (!this.$tip) {
-                return;
-            }
-            // Clear any hover enter/leave event
-            clearTimeout(this.$hoverTimeout);
-            this.$hoverTimeout = null;
-            this.$hoverState = '';
-            // Hide the tip
-            this.hide(null, true);
-        }
-
-        // Hide tooltip
-
-    }, {
-        key: 'hide',
-        value: function hide(callback, force) {
-            var _this3 = this;
-
-            var tip = this.$tip;
-            if (!tip) {
-                return;
-            }
-
-            // Create a canelable BvEvent
-            var hideEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('hide', {
-                // We disable cancelling if force is true
-                cancelable: !Boolean(force),
-                target: this.$element,
-                relatedTarget: tip
-            });
-            this.emitEvent(hideEvt);
-            if (hideEvt.defaultPrevented) {
-                // Don't hide if event cancelled
-                return;
-            }
-
-            // Transitionend Callback
-            var complete = function complete() {
-                if (_this3.$hoverState !== HoverState.SHOW && tip.parentNode) {
-                    // Remove tip from dom, and force recompile on next show
-                    tip.parentNode.removeChild(tip);
-                    _this3.removeAriaDescribedby();
-                    _this3.removePopper();
-                    _this3.$tip = null;
-                }
-                if (callback) {
-                    callback();
-                }
-                // Create a non-cancelable BvEvent
-                var hiddenEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('hidden', {
-                    cancelable: false,
-                    target: _this3.$element,
-                    relatedTarget: null
-                });
-                _this3.emitEvent(hiddenEvt);
-            };
-
-            // Disable while open listeners/watchers
-            this.setWhileOpenListeners(false);
-
-            // If forced close, disable animation
-            if (force) {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
-            }
-            // Hide tip
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.SHOW);
-
-            this.$activeTrigger.click = false;
-            this.$activeTrigger.focus = false;
-            this.$activeTrigger.hover = false;
-
-            // Start the hide transition
-            this.transitionOnce(tip, complete);
-
-            this.$hoverState = '';
-        }
-    }, {
-        key: 'emitEvent',
-        value: function emitEvent(evt) {
-            var evtName = evt.type;
-            if (this.$root && this.$root.$emit) {
-                // Emit an event on $root
-                this.$root.$emit('bv::' + this.constructor.NAME + '::' + evtName, evt);
-            }
-            var callbacks = this.$config.callbacks || {};
-            if (typeof callbacks[evtName] === 'function') {
-                callbacks[evtName](evt);
-            }
-        }
-    }, {
-        key: 'getContainer',
-        value: function getContainer() {
-            var container = this.$config.container;
-            var body = document.body;
-            // If we are in a modal, we append to the modal instead of body, unless a container is specified
-            return container === false ? Object(__WEBPACK_IMPORTED_MODULE_3__dom__["b" /* closest */])(MODAL_CLASS, this.$element) || body : Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(container, body) || body;
-        }
-
-        // Will be overritten by popover if needed
-
-    }, {
-        key: 'addAriaDescribedby',
-        value: function addAriaDescribedby() {
-            // Add aria-describedby on trigger element, without removing any other IDs
-            var desc = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'aria-describedby') || '';
-            desc = desc.split(/\s+/).concat(this.$id).join(' ').trim();
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(this.$element, 'aria-describedby', desc);
-        }
-
-        // Will be overritten by popover if needed
-
-    }, {
-        key: 'removeAriaDescribedby',
-        value: function removeAriaDescribedby() {
-            var _this4 = this;
-
-            var desc = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'aria-describedby') || '';
-            desc = desc.split(/\s+/).filter(function (d) {
-                return d !== _this4.$id;
-            }).join(' ').trim();
-            if (desc) {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(this.$element, 'aria-describedby', desc);
-            } else {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["r" /* removeAttr */])(this.$element, 'aria-describedby');
-            }
-        }
-    }, {
-        key: 'removePopper',
-        value: function removePopper() {
-            if (this.$popper) {
-                this.$popper.destroy();
-            }
-            this.$popper = null;
-        }
-    }, {
-        key: 'transitionOnce',
-        value: function transitionOnce(tip, complete) {
-            var _this5 = this;
-
-            var transEvents = this.getTransitionEndEvents();
-            var called = false;
-            clearTimeout(this.$fadeTimeout);
-            this.$fadeTimeout = null;
-            var fnOnce = function fnOnce() {
-                if (called) {
-                    return;
-                }
-                called = true;
-                clearTimeout(_this5.$fadeTimeout);
-                _this5.$fadeTimeout = null;
-                transEvents.forEach(function (evtName) {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(tip, evtName, fnOnce);
-                });
-                // Call complete callback
-                complete();
-            };
-            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(tip, ClassName.FADE)) {
-                transEvents.forEach(function (evtName) {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(tip, evtName, fnOnce);
-                });
-                // Fallback to setTimeout
-                this.$fadeTimeout = setTimeout(fnOnce, TRANSITION_DURATION);
-            } else {
-                fnOnce();
-            }
-        }
-
-        // What transitionend event(s) to use? (returns array of event names)
-
-    }, {
-        key: 'getTransitionEndEvents',
-        value: function getTransitionEndEvents() {
-            for (var name in TransitionEndEvents) {
-                if (this.$element.style[name] !== undefined) {
-                    return TransitionEndEvents[name];
-                }
-            }
-            // fallback
-            return [];
-        }
-    }, {
-        key: 'update',
-        value: function update() {
-            if (this.$popper !== null) {
-                this.$popper.scheduleUpdate();
-            }
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'isWithContent',
-        value: function isWithContent(tip) {
-            tip = tip || this.$tip;
-            if (!tip) {
-                return false;
-            }
-            return Boolean((Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.TOOLTIP_INNER, tip) || {}).innerHTML);
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'addAttachmentClass',
-        value: function addAttachmentClass(attachment) {
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(this.getTipElement(), CLASS_PREFIX + '-' + attachment);
-        }
-    }, {
-        key: 'getTipElement',
-        value: function getTipElement() {
-            if (!this.$tip) {
-                // Try and compile user supplied template, or fallback to default template
-                this.$tip = this.compileTemplate(this.$config.template) || this.compileTemplate(this.constructor.Default.template);
-            }
-            // Add tab index so tip can be focused, and to allow it to be set as relatedTargt in focusin/out events
-            this.$tip.tabIndex = -1;
-            return this.$tip;
-        }
-    }, {
-        key: 'compileTemplate',
-        value: function compileTemplate(html) {
-            if (!html || typeof html !== 'string') {
-                return null;
-            }
-            var div = document.createElement('div');
-            div.innerHTML = html.trim();
-            var node = div.firstElementChild ? div.removeChild(div.firstElementChild) : null;
-            div = null;
-            return node;
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'setContent',
-        value: function setContent(tip) {
-            this.setElementContent(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.TOOLTIP_INNER, tip), this.getTitle());
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.SHOW);
-        }
-    }, {
-        key: 'setElementContent',
-        value: function setElementContent(container, content) {
-            if (!container) {
-                // If container element doesn't exist, just return
-                return;
-            }
-            var allowHtml = this.$config.html;
-            if ((typeof content === 'undefined' ? 'undefined' : _typeof(content)) === 'object' && content.nodeType) {
-                // content is a DOM node
-                if (allowHtml) {
-                    if (content.parentElement !== container) {
-                        container.innerHtml = '';
-                        container.appendChild(content);
-                    }
-                } else {
-                    container.innerText = content.innerText;
-                }
-            } else {
-                // We have a plain HTML string or Text
-                container[allowHtml ? 'innerHTML' : 'innerText'] = content;
-            }
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'getTitle',
-        value: function getTitle() {
-            var title = this.$config.title || '';
-            if (typeof title === 'function') {
-                // Call the function to get the title value
-                title = title(this.$element);
-            }
-            if ((typeof title === 'undefined' ? 'undefined' : _typeof(title)) === 'object' && title.nodeType && !title.innerHTML.trim()) {
-                // We have a DOM node, but without inner content, so just return empty string
-                title = '';
-            }
-            if (typeof title === 'string') {
-                title = title.trim();
-            }
-            if (!title) {
-                // If an explicit title is not given, try element's title atributes
-                title = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'title') || Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'data-original-title') || '';
-                title = title.trim();
-            }
-
-            return title;
-        }
-    }, {
-        key: 'listen',
-        value: function listen() {
-            var _this6 = this;
-
-            var triggers = this.$config.trigger.trim().split(/\s+/);
-            var el = this.$element;
-
-            // Using 'this' as the handler will get automagically directed to this.handleEvent
-            // And maintain our binding to 'this'
-            triggers.forEach(function (trigger) {
-                if (trigger === 'click') {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'click', _this6);
-                } else if (trigger === 'focus') {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusin', _this6);
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusout', _this6);
-                } else if (trigger === 'blur') {
-                    // Used to close $tip when element looses focus
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusout', _this6);
-                } else if (trigger === 'hover') {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseenter', _this6);
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseleave', _this6);
-                }
-            }, this);
-        }
-    }, {
-        key: 'unListen',
-        value: function unListen() {
-            var _this7 = this;
-
-            var events = ['click', 'focusin', 'focusout', 'mouseenter', 'mouseleave'];
-            // Using "this" as the handler will get automagically directed to this.handleEvent
-            events.forEach(function (evt) {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(_this7.$element, evt, _this7);
-            }, this);
-        }
-    }, {
-        key: 'handleEvent',
-        value: function handleEvent(e) {
-            // This special method allows us to use "this" as the event handlers
-            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["k" /* isDisabled */])(this.$element)) {
-                // If disabled, don't do anything. Note: if tip is shown before element gets
-                // disabled, then tip not close until no longer disabled or forcefully closed.
-                return;
-            }
-            var type = e.type;
-            var target = e.target;
-            var relatedTarget = e.relatedTarget;
-            var $element = this.$element;
-            var $tip = this.$tip;
-            if (type === 'click') {
-                this.toggle(e);
-            } else if (type === 'focusin' || type === 'mouseenter') {
-                this.enter(e);
-            } else if (type === 'focusout') {
-                // target is the element which is loosing focus
-                // And relatdTarget is the element gaining focus
-                if (target === $element && $tip && $tip.contains(relatedTarget)) {
-                    // If focus moves from $element to $tip, don't trigger a leave
-                    return;
-                }
-                if ($tip && target === $tip && $element.contains(relatedTarget)) {
-                    // If focus moves from $tip to $element, don't trigger a leave
-                    // This will only happen during the whileOpen listeners
-                    return;
-                }
-                // OPtherwise trigger a leave
-                this.leave(e);
-            } else if (type === 'mouseleave') {
-                this.leave(e);
-            }
-        }
-    }, {
-        key: 'setRouteWatcher',
-        value: function setRouteWatcher(on) {
-            var _this8 = this;
-
-            if (on) {
-                this.setRouteWatcher(false);
-                if (this.$root && Boolean(this.$root.$route)) {
-                    this.$routeWatcher = this.$root.$watch('$route', function (newVal, oldVal) {
-                        if (newVal === oldVal) {
-                            return;
-                        }
-                        // If route has changed, we force hide the tooltip/popover
-                        _this8.forceHide();
-                    });
-                }
-            } else {
-                if (this.$routeWatcher) {
-                    // cancel the route watcher by calling hte stored reference
-                    this.$routeWatcher();
-                    this.$routeWatcher = null;
-                }
-            }
-        }
-    }, {
-        key: 'setModalListener',
-        value: function setModalListener(on) {
-            var modal = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["b" /* closest */])(MODAL_CLASS, this.$element);
-            if (!modal) {
-                // If we are not in a modal, don't worry. be happy
-                return;
-            }
-            // We can listen for modal hidden events on $root
-            if (this.$root) {
-                this.$root[on ? '$on' : '$off'](MODAL_CLOSE_EVENT, this.forceHide.bind(this));
-            }
-        }
-    }, {
-        key: 'setRootListener',
-        value: function setRootListener(on) {
-            // We can listen for global 'bv::hide::popover/tooltip' hide request event
-            if (this.$root) {
-                this.$root[on ? '$on' : '$off']('bv::hide::' + this.constructor.NAME, this.forceHide.bind(this));
-            }
-        }
-    }, {
-        key: 'setOnTouchStartListener',
-        value: function setOnTouchStartListener(on) {
-            var _this9 = this;
-
-            // if this is a touch-enabled device we add extra
-            // empty mouseover listeners to the body's immediate children;
-            // only needed because of broken event delegation on iOS
-            // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
-            if ('ontouchstart' in document.documentElement) {
-                Object(__WEBPACK_IMPORTED_MODULE_2__array__["c" /* from */])(document.body.children).forEach(function (el) {
-                    if (on) {
-                        Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseover', _this9._noop);
-                    } else {
-                        Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(el, 'mouseover', _this9._noop);
-                    }
-                });
-            }
-        }
-    }, {
-        key: '_noop',
-        value: function _noop() {
-            // Empty noop handler for ontouchstart devices
-        }
-    }, {
-        key: 'fixTitle',
-        value: function fixTitle() {
-            var el = this.$element;
-            var titleType = _typeof(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'data-original-title'));
-            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'title') || titleType !== 'string') {
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(el, 'data-original-title', Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'title') || '');
-                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(el, 'title', '');
-            }
-        }
-
-        // Enter handler
-
-    }, {
-        key: 'enter',
-        value: function enter(e) {
-            var _this10 = this;
-
-            if (e) {
-                this.$activeTrigger[e.type === 'focusin' ? 'focus' : 'hover'] = true;
-            }
-            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(this.getTipElement(), ClassName.SHOW) || this.$hoverState === HoverState.SHOW) {
-                this.$hoverState = HoverState.SHOW;
-                return;
-            }
-            clearTimeout(this.$hoverTimeout);
-            this.$hoverState = HoverState.SHOW;
-            if (!this.$config.delay || !this.$config.delay.show) {
-                this.show();
-                return;
-            }
-            this.$hoverTimeout = setTimeout(function () {
-                if (_this10.$hoverState === HoverState.SHOW) {
-                    _this10.show();
-                }
-            }, this.$config.delay.show);
-        }
-
-        // Leave handler
-
-    }, {
-        key: 'leave',
-        value: function leave(e) {
-            var _this11 = this;
-
-            if (e) {
-                this.$activeTrigger[e.type === 'focusout' ? 'focus' : 'hover'] = false;
-                if (e.type === 'focusout' && /blur/.test(this.$config.trigger)) {
-                    // Special case for `blur`: we clear out the other triggers
-                    this.$activeTrigger.click = false;
-                    this.$activeTrigger.hover = false;
-                }
-            }
-            if (this.isWithActiveTrigger()) {
-                return;
-            }
-            clearTimeout(this.$hoverTimeout);
-            this.$hoverState = HoverState.OUT;
-            if (!this.$config.delay || !this.$config.delay.hide) {
-                this.hide();
-                return;
-            }
-            this.$hoverTimeout = setTimeout(function () {
-                if (_this11.$hoverState === HoverState.OUT) {
-                    _this11.hide();
-                }
-            }, this.$config.delay.hide);
-        }
-    }, {
-        key: 'getPopperConfig',
-        value: function getPopperConfig(placement, tip) {
-            var _this12 = this;
-
-            return {
-                placement: this.constructor.getAttachment(placement),
-                modifiers: {
-                    offset: { offset: this.getOffset(placement, tip) },
-                    flip: { behavior: this.$config.fallbackPlacement },
-                    arrow: { element: '.arrow' }
-                },
-                onCreate: function onCreate(data) {
-                    // Handle flipping arrow classes
-                    if (data.originalPlacement !== data.placement) {
-                        _this12.handlePopperPlacementChange(data);
-                    }
-                },
-                onUpdate: function onUpdate(data) {
-                    // Handle flipping arrow classes
-                    _this12.handlePopperPlacementChange(data);
-                }
-            };
-        }
-    }, {
-        key: 'getOffset',
-        value: function getOffset(placement, tip) {
-            if (!this.$config.offset) {
-                var arrow = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.ARROW, tip);
-                var arrowOffset = parseFloat(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["h" /* getCS */])(arrow).width) + parseFloat(this.$config.arrowPadding);
-                switch (OffsetMap[placement.toUpperCase()]) {
-                    case +1:
-                        return '+50%p - ' + arrowOffset + 'px';
-                    case -1:
-                        return '-50%p + ' + arrowOffset + 'px';
-                    default:
-                        return 0;
-                }
-            }
-            return parseFloat(this.$config.offset);
-        }
-    }, {
-        key: 'getPlacement',
-        value: function getPlacement() {
-            var placement = this.$config.placement;
-            if (typeof placement === 'function') {
-                return placement.call(this, this.$tip, this.$element);
-            }
-            return placement;
-        }
-    }, {
-        key: 'isWithActiveTrigger',
-        value: function isWithActiveTrigger() {
-            for (var trigger in this.$activeTrigger) {
-                if (this.$activeTrigger[trigger]) {
-                    return true;
-                }
-            }
-            return false;
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'cleanTipClass',
-        value: function cleanTipClass() {
-            var tip = this.getTipElement();
-            var tabClass = tip.className.match(BSCLS_PREFIX_REGEX);
-            if (tabClass !== null && tabClass.length > 0) {
-                tabClass.forEach(function (cls) {
-                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, cls);
-                });
-            }
-        }
-    }, {
-        key: 'handlePopperPlacementChange',
-        value: function handlePopperPlacementChange(data) {
-            this.cleanTipClass();
-            this.addAttachmentClass(this.constructor.getAttachment(data.placement));
-        }
-    }, {
-        key: 'fixTransition',
-        value: function fixTransition(tip) {
-            var initConfigAnimation = this.$config.animation || false;
-            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(tip, 'x-placement') !== null) {
-                return;
-            }
-            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
-            this.$config.animation = false;
-            this.hide();
-            this.show();
-            this.$config.animation = initConfigAnimation;
-        }
-    }], [{
-        key: 'getAttachment',
-        value: function getAttachment(placement) {
-            return AttachmentMap[placement.toUpperCase()];
-        }
-    }, {
-        key: 'Default',
-        get: function get() {
-            return Defaults;
-        }
-
-        // NOTE: Overridden by PopOver class
-
-    }, {
-        key: 'NAME',
-        get: function get() {
-            return NAME;
-        }
-    }]);
-
-    return ToolTip;
-}();
-
-/* harmony default export */ __webpack_exports__["a"] = (ToolTip);
-
-/***/ }),
-/* 21 */
 /*!*********************************************!*\
   !*** ./node_modules/vue/dist/vue.common.js ***!
   \*********************************************/
@@ -16334,6 +14787,1553 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../../timers-browserify/main.js */ 62).setImmediate))
 
 /***/ }),
+/* 13 */
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+var utils = __webpack_require__(/*! ./utils */ 6);
+var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ 67);
+
+var PROTECTION_PREFIX = /^\)\]\}',?\n/;
+var DEFAULT_CONTENT_TYPE = {
+  'Content-Type': 'application/x-www-form-urlencoded'
+};
+
+function setContentTypeIfUnset(headers, value) {
+  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
+    headers['Content-Type'] = value;
+  }
+}
+
+function getDefaultAdapter() {
+  var adapter;
+  if (typeof XMLHttpRequest !== 'undefined') {
+    // For browsers use XHR adapter
+    adapter = __webpack_require__(/*! ./adapters/xhr */ 24);
+  } else if (typeof process !== 'undefined') {
+    // For node use HTTP adapter
+    adapter = __webpack_require__(/*! ./adapters/http */ 24);
+  }
+  return adapter;
+}
+
+var defaults = {
+  adapter: getDefaultAdapter(),
+
+  transformRequest: [function transformRequest(data, headers) {
+    normalizeHeaderName(headers, 'Content-Type');
+    if (utils.isFormData(data) ||
+      utils.isArrayBuffer(data) ||
+      utils.isStream(data) ||
+      utils.isFile(data) ||
+      utils.isBlob(data)
+    ) {
+      return data;
+    }
+    if (utils.isArrayBufferView(data)) {
+      return data.buffer;
+    }
+    if (utils.isURLSearchParams(data)) {
+      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
+      return data.toString();
+    }
+    if (utils.isObject(data)) {
+      setContentTypeIfUnset(headers, 'application/json;charset=utf-8');
+      return JSON.stringify(data);
+    }
+    return data;
+  }],
+
+  transformResponse: [function transformResponse(data) {
+    /*eslint no-param-reassign:0*/
+    if (typeof data === 'string') {
+      data = data.replace(PROTECTION_PREFIX, '');
+      try {
+        data = JSON.parse(data);
+      } catch (e) { /* Ignore */ }
+    }
+    return data;
+  }],
+
+  timeout: 0,
+
+  xsrfCookieName: 'XSRF-TOKEN',
+  xsrfHeaderName: 'X-XSRF-TOKEN',
+
+  maxContentLength: -1,
+
+  validateStatus: function validateStatus(status) {
+    return status >= 200 && status < 300;
+  }
+};
+
+defaults.headers = {
+  common: {
+    'Accept': 'application/json, text/plain, */*'
+  }
+};
+
+utils.forEach(['delete', 'get', 'head'], function forEachMehtodNoData(method) {
+  defaults.headers[method] = {};
+});
+
+utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
+  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
+});
+
+module.exports = defaults;
+
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 22)))
+
+/***/ }),
+/* 14 */
+/*!*********************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/utils/identity.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = identity;
+function identity(x) {
+    return x;
+}
+
+/***/ }),
+/* 15 */
+/*!***********************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/utils/upperFirst.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = upperFirst;
+/**
+ * @param {string} str
+ */
+function upperFirst(str) {
+    if (typeof str !== "string") {
+        str = String(str);
+    }
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+/***/ }),
+/* 16 */
+/*!*****************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/utils/warn.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/**
+ * Log a warning message to the console with bootstrap-vue formatting sugar.
+ * @param {string} message
+ */
+function warn(message) {
+  console.warn("[Bootstrap-Vue warn]: " + message);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (warn);
+
+/***/ }),
+/* 17 */
+/*!*************************************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/components/button/button-close.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+var props = {
+    disabled: {
+        type: Boolean,
+        default: false
+    },
+    ariaLabel: {
+        type: String,
+        default: "Close"
+    },
+    textVariant: {
+        type: String,
+        default: null
+    }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    functional: true,
+    props: props,
+    render: function render(h, _ref) {
+        var props = _ref.props,
+            data = _ref.data,
+            listeners = _ref.listeners,
+            children = _ref.children;
+
+        var componentData = {
+            staticClass: "close",
+            class: _defineProperty({}, "text-" + props.textVariant, props.textVariant),
+            attrs: {
+                type: "button",
+                disabled: props.disabled,
+                "aria-label": props.ariaLabel ? String(props.ariaLabel) : null
+            },
+            on: {
+                click: function click(e) {
+                    // Ensure click on button HTML content is also disabled
+                    if (props.disabled && e instanceof Event) {
+                        e.stopPropagation();
+                        e.preventDefault();
+                    }
+                }
+            }
+        };
+        // Careful not to override the slot with innerHTML
+        if (!children.length) {
+            componentData.domProps = { innerHTML: "×" };
+        }
+        return h("button", Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, componentData), children);
+    }
+});
+
+/***/ }),
+/* 18 */
+/*!*******************************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/components/button/button.js ***!
+  \*******************************************************************/
+/*! exports provided: props, default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export props */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_array__ = __webpack_require__(/*! ../../utils/array */ 4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_dom__ = __webpack_require__(/*! ../../utils/dom */ 5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__link_link__ = __webpack_require__(/*! ../link/link */ 7);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+
+
+
+
+var btnProps = {
+    block: {
+        type: Boolean,
+        default: false
+    },
+    disabled: {
+        type: Boolean,
+        default: false
+    },
+    size: {
+        type: String,
+        default: null,
+        validator: function validator(size) {
+            return Object(__WEBPACK_IMPORTED_MODULE_1__utils_array__["a" /* arrayIncludes */])(["sm", "", "lg"], size);
+        }
+    },
+    variant: {
+        type: String,
+        default: null
+    },
+    type: {
+        type: String,
+        default: "button"
+    },
+    pressed: {
+        // tri-state prop: true, false or null
+        // => on, off, not a toggle
+        type: Boolean,
+        default: null
+    }
+};
+
+var linkProps = Object(__WEBPACK_IMPORTED_MODULE_4__link_link__["c" /* propsFactory */])();
+delete linkProps.href.default;
+delete linkProps.to.default;
+var linkPropKeys = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["e" /* keys */])(linkProps);
+
+var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */])(linkProps, btnProps);
+
+function handleFocus(evt) {
+    if (evt.type === "focusin") {
+        Object(__WEBPACK_IMPORTED_MODULE_3__utils_dom__["a" /* addClass */])(evt.target, "focus");
+    } else if (evt.type === "focusout") {
+        Object(__WEBPACK_IMPORTED_MODULE_3__utils_dom__["s" /* removeClass */])(evt.target, "focus");
+    }
+}
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    functional: true,
+    props: props,
+    render: function render(h, _ref) {
+        var _ref2;
+
+        var props = _ref.props,
+            data = _ref.data,
+            listeners = _ref.listeners,
+            children = _ref.children;
+
+        var isLink = Boolean(props.href || props.to);
+        var isToggle = typeof props.pressed === "boolean";
+        var on = {
+            click: function click(e) {
+                if (props.disabled && e instanceof Event) {
+                    e.stopPropagation();
+                    e.preventDefault();
+                } else if (isToggle) {
+                    // Concat will normalize the value to an array
+                    // without double wrapping an array value in an array.
+                    Object(__WEBPACK_IMPORTED_MODULE_1__utils_array__["b" /* concat */])(listeners["update:pressed"]).forEach(function (fn) {
+                        if (typeof fn === "function") {
+                            fn(!props.pressed);
+                        }
+                    });
+                }
+            }
+        };
+
+        if (isToggle) {
+            on.focusin = handleFocus;
+            on.focusout = handleFocus;
+        }
+
+        var componentData = {
+            staticClass: "btn",
+            class: [props.variant ? "btn-" + props.variant : "btn-secondary", (_ref2 = {}, _defineProperty(_ref2, "btn-" + props.size, Boolean(props.size)), _defineProperty(_ref2, "btn-block", props.block), _defineProperty(_ref2, "disabled", props.disabled), _defineProperty(_ref2, "active", props.pressed), _ref2)],
+            props: isLink ? Object(__WEBPACK_IMPORTED_MODULE_0__utils__["f" /* pluckProps */])(linkPropKeys, props) : null,
+            attrs: {
+                type: isLink ? null : props.type,
+                disabled: isLink ? null : props.disabled,
+                // Data attribute not used for js logic,
+                // but only for BS4 style selectors.
+                "data-toggle": isToggle ? "button" : null,
+                "aria-pressed": isToggle ? String(props.pressed) : null,
+                // Tab index is used when the component becomes a link.
+                // Links are tabable, but don't allow disabled,
+                // so we mimic that functionality by disabling tabbing.
+                tabindex: props.disabled && isLink ? "-1" : data.attrs ? data.attrs['tabindex'] : null
+            },
+            on: on
+        };
+
+        return h(isLink ? __WEBPACK_IMPORTED_MODULE_4__link_link__["a" /* default */] : "button", Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, componentData), children);
+    }
+});
+
+/***/ }),
+/* 19 */
+/*!***************************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/components/image/img.js ***!
+  \***************************************************************/
+/*! exports provided: props, default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export props */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+// Blank image with fill template
+var BLANK_TEMPLATE = '<svg width="%{w}" height="%{h}" ' + 'xmlns="http://www.w3.org/2000/svg" ' + 'viewBox="0 0 %{w} %{h}" preserveAspectRatio="none">' + '<rect width="100%" height="100%" style="fill:%{f};"></rect>' + '</svg>';
+
+function makeBlankImgSrc(width, height, color) {
+    var src = encodeURIComponent(BLANK_TEMPLATE.replace('%{w}', String(width)).replace('%{h}', String(height)).replace('%{f}', color));
+    return 'data:image/svg+xml;charset=UTF-8,' + src;
+}
+
+var props = {
+    src: {
+        type: String,
+        default: null
+    },
+    alt: {
+        type: String,
+        default: null
+    },
+    width: {
+        type: [Number, String],
+        default: null
+    },
+    height: {
+        type: [Number, String],
+        default: null
+    },
+    block: {
+        type: Boolean,
+        default: false
+    },
+    fluid: {
+        type: Boolean,
+        default: false
+    },
+    fluidGrow: {
+        // Gives fluid images class `w-100` to make them grow to fit container
+        type: Boolean,
+        default: false
+    },
+    rounded: {
+        // rounded can be:
+        //   false: no rounding of corners
+        //   true: slightly rounded corners
+        //   'top': top corners rounded
+        //   'right': right corners rounded
+        //   'bottom': bottom corners rounded
+        //   'left': left corners rounded
+        //   'circle': circle/oval
+        //   '0': force rounding off
+        type: [Boolean, String],
+        default: false
+    },
+    thumbnail: {
+        type: Boolean,
+        default: false
+    },
+    left: {
+        type: Boolean,
+        default: false
+    },
+    right: {
+        type: Boolean,
+        default: false
+    },
+    center: {
+        type: Boolean,
+        default: false
+    },
+    blank: {
+        type: Boolean,
+        default: false
+    },
+    blankColor: {
+        type: String,
+        default: 'transparent'
+    }
+};
+
+/* harmony default export */ __webpack_exports__["a"] = ({
+    functional: true,
+    props: props,
+    render: function render(h, _ref) {
+        var _class;
+
+        var props = _ref.props,
+            data = _ref.data;
+
+        var src = props.src;
+        var width = Boolean(parseInt(props.width, 10)) ? parseInt(props.width, 10) : null;
+        var height = Boolean(parseInt(props.height, 10)) ? parseInt(props.height, 10) : null;
+        var align = null;
+        var block = props.block;
+        if (props.blank) {
+            if (!height && Boolean(width)) {
+                height = width;
+            } else if (!width && Boolean(height)) {
+                width = height;
+            }
+            if (!width && !height) {
+                width = 1;
+                height = 1;
+            }
+            // Make a blank SVG image
+            src = makeBlankImgSrc(width, height, props.blankColor || 'transparent');
+        }
+        if (props.left) {
+            align = 'float-left';
+        } else if (props.right) {
+            align = 'float-right';
+        } else if (props.center) {
+            align = 'mx-auto';
+            block = true;
+        }
+        return h('img', Object(__WEBPACK_IMPORTED_MODULE_0__utils__["d" /* mergeData */])(data, {
+            attrs: {
+                'src': src,
+                'alt': props.alt,
+                'width': width ? String(width) : null,
+                'height': height ? String(height) : null
+            },
+            class: (_class = {
+                'img-thumbnail': props.thumbnail,
+                'img-fluid': props.fluid || props.fluidGrow,
+                'w-100': props.fluidGrow,
+                'rounded': props.rounded === '' || props.rounded === true
+            }, _defineProperty(_class, 'rounded-' + props.rounded, typeof props.rounded === 'string' && props.rounded !== ''), _defineProperty(_class, align, Boolean(align)), _defineProperty(_class, 'd-block', block), _class)
+        }));
+    }
+});
+
+/***/ }),
+/* 20 */
+/*!********************************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/components/dropdown/index.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(/*! ./dropdown */ 147);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(/*! ./dropdown-item */ 151);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(/*! ./dropdown-item-button */ 152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(/*! ./dropdown-header */ 153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(/*! ./dropdown-divider */ 154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils__ = __webpack_require__(/*! ../../utils */ 0);
+
+
+
+
+
+
+
+/* eslint-disable no-var, no-undef, guard-for-in, object-shorthand */
+
+var components = {
+  bDropdown: __WEBPACK_IMPORTED_MODULE_0__dropdown__["a" /* default */],
+  bDd: __WEBPACK_IMPORTED_MODULE_0__dropdown__["a" /* default */],
+  bDropdownItem: __WEBPACK_IMPORTED_MODULE_1__dropdown_item__["a" /* default */],
+  bDdItem: __WEBPACK_IMPORTED_MODULE_1__dropdown_item__["a" /* default */],
+  bDropdownItemButton: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
+  bDropdownItemBtn: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
+  bDdItemButton: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
+  bDdItemBtn: __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__["a" /* default */],
+  bDropdownHeader: __WEBPACK_IMPORTED_MODULE_3__dropdown_header__["a" /* default */],
+  bDdHeader: __WEBPACK_IMPORTED_MODULE_3__dropdown_header__["a" /* default */],
+  bDropdownDivider: __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__["a" /* default */],
+  bDdDivider: __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__["a" /* default */]
+};
+
+var VuePlugin = {
+  install: function install(Vue) {
+    Object(__WEBPACK_IMPORTED_MODULE_5__utils__["h" /* registerComponents */])(Vue, components);
+  }
+};
+
+Object(__WEBPACK_IMPORTED_MODULE_5__utils__["l" /* vueUse */])(VuePlugin);
+
+/* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
+
+/***/ }),
+/* 21 */
+/*!**************************************************************!*\
+  !*** ./node_modules/bootstrap-vue/es/utils/tooltip.class.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(/*! ./object */ 2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array__ = __webpack_require__(/*! ./array */ 4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(/*! ./dom */ 5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bv_event_class__ = __webpack_require__(/*! ./bv-event.class */ 51);
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+
+
+
+
+
+
+var NAME = 'tooltip';
+var CLASS_PREFIX = 'bs-tooltip';
+var BSCLS_PREFIX_REGEX = new RegExp('\\b' + CLASS_PREFIX + '\\S+', 'g');
+
+var TRANSITION_DURATION = 150;
+
+// Modal $root event (prepare for future evnt name change)
+var MODAL_CLOSE_EVENT = 'bv::modal::hidden';
+var MODAL_CLASS = '.modal';
+
+var AttachmentMap = {
+    AUTO: 'auto',
+    TOP: 'top',
+    RIGHT: 'right',
+    BOTTOM: 'bottom',
+    LEFT: 'left',
+    TOPLEFT: 'top',
+    TOPRIGHT: 'top',
+    RIGHTTOP: 'right',
+    RIGHTBOTTOM: 'right',
+    BOTTOMLEFT: 'bottom',
+    BOTTOMRIGHT: 'bottom',
+    LEFTTOP: 'left',
+    LEFTBOTTOM: 'left'
+};
+
+var OffsetMap = {
+    AUTO: 0,
+    TOPLEFT: -1,
+    TOP: 0,
+    TOPRIGHT: +1,
+    RIGHTTOP: -1,
+    RIGHT: 0,
+    RIGHTBOTTOM: +1,
+    BOTTOMLEFT: -1,
+    BOTTOM: 0,
+    BOTTOMRIGHT: +1,
+    LEFTTOP: -1,
+    LEFT: 0,
+    LEFTBOTTOM: +1
+};
+
+var HoverState = {
+    SHOW: 'show',
+    OUT: 'out'
+};
+
+var ClassName = {
+    FADE: 'fade',
+    SHOW: 'show'
+};
+
+var Selector = {
+    TOOLTIP: '.tooltip',
+    TOOLTIP_INNER: '.tooltip-inner',
+    ARROW: '.arrow'
+};
+
+var Trigger = {
+    HOVER: 'hover',
+    FOCUS: 'focus',
+    CLICK: 'click',
+    BLUR: 'blur',
+    MANUAL: 'manual'
+};
+
+var Defaults = {
+    animation: true,
+    template: '<div class="tooltip" role="tooltip">' + '<div class="arrow"></div>' + '<div class="tooltip-inner"></div>' + '</div>',
+    trigger: 'hover focus',
+    title: '',
+    delay: 0,
+    html: false,
+    placement: 'top',
+    offset: 0,
+    arrowPadding: 6,
+    container: false,
+    fallbackPlacement: 'flip',
+    callbacks: {}
+};
+
+// Transition Event names
+var TransitionEndEvents = {
+    WebkitTransition: ['webkitTransitionEnd'],
+    MozTransition: ['transitionend'],
+    OTransition: ['otransitionend', 'oTransitionEnd'],
+    transition: ['transitionend']
+};
+
+// Client Side Tip ID counter for aria-describedby attribute
+// Could use Alex's uid generator util
+// Each tooltip requires a unique client side ID
+var NEXTID = 1;
+function generateId(name) {
+    return '__BV_' + name + '_' + NEXTID++ + '__';
+}
+
+/*
+ * ToolTip Class definition
+ */
+
+var ToolTip = function () {
+
+    // Main constructor
+    function ToolTip(element, config, $root) {
+        _classCallCheck(this, ToolTip);
+
+        // New tooltip object
+        this.$fadeTimeout = null;
+        this.$hoverTimeout = null;
+        this.$visibleInterval = null;
+        this.$hoverState = '';
+        this.$activeTrigger = {};
+        this.$popper = null;
+        this.$element = element;
+        this.$tip = null;
+        this.$id = generateId(this.constructor.NAME);
+        this.$root = $root || null;
+        this.$routeWatcher = null;
+        this.updateConfig(config);
+    }
+
+    // NOTE: Overridden by PopOver class
+
+
+    _createClass(ToolTip, [{
+        key: 'updateConfig',
+
+
+        // Update config
+        value: function updateConfig(config) {
+            // Merge config into defaults. We use "this" here because PopOver overrides Default
+            var updatedConfig = Object(__WEBPACK_IMPORTED_MODULE_1__object__["a" /* assign */])({}, this.constructor.Default, config);
+
+            // Sanitize delay
+            if (config.delay && typeof config.delay === 'number') {
+                updatedConfig.delay = {
+                    show: config.delay,
+                    hide: config.delay
+                };
+            }
+
+            // Title for tooltip and popover
+            if (config.title && typeof config.title === 'number') {
+                updatedConfig.title = config.title.toString();
+            }
+
+            // Content only for popover
+            if (config.content && typeof config.content === 'number') {
+                updatedConfig.content = config.content.toString();
+            }
+
+            // Hide element original title if needed
+            this.fixTitle();
+            // Update the config
+            this.$config = updatedConfig;
+            // Stop/Restart listening
+            this.unListen();
+            this.listen();
+        }
+
+        // Destroy this instance
+
+    }, {
+        key: 'destroy',
+        value: function destroy() {
+            // Stop listening to trigger events
+            this.unListen();
+            // Disable while open listeners/watchers
+            this.setWhileOpenListeners(false);
+            // Clear any timouts
+            clearTimeout(this.$hoverTimeout);
+            this.$hoverTimeout = null;
+            clearTimeout(this.$fadeTimeout);
+            this.$fadeTimeout = null;
+            // Remove popper
+            if (this.$popper) {
+                this.$popper.destroy();
+            }
+            this.$popper = null;
+            // Remove tip from document
+            if (this.$tip && this.$tip.parentElement) {
+                this.$tip.parentElement.removeChild(this.$tip);
+            }
+            this.$tip = null;
+            // Null out other properties
+            this.$id = null;
+            this.$root = null;
+            this.$element = null;
+            this.$config = null;
+            this.$hoverState = null;
+            this.$activeTrigger = null;
+        }
+
+        // Click toggler
+
+    }, {
+        key: 'toggle',
+        value: function toggle(event) {
+            if (event) {
+                this.$activeTrigger.click = !this.$activeTrigger.click;
+
+                if (this.isWithActiveTrigger()) {
+                    this.enter(null);
+                } else {
+                    this.leave(null);
+                }
+            } else {
+                if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(this.getTipElement(), ClassName.SHOW)) {
+                    this.leave(null);
+                } else {
+                    this.enter(null);
+                }
+            }
+        }
+
+        // Show tooltip
+
+    }, {
+        key: 'show',
+        value: function show() {
+            var _this = this;
+
+            if (!document.body.contains(this.$element)) {
+                // If trigger element isn't in the DOM
+                return;
+            }
+
+            // Build tooltip element (also sets this.$tip)
+            var tip = this.getTipElement();
+            this.fixTitle();
+            this.setContent(tip);
+            if (!this.isWithContent(tip)) {
+                // if No content, dont bother showing
+                this.$tip = null;
+                return;
+            }
+
+            // Set ID on tip and aria-describedby on element
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(tip, 'id', this.$id);
+            this.addAriaDescribedby();
+
+            // Set animation on or off
+            if (this.$config.animation) {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(tip, ClassName.FADE);
+            } else {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
+            }
+
+            var placement = this.getPlacement();
+            var attachment = this.constructor.getAttachment(placement);
+            this.addAttachmentClass(attachment);
+
+            // Create a cancelable BvEvent
+            var showEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('show', {
+                cancelable: true,
+                target: this.$element,
+                relatedTarget: tip
+            });
+            this.emitEvent(showEvt);
+            if (showEvt.defaultPrevented) {
+                // Don't show if event cancelled
+                this.$tip = null;
+                return;
+            }
+
+            // Insert tooltip if needed
+            var container = this.getContainer();
+            if (!document.body.contains(tip)) {
+                container.appendChild(tip);
+            }
+
+            // Refresh popper
+            this.removePopper();
+            this.$popper = new __WEBPACK_IMPORTED_MODULE_0_popper_js__["a" /* default */](this.$element, tip, this.getPopperConfig(placement, tip));
+
+            // Transitionend Callback
+            var complete = function complete() {
+                if (_this.$config.animation) {
+                    _this.fixTransition(tip);
+                }
+                var prevHoverState = _this.$hoverState;
+                _this.$hoverState = null;
+                if (prevHoverState === HoverState.OUT) {
+                    _this.leave(null);
+                }
+                // Create a non-cancelable BvEvent
+                var shownEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('shown', {
+                    cancelable: false,
+                    target: _this.$element,
+                    relatedTarget: tip
+                });
+                _this.emitEvent(shownEvt);
+            };
+
+            // Enable while open listeners/watchers
+            this.setWhileOpenListeners(true);
+
+            // Show tip
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(tip, ClassName.SHOW);
+
+            // Start the transition/animation
+            this.transitionOnce(tip, complete);
+        }
+
+        // handler for periodic visibility check
+
+    }, {
+        key: 'visibleCheck',
+        value: function visibleCheck(on) {
+            var _this2 = this;
+
+            clearInterval(this.$visibleInterval);
+            this.$visibleInterval = null;
+            if (on) {
+                this.$visibleInterval = setInterval(function () {
+                    var tip = _this2.getTipElement();
+                    if (tip && !Object(__WEBPACK_IMPORTED_MODULE_3__dom__["m" /* isVisible */])(_this2.$element) && Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(tip, ClassName.SHOW)) {
+                        // Element is no longer visible, so force-hide the tooltip
+                        _this2.forceHide();
+                    }
+                }, 100);
+            }
+        }
+    }, {
+        key: 'setWhileOpenListeners',
+        value: function setWhileOpenListeners(on) {
+            // Modal close events
+            this.setModalListener(on);
+            // Periodic $element visibility check
+            // For handling when tip is in <keepalive>, tabs, carousel, etc
+            this.visibleCheck(on);
+            // Route change events
+            this.setRouteWatcher(on);
+            // Global hide events
+            this.setRootListener(on);
+            // Ontouch start listeners
+            this.setOnTouchStartListener(on);
+            if (on && /(focus|blur)/.test(this.$config.trigger)) {
+                // If focus moves between trigger element and tip container, dont close
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(this.$tip, 'focusout', this);
+            } else {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(this.$tip, 'focusout', this);
+            }
+        }
+
+        // force hide of tip (internal method)
+
+    }, {
+        key: 'forceHide',
+        value: function forceHide() {
+            // Disable while open listeners/watchers
+            this.setWhileOpenListeners(false);
+            if (!this.$tip) {
+                return;
+            }
+            // Clear any hover enter/leave event
+            clearTimeout(this.$hoverTimeout);
+            this.$hoverTimeout = null;
+            this.$hoverState = '';
+            // Hide the tip
+            this.hide(null, true);
+        }
+
+        // Hide tooltip
+
+    }, {
+        key: 'hide',
+        value: function hide(callback, force) {
+            var _this3 = this;
+
+            var tip = this.$tip;
+            if (!tip) {
+                return;
+            }
+
+            // Create a canelable BvEvent
+            var hideEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('hide', {
+                // We disable cancelling if force is true
+                cancelable: !Boolean(force),
+                target: this.$element,
+                relatedTarget: tip
+            });
+            this.emitEvent(hideEvt);
+            if (hideEvt.defaultPrevented) {
+                // Don't hide if event cancelled
+                return;
+            }
+
+            // Transitionend Callback
+            var complete = function complete() {
+                if (_this3.$hoverState !== HoverState.SHOW && tip.parentNode) {
+                    // Remove tip from dom, and force recompile on next show
+                    tip.parentNode.removeChild(tip);
+                    _this3.removeAriaDescribedby();
+                    _this3.removePopper();
+                    _this3.$tip = null;
+                }
+                if (callback) {
+                    callback();
+                }
+                // Create a non-cancelable BvEvent
+                var hiddenEvt = new __WEBPACK_IMPORTED_MODULE_4__bv_event_class__["a" /* default */]('hidden', {
+                    cancelable: false,
+                    target: _this3.$element,
+                    relatedTarget: null
+                });
+                _this3.emitEvent(hiddenEvt);
+            };
+
+            // Disable while open listeners/watchers
+            this.setWhileOpenListeners(false);
+
+            // If forced close, disable animation
+            if (force) {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
+            }
+            // Hide tip
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.SHOW);
+
+            this.$activeTrigger.click = false;
+            this.$activeTrigger.focus = false;
+            this.$activeTrigger.hover = false;
+
+            // Start the hide transition
+            this.transitionOnce(tip, complete);
+
+            this.$hoverState = '';
+        }
+    }, {
+        key: 'emitEvent',
+        value: function emitEvent(evt) {
+            var evtName = evt.type;
+            if (this.$root && this.$root.$emit) {
+                // Emit an event on $root
+                this.$root.$emit('bv::' + this.constructor.NAME + '::' + evtName, evt);
+            }
+            var callbacks = this.$config.callbacks || {};
+            if (typeof callbacks[evtName] === 'function') {
+                callbacks[evtName](evt);
+            }
+        }
+    }, {
+        key: 'getContainer',
+        value: function getContainer() {
+            var container = this.$config.container;
+            var body = document.body;
+            // If we are in a modal, we append to the modal instead of body, unless a container is specified
+            return container === false ? Object(__WEBPACK_IMPORTED_MODULE_3__dom__["b" /* closest */])(MODAL_CLASS, this.$element) || body : Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(container, body) || body;
+        }
+
+        // Will be overritten by popover if needed
+
+    }, {
+        key: 'addAriaDescribedby',
+        value: function addAriaDescribedby() {
+            // Add aria-describedby on trigger element, without removing any other IDs
+            var desc = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'aria-describedby') || '';
+            desc = desc.split(/\s+/).concat(this.$id).join(' ').trim();
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(this.$element, 'aria-describedby', desc);
+        }
+
+        // Will be overritten by popover if needed
+
+    }, {
+        key: 'removeAriaDescribedby',
+        value: function removeAriaDescribedby() {
+            var _this4 = this;
+
+            var desc = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'aria-describedby') || '';
+            desc = desc.split(/\s+/).filter(function (d) {
+                return d !== _this4.$id;
+            }).join(' ').trim();
+            if (desc) {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(this.$element, 'aria-describedby', desc);
+            } else {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["r" /* removeAttr */])(this.$element, 'aria-describedby');
+            }
+        }
+    }, {
+        key: 'removePopper',
+        value: function removePopper() {
+            if (this.$popper) {
+                this.$popper.destroy();
+            }
+            this.$popper = null;
+        }
+    }, {
+        key: 'transitionOnce',
+        value: function transitionOnce(tip, complete) {
+            var _this5 = this;
+
+            var transEvents = this.getTransitionEndEvents();
+            var called = false;
+            clearTimeout(this.$fadeTimeout);
+            this.$fadeTimeout = null;
+            var fnOnce = function fnOnce() {
+                if (called) {
+                    return;
+                }
+                called = true;
+                clearTimeout(_this5.$fadeTimeout);
+                _this5.$fadeTimeout = null;
+                transEvents.forEach(function (evtName) {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(tip, evtName, fnOnce);
+                });
+                // Call complete callback
+                complete();
+            };
+            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(tip, ClassName.FADE)) {
+                transEvents.forEach(function (evtName) {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(tip, evtName, fnOnce);
+                });
+                // Fallback to setTimeout
+                this.$fadeTimeout = setTimeout(fnOnce, TRANSITION_DURATION);
+            } else {
+                fnOnce();
+            }
+        }
+
+        // What transitionend event(s) to use? (returns array of event names)
+
+    }, {
+        key: 'getTransitionEndEvents',
+        value: function getTransitionEndEvents() {
+            for (var name in TransitionEndEvents) {
+                if (this.$element.style[name] !== undefined) {
+                    return TransitionEndEvents[name];
+                }
+            }
+            // fallback
+            return [];
+        }
+    }, {
+        key: 'update',
+        value: function update() {
+            if (this.$popper !== null) {
+                this.$popper.scheduleUpdate();
+            }
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'isWithContent',
+        value: function isWithContent(tip) {
+            tip = tip || this.$tip;
+            if (!tip) {
+                return false;
+            }
+            return Boolean((Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.TOOLTIP_INNER, tip) || {}).innerHTML);
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'addAttachmentClass',
+        value: function addAttachmentClass(attachment) {
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["a" /* addClass */])(this.getTipElement(), CLASS_PREFIX + '-' + attachment);
+        }
+    }, {
+        key: 'getTipElement',
+        value: function getTipElement() {
+            if (!this.$tip) {
+                // Try and compile user supplied template, or fallback to default template
+                this.$tip = this.compileTemplate(this.$config.template) || this.compileTemplate(this.constructor.Default.template);
+            }
+            // Add tab index so tip can be focused, and to allow it to be set as relatedTargt in focusin/out events
+            this.$tip.tabIndex = -1;
+            return this.$tip;
+        }
+    }, {
+        key: 'compileTemplate',
+        value: function compileTemplate(html) {
+            if (!html || typeof html !== 'string') {
+                return null;
+            }
+            var div = document.createElement('div');
+            div.innerHTML = html.trim();
+            var node = div.firstElementChild ? div.removeChild(div.firstElementChild) : null;
+            div = null;
+            return node;
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'setContent',
+        value: function setContent(tip) {
+            this.setElementContent(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.TOOLTIP_INNER, tip), this.getTitle());
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.SHOW);
+        }
+    }, {
+        key: 'setElementContent',
+        value: function setElementContent(container, content) {
+            if (!container) {
+                // If container element doesn't exist, just return
+                return;
+            }
+            var allowHtml = this.$config.html;
+            if ((typeof content === 'undefined' ? 'undefined' : _typeof(content)) === 'object' && content.nodeType) {
+                // content is a DOM node
+                if (allowHtml) {
+                    if (content.parentElement !== container) {
+                        container.innerHtml = '';
+                        container.appendChild(content);
+                    }
+                } else {
+                    container.innerText = content.innerText;
+                }
+            } else {
+                // We have a plain HTML string or Text
+                container[allowHtml ? 'innerHTML' : 'innerText'] = content;
+            }
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'getTitle',
+        value: function getTitle() {
+            var title = this.$config.title || '';
+            if (typeof title === 'function') {
+                // Call the function to get the title value
+                title = title(this.$element);
+            }
+            if ((typeof title === 'undefined' ? 'undefined' : _typeof(title)) === 'object' && title.nodeType && !title.innerHTML.trim()) {
+                // We have a DOM node, but without inner content, so just return empty string
+                title = '';
+            }
+            if (typeof title === 'string') {
+                title = title.trim();
+            }
+            if (!title) {
+                // If an explicit title is not given, try element's title atributes
+                title = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'title') || Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(this.$element, 'data-original-title') || '';
+                title = title.trim();
+            }
+
+            return title;
+        }
+    }, {
+        key: 'listen',
+        value: function listen() {
+            var _this6 = this;
+
+            var triggers = this.$config.trigger.trim().split(/\s+/);
+            var el = this.$element;
+
+            // Using 'this' as the handler will get automagically directed to this.handleEvent
+            // And maintain our binding to 'this'
+            triggers.forEach(function (trigger) {
+                if (trigger === 'click') {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'click', _this6);
+                } else if (trigger === 'focus') {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusin', _this6);
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusout', _this6);
+                } else if (trigger === 'blur') {
+                    // Used to close $tip when element looses focus
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'focusout', _this6);
+                } else if (trigger === 'hover') {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseenter', _this6);
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseleave', _this6);
+                }
+            }, this);
+        }
+    }, {
+        key: 'unListen',
+        value: function unListen() {
+            var _this7 = this;
+
+            var events = ['click', 'focusin', 'focusout', 'mouseenter', 'mouseleave'];
+            // Using "this" as the handler will get automagically directed to this.handleEvent
+            events.forEach(function (evt) {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(_this7.$element, evt, _this7);
+            }, this);
+        }
+    }, {
+        key: 'handleEvent',
+        value: function handleEvent(e) {
+            // This special method allows us to use "this" as the event handlers
+            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["k" /* isDisabled */])(this.$element)) {
+                // If disabled, don't do anything. Note: if tip is shown before element gets
+                // disabled, then tip not close until no longer disabled or forcefully closed.
+                return;
+            }
+            var type = e.type;
+            var target = e.target;
+            var relatedTarget = e.relatedTarget;
+            var $element = this.$element;
+            var $tip = this.$tip;
+            if (type === 'click') {
+                this.toggle(e);
+            } else if (type === 'focusin' || type === 'mouseenter') {
+                this.enter(e);
+            } else if (type === 'focusout') {
+                // target is the element which is loosing focus
+                // And relatdTarget is the element gaining focus
+                if (target === $element && $tip && $tip.contains(relatedTarget)) {
+                    // If focus moves from $element to $tip, don't trigger a leave
+                    return;
+                }
+                if ($tip && target === $tip && $element.contains(relatedTarget)) {
+                    // If focus moves from $tip to $element, don't trigger a leave
+                    // This will only happen during the whileOpen listeners
+                    return;
+                }
+                // OPtherwise trigger a leave
+                this.leave(e);
+            } else if (type === 'mouseleave') {
+                this.leave(e);
+            }
+        }
+    }, {
+        key: 'setRouteWatcher',
+        value: function setRouteWatcher(on) {
+            var _this8 = this;
+
+            if (on) {
+                this.setRouteWatcher(false);
+                if (this.$root && Boolean(this.$root.$route)) {
+                    this.$routeWatcher = this.$root.$watch('$route', function (newVal, oldVal) {
+                        if (newVal === oldVal) {
+                            return;
+                        }
+                        // If route has changed, we force hide the tooltip/popover
+                        _this8.forceHide();
+                    });
+                }
+            } else {
+                if (this.$routeWatcher) {
+                    // cancel the route watcher by calling hte stored reference
+                    this.$routeWatcher();
+                    this.$routeWatcher = null;
+                }
+            }
+        }
+    }, {
+        key: 'setModalListener',
+        value: function setModalListener(on) {
+            var modal = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["b" /* closest */])(MODAL_CLASS, this.$element);
+            if (!modal) {
+                // If we are not in a modal, don't worry. be happy
+                return;
+            }
+            // We can listen for modal hidden events on $root
+            if (this.$root) {
+                this.$root[on ? '$on' : '$off'](MODAL_CLOSE_EVENT, this.forceHide.bind(this));
+            }
+        }
+    }, {
+        key: 'setRootListener',
+        value: function setRootListener(on) {
+            // We can listen for global 'bv::hide::popover/tooltip' hide request event
+            if (this.$root) {
+                this.$root[on ? '$on' : '$off']('bv::hide::' + this.constructor.NAME, this.forceHide.bind(this));
+            }
+        }
+    }, {
+        key: 'setOnTouchStartListener',
+        value: function setOnTouchStartListener(on) {
+            var _this9 = this;
+
+            // if this is a touch-enabled device we add extra
+            // empty mouseover listeners to the body's immediate children;
+            // only needed because of broken event delegation on iOS
+            // https://www.quirksmode.org/blog/archives/2014/02/mouse_event_bub.html
+            if ('ontouchstart' in document.documentElement) {
+                Object(__WEBPACK_IMPORTED_MODULE_2__array__["c" /* from */])(document.body.children).forEach(function (el) {
+                    if (on) {
+                        Object(__WEBPACK_IMPORTED_MODULE_3__dom__["d" /* eventOn */])(el, 'mouseover', _this9._noop);
+                    } else {
+                        Object(__WEBPACK_IMPORTED_MODULE_3__dom__["c" /* eventOff */])(el, 'mouseover', _this9._noop);
+                    }
+                });
+            }
+        }
+    }, {
+        key: '_noop',
+        value: function _noop() {
+            // Empty noop handler for ontouchstart devices
+        }
+    }, {
+        key: 'fixTitle',
+        value: function fixTitle() {
+            var el = this.$element;
+            var titleType = _typeof(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'data-original-title'));
+            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'title') || titleType !== 'string') {
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(el, 'data-original-title', Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(el, 'title') || '');
+                Object(__WEBPACK_IMPORTED_MODULE_3__dom__["v" /* setAttr */])(el, 'title', '');
+            }
+        }
+
+        // Enter handler
+
+    }, {
+        key: 'enter',
+        value: function enter(e) {
+            var _this10 = this;
+
+            if (e) {
+                this.$activeTrigger[e.type === 'focusin' ? 'focus' : 'hover'] = true;
+            }
+            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["j" /* hasClass */])(this.getTipElement(), ClassName.SHOW) || this.$hoverState === HoverState.SHOW) {
+                this.$hoverState = HoverState.SHOW;
+                return;
+            }
+            clearTimeout(this.$hoverTimeout);
+            this.$hoverState = HoverState.SHOW;
+            if (!this.$config.delay || !this.$config.delay.show) {
+                this.show();
+                return;
+            }
+            this.$hoverTimeout = setTimeout(function () {
+                if (_this10.$hoverState === HoverState.SHOW) {
+                    _this10.show();
+                }
+            }, this.$config.delay.show);
+        }
+
+        // Leave handler
+
+    }, {
+        key: 'leave',
+        value: function leave(e) {
+            var _this11 = this;
+
+            if (e) {
+                this.$activeTrigger[e.type === 'focusout' ? 'focus' : 'hover'] = false;
+                if (e.type === 'focusout' && /blur/.test(this.$config.trigger)) {
+                    // Special case for `blur`: we clear out the other triggers
+                    this.$activeTrigger.click = false;
+                    this.$activeTrigger.hover = false;
+                }
+            }
+            if (this.isWithActiveTrigger()) {
+                return;
+            }
+            clearTimeout(this.$hoverTimeout);
+            this.$hoverState = HoverState.OUT;
+            if (!this.$config.delay || !this.$config.delay.hide) {
+                this.hide();
+                return;
+            }
+            this.$hoverTimeout = setTimeout(function () {
+                if (_this11.$hoverState === HoverState.OUT) {
+                    _this11.hide();
+                }
+            }, this.$config.delay.hide);
+        }
+    }, {
+        key: 'getPopperConfig',
+        value: function getPopperConfig(placement, tip) {
+            var _this12 = this;
+
+            return {
+                placement: this.constructor.getAttachment(placement),
+                modifiers: {
+                    offset: { offset: this.getOffset(placement, tip) },
+                    flip: { behavior: this.$config.fallbackPlacement },
+                    arrow: { element: '.arrow' }
+                },
+                onCreate: function onCreate(data) {
+                    // Handle flipping arrow classes
+                    if (data.originalPlacement !== data.placement) {
+                        _this12.handlePopperPlacementChange(data);
+                    }
+                },
+                onUpdate: function onUpdate(data) {
+                    // Handle flipping arrow classes
+                    _this12.handlePopperPlacementChange(data);
+                }
+            };
+        }
+    }, {
+        key: 'getOffset',
+        value: function getOffset(placement, tip) {
+            if (!this.$config.offset) {
+                var arrow = Object(__WEBPACK_IMPORTED_MODULE_3__dom__["t" /* select */])(Selector.ARROW, tip);
+                var arrowOffset = parseFloat(Object(__WEBPACK_IMPORTED_MODULE_3__dom__["h" /* getCS */])(arrow).width) + parseFloat(this.$config.arrowPadding);
+                switch (OffsetMap[placement.toUpperCase()]) {
+                    case +1:
+                        return '+50%p - ' + arrowOffset + 'px';
+                    case -1:
+                        return '-50%p + ' + arrowOffset + 'px';
+                    default:
+                        return 0;
+                }
+            }
+            return parseFloat(this.$config.offset);
+        }
+    }, {
+        key: 'getPlacement',
+        value: function getPlacement() {
+            var placement = this.$config.placement;
+            if (typeof placement === 'function') {
+                return placement.call(this, this.$tip, this.$element);
+            }
+            return placement;
+        }
+    }, {
+        key: 'isWithActiveTrigger',
+        value: function isWithActiveTrigger() {
+            for (var trigger in this.$activeTrigger) {
+                if (this.$activeTrigger[trigger]) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'cleanTipClass',
+        value: function cleanTipClass() {
+            var tip = this.getTipElement();
+            var tabClass = tip.className.match(BSCLS_PREFIX_REGEX);
+            if (tabClass !== null && tabClass.length > 0) {
+                tabClass.forEach(function (cls) {
+                    Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, cls);
+                });
+            }
+        }
+    }, {
+        key: 'handlePopperPlacementChange',
+        value: function handlePopperPlacementChange(data) {
+            this.cleanTipClass();
+            this.addAttachmentClass(this.constructor.getAttachment(data.placement));
+        }
+    }, {
+        key: 'fixTransition',
+        value: function fixTransition(tip) {
+            var initConfigAnimation = this.$config.animation || false;
+            if (Object(__WEBPACK_IMPORTED_MODULE_3__dom__["e" /* getAttr */])(tip, 'x-placement') !== null) {
+                return;
+            }
+            Object(__WEBPACK_IMPORTED_MODULE_3__dom__["s" /* removeClass */])(tip, ClassName.FADE);
+            this.$config.animation = false;
+            this.hide();
+            this.show();
+            this.$config.animation = initConfigAnimation;
+        }
+    }], [{
+        key: 'getAttachment',
+        value: function getAttachment(placement) {
+            return AttachmentMap[placement.toUpperCase()];
+        }
+    }, {
+        key: 'Default',
+        get: function get() {
+            return Defaults;
+        }
+
+        // NOTE: Overridden by PopOver class
+
+    }, {
+        key: 'NAME',
+        get: function get() {
+            return NAME;
+        }
+    }]);
+
+    return ToolTip;
+}();
+
+/* harmony default export */ __webpack_exports__["a"] = (ToolTip);
+
+/***/ }),
 /* 22 */
 /*!*****************************************!*\
   !*** ./node_modules/process/browser.js ***!
@@ -17988,7 +17988,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(/*! ./nav-form */ 230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue__ = __webpack_require__(/*! ./nav-item-dropdown.vue */ 231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(/*! ../dropdown */ 19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(/*! ../dropdown */ 20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -18032,7 +18032,7 @@ Object(__WEBPACK_IMPORTED_MODULE_6__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_class__ = __webpack_require__(/*! ./tooltip.class */ 20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_class__ = __webpack_require__(/*! ./tooltip.class */ 21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(/*! ./object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dom__ = __webpack_require__(/*! ./dom */ 5);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -20882,7 +20882,7 @@ if (inBrowser && window.Vue) {
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/js/app.js */58);
-module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/sass/app.scss */319);
+module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/sass/app.scss */327);
 
 
 /***/ }),
@@ -20948,7 +20948,7 @@ window.app = new Vue({
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(/*! lodash */ 60);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(/*! vue */ 21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(/*! vue */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(/*! axios */ 64);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
@@ -38386,7 +38386,7 @@ module.exports = __webpack_require__(/*! ./lib/axios */ 65);
 var utils = __webpack_require__(/*! ./utils */ 6);
 var bind = __webpack_require__(/*! ./helpers/bind */ 23);
 var Axios = __webpack_require__(/*! ./core/Axios */ 66);
-var defaults = __webpack_require__(/*! ./defaults */ 12);
+var defaults = __webpack_require__(/*! ./defaults */ 13);
 
 /**
  * Create an instance of Axios
@@ -38447,7 +38447,7 @@ module.exports.default = axios;
 "use strict";
 
 
-var defaults = __webpack_require__(/*! ./../defaults */ 12);
+var defaults = __webpack_require__(/*! ./../defaults */ 13);
 var utils = __webpack_require__(/*! ./../utils */ 6);
 var InterceptorManager = __webpack_require__(/*! ./InterceptorManager */ 75);
 var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ 76);
@@ -39025,7 +39025,7 @@ module.exports = InterceptorManager;
 var utils = __webpack_require__(/*! ./../utils */ 6);
 var transformData = __webpack_require__(/*! ./transformData */ 77);
 var isCancel = __webpack_require__(/*! ../cancel/isCancel */ 26);
-var defaults = __webpack_require__(/*! ../defaults */ 12);
+var defaults = __webpack_require__(/*! ../defaults */ 13);
 
 /**
  * Throws a `Cancel` if cancellation has been requested.
@@ -39356,7 +39356,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(/*! ./carousel */ 130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(/*! ./layout */ 139);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collapse__ = __webpack_require__(/*! ./collapse */ 40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(/*! ./dropdown */ 19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(/*! ./dropdown */ 20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(/*! ./embed */ 155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(/*! ./form */ 157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(/*! ./form-group */ 158);
@@ -39568,7 +39568,7 @@ module.exports = Component.exports
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils__ = __webpack_require__(/*! ../../utils */ 0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_close__ = __webpack_require__(/*! ../button/button-close */ 16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_close__ = __webpack_require__(/*! ../button/button-close */ 17);
 //
 //
 //
@@ -39726,7 +39726,7 @@ function addEventListenerOnce(el, evtName, callback) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = copyProps;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__array__ = __webpack_require__(/*! ./array */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(/*! ./object */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(/*! ./identity */ 13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(/*! ./identity */ 14);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 
@@ -39951,7 +39951,7 @@ function observeDOM(el, callback, opts) {
 /* harmony export (immutable) */ __webpack_exports__["a"] = pluckProps;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__object__ = __webpack_require__(/*! ./object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(/*! ./array */ 4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(/*! ./identity */ 13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__identity__ = __webpack_require__(/*! ./identity */ 14);
 
 
 
@@ -39983,7 +39983,7 @@ function pluckProps(keysToPluck, objToPluck) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = prefixPropName;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 15);
 
 
 /**
@@ -40084,7 +40084,7 @@ function vueUse(VuePlugin) {
 
 "use strict";
 /* harmony export (immutable) */ __webpack_exports__["a"] = suffixPropName;
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 15);
 
 
 /**
@@ -40371,8 +40371,8 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button__ = __webpack_require__(/*! ./button */ 17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_close__ = __webpack_require__(/*! ./button-close */ 16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button__ = __webpack_require__(/*! ./button */ 18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_close__ = __webpack_require__(/*! ./button-close */ 17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -43426,7 +43426,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__image_img__ = __webpack_require__(/*! ../image/img */ 18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__image_img__ = __webpack_require__(/*! ../image/img */ 19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins__ = __webpack_require__(/*! ../../mixins */ 3);
 //
@@ -44360,7 +44360,7 @@ module.exports = Component.exports
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__mixins__ = __webpack_require__(/*! ../../mixins */ 3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(/*! ../button/button */ 17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button__ = __webpack_require__(/*! ../button/button */ 18);
 //
 //
 //
@@ -48106,7 +48106,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(/*! ./img */ 18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(/*! ./img */ 19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(/*! ./img-lazy */ 207);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
@@ -48210,7 +48210,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(/*! ./img */ 18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(/*! ./img */ 19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_dom__ = __webpack_require__(/*! ../../utils/dom */ 5);
 //
 //
@@ -49025,8 +49025,8 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_button__ = __webpack_require__(/*! ../button/button */ 17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_close__ = __webpack_require__(/*! ../button/button-close */ 16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_button__ = __webpack_require__(/*! ../button/button */ 18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__button_button_close__ = __webpack_require__(/*! ../button/button-close */ 17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins__ = __webpack_require__(/*! ../../mixins */ 3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(/*! ../../utils */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils_bv_event_class__ = __webpack_require__(/*! ../../utils/bv-event.class */ 51);
@@ -50438,7 +50438,7 @@ if (false) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(/*! ./navbar-toggle */ 238);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav__ = __webpack_require__(/*! ../nav */ 53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collapse__ = __webpack_require__(/*! ../collapse */ 40);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(/*! ../dropdown */ 19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(/*! ../dropdown */ 20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -55956,7 +55956,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_tooltip_class__ = __webpack_require__(/*! ../../utils/tooltip.class */ 20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_tooltip_class__ = __webpack_require__(/*! ../../utils/tooltip.class */ 21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__mixins__ = __webpack_require__(/*! ../../mixins */ 3);
 //
@@ -56748,9 +56748,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_tooltip_class__ = __webpack_require__(/*! ../../utils/tooltip.class */ 20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_tooltip_class__ = __webpack_require__(/*! ../../utils/tooltip.class */ 21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 16);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 
@@ -56956,7 +56956,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_popover_class__ = __webpack_require__(/*! ../../utils/popover.class */ 54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 16);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
 
@@ -57184,31 +57184,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "main",
-    [
-      _c("app-sidebar"),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "page-content column" },
-        [
-          _c("app-header"),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "page-content__main container-fluid" },
-            [_c("router-view")],
-            1
-          ),
-          _vm._v(" "),
-          _c("app-footer")
-        ],
-        1
-      )
-    ],
-    1
-  )
+  return _c("router-view")
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -57534,15 +57510,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     name: 'app-sidebar'
@@ -57567,32 +57534,6 @@ var render = function() {
     _c("div", { staticClass: "sidebar__body" }, [
       _c("nav", [
         _c("ul", { staticClass: "sidebar__menu" }, [
-          _c(
-            "li",
-            { staticClass: "sidebar__item" },
-            [
-              _c(
-                "router-link",
-                {
-                  staticClass: "sidebar__link",
-                  attrs: { to: { name: "login" } }
-                },
-                [
-                  _c(
-                    "span",
-                    { staticClass: "sidebar__icon" },
-                    [_c("app-icon", { attrs: { name: "property-1" } })],
-                    1
-                  ),
-                  _vm._v(
-                    "\n                        Login\n                    "
-                  )
-                ]
-              )
-            ],
-            1
-          ),
-          _vm._v(" "),
           _c("li", { staticClass: "sidebar__item" }, [
             _c("a", { staticClass: "sidebar__link", attrs: { href: "/" } }, [
               _c(
@@ -58107,10 +58048,10 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(/*! vue-router */ 56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_index__ = __webpack_require__(/*! ../app/index */ 339);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_index__ = __webpack_require__(/*! ../app/index */ 319);
 
 
 
@@ -58127,29 +58068,20 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 
 /***/ }),
 /* 319 */
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports) {
+/*!******************************************!*\
+  !*** ./resources/assets/js/app/index.js ***!
+  \******************************************/
+/*! exports provided: routes */
+/*! exports used: routes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// removed by extract-text-webpack-plugin
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routes__ = __webpack_require__(/*! ./routes */ 320);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__routes__["a"]; });
+
 
 /***/ }),
-/* 320 */,
-/* 321 */,
-/* 322 */,
-/* 323 */,
-/* 324 */,
-/* 325 */,
-/* 326 */,
-/* 327 */,
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */
+/* 320 */
 /*!*******************************************!*\
   !*** ./resources/assets/js/app/routes.js ***!
   \*******************************************/
@@ -58158,15 +58090,17 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__auth_routes__ = __webpack_require__(/*! ./auth/routes */ 333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__auth_routes__ = __webpack_require__(/*! ./auth/routes */ 321);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_routes__ = __webpack_require__(/*! ./home/routes */ 340);
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 
 
-/* harmony default export */ __webpack_exports__["a"] = ([].concat(_toConsumableArray(__WEBPACK_IMPORTED_MODULE_0__auth_routes__["a" /* default */])));
+
+/* harmony default export */ __webpack_exports__["a"] = ([].concat(_toConsumableArray(__WEBPACK_IMPORTED_MODULE_0__auth_routes__["a" /* default */]), _toConsumableArray(__WEBPACK_IMPORTED_MODULE_1__home_routes__["a" /* default */])));
 
 /***/ }),
-/* 333 */
+/* 321 */
 /*!******************************************************!*\
   !*** ./resources/assets/js/app/auth/routes/index.js ***!
   \******************************************************/
@@ -58175,13 +58109,19 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 344);
+
 
 
 /* harmony default export */ __webpack_exports__["a"] = ([{
     path: '/login',
-    component: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* Login */],
+    component: __WEBPACK_IMPORTED_MODULE_1__layouts__["a" /* Auth */],
     name: 'login',
+    children: [{
+        path: '/',
+        component: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* Login */]
+    }],
     meta: {
         guest: true,
         needsAuth: false
@@ -58197,7 +58137,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 }]);
 
 /***/ }),
-/* 334 */
+/* 322 */
 /*!**********************************************************!*\
   !*** ./resources/assets/js/app/auth/components/index.js ***!
   \**********************************************************/
@@ -58208,15 +58148,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Register; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
-var Login = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('login', __webpack_require__(/*! ./Login.vue */ 335));
-var Register = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('register', __webpack_require__(/*! ./Register.vue */ 337));
+var Login = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('login', __webpack_require__(/*! ./Login.vue */ 323));
+var Register = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('register', __webpack_require__(/*! ./Register.vue */ 325));
 
 /***/ }),
-/* 335 */
+/* 323 */
 /*!***********************************************************!*\
   !*** ./resources/assets/js/app/auth/components/Login.vue ***!
   \***********************************************************/
@@ -58229,7 +58169,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Login.vue */ 336)
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Login.vue */ 324)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58269,7 +58209,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 336 */
+/* 324 */
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/auth/components/Login.vue ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
@@ -58281,9 +58221,47 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("Login")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "container-fluid d-flex justify-content-center" },
+      [
+        _c("div", { staticClass: "col-6 text-center" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "email", placeholder: "E-mail" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("input", {
+              staticClass: "form-control",
+              attrs: { type: "password", placeholder: "Password" }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "button",
+              {
+                staticClass: "btn btn-primary btn-lg btn-block",
+                attrs: { type: "submit" }
+              },
+              [_vm._v("Log In")]
+            )
+          ])
+        ])
+      ]
+    )
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -58294,7 +58272,7 @@ if (false) {
 }
 
 /***/ }),
-/* 337 */
+/* 325 */
 /*!**************************************************************!*\
   !*** ./resources/assets/js/app/auth/components/Register.vue ***!
   \**************************************************************/
@@ -58307,7 +58285,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Register.vue */ 338)
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Register.vue */ 326)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58347,7 +58325,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 338 */
+/* 326 */
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/auth/components/Register.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
@@ -58372,18 +58350,373 @@ if (false) {
 }
 
 /***/ }),
-/* 339 */
-/*!******************************************!*\
-  !*** ./resources/assets/js/app/index.js ***!
-  \******************************************/
-/*! exports provided: routes */
-/*! exports used: routes */
+/* 327 */
+/*!****************************************!*\
+  !*** ./resources/assets/sass/app.scss ***!
+  \****************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */,
+/* 333 */,
+/* 334 */,
+/* 335 */,
+/* 336 */,
+/* 337 */,
+/* 338 */,
+/* 339 */,
+/* 340 */
+/*!******************************************************!*\
+  !*** ./resources/assets/js/app/home/routes/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/*! exports used: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routes__ = __webpack_require__(/*! ./routes */ 332);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__routes__["a"]; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 344);
 
+
+
+/* harmony default export */ __webpack_exports__["a"] = ([{
+    path: '/',
+    component: __WEBPACK_IMPORTED_MODULE_1__layouts__["b" /* Default */],
+    children: [{
+        path: '/',
+        component: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* Home */],
+        name: 'home'
+    }]
+}]);
+
+/***/ }),
+/* 341 */
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/app/home/components/index.js ***!
+  \**********************************************************/
+/*! exports provided: Home */
+/*! exports used: Home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var Home = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('home', __webpack_require__(/*! ./Home.vue */ 342));
+
+/***/ }),
+/* 342 */
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/app/home/components/Home.vue ***!
+  \**********************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Home.vue */ 343)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/app/home/components/Home.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-685bdd88", Component.options)
+  } else {
+    hotAPI.reload("data-v-685bdd88", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 343 */
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/home/components/Home.vue ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("p", [_vm._v("Home")])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-685bdd88", module.exports)
+  }
+}
+
+/***/ }),
+/* 344 */
+/*!**********************************************!*\
+  !*** ./resources/assets/js/layouts/index.js ***!
+  \**********************************************/
+/*! exports provided: Auth, Default */
+/*! exports used: Auth, Default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Auth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Default; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var Auth = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('auth', __webpack_require__(/*! ./Auth.vue */ 348));
+var Default = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('default', __webpack_require__(/*! ./Default.vue */ 345));
+
+/***/ }),
+/* 345 */
+/*!*************************************************!*\
+  !*** ./resources/assets/js/layouts/Default.vue ***!
+  \*************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-a006064e","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Default.vue */ 347)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/layouts/Default.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a006064e", Component.options)
+  } else {
+    hotAPI.reload("data-v-a006064e", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 346 */,
+/* 347 */
+/*!************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-a006064e","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/layouts/Default.vue ***!
+  \************************************************************************************************************************************************************************************************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "main",
+    [
+      _c("app-sidebar"),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "page-content column" },
+        [
+          _c("app-header"),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "page-content__main container-fluid" },
+            [_c("router-view")],
+            1
+          ),
+          _vm._v(" "),
+          _c("app-footer")
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-a006064e", module.exports)
+  }
+}
+
+/***/ }),
+/* 348 */
+/*!**********************************************!*\
+  !*** ./resources/assets/js/layouts/Auth.vue ***!
+  \**********************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
+/* script */
+var __vue_script__ = null
+/* template */
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Auth.vue */ 350)
+/* template functional */
+  var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/layouts/Auth.vue"
+if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-37794fc0", Component.options)
+  } else {
+    hotAPI.reload("data-v-37794fc0", Component.options)
+' + '  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 349 */,
+/* 350 */
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/layouts/Auth.vue ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("main", [
+    _c("div", { staticClass: "page-content column" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "page-content__auth container-fluid bg-primary text-white"
+        },
+        [
+          _c("h1", [_vm._v("Vulcan")]),
+          _vm._v(" "),
+          _c("app-icon", { attrs: { name: "handshake-1" } })
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "page-content column" }, [
+      _c(
+        "div",
+        { staticClass: "page-content__auth bg-info" },
+        [_c("router-view")],
+        1
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-37794fc0", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);
