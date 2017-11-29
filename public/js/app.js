@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 57);
+/******/ 	return __webpack_require__(__webpack_require__.s = 58);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,23 +73,23 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__addEventListenerOnce__ = __webpack_require__(/*! ./addEventListenerOnce */ 88);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__addEventListenerOnce__ = __webpack_require__(/*! ./addEventListenerOnce */ 89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__array__ = __webpack_require__(/*! ./array */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__object__ = __webpack_require__(/*! ./object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(/*! ./dom */ 5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__copyProps__ = __webpack_require__(/*! ./copyProps */ 89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__copyProps__ = __webpack_require__(/*! ./copyProps */ 90);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__lowerFirst__ = __webpack_require__(/*! ./lowerFirst */ 28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__identity__ = __webpack_require__(/*! ./identity */ 14);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__loose_equal__ = __webpack_require__(/*! ./loose-equal */ 90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js__ = __webpack_require__(/*! vue-functional-data-merge/dist/lib.common.js */ 91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__loose_equal__ = __webpack_require__(/*! ./loose-equal */ 91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js__ = __webpack_require__(/*! vue-functional-data-merge/dist/lib.common.js */ 92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_vue_functional_data_merge_dist_lib_common_js__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__memoize__ = __webpack_require__(/*! ./memoize */ 92);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__observe_dom__ = __webpack_require__(/*! ./observe-dom */ 93);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pluckProps__ = __webpack_require__(/*! ./pluckProps */ 94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__prefixPropName__ = __webpack_require__(/*! ./prefixPropName */ 95);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__plugins__ = __webpack_require__(/*! ./plugins */ 96);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__suffixPropName__ = __webpack_require__(/*! ./suffixPropName */ 97);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__unPrefixPropName__ = __webpack_require__(/*! ./unPrefixPropName */ 98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__memoize__ = __webpack_require__(/*! ./memoize */ 93);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__observe_dom__ = __webpack_require__(/*! ./observe-dom */ 94);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pluckProps__ = __webpack_require__(/*! ./pluckProps */ 95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__prefixPropName__ = __webpack_require__(/*! ./prefixPropName */ 96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__plugins__ = __webpack_require__(/*! ./plugins */ 97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__suffixPropName__ = __webpack_require__(/*! ./suffixPropName */ 98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__unPrefixPropName__ = __webpack_require__(/*! ./unPrefixPropName */ 99);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__upperFirst__ = __webpack_require__(/*! ./upperFirst */ 15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__warn__ = __webpack_require__(/*! ./warn */ 16);
 /* unused harmony reexport addEventListenerOnce */
@@ -351,19 +351,19 @@ function readonlyDescriptor() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_mixin__ = __webpack_require__(/*! ./card-mixin */ 117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card_mixin__ = __webpack_require__(/*! ./card-mixin */ 118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(/*! ./clickout */ 32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown__ = __webpack_require__(/*! ./dropdown */ 118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form__ = __webpack_require__(/*! ./form */ 119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_custom__ = __webpack_require__(/*! ./form-custom */ 120);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_options__ = __webpack_require__(/*! ./form-options */ 121);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_radio_check__ = __webpack_require__(/*! ./form-radio-check */ 122);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__form_size__ = __webpack_require__(/*! ./form-size */ 123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__form_state__ = __webpack_require__(/*! ./form-state */ 124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__id__ = __webpack_require__(/*! ./id */ 125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown__ = __webpack_require__(/*! ./dropdown */ 119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form__ = __webpack_require__(/*! ./form */ 120);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__form_custom__ = __webpack_require__(/*! ./form-custom */ 121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__form_options__ = __webpack_require__(/*! ./form-options */ 122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__form_radio_check__ = __webpack_require__(/*! ./form-radio-check */ 123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__form_size__ = __webpack_require__(/*! ./form-size */ 124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__form_state__ = __webpack_require__(/*! ./form-state */ 125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__id__ = __webpack_require__(/*! ./id */ 126);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__listen_on_root__ = __webpack_require__(/*! ./listen-on-root */ 33);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pagination__ = __webpack_require__(/*! ./pagination */ 126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__toolpop__ = __webpack_require__(/*! ./toolpop */ 128);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pagination__ = __webpack_require__(/*! ./pagination */ 127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__toolpop__ = __webpack_require__(/*! ./toolpop */ 129);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__card_mixin__["a"]; });
 /* unused harmony reexport clickOutMixin */
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_2__dropdown__["a"]; });
@@ -1478,7 +1478,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(/*! ./listToStyles */ 163)
+var listToStyles = __webpack_require__(/*! ./listToStyles */ 164)
 
 /*
 type StyleObject = {
@@ -1713,2453 +1713,6 @@ module.exports = g;
 
 /***/ }),
 /* 11 */
-/*!***************************************************!*\
-  !*** ./node_modules/popper.js/dist/esm/popper.js ***!
-  \***************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/**!
- * @fileOverview Kickass library to create and place poppers near their reference elements.
- * @version 1.12.6
- * @license
- * Copyright (c) 2016 Federico Zivolo and contributors
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- * SOFTWARE.
- */
-var isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
-var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
-var timeoutDuration = 0;
-for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
-  if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
-    timeoutDuration = 1;
-    break;
-  }
-}
-
-function microtaskDebounce(fn) {
-  var called = false;
-  return function () {
-    if (called) {
-      return;
-    }
-    called = true;
-    Promise.resolve().then(function () {
-      called = false;
-      fn();
-    });
-  };
-}
-
-function taskDebounce(fn) {
-  var scheduled = false;
-  return function () {
-    if (!scheduled) {
-      scheduled = true;
-      setTimeout(function () {
-        scheduled = false;
-        fn();
-      }, timeoutDuration);
-    }
-  };
-}
-
-var supportsMicroTasks = isBrowser && window.Promise;
-
-/**
-* Create a debounced version of a method, that's asynchronously deferred
-* but called in the minimum time possible.
-*
-* @method
-* @memberof Popper.Utils
-* @argument {Function} fn
-* @returns {Function}
-*/
-var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
-
-/**
- * Check if the given variable is a function
- * @method
- * @memberof Popper.Utils
- * @argument {Any} functionToCheck - variable to check
- * @returns {Boolean} answer to: is a function?
- */
-function isFunction(functionToCheck) {
-  var getType = {};
-  return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
-}
-
-/**
- * Get CSS computed property of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Eement} element
- * @argument {String} property
- */
-function getStyleComputedProperty(element, property) {
-  if (element.nodeType !== 1) {
-    return [];
-  }
-  // NOTE: 1 DOM access here
-  var css = window.getComputedStyle(element, null);
-  return property ? css[property] : css;
-}
-
-/**
- * Returns the parentNode or the host of the element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} parent
- */
-function getParentNode(element) {
-  if (element.nodeName === 'HTML') {
-    return element;
-  }
-  return element.parentNode || element.host;
-}
-
-/**
- * Returns the scrolling parent of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} scroll parent
- */
-function getScrollParent(element) {
-  // Return body, `getScroll` will take care to get the correct `scrollTop` from it
-  if (!element) {
-    return window.document.body;
-  }
-
-  switch (element.nodeName) {
-    case 'HTML':
-    case 'BODY':
-      return element.ownerDocument.body;
-    case '#document':
-      return element.body;
-  }
-
-  // Firefox want us to check `-x` and `-y` variations as well
-
-  var _getStyleComputedProp = getStyleComputedProperty(element),
-      overflow = _getStyleComputedProp.overflow,
-      overflowX = _getStyleComputedProp.overflowX,
-      overflowY = _getStyleComputedProp.overflowY;
-
-  if (/(auto|scroll)/.test(overflow + overflowY + overflowX)) {
-    return element;
-  }
-
-  return getScrollParent(getParentNode(element));
-}
-
-/**
- * Returns the offset parent of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Element} offset parent
- */
-function getOffsetParent(element) {
-  // NOTE: 1 DOM access here
-  var offsetParent = element && element.offsetParent;
-  var nodeName = offsetParent && offsetParent.nodeName;
-
-  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
-    if (element) {
-      return element.ownerDocument.documentElement;
-    }
-
-    return window.document.documentElement;
-  }
-
-  // .offsetParent will return the closest TD or TABLE in case
-  // no offsetParent is present, I hate this job...
-  if (['TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
-    return getOffsetParent(offsetParent);
-  }
-
-  return offsetParent;
-}
-
-function isOffsetContainer(element) {
-  var nodeName = element.nodeName;
-
-  if (nodeName === 'BODY') {
-    return false;
-  }
-  return nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element;
-}
-
-/**
- * Finds the root node (document, shadowDOM root) of the given element
- * @method
- * @memberof Popper.Utils
- * @argument {Element} node
- * @returns {Element} root node
- */
-function getRoot(node) {
-  if (node.parentNode !== null) {
-    return getRoot(node.parentNode);
-  }
-
-  return node;
-}
-
-/**
- * Finds the offset parent common to the two provided nodes
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element1
- * @argument {Element} element2
- * @returns {Element} common offset parent
- */
-function findCommonOffsetParent(element1, element2) {
-  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
-  if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
-    return window.document.documentElement;
-  }
-
-  // Here we make sure to give as "start" the element that comes first in the DOM
-  var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
-  var start = order ? element1 : element2;
-  var end = order ? element2 : element1;
-
-  // Get common ancestor container
-  var range = document.createRange();
-  range.setStart(start, 0);
-  range.setEnd(end, 0);
-  var commonAncestorContainer = range.commonAncestorContainer;
-
-  // Both nodes are inside #document
-
-  if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
-    if (isOffsetContainer(commonAncestorContainer)) {
-      return commonAncestorContainer;
-    }
-
-    return getOffsetParent(commonAncestorContainer);
-  }
-
-  // one of the nodes is inside shadowDOM, find which one
-  var element1root = getRoot(element1);
-  if (element1root.host) {
-    return findCommonOffsetParent(element1root.host, element2);
-  } else {
-    return findCommonOffsetParent(element1, getRoot(element2).host);
-  }
-}
-
-/**
- * Gets the scroll value of the given element in the given side (top and left)
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @argument {String} side `top` or `left`
- * @returns {number} amount of scrolled pixels
- */
-function getScroll(element) {
-  var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'top';
-
-  var upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
-  var nodeName = element.nodeName;
-
-  if (nodeName === 'BODY' || nodeName === 'HTML') {
-    var html = element.ownerDocument.documentElement;
-    var scrollingElement = element.ownerDocument.scrollingElement || html;
-    return scrollingElement[upperSide];
-  }
-
-  return element[upperSide];
-}
-
-/*
- * Sum or subtract the element scroll values (left and top) from a given rect object
- * @method
- * @memberof Popper.Utils
- * @param {Object} rect - Rect object you want to change
- * @param {HTMLElement} element - The element from the function reads the scroll values
- * @param {Boolean} subtract - set to true if you want to subtract the scroll values
- * @return {Object} rect - The modifier rect object
- */
-function includeScroll(rect, element) {
-  var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-
-  var scrollTop = getScroll(element, 'top');
-  var scrollLeft = getScroll(element, 'left');
-  var modifier = subtract ? -1 : 1;
-  rect.top += scrollTop * modifier;
-  rect.bottom += scrollTop * modifier;
-  rect.left += scrollLeft * modifier;
-  rect.right += scrollLeft * modifier;
-  return rect;
-}
-
-/*
- * Helper to detect borders of a given element
- * @method
- * @memberof Popper.Utils
- * @param {CSSStyleDeclaration} styles
- * Result of `getStyleComputedProperty` on the given element
- * @param {String} axis - `x` or `y`
- * @return {number} borders - The borders size of the given axis
- */
-
-function getBordersSize(styles, axis) {
-  var sideA = axis === 'x' ? 'Left' : 'Top';
-  var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
-
-  return +styles['border' + sideA + 'Width'].split('px')[0] + +styles['border' + sideB + 'Width'].split('px')[0];
-}
-
-/**
- * Tells if you are running Internet Explorer 10
- * @method
- * @memberof Popper.Utils
- * @returns {Boolean} isIE10
- */
-var isIE10 = undefined;
-
-var isIE10$1 = function () {
-  if (isIE10 === undefined) {
-    isIE10 = navigator.appVersion.indexOf('MSIE 10') !== -1;
-  }
-  return isIE10;
-};
-
-function getSize(axis, body, html, computedStyle) {
-  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE10$1() ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
-}
-
-function getWindowSizes() {
-  var body = window.document.body;
-  var html = window.document.documentElement;
-  var computedStyle = isIE10$1() && window.getComputedStyle(html);
-
-  return {
-    height: getSize('Height', body, html, computedStyle),
-    width: getSize('Width', body, html, computedStyle)
-  };
-}
-
-var classCallCheck = function (instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-};
-
-var createClass = function () {
-  function defineProperties(target, props) {
-    for (var i = 0; i < props.length; i++) {
-      var descriptor = props[i];
-      descriptor.enumerable = descriptor.enumerable || false;
-      descriptor.configurable = true;
-      if ("value" in descriptor) descriptor.writable = true;
-      Object.defineProperty(target, descriptor.key, descriptor);
-    }
-  }
-
-  return function (Constructor, protoProps, staticProps) {
-    if (protoProps) defineProperties(Constructor.prototype, protoProps);
-    if (staticProps) defineProperties(Constructor, staticProps);
-    return Constructor;
-  };
-}();
-
-
-
-
-
-var defineProperty = function (obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-};
-
-var _extends = Object.assign || function (target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i];
-
-    for (var key in source) {
-      if (Object.prototype.hasOwnProperty.call(source, key)) {
-        target[key] = source[key];
-      }
-    }
-  }
-
-  return target;
-};
-
-/**
- * Given element offsets, generate an output similar to getBoundingClientRect
- * @method
- * @memberof Popper.Utils
- * @argument {Object} offsets
- * @returns {Object} ClientRect like output
- */
-function getClientRect(offsets) {
-  return _extends({}, offsets, {
-    right: offsets.left + offsets.width,
-    bottom: offsets.top + offsets.height
-  });
-}
-
-/**
- * Get bounding client rect of given element
- * @method
- * @memberof Popper.Utils
- * @param {HTMLElement} element
- * @return {Object} client rect
- */
-function getBoundingClientRect(element) {
-  var rect = {};
-
-  // IE10 10 FIX: Please, don't ask, the element isn't
-  // considered in DOM in some circumstances...
-  // This isn't reproducible in IE10 compatibility mode of IE11
-  if (isIE10$1()) {
-    try {
-      rect = element.getBoundingClientRect();
-      var scrollTop = getScroll(element, 'top');
-      var scrollLeft = getScroll(element, 'left');
-      rect.top += scrollTop;
-      rect.left += scrollLeft;
-      rect.bottom += scrollTop;
-      rect.right += scrollLeft;
-    } catch (err) {}
-  } else {
-    rect = element.getBoundingClientRect();
-  }
-
-  var result = {
-    left: rect.left,
-    top: rect.top,
-    width: rect.right - rect.left,
-    height: rect.bottom - rect.top
-  };
-
-  // subtract scrollbar size from sizes
-  var sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
-  var width = sizes.width || element.clientWidth || result.right - result.left;
-  var height = sizes.height || element.clientHeight || result.bottom - result.top;
-
-  var horizScrollbar = element.offsetWidth - width;
-  var vertScrollbar = element.offsetHeight - height;
-
-  // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
-  // we make this check conditional for performance reasons
-  if (horizScrollbar || vertScrollbar) {
-    var styles = getStyleComputedProperty(element);
-    horizScrollbar -= getBordersSize(styles, 'x');
-    vertScrollbar -= getBordersSize(styles, 'y');
-
-    result.width -= horizScrollbar;
-    result.height -= vertScrollbar;
-  }
-
-  return getClientRect(result);
-}
-
-function getOffsetRectRelativeToArbitraryNode(children, parent) {
-  var isIE10 = isIE10$1();
-  var isHTML = parent.nodeName === 'HTML';
-  var childrenRect = getBoundingClientRect(children);
-  var parentRect = getBoundingClientRect(parent);
-  var scrollParent = getScrollParent(children);
-
-  var styles = getStyleComputedProperty(parent);
-  var borderTopWidth = +styles.borderTopWidth.split('px')[0];
-  var borderLeftWidth = +styles.borderLeftWidth.split('px')[0];
-
-  var offsets = getClientRect({
-    top: childrenRect.top - parentRect.top - borderTopWidth,
-    left: childrenRect.left - parentRect.left - borderLeftWidth,
-    width: childrenRect.width,
-    height: childrenRect.height
-  });
-  offsets.marginTop = 0;
-  offsets.marginLeft = 0;
-
-  // Subtract margins of documentElement in case it's being used as parent
-  // we do this only on HTML because it's the only element that behaves
-  // differently when margins are applied to it. The margins are included in
-  // the box of the documentElement, in the other cases not.
-  if (!isIE10 && isHTML) {
-    var marginTop = +styles.marginTop.split('px')[0];
-    var marginLeft = +styles.marginLeft.split('px')[0];
-
-    offsets.top -= borderTopWidth - marginTop;
-    offsets.bottom -= borderTopWidth - marginTop;
-    offsets.left -= borderLeftWidth - marginLeft;
-    offsets.right -= borderLeftWidth - marginLeft;
-
-    // Attach marginTop and marginLeft because in some circumstances we may need them
-    offsets.marginTop = marginTop;
-    offsets.marginLeft = marginLeft;
-  }
-
-  if (isIE10 ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
-    offsets = includeScroll(offsets, parent);
-  }
-
-  return offsets;
-}
-
-function getViewportOffsetRectRelativeToArtbitraryNode(element) {
-  var html = element.ownerDocument.documentElement;
-  var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
-  var width = Math.max(html.clientWidth, window.innerWidth || 0);
-  var height = Math.max(html.clientHeight, window.innerHeight || 0);
-
-  var scrollTop = getScroll(html);
-  var scrollLeft = getScroll(html, 'left');
-
-  var offset = {
-    top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
-    left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
-    width: width,
-    height: height
-  };
-
-  return getClientRect(offset);
-}
-
-/**
- * Check if the given element is fixed or is inside a fixed parent
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @argument {Element} customContainer
- * @returns {Boolean} answer to "isFixed?"
- */
-function isFixed(element) {
-  var nodeName = element.nodeName;
-  if (nodeName === 'BODY' || nodeName === 'HTML') {
-    return false;
-  }
-  if (getStyleComputedProperty(element, 'position') === 'fixed') {
-    return true;
-  }
-  return isFixed(getParentNode(element));
-}
-
-/**
- * Computed the boundaries limits and return them
- * @method
- * @memberof Popper.Utils
- * @param {HTMLElement} popper
- * @param {HTMLElement} reference
- * @param {number} padding
- * @param {HTMLElement} boundariesElement - Element used to define the boundaries
- * @returns {Object} Coordinates of the boundaries
- */
-function getBoundaries(popper, reference, padding, boundariesElement) {
-  // NOTE: 1 DOM access here
-  var boundaries = { top: 0, left: 0 };
-  var offsetParent = findCommonOffsetParent(popper, reference);
-
-  // Handle viewport case
-  if (boundariesElement === 'viewport') {
-    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent);
-  } else {
-    // Handle other cases based on DOM element used as boundaries
-    var boundariesNode = void 0;
-    if (boundariesElement === 'scrollParent') {
-      boundariesNode = getScrollParent(getParentNode(popper));
-      if (boundariesNode.nodeName === 'BODY') {
-        boundariesNode = popper.ownerDocument.documentElement;
-      }
-    } else if (boundariesElement === 'window') {
-      boundariesNode = popper.ownerDocument.documentElement;
-    } else {
-      boundariesNode = boundariesElement;
-    }
-
-    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent);
-
-    // In case of HTML, we need a different computation
-    if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
-      var _getWindowSizes = getWindowSizes(),
-          height = _getWindowSizes.height,
-          width = _getWindowSizes.width;
-
-      boundaries.top += offsets.top - offsets.marginTop;
-      boundaries.bottom = height + offsets.top;
-      boundaries.left += offsets.left - offsets.marginLeft;
-      boundaries.right = width + offsets.left;
-    } else {
-      // for all the other DOM elements, this one is good
-      boundaries = offsets;
-    }
-  }
-
-  // Add paddings
-  boundaries.left += padding;
-  boundaries.top += padding;
-  boundaries.right -= padding;
-  boundaries.bottom -= padding;
-
-  return boundaries;
-}
-
-function getArea(_ref) {
-  var width = _ref.width,
-      height = _ref.height;
-
-  return width * height;
-}
-
-/**
- * Utility used to transform the `auto` placement to the placement with more
- * available space.
- * @method
- * @memberof Popper.Utils
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
-  var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
-
-  if (placement.indexOf('auto') === -1) {
-    return placement;
-  }
-
-  var boundaries = getBoundaries(popper, reference, padding, boundariesElement);
-
-  var rects = {
-    top: {
-      width: boundaries.width,
-      height: refRect.top - boundaries.top
-    },
-    right: {
-      width: boundaries.right - refRect.right,
-      height: boundaries.height
-    },
-    bottom: {
-      width: boundaries.width,
-      height: boundaries.bottom - refRect.bottom
-    },
-    left: {
-      width: refRect.left - boundaries.left,
-      height: boundaries.height
-    }
-  };
-
-  var sortedAreas = Object.keys(rects).map(function (key) {
-    return _extends({
-      key: key
-    }, rects[key], {
-      area: getArea(rects[key])
-    });
-  }).sort(function (a, b) {
-    return b.area - a.area;
-  });
-
-  var filteredAreas = sortedAreas.filter(function (_ref2) {
-    var width = _ref2.width,
-        height = _ref2.height;
-    return width >= popper.clientWidth && height >= popper.clientHeight;
-  });
-
-  var computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].key : sortedAreas[0].key;
-
-  var variation = placement.split('-')[1];
-
-  return computedPlacement + (variation ? '-' + variation : '');
-}
-
-/**
- * Get offsets to the reference element
- * @method
- * @memberof Popper.Utils
- * @param {Object} state
- * @param {Element} popper - the popper element
- * @param {Element} reference - the reference element (the popper will be relative to this)
- * @returns {Object} An object containing the offsets which will be applied to the popper
- */
-function getReferenceOffsets(state, popper, reference) {
-  var commonOffsetParent = findCommonOffsetParent(popper, reference);
-  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent);
-}
-
-/**
- * Get the outer sizes of the given element (offset size + margins)
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element
- * @returns {Object} object containing width and height properties
- */
-function getOuterSizes(element) {
-  var styles = window.getComputedStyle(element);
-  var x = parseFloat(styles.marginTop) + parseFloat(styles.marginBottom);
-  var y = parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
-  var result = {
-    width: element.offsetWidth + y,
-    height: element.offsetHeight + x
-  };
-  return result;
-}
-
-/**
- * Get the opposite placement of the given one
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement
- * @returns {String} flipped placement
- */
-function getOppositePlacement(placement) {
-  var hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
-  return placement.replace(/left|right|bottom|top/g, function (matched) {
-    return hash[matched];
-  });
-}
-
-/**
- * Get offsets to the popper
- * @method
- * @memberof Popper.Utils
- * @param {Object} position - CSS position the Popper will get applied
- * @param {HTMLElement} popper - the popper element
- * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
- * @param {String} placement - one of the valid placement options
- * @returns {Object} popperOffsets - An object containing the offsets which will be applied to the popper
- */
-function getPopperOffsets(popper, referenceOffsets, placement) {
-  placement = placement.split('-')[0];
-
-  // Get popper node sizes
-  var popperRect = getOuterSizes(popper);
-
-  // Add position, width and height to our offsets object
-  var popperOffsets = {
-    width: popperRect.width,
-    height: popperRect.height
-  };
-
-  // depending by the popper placement we have to compute its offsets slightly differently
-  var isHoriz = ['right', 'left'].indexOf(placement) !== -1;
-  var mainSide = isHoriz ? 'top' : 'left';
-  var secondarySide = isHoriz ? 'left' : 'top';
-  var measurement = isHoriz ? 'height' : 'width';
-  var secondaryMeasurement = !isHoriz ? 'height' : 'width';
-
-  popperOffsets[mainSide] = referenceOffsets[mainSide] + referenceOffsets[measurement] / 2 - popperRect[measurement] / 2;
-  if (placement === secondarySide) {
-    popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
-  } else {
-    popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
-  }
-
-  return popperOffsets;
-}
-
-/**
- * Mimics the `find` method of Array
- * @method
- * @memberof Popper.Utils
- * @argument {Array} arr
- * @argument prop
- * @argument value
- * @returns index or -1
- */
-function find(arr, check) {
-  // use native find if supported
-  if (Array.prototype.find) {
-    return arr.find(check);
-  }
-
-  // use `filter` to obtain the same behavior of `find`
-  return arr.filter(check)[0];
-}
-
-/**
- * Return the index of the matching object
- * @method
- * @memberof Popper.Utils
- * @argument {Array} arr
- * @argument prop
- * @argument value
- * @returns index or -1
- */
-function findIndex(arr, prop, value) {
-  // use native findIndex if supported
-  if (Array.prototype.findIndex) {
-    return arr.findIndex(function (cur) {
-      return cur[prop] === value;
-    });
-  }
-
-  // use `find` + `indexOf` if `findIndex` isn't supported
-  var match = find(arr, function (obj) {
-    return obj[prop] === value;
-  });
-  return arr.indexOf(match);
-}
-
-/**
- * Loop trough the list of modifiers and run them in order,
- * each of them will then edit the data object.
- * @method
- * @memberof Popper.Utils
- * @param {dataObject} data
- * @param {Array} modifiers
- * @param {String} ends - Optional modifier name used as stopper
- * @returns {dataObject}
- */
-function runModifiers(modifiers, data, ends) {
-  var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, 'name', ends));
-
-  modifiersToRun.forEach(function (modifier) {
-    if (modifier['function']) {
-      // eslint-disable-line dot-notation
-      console.warn('`modifier.function` is deprecated, use `modifier.fn`!');
-    }
-    var fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
-    if (modifier.enabled && isFunction(fn)) {
-      // Add properties to offsets to make them a complete clientRect object
-      // we do this before each modifier to make sure the previous one doesn't
-      // mess with these values
-      data.offsets.popper = getClientRect(data.offsets.popper);
-      data.offsets.reference = getClientRect(data.offsets.reference);
-
-      data = fn(data, modifier);
-    }
-  });
-
-  return data;
-}
-
-/**
- * Updates the position of the popper, computing the new offsets and applying
- * the new style.<br />
- * Prefer `scheduleUpdate` over `update` because of performance reasons.
- * @method
- * @memberof Popper
- */
-function update() {
-  // if popper is destroyed, don't perform any further update
-  if (this.state.isDestroyed) {
-    return;
-  }
-
-  var data = {
-    instance: this,
-    styles: {},
-    arrowStyles: {},
-    attributes: {},
-    flipped: false,
-    offsets: {}
-  };
-
-  // compute reference element offsets
-  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference);
-
-  // compute auto placement, store placement inside the data object,
-  // modifiers will be able to edit `placement` if needed
-  // and refer to originalPlacement to know the original value
-  data.placement = computeAutoPlacement(this.options.placement, data.offsets.reference, this.popper, this.reference, this.options.modifiers.flip.boundariesElement, this.options.modifiers.flip.padding);
-
-  // store the computed placement inside `originalPlacement`
-  data.originalPlacement = data.placement;
-
-  // compute the popper offsets
-  data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
-  data.offsets.popper.position = 'absolute';
-
-  // run the modifiers
-  data = runModifiers(this.modifiers, data);
-
-  // the first `update` will call `onCreate` callback
-  // the other ones will call `onUpdate` callback
-  if (!this.state.isCreated) {
-    this.state.isCreated = true;
-    this.options.onCreate(data);
-  } else {
-    this.options.onUpdate(data);
-  }
-}
-
-/**
- * Helper used to know if the given modifier is enabled.
- * @method
- * @memberof Popper.Utils
- * @returns {Boolean}
- */
-function isModifierEnabled(modifiers, modifierName) {
-  return modifiers.some(function (_ref) {
-    var name = _ref.name,
-        enabled = _ref.enabled;
-    return enabled && name === modifierName;
-  });
-}
-
-/**
- * Get the prefixed supported property name
- * @method
- * @memberof Popper.Utils
- * @argument {String} property (camelCase)
- * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
- */
-function getSupportedPropertyName(property) {
-  var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];
-  var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
-
-  for (var i = 0; i < prefixes.length - 1; i++) {
-    var prefix = prefixes[i];
-    var toCheck = prefix ? '' + prefix + upperProp : property;
-    if (typeof window.document.body.style[toCheck] !== 'undefined') {
-      return toCheck;
-    }
-  }
-  return null;
-}
-
-/**
- * Destroy the popper
- * @method
- * @memberof Popper
- */
-function destroy() {
-  this.state.isDestroyed = true;
-
-  // touch DOM only if `applyStyle` modifier is enabled
-  if (isModifierEnabled(this.modifiers, 'applyStyle')) {
-    this.popper.removeAttribute('x-placement');
-    this.popper.style.left = '';
-    this.popper.style.position = '';
-    this.popper.style.top = '';
-    this.popper.style[getSupportedPropertyName('transform')] = '';
-  }
-
-  this.disableEventListeners();
-
-  // remove the popper if user explicity asked for the deletion on destroy
-  // do not use `remove` because IE11 doesn't support it
-  if (this.options.removeOnDestroy) {
-    this.popper.parentNode.removeChild(this.popper);
-  }
-  return this;
-}
-
-/**
- * Get the window associated with the element
- * @argument {Element} element
- * @returns {Window}
- */
-function getWindow(element) {
-  var ownerDocument = element.ownerDocument;
-  return ownerDocument ? ownerDocument.defaultView : window;
-}
-
-function attachToScrollParents(scrollParent, event, callback, scrollParents) {
-  var isBody = scrollParent.nodeName === 'BODY';
-  var target = isBody ? scrollParent.ownerDocument.defaultView : scrollParent;
-  target.addEventListener(event, callback, { passive: true });
-
-  if (!isBody) {
-    attachToScrollParents(getScrollParent(target.parentNode), event, callback, scrollParents);
-  }
-  scrollParents.push(target);
-}
-
-/**
- * Setup needed event listeners used to update the popper position
- * @method
- * @memberof Popper.Utils
- * @private
- */
-function setupEventListeners(reference, options, state, updateBound) {
-  // Resize event listener on window
-  state.updateBound = updateBound;
-  getWindow(reference).addEventListener('resize', state.updateBound, { passive: true });
-
-  // Scroll event listener on scroll parents
-  var scrollElement = getScrollParent(reference);
-  attachToScrollParents(scrollElement, 'scroll', state.updateBound, state.scrollParents);
-  state.scrollElement = scrollElement;
-  state.eventsEnabled = true;
-
-  return state;
-}
-
-/**
- * It will add resize/scroll events and start recalculating
- * position of the popper element when they are triggered.
- * @method
- * @memberof Popper
- */
-function enableEventListeners() {
-  if (!this.state.eventsEnabled) {
-    this.state = setupEventListeners(this.reference, this.options, this.state, this.scheduleUpdate);
-  }
-}
-
-/**
- * Remove event listeners used to update the popper position
- * @method
- * @memberof Popper.Utils
- * @private
- */
-function removeEventListeners(reference, state) {
-  // Remove resize event listener on window
-  getWindow(reference).removeEventListener('resize', state.updateBound);
-
-  // Remove scroll event listener on scroll parents
-  state.scrollParents.forEach(function (target) {
-    target.removeEventListener('scroll', state.updateBound);
-  });
-
-  // Reset state
-  state.updateBound = null;
-  state.scrollParents = [];
-  state.scrollElement = null;
-  state.eventsEnabled = false;
-  return state;
-}
-
-/**
- * It will remove resize/scroll events and won't recalculate popper position
- * when they are triggered. It also won't trigger onUpdate callback anymore,
- * unless you call `update` method manually.
- * @method
- * @memberof Popper
- */
-function disableEventListeners() {
-  if (this.state.eventsEnabled) {
-    window.cancelAnimationFrame(this.scheduleUpdate);
-    this.state = removeEventListeners(this.reference, this.state);
-  }
-}
-
-/**
- * Tells if a given input is a number
- * @method
- * @memberof Popper.Utils
- * @param {*} input to check
- * @return {Boolean}
- */
-function isNumeric(n) {
-  return n !== '' && !isNaN(parseFloat(n)) && isFinite(n);
-}
-
-/**
- * Set the style to the given popper
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element - Element to apply the style to
- * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
- */
-function setStyles(element, styles) {
-  Object.keys(styles).forEach(function (prop) {
-    var unit = '';
-    // add unit if the value is numeric and is one of the following
-    if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 && isNumeric(styles[prop])) {
-      unit = 'px';
-    }
-    element.style[prop] = styles[prop] + unit;
-  });
-}
-
-/**
- * Set the attributes to the given popper
- * @method
- * @memberof Popper.Utils
- * @argument {Element} element - Element to apply the attributes to
- * @argument {Object} styles
- * Object with a list of properties and values which will be applied to the element
- */
-function setAttributes(element, attributes) {
-  Object.keys(attributes).forEach(function (prop) {
-    var value = attributes[prop];
-    if (value !== false) {
-      element.setAttribute(prop, attributes[prop]);
-    } else {
-      element.removeAttribute(prop);
-    }
-  });
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} data.styles - List of style properties - values to apply to popper element
- * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The same data object
- */
-function applyStyle(data) {
-  // any property present in `data.styles` will be applied to the popper,
-  // in this way we can make the 3rd party modifiers add custom styles to it
-  // Be aware, modifiers could override the properties defined in the previous
-  // lines of this modifier!
-  setStyles(data.instance.popper, data.styles);
-
-  // any property present in `data.attributes` will be applied to the popper,
-  // they will be set as HTML attributes of the element
-  setAttributes(data.instance.popper, data.attributes);
-
-  // if arrowElement is defined and arrowStyles has some properties
-  if (data.arrowElement && Object.keys(data.arrowStyles).length) {
-    setStyles(data.arrowElement, data.arrowStyles);
-  }
-
-  return data;
-}
-
-/**
- * Set the x-placement attribute before everything else because it could be used
- * to add margins to the popper margins needs to be calculated to get the
- * correct popper offsets.
- * @method
- * @memberof Popper.modifiers
- * @param {HTMLElement} reference - The reference element used to position the popper
- * @param {HTMLElement} popper - The HTML element used as popper.
- * @param {Object} options - Popper.js options
- */
-function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
-  // compute reference element offsets
-  var referenceOffsets = getReferenceOffsets(state, popper, reference);
-
-  // compute auto placement, store placement inside the data object,
-  // modifiers will be able to edit `placement` if needed
-  // and refer to originalPlacement to know the original value
-  var placement = computeAutoPlacement(options.placement, referenceOffsets, popper, reference, options.modifiers.flip.boundariesElement, options.modifiers.flip.padding);
-
-  popper.setAttribute('x-placement', placement);
-
-  // Apply `position` to popper before anything else because
-  // without the position applied we can't guarantee correct computations
-  setStyles(popper, { position: 'absolute' });
-
-  return options;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function computeStyle(data, options) {
-  var x = options.x,
-      y = options.y;
-  var popper = data.offsets.popper;
-
-  // Remove this legacy support in Popper.js v2
-
-  var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
-    return modifier.name === 'applyStyle';
-  }).gpuAcceleration;
-  if (legacyGpuAccelerationOption !== undefined) {
-    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
-  }
-  var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
-
-  var offsetParent = getOffsetParent(data.instance.popper);
-  var offsetParentRect = getBoundingClientRect(offsetParent);
-
-  // Styles
-  var styles = {
-    position: popper.position
-  };
-
-  // floor sides to avoid blurry text
-  var offsets = {
-    left: Math.floor(popper.left),
-    top: Math.floor(popper.top),
-    bottom: Math.floor(popper.bottom),
-    right: Math.floor(popper.right)
-  };
-
-  var sideA = x === 'bottom' ? 'top' : 'bottom';
-  var sideB = y === 'right' ? 'left' : 'right';
-
-  // if gpuAcceleration is set to `true` and transform is supported,
-  //  we use `translate3d` to apply the position to the popper we
-  // automatically use the supported prefixed version if needed
-  var prefixedProperty = getSupportedPropertyName('transform');
-
-  // now, let's make a step back and look at this code closely (wtf?)
-  // If the content of the popper grows once it's been positioned, it
-  // may happen that the popper gets misplaced because of the new content
-  // overflowing its reference element
-  // To avoid this problem, we provide two options (x and y), which allow
-  // the consumer to define the offset origin.
-  // If we position a popper on top of a reference element, we can set
-  // `x` to `top` to make the popper grow towards its top instead of
-  // its bottom.
-  var left = void 0,
-      top = void 0;
-  if (sideA === 'bottom') {
-    top = -offsetParentRect.height + offsets.bottom;
-  } else {
-    top = offsets.top;
-  }
-  if (sideB === 'right') {
-    left = -offsetParentRect.width + offsets.right;
-  } else {
-    left = offsets.left;
-  }
-  if (gpuAcceleration && prefixedProperty) {
-    styles[prefixedProperty] = 'translate3d(' + left + 'px, ' + top + 'px, 0)';
-    styles[sideA] = 0;
-    styles[sideB] = 0;
-    styles.willChange = 'transform';
-  } else {
-    // othwerise, we use the standard `top`, `left`, `bottom` and `right` properties
-    var invertTop = sideA === 'bottom' ? -1 : 1;
-    var invertLeft = sideB === 'right' ? -1 : 1;
-    styles[sideA] = top * invertTop;
-    styles[sideB] = left * invertLeft;
-    styles.willChange = sideA + ', ' + sideB;
-  }
-
-  // Attributes
-  var attributes = {
-    'x-placement': data.placement
-  };
-
-  // Update `data` attributes, styles and arrowStyles
-  data.attributes = _extends({}, attributes, data.attributes);
-  data.styles = _extends({}, styles, data.styles);
-  data.arrowStyles = _extends({}, data.offsets.arrow, data.arrowStyles);
-
-  return data;
-}
-
-/**
- * Helper used to know if the given modifier depends from another one.<br />
- * It checks if the needed modifier is listed and enabled.
- * @method
- * @memberof Popper.Utils
- * @param {Array} modifiers - list of modifiers
- * @param {String} requestingName - name of requesting modifier
- * @param {String} requestedName - name of requested modifier
- * @returns {Boolean}
- */
-function isModifierRequired(modifiers, requestingName, requestedName) {
-  var requesting = find(modifiers, function (_ref) {
-    var name = _ref.name;
-    return name === requestingName;
-  });
-
-  var isRequired = !!requesting && modifiers.some(function (modifier) {
-    return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
-  });
-
-  if (!isRequired) {
-    var _requesting = '`' + requestingName + '`';
-    var requested = '`' + requestedName + '`';
-    console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to include it before ' + _requesting + '!');
-  }
-  return isRequired;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function arrow(data, options) {
-  // arrow depends on keepTogether in order to work
-  if (!isModifierRequired(data.instance.modifiers, 'arrow', 'keepTogether')) {
-    return data;
-  }
-
-  var arrowElement = options.element;
-
-  // if arrowElement is a string, suppose it's a CSS selector
-  if (typeof arrowElement === 'string') {
-    arrowElement = data.instance.popper.querySelector(arrowElement);
-
-    // if arrowElement is not found, don't run the modifier
-    if (!arrowElement) {
-      return data;
-    }
-  } else {
-    // if the arrowElement isn't a query selector we must check that the
-    // provided DOM node is child of its popper node
-    if (!data.instance.popper.contains(arrowElement)) {
-      console.warn('WARNING: `arrow.element` must be child of its popper element!');
-      return data;
-    }
-  }
-
-  var placement = data.placement.split('-')[0];
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var isVertical = ['left', 'right'].indexOf(placement) !== -1;
-
-  var len = isVertical ? 'height' : 'width';
-  var sideCapitalized = isVertical ? 'Top' : 'Left';
-  var side = sideCapitalized.toLowerCase();
-  var altSide = isVertical ? 'left' : 'top';
-  var opSide = isVertical ? 'bottom' : 'right';
-  var arrowElementSize = getOuterSizes(arrowElement)[len];
-
-  //
-  // extends keepTogether behavior making sure the popper and its
-  // reference have enough pixels in conjuction
-  //
-
-  // top/left side
-  if (reference[opSide] - arrowElementSize < popper[side]) {
-    data.offsets.popper[side] -= popper[side] - (reference[opSide] - arrowElementSize);
-  }
-  // bottom/right side
-  if (reference[side] + arrowElementSize > popper[opSide]) {
-    data.offsets.popper[side] += reference[side] + arrowElementSize - popper[opSide];
-  }
-
-  // compute center of the popper
-  var center = reference[side] + reference[len] / 2 - arrowElementSize / 2;
-
-  // Compute the sideValue using the updated popper offsets
-  // take popper margin in account because we don't have this info available
-  var popperMarginSide = getStyleComputedProperty(data.instance.popper, 'margin' + sideCapitalized).replace('px', '');
-  var sideValue = center - getClientRect(data.offsets.popper)[side] - popperMarginSide;
-
-  // prevent arrowElement from being placed not contiguously to its popper
-  sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
-
-  data.arrowElement = arrowElement;
-  data.offsets.arrow = {};
-  data.offsets.arrow[side] = Math.round(sideValue);
-  data.offsets.arrow[altSide] = ''; // make sure to unset any eventual altSide value from the DOM node
-
-  return data;
-}
-
-/**
- * Get the opposite placement variation of the given one
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement variation
- * @returns {String} flipped placement variation
- */
-function getOppositeVariation(variation) {
-  if (variation === 'end') {
-    return 'start';
-  } else if (variation === 'start') {
-    return 'end';
-  }
-  return variation;
-}
-
-/**
- * List of accepted placements to use as values of the `placement` option.<br />
- * Valid placements are:
- * - `auto`
- * - `top`
- * - `right`
- * - `bottom`
- * - `left`
- *
- * Each placement can have a variation from this list:
- * - `-start`
- * - `-end`
- *
- * Variations are interpreted easily if you think of them as the left to right
- * written languages. Horizontally (`top` and `bottom`), `start` is left and `end`
- * is right.<br />
- * Vertically (`left` and `right`), `start` is top and `end` is bottom.
- *
- * Some valid examples are:
- * - `top-end` (on top of reference, right aligned)
- * - `right-start` (on right of reference, top aligned)
- * - `bottom` (on bottom, centered)
- * - `auto-right` (on the side with more space available, alignment depends by placement)
- *
- * @static
- * @type {Array}
- * @enum {String}
- * @readonly
- * @method placements
- * @memberof Popper
- */
-var placements = ['auto-start', 'auto', 'auto-end', 'top-start', 'top', 'top-end', 'right-start', 'right', 'right-end', 'bottom-end', 'bottom', 'bottom-start', 'left-end', 'left', 'left-start'];
-
-// Get rid of `auto` `auto-start` and `auto-end`
-var validPlacements = placements.slice(3);
-
-/**
- * Given an initial placement, returns all the subsequent placements
- * clockwise (or counter-clockwise).
- *
- * @method
- * @memberof Popper.Utils
- * @argument {String} placement - A valid placement (it accepts variations)
- * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
- * @returns {Array} placements including their variations
- */
-function clockwise(placement) {
-  var counter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
-
-  var index = validPlacements.indexOf(placement);
-  var arr = validPlacements.slice(index + 1).concat(validPlacements.slice(0, index));
-  return counter ? arr.reverse() : arr;
-}
-
-var BEHAVIORS = {
-  FLIP: 'flip',
-  CLOCKWISE: 'clockwise',
-  COUNTERCLOCKWISE: 'counterclockwise'
-};
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function flip(data, options) {
-  // if `inner` modifier is enabled, we can't use the `flip` modifier
-  if (isModifierEnabled(data.instance.modifiers, 'inner')) {
-    return data;
-  }
-
-  if (data.flipped && data.placement === data.originalPlacement) {
-    // seems like flip is trying to loop, probably there's not enough space on any of the flippable sides
-    return data;
-  }
-
-  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement);
-
-  var placement = data.placement.split('-')[0];
-  var placementOpposite = getOppositePlacement(placement);
-  var variation = data.placement.split('-')[1] || '';
-
-  var flipOrder = [];
-
-  switch (options.behavior) {
-    case BEHAVIORS.FLIP:
-      flipOrder = [placement, placementOpposite];
-      break;
-    case BEHAVIORS.CLOCKWISE:
-      flipOrder = clockwise(placement);
-      break;
-    case BEHAVIORS.COUNTERCLOCKWISE:
-      flipOrder = clockwise(placement, true);
-      break;
-    default:
-      flipOrder = options.behavior;
-  }
-
-  flipOrder.forEach(function (step, index) {
-    if (placement !== step || flipOrder.length === index + 1) {
-      return data;
-    }
-
-    placement = data.placement.split('-')[0];
-    placementOpposite = getOppositePlacement(placement);
-
-    var popperOffsets = data.offsets.popper;
-    var refOffsets = data.offsets.reference;
-
-    // using floor because the reference offsets may contain decimals we are not going to consider here
-    var floor = Math.floor;
-    var overlapsRef = placement === 'left' && floor(popperOffsets.right) > floor(refOffsets.left) || placement === 'right' && floor(popperOffsets.left) < floor(refOffsets.right) || placement === 'top' && floor(popperOffsets.bottom) > floor(refOffsets.top) || placement === 'bottom' && floor(popperOffsets.top) < floor(refOffsets.bottom);
-
-    var overflowsLeft = floor(popperOffsets.left) < floor(boundaries.left);
-    var overflowsRight = floor(popperOffsets.right) > floor(boundaries.right);
-    var overflowsTop = floor(popperOffsets.top) < floor(boundaries.top);
-    var overflowsBottom = floor(popperOffsets.bottom) > floor(boundaries.bottom);
-
-    var overflowsBoundaries = placement === 'left' && overflowsLeft || placement === 'right' && overflowsRight || placement === 'top' && overflowsTop || placement === 'bottom' && overflowsBottom;
-
-    // flip the variation if required
-    var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
-    var flippedVariation = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
-
-    if (overlapsRef || overflowsBoundaries || flippedVariation) {
-      // this boolean to detect any flip loop
-      data.flipped = true;
-
-      if (overlapsRef || overflowsBoundaries) {
-        placement = flipOrder[index + 1];
-      }
-
-      if (flippedVariation) {
-        variation = getOppositeVariation(variation);
-      }
-
-      data.placement = placement + (variation ? '-' + variation : '');
-
-      // this object contains `position`, we want to preserve it along with
-      // any additional property we may add in the future
-      data.offsets.popper = _extends({}, data.offsets.popper, getPopperOffsets(data.instance.popper, data.offsets.reference, data.placement));
-
-      data = runModifiers(data.instance.modifiers, data, 'flip');
-    }
-  });
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function keepTogether(data) {
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var placement = data.placement.split('-')[0];
-  var floor = Math.floor;
-  var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
-  var side = isVertical ? 'right' : 'bottom';
-  var opSide = isVertical ? 'left' : 'top';
-  var measurement = isVertical ? 'width' : 'height';
-
-  if (popper[side] < floor(reference[opSide])) {
-    data.offsets.popper[opSide] = floor(reference[opSide]) - popper[measurement];
-  }
-  if (popper[opSide] > floor(reference[side])) {
-    data.offsets.popper[opSide] = floor(reference[side]);
-  }
-
-  return data;
-}
-
-/**
- * Converts a string containing value + unit into a px value number
- * @function
- * @memberof {modifiers~offset}
- * @private
- * @argument {String} str - Value + unit string
- * @argument {String} measurement - `height` or `width`
- * @argument {Object} popperOffsets
- * @argument {Object} referenceOffsets
- * @returns {Number|String}
- * Value in pixels, or original string if no values were extracted
- */
-function toValue(str, measurement, popperOffsets, referenceOffsets) {
-  // separate value from unit
-  var split = str.match(/((?:\-|\+)?\d*\.?\d*)(.*)/);
-  var value = +split[1];
-  var unit = split[2];
-
-  // If it's not a number it's an operator, I guess
-  if (!value) {
-    return str;
-  }
-
-  if (unit.indexOf('%') === 0) {
-    var element = void 0;
-    switch (unit) {
-      case '%p':
-        element = popperOffsets;
-        break;
-      case '%':
-      case '%r':
-      default:
-        element = referenceOffsets;
-    }
-
-    var rect = getClientRect(element);
-    return rect[measurement] / 100 * value;
-  } else if (unit === 'vh' || unit === 'vw') {
-    // if is a vh or vw, we calculate the size based on the viewport
-    var size = void 0;
-    if (unit === 'vh') {
-      size = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    } else {
-      size = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-    }
-    return size / 100 * value;
-  } else {
-    // if is an explicit pixel unit, we get rid of the unit and keep the value
-    // if is an implicit unit, it's px, and we return just the value
-    return value;
-  }
-}
-
-/**
- * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
- * @function
- * @memberof {modifiers~offset}
- * @private
- * @argument {String} offset
- * @argument {Object} popperOffsets
- * @argument {Object} referenceOffsets
- * @argument {String} basePlacement
- * @returns {Array} a two cells array with x and y offsets in numbers
- */
-function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
-  var offsets = [0, 0];
-
-  // Use height if placement is left or right and index is 0 otherwise use width
-  // in this way the first offset will use an axis and the second one
-  // will use the other one
-  var useHeight = ['right', 'left'].indexOf(basePlacement) !== -1;
-
-  // Split the offset string to obtain a list of values and operands
-  // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
-  var fragments = offset.split(/(\+|\-)/).map(function (frag) {
-    return frag.trim();
-  });
-
-  // Detect if the offset string contains a pair of values or a single one
-  // they could be separated by comma or space
-  var divider = fragments.indexOf(find(fragments, function (frag) {
-    return frag.search(/,|\s/) !== -1;
-  }));
-
-  if (fragments[divider] && fragments[divider].indexOf(',') === -1) {
-    console.warn('Offsets separated by white space(s) are deprecated, use a comma (,) instead.');
-  }
-
-  // If divider is found, we divide the list of values and operands to divide
-  // them by ofset X and Y.
-  var splitRegex = /\s*,\s*|\s+/;
-  var ops = divider !== -1 ? [fragments.slice(0, divider).concat([fragments[divider].split(splitRegex)[0]]), [fragments[divider].split(splitRegex)[1]].concat(fragments.slice(divider + 1))] : [fragments];
-
-  // Convert the values with units to absolute pixels to allow our computations
-  ops = ops.map(function (op, index) {
-    // Most of the units rely on the orientation of the popper
-    var measurement = (index === 1 ? !useHeight : useHeight) ? 'height' : 'width';
-    var mergeWithPrevious = false;
-    return op
-    // This aggregates any `+` or `-` sign that aren't considered operators
-    // e.g.: 10 + +5 => [10, +, +5]
-    .reduce(function (a, b) {
-      if (a[a.length - 1] === '' && ['+', '-'].indexOf(b) !== -1) {
-        a[a.length - 1] = b;
-        mergeWithPrevious = true;
-        return a;
-      } else if (mergeWithPrevious) {
-        a[a.length - 1] += b;
-        mergeWithPrevious = false;
-        return a;
-      } else {
-        return a.concat(b);
-      }
-    }, [])
-    // Here we convert the string values into number values (in px)
-    .map(function (str) {
-      return toValue(str, measurement, popperOffsets, referenceOffsets);
-    });
-  });
-
-  // Loop trough the offsets arrays and execute the operations
-  ops.forEach(function (op, index) {
-    op.forEach(function (frag, index2) {
-      if (isNumeric(frag)) {
-        offsets[index] += frag * (op[index2 - 1] === '-' ? -1 : 1);
-      }
-    });
-  });
-  return offsets;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @argument {Number|String} options.offset=0
- * The offset value as described in the modifier description
- * @returns {Object} The data object, properly modified
- */
-function offset(data, _ref) {
-  var offset = _ref.offset;
-  var placement = data.placement,
-      _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var basePlacement = placement.split('-')[0];
-
-  var offsets = void 0;
-  if (isNumeric(+offset)) {
-    offsets = [+offset, 0];
-  } else {
-    offsets = parseOffset(offset, popper, reference, basePlacement);
-  }
-
-  if (basePlacement === 'left') {
-    popper.top += offsets[0];
-    popper.left -= offsets[1];
-  } else if (basePlacement === 'right') {
-    popper.top += offsets[0];
-    popper.left += offsets[1];
-  } else if (basePlacement === 'top') {
-    popper.left += offsets[0];
-    popper.top -= offsets[1];
-  } else if (basePlacement === 'bottom') {
-    popper.left += offsets[0];
-    popper.top += offsets[1];
-  }
-
-  data.popper = popper;
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function preventOverflow(data, options) {
-  var boundariesElement = options.boundariesElement || getOffsetParent(data.instance.popper);
-
-  // If offsetParent is the reference element, we really want to
-  // go one step up and use the next offsetParent as reference to
-  // avoid to make this modifier completely useless and look like broken
-  if (data.instance.reference === boundariesElement) {
-    boundariesElement = getOffsetParent(boundariesElement);
-  }
-
-  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement);
-  options.boundaries = boundaries;
-
-  var order = options.priority;
-  var popper = data.offsets.popper;
-
-  var check = {
-    primary: function primary(placement) {
-      var value = popper[placement];
-      if (popper[placement] < boundaries[placement] && !options.escapeWithReference) {
-        value = Math.max(popper[placement], boundaries[placement]);
-      }
-      return defineProperty({}, placement, value);
-    },
-    secondary: function secondary(placement) {
-      var mainSide = placement === 'right' ? 'left' : 'top';
-      var value = popper[mainSide];
-      if (popper[placement] > boundaries[placement] && !options.escapeWithReference) {
-        value = Math.min(popper[mainSide], boundaries[placement] - (placement === 'right' ? popper.width : popper.height));
-      }
-      return defineProperty({}, mainSide, value);
-    }
-  };
-
-  order.forEach(function (placement) {
-    var side = ['left', 'top'].indexOf(placement) !== -1 ? 'primary' : 'secondary';
-    popper = _extends({}, popper, check[side](placement));
-  });
-
-  data.offsets.popper = popper;
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function shift(data) {
-  var placement = data.placement;
-  var basePlacement = placement.split('-')[0];
-  var shiftvariation = placement.split('-')[1];
-
-  // if shift shiftvariation is specified, run the modifier
-  if (shiftvariation) {
-    var _data$offsets = data.offsets,
-        reference = _data$offsets.reference,
-        popper = _data$offsets.popper;
-
-    var isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
-    var side = isVertical ? 'left' : 'top';
-    var measurement = isVertical ? 'width' : 'height';
-
-    var shiftOffsets = {
-      start: defineProperty({}, side, reference[side]),
-      end: defineProperty({}, side, reference[side] + reference[measurement] - popper[measurement])
-    };
-
-    data.offsets.popper = _extends({}, popper, shiftOffsets[shiftvariation]);
-  }
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by update method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function hide(data) {
-  if (!isModifierRequired(data.instance.modifiers, 'hide', 'preventOverflow')) {
-    return data;
-  }
-
-  var refRect = data.offsets.reference;
-  var bound = find(data.instance.modifiers, function (modifier) {
-    return modifier.name === 'preventOverflow';
-  }).boundaries;
-
-  if (refRect.bottom < bound.top || refRect.left > bound.right || refRect.top > bound.bottom || refRect.right < bound.left) {
-    // Avoid unnecessary DOM access if visibility hasn't changed
-    if (data.hide === true) {
-      return data;
-    }
-
-    data.hide = true;
-    data.attributes['x-out-of-boundaries'] = '';
-  } else {
-    // Avoid unnecessary DOM access if visibility hasn't changed
-    if (data.hide === false) {
-      return data;
-    }
-
-    data.hide = false;
-    data.attributes['x-out-of-boundaries'] = false;
-  }
-
-  return data;
-}
-
-/**
- * @function
- * @memberof Modifiers
- * @argument {Object} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {Object} The data object, properly modified
- */
-function inner(data) {
-  var placement = data.placement;
-  var basePlacement = placement.split('-')[0];
-  var _data$offsets = data.offsets,
-      popper = _data$offsets.popper,
-      reference = _data$offsets.reference;
-
-  var isHoriz = ['left', 'right'].indexOf(basePlacement) !== -1;
-
-  var subtractLength = ['top', 'left'].indexOf(basePlacement) === -1;
-
-  popper[isHoriz ? 'left' : 'top'] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? 'width' : 'height'] : 0);
-
-  data.placement = getOppositePlacement(placement);
-  data.offsets.popper = getClientRect(popper);
-
-  return data;
-}
-
-/**
- * Modifier function, each modifier can have a function of this type assigned
- * to its `fn` property.<br />
- * These functions will be called on each update, this means that you must
- * make sure they are performant enough to avoid performance bottlenecks.
- *
- * @function ModifierFn
- * @argument {dataObject} data - The data object generated by `update` method
- * @argument {Object} options - Modifiers configuration and options
- * @returns {dataObject} The data object, properly modified
- */
-
-/**
- * Modifiers are plugins used to alter the behavior of your poppers.<br />
- * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
- * needed by the library.
- *
- * Usually you don't want to override the `order`, `fn` and `onLoad` props.
- * All the other properties are configurations that could be tweaked.
- * @namespace modifiers
- */
-var modifiers = {
-  /**
-   * Modifier used to shift the popper on the start or end of its reference
-   * element.<br />
-   * It will read the variation of the `placement` property.<br />
-   * It can be one either `-end` or `-start`.
-   * @memberof modifiers
-   * @inner
-   */
-  shift: {
-    /** @prop {number} order=100 - Index used to define the order of execution */
-    order: 100,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: shift
-  },
-
-  /**
-   * The `offset` modifier can shift your popper on both its axis.
-   *
-   * It accepts the following units:
-   * - `px` or unitless, interpreted as pixels
-   * - `%` or `%r`, percentage relative to the length of the reference element
-   * - `%p`, percentage relative to the length of the popper element
-   * - `vw`, CSS viewport width unit
-   * - `vh`, CSS viewport height unit
-   *
-   * For length is intended the main axis relative to the placement of the popper.<br />
-   * This means that if the placement is `top` or `bottom`, the length will be the
-   * `width`. In case of `left` or `right`, it will be the height.
-   *
-   * You can provide a single value (as `Number` or `String`), or a pair of values
-   * as `String` divided by a comma or one (or more) white spaces.<br />
-   * The latter is a deprecated method because it leads to confusion and will be
-   * removed in v2.<br />
-   * Additionally, it accepts additions and subtractions between different units.
-   * Note that multiplications and divisions aren't supported.
-   *
-   * Valid examples are:
-   * ```
-   * 10
-   * '10%'
-   * '10, 10'
-   * '10%, 10'
-   * '10 + 10%'
-   * '10 - 5vh + 3%'
-   * '-10px + 5vh, 5px - 6%'
-   * ```
-   * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
-   * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
-   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  offset: {
-    /** @prop {number} order=200 - Index used to define the order of execution */
-    order: 200,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: offset,
-    /** @prop {Number|String} offset=0
-     * The offset value as described in the modifier description
-     */
-    offset: 0
-  },
-
-  /**
-   * Modifier used to prevent the popper from being positioned outside the boundary.
-   *
-   * An scenario exists where the reference itself is not within the boundaries.<br />
-   * We can say it has "escaped the boundaries" — or just "escaped".<br />
-   * In this case we need to decide whether the popper should either:
-   *
-   * - detach from the reference and remain "trapped" in the boundaries, or
-   * - if it should ignore the boundary and "escape with its reference"
-   *
-   * When `escapeWithReference` is set to`true` and reference is completely
-   * outside its boundaries, the popper will overflow (or completely leave)
-   * the boundaries in order to remain attached to the edge of the reference.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  preventOverflow: {
-    /** @prop {number} order=300 - Index used to define the order of execution */
-    order: 300,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: preventOverflow,
-    /**
-     * @prop {Array} [priority=['left','right','top','bottom']]
-     * Popper will try to prevent overflow following these priorities by default,
-     * then, it could overflow on the left and on top of the `boundariesElement`
-     */
-    priority: ['left', 'right', 'top', 'bottom'],
-    /**
-     * @prop {number} padding=5
-     * Amount of pixel used to define a minimum distance between the boundaries
-     * and the popper this makes sure the popper has always a little padding
-     * between the edges of its container
-     */
-    padding: 5,
-    /**
-     * @prop {String|HTMLElement} boundariesElement='scrollParent'
-     * Boundaries used by the modifier, can be `scrollParent`, `window`,
-     * `viewport` or any DOM element.
-     */
-    boundariesElement: 'scrollParent'
-  },
-
-  /**
-   * Modifier used to make sure the reference and its popper stay near eachothers
-   * without leaving any gap between the two. Expecially useful when the arrow is
-   * enabled and you want to assure it to point to its reference element.
-   * It cares only about the first axis, you can still have poppers with margin
-   * between the popper and its reference element.
-   * @memberof modifiers
-   * @inner
-   */
-  keepTogether: {
-    /** @prop {number} order=400 - Index used to define the order of execution */
-    order: 400,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: keepTogether
-  },
-
-  /**
-   * This modifier is used to move the `arrowElement` of the popper to make
-   * sure it is positioned between the reference element and its popper element.
-   * It will read the outer size of the `arrowElement` node to detect how many
-   * pixels of conjuction are needed.
-   *
-   * It has no effect if no `arrowElement` is provided.
-   * @memberof modifiers
-   * @inner
-   */
-  arrow: {
-    /** @prop {number} order=500 - Index used to define the order of execution */
-    order: 500,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: arrow,
-    /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */
-    element: '[x-arrow]'
-  },
-
-  /**
-   * Modifier used to flip the popper's placement when it starts to overlap its
-   * reference element.
-   *
-   * Requires the `preventOverflow` modifier before it in order to work.
-   *
-   * **NOTE:** this modifier will interrupt the current update cycle and will
-   * restart it if it detects the need to flip the placement.
-   * @memberof modifiers
-   * @inner
-   */
-  flip: {
-    /** @prop {number} order=600 - Index used to define the order of execution */
-    order: 600,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: flip,
-    /**
-     * @prop {String|Array} behavior='flip'
-     * The behavior used to change the popper's placement. It can be one of
-     * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
-     * placements (with optional variations).
-     */
-    behavior: 'flip',
-    /**
-     * @prop {number} padding=5
-     * The popper will flip if it hits the edges of the `boundariesElement`
-     */
-    padding: 5,
-    /**
-     * @prop {String|HTMLElement} boundariesElement='viewport'
-     * The element which will define the boundaries of the popper position,
-     * the popper will never be placed outside of the defined boundaries
-     * (except if keepTogether is enabled)
-     */
-    boundariesElement: 'viewport'
-  },
-
-  /**
-   * Modifier used to make the popper flow toward the inner of the reference element.
-   * By default, when this modifier is disabled, the popper will be placed outside
-   * the reference element.
-   * @memberof modifiers
-   * @inner
-   */
-  inner: {
-    /** @prop {number} order=700 - Index used to define the order of execution */
-    order: 700,
-    /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */
-    enabled: false,
-    /** @prop {ModifierFn} */
-    fn: inner
-  },
-
-  /**
-   * Modifier used to hide the popper when its reference element is outside of the
-   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
-   * be used to hide with a CSS selector the popper when its reference is
-   * out of boundaries.
-   *
-   * Requires the `preventOverflow` modifier before it in order to work.
-   * @memberof modifiers
-   * @inner
-   */
-  hide: {
-    /** @prop {number} order=800 - Index used to define the order of execution */
-    order: 800,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: hide
-  },
-
-  /**
-   * Computes the style that will be applied to the popper element to gets
-   * properly positioned.
-   *
-   * Note that this modifier will not touch the DOM, it just prepares the styles
-   * so that `applyStyle` modifier can apply it. This separation is useful
-   * in case you need to replace `applyStyle` with a custom implementation.
-   *
-   * This modifier has `850` as `order` value to maintain backward compatibility
-   * with previous versions of Popper.js. Expect the modifiers ordering method
-   * to change in future major versions of the library.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  computeStyle: {
-    /** @prop {number} order=850 - Index used to define the order of execution */
-    order: 850,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: computeStyle,
-    /**
-     * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
-     */
-    gpuAcceleration: true,
-    /**
-     * @prop {string} [x='bottom']
-     * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
-     * Change this if your popper should grow in a direction different from `bottom`
-     */
-    x: 'bottom',
-    /**
-     * @prop {string} [x='left']
-     * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
-     * Change this if your popper should grow in a direction different from `right`
-     */
-    y: 'right'
-  },
-
-  /**
-   * Applies the computed styles to the popper element.
-   *
-   * All the DOM manipulations are limited to this modifier. This is useful in case
-   * you want to integrate Popper.js inside a framework or view library and you
-   * want to delegate all the DOM manipulations to it.
-   *
-   * Note that if you disable this modifier, you must make sure the popper element
-   * has its position set to `absolute` before Popper.js can do its work!
-   *
-   * Just disable this modifier and define you own to achieve the desired effect.
-   *
-   * @memberof modifiers
-   * @inner
-   */
-  applyStyle: {
-    /** @prop {number} order=900 - Index used to define the order of execution */
-    order: 900,
-    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
-    enabled: true,
-    /** @prop {ModifierFn} */
-    fn: applyStyle,
-    /** @prop {Function} */
-    onLoad: applyStyleOnLoad,
-    /**
-     * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
-     * @prop {Boolean} gpuAcceleration=true
-     * If true, it uses the CSS 3d transformation to position the popper.
-     * Otherwise, it will use the `top` and `left` properties.
-     */
-    gpuAcceleration: undefined
-  }
-};
-
-/**
- * The `dataObject` is an object containing all the informations used by Popper.js
- * this object get passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
- * @name dataObject
- * @property {Object} data.instance The Popper.js instance
- * @property {String} data.placement Placement applied to popper
- * @property {String} data.originalPlacement Placement originally defined on init
- * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
- * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper.
- * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
- * @property {Object} data.styles Any CSS property defined here will be applied to the popper, it expects the JavaScript nomenclature (eg. `marginBottom`)
- * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow, it expects the JavaScript nomenclature (eg. `marginBottom`)
- * @property {Object} data.boundaries Offsets of the popper boundaries
- * @property {Object} data.offsets The measurements of popper, reference and arrow elements.
- * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
- * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
- * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
- */
-
-/**
- * Default options provided to Popper.js constructor.<br />
- * These can be overriden using the `options` argument of Popper.js.<br />
- * To override an option, simply pass as 3rd argument an object with the same
- * structure of this object, example:
- * ```
- * new Popper(ref, pop, {
- *   modifiers: {
- *     preventOverflow: { enabled: false }
- *   }
- * })
- * ```
- * @type {Object}
- * @static
- * @memberof Popper
- */
-var Defaults = {
-  /**
-   * Popper's placement
-   * @prop {Popper.placements} placement='bottom'
-   */
-  placement: 'bottom',
-
-  /**
-   * Whether events (resize, scroll) are initially enabled
-   * @prop {Boolean} eventsEnabled=true
-   */
-  eventsEnabled: true,
-
-  /**
-   * Set to true if you want to automatically remove the popper when
-   * you call the `destroy` method.
-   * @prop {Boolean} removeOnDestroy=false
-   */
-  removeOnDestroy: false,
-
-  /**
-   * Callback called when the popper is created.<br />
-   * By default, is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
-   * @prop {onCreate}
-   */
-  onCreate: function onCreate() {},
-
-  /**
-   * Callback called when the popper is updated, this callback is not called
-   * on the initialization/creation of the popper, but only on subsequent
-   * updates.<br />
-   * By default, is set to no-op.<br />
-   * Access Popper.js instance with `data.instance`.
-   * @prop {onUpdate}
-   */
-  onUpdate: function onUpdate() {},
-
-  /**
-   * List of modifiers used to modify the offsets before they are applied to the popper.
-   * They provide most of the functionalities of Popper.js
-   * @prop {modifiers}
-   */
-  modifiers: modifiers
-};
-
-/**
- * @callback onCreate
- * @param {dataObject} data
- */
-
-/**
- * @callback onUpdate
- * @param {dataObject} data
- */
-
-// Utils
-// Methods
-var Popper = function () {
-  /**
-   * Create a new Popper.js instance
-   * @class Popper
-   * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
-   * @param {HTMLElement} popper - The HTML element used as popper.
-   * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
-   * @return {Object} instance - The generated Popper.js instance
-   */
-  function Popper(reference, popper) {
-    var _this = this;
-
-    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-    classCallCheck(this, Popper);
-
-    this.scheduleUpdate = function () {
-      return requestAnimationFrame(_this.update);
-    };
-
-    // make update() debounced, so that it only runs at most once-per-tick
-    this.update = debounce(this.update.bind(this));
-
-    // with {} we create a new object with the options inside it
-    this.options = _extends({}, Popper.Defaults, options);
-
-    // init state
-    this.state = {
-      isDestroyed: false,
-      isCreated: false,
-      scrollParents: []
-    };
-
-    // get reference and popper elements (allow jQuery wrappers)
-    this.reference = reference && reference.jquery ? reference[0] : reference;
-    this.popper = popper && popper.jquery ? popper[0] : popper;
-
-    // Deep merge modifiers options
-    this.options.modifiers = {};
-    Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function (name) {
-      _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
-    });
-
-    // Refactoring modifiers' list (Object => Array)
-    this.modifiers = Object.keys(this.options.modifiers).map(function (name) {
-      return _extends({
-        name: name
-      }, _this.options.modifiers[name]);
-    })
-    // sort the modifiers by order
-    .sort(function (a, b) {
-      return a.order - b.order;
-    });
-
-    // modifiers have the ability to execute arbitrary code when Popper.js get inited
-    // such code is executed in the same order of its modifier
-    // they could add new properties to their options configuration
-    // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
-    this.modifiers.forEach(function (modifierOptions) {
-      if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) {
-        modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
-      }
-    });
-
-    // fire the first update to position the popper in the right place
-    this.update();
-
-    var eventsEnabled = this.options.eventsEnabled;
-    if (eventsEnabled) {
-      // setup event listeners, they will take care of update the position in specific situations
-      this.enableEventListeners();
-    }
-
-    this.state.eventsEnabled = eventsEnabled;
-  }
-
-  // We can't use class properties because they don't get listed in the
-  // class prototype and break stuff like Sinon stubs
-
-
-  createClass(Popper, [{
-    key: 'update',
-    value: function update$$1() {
-      return update.call(this);
-    }
-  }, {
-    key: 'destroy',
-    value: function destroy$$1() {
-      return destroy.call(this);
-    }
-  }, {
-    key: 'enableEventListeners',
-    value: function enableEventListeners$$1() {
-      return enableEventListeners.call(this);
-    }
-  }, {
-    key: 'disableEventListeners',
-    value: function disableEventListeners$$1() {
-      return disableEventListeners.call(this);
-    }
-
-    /**
-     * Schedule an update, it will run on the next UI update available
-     * @method scheduleUpdate
-     * @memberof Popper
-     */
-
-
-    /**
-     * Collection of utilities useful when writing custom modifiers.
-     * Starting from version 1.7, this method is available only if you
-     * include `popper-utils.js` before `popper.js`.
-     *
-     * **DEPRECATION**: This way to access PopperUtils is deprecated
-     * and will be removed in v2! Use the PopperUtils module directly instead.
-     * Due to the high instability of the methods contained in Utils, we can't
-     * guarantee them to follow semver. Use them at your own risk!
-     * @static
-     * @private
-     * @type {Object}
-     * @deprecated since version 1.8
-     * @member Utils
-     * @memberof Popper
-     */
-
-  }]);
-  return Popper;
-}();
-
-/**
- * The `referenceObject` is an object that provides an interface compatible with Popper.js
- * and lets you use it as replacement of a real DOM node.<br />
- * You can use this method to position a popper relatively to a set of coordinates
- * in case you don't have a DOM node to use as reference.
- *
- * ```
- * new Popper(referenceObject, popperNode);
- * ```
- *
- * NB: This feature isn't supported in Internet Explorer 10
- * @name referenceObject
- * @property {Function} data.getBoundingClientRect
- * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
- * @property {number} data.clientWidth
- * An ES6 getter that will return the width of the virtual reference element.
- * @property {number} data.clientHeight
- * An ES6 getter that will return the height of the virtual reference element.
- */
-
-
-Popper.Utils = (typeof window !== 'undefined' ? window : global).PopperUtils;
-Popper.placements = placements;
-Popper.Defaults = Defaults;
-
-/* harmony default export */ __webpack_exports__["a"] = (Popper);
-//# sourceMappingURL=popper.js.map
-
-/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 10)))
-
-/***/ }),
-/* 12 */
 /*!*********************************************!*\
   !*** ./node_modules/vue/dist/vue.common.js ***!
   \*********************************************/
@@ -14784,7 +12337,2454 @@ Vue$3.compile = compileToFunctions;
 
 module.exports = Vue$3;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../../timers-browserify/main.js */ 62).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../../timers-browserify/main.js */ 63).setImmediate))
+
+/***/ }),
+/* 12 */
+/*!***************************************************!*\
+  !*** ./node_modules/popper.js/dist/esm/popper.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.12.6
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+var isBrowser = typeof window !== 'undefined' && typeof window.document !== 'undefined';
+var longerTimeoutBrowsers = ['Edge', 'Trident', 'Firefox'];
+var timeoutDuration = 0;
+for (var i = 0; i < longerTimeoutBrowsers.length; i += 1) {
+  if (isBrowser && navigator.userAgent.indexOf(longerTimeoutBrowsers[i]) >= 0) {
+    timeoutDuration = 1;
+    break;
+  }
+}
+
+function microtaskDebounce(fn) {
+  var called = false;
+  return function () {
+    if (called) {
+      return;
+    }
+    called = true;
+    Promise.resolve().then(function () {
+      called = false;
+      fn();
+    });
+  };
+}
+
+function taskDebounce(fn) {
+  var scheduled = false;
+  return function () {
+    if (!scheduled) {
+      scheduled = true;
+      setTimeout(function () {
+        scheduled = false;
+        fn();
+      }, timeoutDuration);
+    }
+  };
+}
+
+var supportsMicroTasks = isBrowser && window.Promise;
+
+/**
+* Create a debounced version of a method, that's asynchronously deferred
+* but called in the minimum time possible.
+*
+* @method
+* @memberof Popper.Utils
+* @argument {Function} fn
+* @returns {Function}
+*/
+var debounce = supportsMicroTasks ? microtaskDebounce : taskDebounce;
+
+/**
+ * Check if the given variable is a function
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Any} functionToCheck - variable to check
+ * @returns {Boolean} answer to: is a function?
+ */
+function isFunction(functionToCheck) {
+  var getType = {};
+  return functionToCheck && getType.toString.call(functionToCheck) === '[object Function]';
+}
+
+/**
+ * Get CSS computed property of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Eement} element
+ * @argument {String} property
+ */
+function getStyleComputedProperty(element, property) {
+  if (element.nodeType !== 1) {
+    return [];
+  }
+  // NOTE: 1 DOM access here
+  var css = window.getComputedStyle(element, null);
+  return property ? css[property] : css;
+}
+
+/**
+ * Returns the parentNode or the host of the element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} parent
+ */
+function getParentNode(element) {
+  if (element.nodeName === 'HTML') {
+    return element;
+  }
+  return element.parentNode || element.host;
+}
+
+/**
+ * Returns the scrolling parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} scroll parent
+ */
+function getScrollParent(element) {
+  // Return body, `getScroll` will take care to get the correct `scrollTop` from it
+  if (!element) {
+    return window.document.body;
+  }
+
+  switch (element.nodeName) {
+    case 'HTML':
+    case 'BODY':
+      return element.ownerDocument.body;
+    case '#document':
+      return element.body;
+  }
+
+  // Firefox want us to check `-x` and `-y` variations as well
+
+  var _getStyleComputedProp = getStyleComputedProperty(element),
+      overflow = _getStyleComputedProp.overflow,
+      overflowX = _getStyleComputedProp.overflowX,
+      overflowY = _getStyleComputedProp.overflowY;
+
+  if (/(auto|scroll)/.test(overflow + overflowY + overflowX)) {
+    return element;
+  }
+
+  return getScrollParent(getParentNode(element));
+}
+
+/**
+ * Returns the offset parent of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Element} offset parent
+ */
+function getOffsetParent(element) {
+  // NOTE: 1 DOM access here
+  var offsetParent = element && element.offsetParent;
+  var nodeName = offsetParent && offsetParent.nodeName;
+
+  if (!nodeName || nodeName === 'BODY' || nodeName === 'HTML') {
+    if (element) {
+      return element.ownerDocument.documentElement;
+    }
+
+    return window.document.documentElement;
+  }
+
+  // .offsetParent will return the closest TD or TABLE in case
+  // no offsetParent is present, I hate this job...
+  if (['TD', 'TABLE'].indexOf(offsetParent.nodeName) !== -1 && getStyleComputedProperty(offsetParent, 'position') === 'static') {
+    return getOffsetParent(offsetParent);
+  }
+
+  return offsetParent;
+}
+
+function isOffsetContainer(element) {
+  var nodeName = element.nodeName;
+
+  if (nodeName === 'BODY') {
+    return false;
+  }
+  return nodeName === 'HTML' || getOffsetParent(element.firstElementChild) === element;
+}
+
+/**
+ * Finds the root node (document, shadowDOM root) of the given element
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} node
+ * @returns {Element} root node
+ */
+function getRoot(node) {
+  if (node.parentNode !== null) {
+    return getRoot(node.parentNode);
+  }
+
+  return node;
+}
+
+/**
+ * Finds the offset parent common to the two provided nodes
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element1
+ * @argument {Element} element2
+ * @returns {Element} common offset parent
+ */
+function findCommonOffsetParent(element1, element2) {
+  // This check is needed to avoid errors in case one of the elements isn't defined for any reason
+  if (!element1 || !element1.nodeType || !element2 || !element2.nodeType) {
+    return window.document.documentElement;
+  }
+
+  // Here we make sure to give as "start" the element that comes first in the DOM
+  var order = element1.compareDocumentPosition(element2) & Node.DOCUMENT_POSITION_FOLLOWING;
+  var start = order ? element1 : element2;
+  var end = order ? element2 : element1;
+
+  // Get common ancestor container
+  var range = document.createRange();
+  range.setStart(start, 0);
+  range.setEnd(end, 0);
+  var commonAncestorContainer = range.commonAncestorContainer;
+
+  // Both nodes are inside #document
+
+  if (element1 !== commonAncestorContainer && element2 !== commonAncestorContainer || start.contains(end)) {
+    if (isOffsetContainer(commonAncestorContainer)) {
+      return commonAncestorContainer;
+    }
+
+    return getOffsetParent(commonAncestorContainer);
+  }
+
+  // one of the nodes is inside shadowDOM, find which one
+  var element1root = getRoot(element1);
+  if (element1root.host) {
+    return findCommonOffsetParent(element1root.host, element2);
+  } else {
+    return findCommonOffsetParent(element1, getRoot(element2).host);
+  }
+}
+
+/**
+ * Gets the scroll value of the given element in the given side (top and left)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {String} side `top` or `left`
+ * @returns {number} amount of scrolled pixels
+ */
+function getScroll(element) {
+  var side = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'top';
+
+  var upperSide = side === 'top' ? 'scrollTop' : 'scrollLeft';
+  var nodeName = element.nodeName;
+
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    var html = element.ownerDocument.documentElement;
+    var scrollingElement = element.ownerDocument.scrollingElement || html;
+    return scrollingElement[upperSide];
+  }
+
+  return element[upperSide];
+}
+
+/*
+ * Sum or subtract the element scroll values (left and top) from a given rect object
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} rect - Rect object you want to change
+ * @param {HTMLElement} element - The element from the function reads the scroll values
+ * @param {Boolean} subtract - set to true if you want to subtract the scroll values
+ * @return {Object} rect - The modifier rect object
+ */
+function includeScroll(rect, element) {
+  var subtract = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+
+  var scrollTop = getScroll(element, 'top');
+  var scrollLeft = getScroll(element, 'left');
+  var modifier = subtract ? -1 : 1;
+  rect.top += scrollTop * modifier;
+  rect.bottom += scrollTop * modifier;
+  rect.left += scrollLeft * modifier;
+  rect.right += scrollLeft * modifier;
+  return rect;
+}
+
+/*
+ * Helper to detect borders of a given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {CSSStyleDeclaration} styles
+ * Result of `getStyleComputedProperty` on the given element
+ * @param {String} axis - `x` or `y`
+ * @return {number} borders - The borders size of the given axis
+ */
+
+function getBordersSize(styles, axis) {
+  var sideA = axis === 'x' ? 'Left' : 'Top';
+  var sideB = sideA === 'Left' ? 'Right' : 'Bottom';
+
+  return +styles['border' + sideA + 'Width'].split('px')[0] + +styles['border' + sideB + 'Width'].split('px')[0];
+}
+
+/**
+ * Tells if you are running Internet Explorer 10
+ * @method
+ * @memberof Popper.Utils
+ * @returns {Boolean} isIE10
+ */
+var isIE10 = undefined;
+
+var isIE10$1 = function () {
+  if (isIE10 === undefined) {
+    isIE10 = navigator.appVersion.indexOf('MSIE 10') !== -1;
+  }
+  return isIE10;
+};
+
+function getSize(axis, body, html, computedStyle) {
+  return Math.max(body['offset' + axis], body['scroll' + axis], html['client' + axis], html['offset' + axis], html['scroll' + axis], isIE10$1() ? html['offset' + axis] + computedStyle['margin' + (axis === 'Height' ? 'Top' : 'Left')] + computedStyle['margin' + (axis === 'Height' ? 'Bottom' : 'Right')] : 0);
+}
+
+function getWindowSizes() {
+  var body = window.document.body;
+  var html = window.document.documentElement;
+  var computedStyle = isIE10$1() && window.getComputedStyle(html);
+
+  return {
+    height: getSize('Height', body, html, computedStyle),
+    width: getSize('Width', body, html, computedStyle)
+  };
+}
+
+var classCallCheck = function (instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+};
+
+var createClass = function () {
+  function defineProperties(target, props) {
+    for (var i = 0; i < props.length; i++) {
+      var descriptor = props[i];
+      descriptor.enumerable = descriptor.enumerable || false;
+      descriptor.configurable = true;
+      if ("value" in descriptor) descriptor.writable = true;
+      Object.defineProperty(target, descriptor.key, descriptor);
+    }
+  }
+
+  return function (Constructor, protoProps, staticProps) {
+    if (protoProps) defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) defineProperties(Constructor, staticProps);
+    return Constructor;
+  };
+}();
+
+
+
+
+
+var defineProperty = function (obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+};
+
+var _extends = Object.assign || function (target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i];
+
+    for (var key in source) {
+      if (Object.prototype.hasOwnProperty.call(source, key)) {
+        target[key] = source[key];
+      }
+    }
+  }
+
+  return target;
+};
+
+/**
+ * Given element offsets, generate an output similar to getBoundingClientRect
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} offsets
+ * @returns {Object} ClientRect like output
+ */
+function getClientRect(offsets) {
+  return _extends({}, offsets, {
+    right: offsets.left + offsets.width,
+    bottom: offsets.top + offsets.height
+  });
+}
+
+/**
+ * Get bounding client rect of given element
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} element
+ * @return {Object} client rect
+ */
+function getBoundingClientRect(element) {
+  var rect = {};
+
+  // IE10 10 FIX: Please, don't ask, the element isn't
+  // considered in DOM in some circumstances...
+  // This isn't reproducible in IE10 compatibility mode of IE11
+  if (isIE10$1()) {
+    try {
+      rect = element.getBoundingClientRect();
+      var scrollTop = getScroll(element, 'top');
+      var scrollLeft = getScroll(element, 'left');
+      rect.top += scrollTop;
+      rect.left += scrollLeft;
+      rect.bottom += scrollTop;
+      rect.right += scrollLeft;
+    } catch (err) {}
+  } else {
+    rect = element.getBoundingClientRect();
+  }
+
+  var result = {
+    left: rect.left,
+    top: rect.top,
+    width: rect.right - rect.left,
+    height: rect.bottom - rect.top
+  };
+
+  // subtract scrollbar size from sizes
+  var sizes = element.nodeName === 'HTML' ? getWindowSizes() : {};
+  var width = sizes.width || element.clientWidth || result.right - result.left;
+  var height = sizes.height || element.clientHeight || result.bottom - result.top;
+
+  var horizScrollbar = element.offsetWidth - width;
+  var vertScrollbar = element.offsetHeight - height;
+
+  // if an hypothetical scrollbar is detected, we must be sure it's not a `border`
+  // we make this check conditional for performance reasons
+  if (horizScrollbar || vertScrollbar) {
+    var styles = getStyleComputedProperty(element);
+    horizScrollbar -= getBordersSize(styles, 'x');
+    vertScrollbar -= getBordersSize(styles, 'y');
+
+    result.width -= horizScrollbar;
+    result.height -= vertScrollbar;
+  }
+
+  return getClientRect(result);
+}
+
+function getOffsetRectRelativeToArbitraryNode(children, parent) {
+  var isIE10 = isIE10$1();
+  var isHTML = parent.nodeName === 'HTML';
+  var childrenRect = getBoundingClientRect(children);
+  var parentRect = getBoundingClientRect(parent);
+  var scrollParent = getScrollParent(children);
+
+  var styles = getStyleComputedProperty(parent);
+  var borderTopWidth = +styles.borderTopWidth.split('px')[0];
+  var borderLeftWidth = +styles.borderLeftWidth.split('px')[0];
+
+  var offsets = getClientRect({
+    top: childrenRect.top - parentRect.top - borderTopWidth,
+    left: childrenRect.left - parentRect.left - borderLeftWidth,
+    width: childrenRect.width,
+    height: childrenRect.height
+  });
+  offsets.marginTop = 0;
+  offsets.marginLeft = 0;
+
+  // Subtract margins of documentElement in case it's being used as parent
+  // we do this only on HTML because it's the only element that behaves
+  // differently when margins are applied to it. The margins are included in
+  // the box of the documentElement, in the other cases not.
+  if (!isIE10 && isHTML) {
+    var marginTop = +styles.marginTop.split('px')[0];
+    var marginLeft = +styles.marginLeft.split('px')[0];
+
+    offsets.top -= borderTopWidth - marginTop;
+    offsets.bottom -= borderTopWidth - marginTop;
+    offsets.left -= borderLeftWidth - marginLeft;
+    offsets.right -= borderLeftWidth - marginLeft;
+
+    // Attach marginTop and marginLeft because in some circumstances we may need them
+    offsets.marginTop = marginTop;
+    offsets.marginLeft = marginLeft;
+  }
+
+  if (isIE10 ? parent.contains(scrollParent) : parent === scrollParent && scrollParent.nodeName !== 'BODY') {
+    offsets = includeScroll(offsets, parent);
+  }
+
+  return offsets;
+}
+
+function getViewportOffsetRectRelativeToArtbitraryNode(element) {
+  var html = element.ownerDocument.documentElement;
+  var relativeOffset = getOffsetRectRelativeToArbitraryNode(element, html);
+  var width = Math.max(html.clientWidth, window.innerWidth || 0);
+  var height = Math.max(html.clientHeight, window.innerHeight || 0);
+
+  var scrollTop = getScroll(html);
+  var scrollLeft = getScroll(html, 'left');
+
+  var offset = {
+    top: scrollTop - relativeOffset.top + relativeOffset.marginTop,
+    left: scrollLeft - relativeOffset.left + relativeOffset.marginLeft,
+    width: width,
+    height: height
+  };
+
+  return getClientRect(offset);
+}
+
+/**
+ * Check if the given element is fixed or is inside a fixed parent
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @argument {Element} customContainer
+ * @returns {Boolean} answer to "isFixed?"
+ */
+function isFixed(element) {
+  var nodeName = element.nodeName;
+  if (nodeName === 'BODY' || nodeName === 'HTML') {
+    return false;
+  }
+  if (getStyleComputedProperty(element, 'position') === 'fixed') {
+    return true;
+  }
+  return isFixed(getParentNode(element));
+}
+
+/**
+ * Computed the boundaries limits and return them
+ * @method
+ * @memberof Popper.Utils
+ * @param {HTMLElement} popper
+ * @param {HTMLElement} reference
+ * @param {number} padding
+ * @param {HTMLElement} boundariesElement - Element used to define the boundaries
+ * @returns {Object} Coordinates of the boundaries
+ */
+function getBoundaries(popper, reference, padding, boundariesElement) {
+  // NOTE: 1 DOM access here
+  var boundaries = { top: 0, left: 0 };
+  var offsetParent = findCommonOffsetParent(popper, reference);
+
+  // Handle viewport case
+  if (boundariesElement === 'viewport') {
+    boundaries = getViewportOffsetRectRelativeToArtbitraryNode(offsetParent);
+  } else {
+    // Handle other cases based on DOM element used as boundaries
+    var boundariesNode = void 0;
+    if (boundariesElement === 'scrollParent') {
+      boundariesNode = getScrollParent(getParentNode(popper));
+      if (boundariesNode.nodeName === 'BODY') {
+        boundariesNode = popper.ownerDocument.documentElement;
+      }
+    } else if (boundariesElement === 'window') {
+      boundariesNode = popper.ownerDocument.documentElement;
+    } else {
+      boundariesNode = boundariesElement;
+    }
+
+    var offsets = getOffsetRectRelativeToArbitraryNode(boundariesNode, offsetParent);
+
+    // In case of HTML, we need a different computation
+    if (boundariesNode.nodeName === 'HTML' && !isFixed(offsetParent)) {
+      var _getWindowSizes = getWindowSizes(),
+          height = _getWindowSizes.height,
+          width = _getWindowSizes.width;
+
+      boundaries.top += offsets.top - offsets.marginTop;
+      boundaries.bottom = height + offsets.top;
+      boundaries.left += offsets.left - offsets.marginLeft;
+      boundaries.right = width + offsets.left;
+    } else {
+      // for all the other DOM elements, this one is good
+      boundaries = offsets;
+    }
+  }
+
+  // Add paddings
+  boundaries.left += padding;
+  boundaries.top += padding;
+  boundaries.right -= padding;
+  boundaries.bottom -= padding;
+
+  return boundaries;
+}
+
+function getArea(_ref) {
+  var width = _ref.width,
+      height = _ref.height;
+
+  return width * height;
+}
+
+/**
+ * Utility used to transform the `auto` placement to the placement with more
+ * available space.
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function computeAutoPlacement(placement, refRect, popper, reference, boundariesElement) {
+  var padding = arguments.length > 5 && arguments[5] !== undefined ? arguments[5] : 0;
+
+  if (placement.indexOf('auto') === -1) {
+    return placement;
+  }
+
+  var boundaries = getBoundaries(popper, reference, padding, boundariesElement);
+
+  var rects = {
+    top: {
+      width: boundaries.width,
+      height: refRect.top - boundaries.top
+    },
+    right: {
+      width: boundaries.right - refRect.right,
+      height: boundaries.height
+    },
+    bottom: {
+      width: boundaries.width,
+      height: boundaries.bottom - refRect.bottom
+    },
+    left: {
+      width: refRect.left - boundaries.left,
+      height: boundaries.height
+    }
+  };
+
+  var sortedAreas = Object.keys(rects).map(function (key) {
+    return _extends({
+      key: key
+    }, rects[key], {
+      area: getArea(rects[key])
+    });
+  }).sort(function (a, b) {
+    return b.area - a.area;
+  });
+
+  var filteredAreas = sortedAreas.filter(function (_ref2) {
+    var width = _ref2.width,
+        height = _ref2.height;
+    return width >= popper.clientWidth && height >= popper.clientHeight;
+  });
+
+  var computedPlacement = filteredAreas.length > 0 ? filteredAreas[0].key : sortedAreas[0].key;
+
+  var variation = placement.split('-')[1];
+
+  return computedPlacement + (variation ? '-' + variation : '');
+}
+
+/**
+ * Get offsets to the reference element
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} state
+ * @param {Element} popper - the popper element
+ * @param {Element} reference - the reference element (the popper will be relative to this)
+ * @returns {Object} An object containing the offsets which will be applied to the popper
+ */
+function getReferenceOffsets(state, popper, reference) {
+  var commonOffsetParent = findCommonOffsetParent(popper, reference);
+  return getOffsetRectRelativeToArbitraryNode(reference, commonOffsetParent);
+}
+
+/**
+ * Get the outer sizes of the given element (offset size + margins)
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element
+ * @returns {Object} object containing width and height properties
+ */
+function getOuterSizes(element) {
+  var styles = window.getComputedStyle(element);
+  var x = parseFloat(styles.marginTop) + parseFloat(styles.marginBottom);
+  var y = parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
+  var result = {
+    width: element.offsetWidth + y,
+    height: element.offsetHeight + x
+  };
+  return result;
+}
+
+/**
+ * Get the opposite placement of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement
+ * @returns {String} flipped placement
+ */
+function getOppositePlacement(placement) {
+  var hash = { left: 'right', right: 'left', bottom: 'top', top: 'bottom' };
+  return placement.replace(/left|right|bottom|top/g, function (matched) {
+    return hash[matched];
+  });
+}
+
+/**
+ * Get offsets to the popper
+ * @method
+ * @memberof Popper.Utils
+ * @param {Object} position - CSS position the Popper will get applied
+ * @param {HTMLElement} popper - the popper element
+ * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
+ * @param {String} placement - one of the valid placement options
+ * @returns {Object} popperOffsets - An object containing the offsets which will be applied to the popper
+ */
+function getPopperOffsets(popper, referenceOffsets, placement) {
+  placement = placement.split('-')[0];
+
+  // Get popper node sizes
+  var popperRect = getOuterSizes(popper);
+
+  // Add position, width and height to our offsets object
+  var popperOffsets = {
+    width: popperRect.width,
+    height: popperRect.height
+  };
+
+  // depending by the popper placement we have to compute its offsets slightly differently
+  var isHoriz = ['right', 'left'].indexOf(placement) !== -1;
+  var mainSide = isHoriz ? 'top' : 'left';
+  var secondarySide = isHoriz ? 'left' : 'top';
+  var measurement = isHoriz ? 'height' : 'width';
+  var secondaryMeasurement = !isHoriz ? 'height' : 'width';
+
+  popperOffsets[mainSide] = referenceOffsets[mainSide] + referenceOffsets[measurement] / 2 - popperRect[measurement] / 2;
+  if (placement === secondarySide) {
+    popperOffsets[secondarySide] = referenceOffsets[secondarySide] - popperRect[secondaryMeasurement];
+  } else {
+    popperOffsets[secondarySide] = referenceOffsets[getOppositePlacement(secondarySide)];
+  }
+
+  return popperOffsets;
+}
+
+/**
+ * Mimics the `find` method of Array
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */
+function find(arr, check) {
+  // use native find if supported
+  if (Array.prototype.find) {
+    return arr.find(check);
+  }
+
+  // use `filter` to obtain the same behavior of `find`
+  return arr.filter(check)[0];
+}
+
+/**
+ * Return the index of the matching object
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Array} arr
+ * @argument prop
+ * @argument value
+ * @returns index or -1
+ */
+function findIndex(arr, prop, value) {
+  // use native findIndex if supported
+  if (Array.prototype.findIndex) {
+    return arr.findIndex(function (cur) {
+      return cur[prop] === value;
+    });
+  }
+
+  // use `find` + `indexOf` if `findIndex` isn't supported
+  var match = find(arr, function (obj) {
+    return obj[prop] === value;
+  });
+  return arr.indexOf(match);
+}
+
+/**
+ * Loop trough the list of modifiers and run them in order,
+ * each of them will then edit the data object.
+ * @method
+ * @memberof Popper.Utils
+ * @param {dataObject} data
+ * @param {Array} modifiers
+ * @param {String} ends - Optional modifier name used as stopper
+ * @returns {dataObject}
+ */
+function runModifiers(modifiers, data, ends) {
+  var modifiersToRun = ends === undefined ? modifiers : modifiers.slice(0, findIndex(modifiers, 'name', ends));
+
+  modifiersToRun.forEach(function (modifier) {
+    if (modifier['function']) {
+      // eslint-disable-line dot-notation
+      console.warn('`modifier.function` is deprecated, use `modifier.fn`!');
+    }
+    var fn = modifier['function'] || modifier.fn; // eslint-disable-line dot-notation
+    if (modifier.enabled && isFunction(fn)) {
+      // Add properties to offsets to make them a complete clientRect object
+      // we do this before each modifier to make sure the previous one doesn't
+      // mess with these values
+      data.offsets.popper = getClientRect(data.offsets.popper);
+      data.offsets.reference = getClientRect(data.offsets.reference);
+
+      data = fn(data, modifier);
+    }
+  });
+
+  return data;
+}
+
+/**
+ * Updates the position of the popper, computing the new offsets and applying
+ * the new style.<br />
+ * Prefer `scheduleUpdate` over `update` because of performance reasons.
+ * @method
+ * @memberof Popper
+ */
+function update() {
+  // if popper is destroyed, don't perform any further update
+  if (this.state.isDestroyed) {
+    return;
+  }
+
+  var data = {
+    instance: this,
+    styles: {},
+    arrowStyles: {},
+    attributes: {},
+    flipped: false,
+    offsets: {}
+  };
+
+  // compute reference element offsets
+  data.offsets.reference = getReferenceOffsets(this.state, this.popper, this.reference);
+
+  // compute auto placement, store placement inside the data object,
+  // modifiers will be able to edit `placement` if needed
+  // and refer to originalPlacement to know the original value
+  data.placement = computeAutoPlacement(this.options.placement, data.offsets.reference, this.popper, this.reference, this.options.modifiers.flip.boundariesElement, this.options.modifiers.flip.padding);
+
+  // store the computed placement inside `originalPlacement`
+  data.originalPlacement = data.placement;
+
+  // compute the popper offsets
+  data.offsets.popper = getPopperOffsets(this.popper, data.offsets.reference, data.placement);
+  data.offsets.popper.position = 'absolute';
+
+  // run the modifiers
+  data = runModifiers(this.modifiers, data);
+
+  // the first `update` will call `onCreate` callback
+  // the other ones will call `onUpdate` callback
+  if (!this.state.isCreated) {
+    this.state.isCreated = true;
+    this.options.onCreate(data);
+  } else {
+    this.options.onUpdate(data);
+  }
+}
+
+/**
+ * Helper used to know if the given modifier is enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @returns {Boolean}
+ */
+function isModifierEnabled(modifiers, modifierName) {
+  return modifiers.some(function (_ref) {
+    var name = _ref.name,
+        enabled = _ref.enabled;
+    return enabled && name === modifierName;
+  });
+}
+
+/**
+ * Get the prefixed supported property name
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} property (camelCase)
+ * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
+ */
+function getSupportedPropertyName(property) {
+  var prefixes = [false, 'ms', 'Webkit', 'Moz', 'O'];
+  var upperProp = property.charAt(0).toUpperCase() + property.slice(1);
+
+  for (var i = 0; i < prefixes.length - 1; i++) {
+    var prefix = prefixes[i];
+    var toCheck = prefix ? '' + prefix + upperProp : property;
+    if (typeof window.document.body.style[toCheck] !== 'undefined') {
+      return toCheck;
+    }
+  }
+  return null;
+}
+
+/**
+ * Destroy the popper
+ * @method
+ * @memberof Popper
+ */
+function destroy() {
+  this.state.isDestroyed = true;
+
+  // touch DOM only if `applyStyle` modifier is enabled
+  if (isModifierEnabled(this.modifiers, 'applyStyle')) {
+    this.popper.removeAttribute('x-placement');
+    this.popper.style.left = '';
+    this.popper.style.position = '';
+    this.popper.style.top = '';
+    this.popper.style[getSupportedPropertyName('transform')] = '';
+  }
+
+  this.disableEventListeners();
+
+  // remove the popper if user explicity asked for the deletion on destroy
+  // do not use `remove` because IE11 doesn't support it
+  if (this.options.removeOnDestroy) {
+    this.popper.parentNode.removeChild(this.popper);
+  }
+  return this;
+}
+
+/**
+ * Get the window associated with the element
+ * @argument {Element} element
+ * @returns {Window}
+ */
+function getWindow(element) {
+  var ownerDocument = element.ownerDocument;
+  return ownerDocument ? ownerDocument.defaultView : window;
+}
+
+function attachToScrollParents(scrollParent, event, callback, scrollParents) {
+  var isBody = scrollParent.nodeName === 'BODY';
+  var target = isBody ? scrollParent.ownerDocument.defaultView : scrollParent;
+  target.addEventListener(event, callback, { passive: true });
+
+  if (!isBody) {
+    attachToScrollParents(getScrollParent(target.parentNode), event, callback, scrollParents);
+  }
+  scrollParents.push(target);
+}
+
+/**
+ * Setup needed event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */
+function setupEventListeners(reference, options, state, updateBound) {
+  // Resize event listener on window
+  state.updateBound = updateBound;
+  getWindow(reference).addEventListener('resize', state.updateBound, { passive: true });
+
+  // Scroll event listener on scroll parents
+  var scrollElement = getScrollParent(reference);
+  attachToScrollParents(scrollElement, 'scroll', state.updateBound, state.scrollParents);
+  state.scrollElement = scrollElement;
+  state.eventsEnabled = true;
+
+  return state;
+}
+
+/**
+ * It will add resize/scroll events and start recalculating
+ * position of the popper element when they are triggered.
+ * @method
+ * @memberof Popper
+ */
+function enableEventListeners() {
+  if (!this.state.eventsEnabled) {
+    this.state = setupEventListeners(this.reference, this.options, this.state, this.scheduleUpdate);
+  }
+}
+
+/**
+ * Remove event listeners used to update the popper position
+ * @method
+ * @memberof Popper.Utils
+ * @private
+ */
+function removeEventListeners(reference, state) {
+  // Remove resize event listener on window
+  getWindow(reference).removeEventListener('resize', state.updateBound);
+
+  // Remove scroll event listener on scroll parents
+  state.scrollParents.forEach(function (target) {
+    target.removeEventListener('scroll', state.updateBound);
+  });
+
+  // Reset state
+  state.updateBound = null;
+  state.scrollParents = [];
+  state.scrollElement = null;
+  state.eventsEnabled = false;
+  return state;
+}
+
+/**
+ * It will remove resize/scroll events and won't recalculate popper position
+ * when they are triggered. It also won't trigger onUpdate callback anymore,
+ * unless you call `update` method manually.
+ * @method
+ * @memberof Popper
+ */
+function disableEventListeners() {
+  if (this.state.eventsEnabled) {
+    window.cancelAnimationFrame(this.scheduleUpdate);
+    this.state = removeEventListeners(this.reference, this.state);
+  }
+}
+
+/**
+ * Tells if a given input is a number
+ * @method
+ * @memberof Popper.Utils
+ * @param {*} input to check
+ * @return {Boolean}
+ */
+function isNumeric(n) {
+  return n !== '' && !isNaN(parseFloat(n)) && isFinite(n);
+}
+
+/**
+ * Set the style to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the style to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */
+function setStyles(element, styles) {
+  Object.keys(styles).forEach(function (prop) {
+    var unit = '';
+    // add unit if the value is numeric and is one of the following
+    if (['width', 'height', 'top', 'right', 'bottom', 'left'].indexOf(prop) !== -1 && isNumeric(styles[prop])) {
+      unit = 'px';
+    }
+    element.style[prop] = styles[prop] + unit;
+  });
+}
+
+/**
+ * Set the attributes to the given popper
+ * @method
+ * @memberof Popper.Utils
+ * @argument {Element} element - Element to apply the attributes to
+ * @argument {Object} styles
+ * Object with a list of properties and values which will be applied to the element
+ */
+function setAttributes(element, attributes) {
+  Object.keys(attributes).forEach(function (prop) {
+    var value = attributes[prop];
+    if (value !== false) {
+      element.setAttribute(prop, attributes[prop]);
+    } else {
+      element.removeAttribute(prop);
+    }
+  });
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} data.styles - List of style properties - values to apply to popper element
+ * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The same data object
+ */
+function applyStyle(data) {
+  // any property present in `data.styles` will be applied to the popper,
+  // in this way we can make the 3rd party modifiers add custom styles to it
+  // Be aware, modifiers could override the properties defined in the previous
+  // lines of this modifier!
+  setStyles(data.instance.popper, data.styles);
+
+  // any property present in `data.attributes` will be applied to the popper,
+  // they will be set as HTML attributes of the element
+  setAttributes(data.instance.popper, data.attributes);
+
+  // if arrowElement is defined and arrowStyles has some properties
+  if (data.arrowElement && Object.keys(data.arrowStyles).length) {
+    setStyles(data.arrowElement, data.arrowStyles);
+  }
+
+  return data;
+}
+
+/**
+ * Set the x-placement attribute before everything else because it could be used
+ * to add margins to the popper margins needs to be calculated to get the
+ * correct popper offsets.
+ * @method
+ * @memberof Popper.modifiers
+ * @param {HTMLElement} reference - The reference element used to position the popper
+ * @param {HTMLElement} popper - The HTML element used as popper.
+ * @param {Object} options - Popper.js options
+ */
+function applyStyleOnLoad(reference, popper, options, modifierOptions, state) {
+  // compute reference element offsets
+  var referenceOffsets = getReferenceOffsets(state, popper, reference);
+
+  // compute auto placement, store placement inside the data object,
+  // modifiers will be able to edit `placement` if needed
+  // and refer to originalPlacement to know the original value
+  var placement = computeAutoPlacement(options.placement, referenceOffsets, popper, reference, options.modifiers.flip.boundariesElement, options.modifiers.flip.padding);
+
+  popper.setAttribute('x-placement', placement);
+
+  // Apply `position` to popper before anything else because
+  // without the position applied we can't guarantee correct computations
+  setStyles(popper, { position: 'absolute' });
+
+  return options;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function computeStyle(data, options) {
+  var x = options.x,
+      y = options.y;
+  var popper = data.offsets.popper;
+
+  // Remove this legacy support in Popper.js v2
+
+  var legacyGpuAccelerationOption = find(data.instance.modifiers, function (modifier) {
+    return modifier.name === 'applyStyle';
+  }).gpuAcceleration;
+  if (legacyGpuAccelerationOption !== undefined) {
+    console.warn('WARNING: `gpuAcceleration` option moved to `computeStyle` modifier and will not be supported in future versions of Popper.js!');
+  }
+  var gpuAcceleration = legacyGpuAccelerationOption !== undefined ? legacyGpuAccelerationOption : options.gpuAcceleration;
+
+  var offsetParent = getOffsetParent(data.instance.popper);
+  var offsetParentRect = getBoundingClientRect(offsetParent);
+
+  // Styles
+  var styles = {
+    position: popper.position
+  };
+
+  // floor sides to avoid blurry text
+  var offsets = {
+    left: Math.floor(popper.left),
+    top: Math.floor(popper.top),
+    bottom: Math.floor(popper.bottom),
+    right: Math.floor(popper.right)
+  };
+
+  var sideA = x === 'bottom' ? 'top' : 'bottom';
+  var sideB = y === 'right' ? 'left' : 'right';
+
+  // if gpuAcceleration is set to `true` and transform is supported,
+  //  we use `translate3d` to apply the position to the popper we
+  // automatically use the supported prefixed version if needed
+  var prefixedProperty = getSupportedPropertyName('transform');
+
+  // now, let's make a step back and look at this code closely (wtf?)
+  // If the content of the popper grows once it's been positioned, it
+  // may happen that the popper gets misplaced because of the new content
+  // overflowing its reference element
+  // To avoid this problem, we provide two options (x and y), which allow
+  // the consumer to define the offset origin.
+  // If we position a popper on top of a reference element, we can set
+  // `x` to `top` to make the popper grow towards its top instead of
+  // its bottom.
+  var left = void 0,
+      top = void 0;
+  if (sideA === 'bottom') {
+    top = -offsetParentRect.height + offsets.bottom;
+  } else {
+    top = offsets.top;
+  }
+  if (sideB === 'right') {
+    left = -offsetParentRect.width + offsets.right;
+  } else {
+    left = offsets.left;
+  }
+  if (gpuAcceleration && prefixedProperty) {
+    styles[prefixedProperty] = 'translate3d(' + left + 'px, ' + top + 'px, 0)';
+    styles[sideA] = 0;
+    styles[sideB] = 0;
+    styles.willChange = 'transform';
+  } else {
+    // othwerise, we use the standard `top`, `left`, `bottom` and `right` properties
+    var invertTop = sideA === 'bottom' ? -1 : 1;
+    var invertLeft = sideB === 'right' ? -1 : 1;
+    styles[sideA] = top * invertTop;
+    styles[sideB] = left * invertLeft;
+    styles.willChange = sideA + ', ' + sideB;
+  }
+
+  // Attributes
+  var attributes = {
+    'x-placement': data.placement
+  };
+
+  // Update `data` attributes, styles and arrowStyles
+  data.attributes = _extends({}, attributes, data.attributes);
+  data.styles = _extends({}, styles, data.styles);
+  data.arrowStyles = _extends({}, data.offsets.arrow, data.arrowStyles);
+
+  return data;
+}
+
+/**
+ * Helper used to know if the given modifier depends from another one.<br />
+ * It checks if the needed modifier is listed and enabled.
+ * @method
+ * @memberof Popper.Utils
+ * @param {Array} modifiers - list of modifiers
+ * @param {String} requestingName - name of requesting modifier
+ * @param {String} requestedName - name of requested modifier
+ * @returns {Boolean}
+ */
+function isModifierRequired(modifiers, requestingName, requestedName) {
+  var requesting = find(modifiers, function (_ref) {
+    var name = _ref.name;
+    return name === requestingName;
+  });
+
+  var isRequired = !!requesting && modifiers.some(function (modifier) {
+    return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
+  });
+
+  if (!isRequired) {
+    var _requesting = '`' + requestingName + '`';
+    var requested = '`' + requestedName + '`';
+    console.warn(requested + ' modifier is required by ' + _requesting + ' modifier in order to work, be sure to include it before ' + _requesting + '!');
+  }
+  return isRequired;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function arrow(data, options) {
+  // arrow depends on keepTogether in order to work
+  if (!isModifierRequired(data.instance.modifiers, 'arrow', 'keepTogether')) {
+    return data;
+  }
+
+  var arrowElement = options.element;
+
+  // if arrowElement is a string, suppose it's a CSS selector
+  if (typeof arrowElement === 'string') {
+    arrowElement = data.instance.popper.querySelector(arrowElement);
+
+    // if arrowElement is not found, don't run the modifier
+    if (!arrowElement) {
+      return data;
+    }
+  } else {
+    // if the arrowElement isn't a query selector we must check that the
+    // provided DOM node is child of its popper node
+    if (!data.instance.popper.contains(arrowElement)) {
+      console.warn('WARNING: `arrow.element` must be child of its popper element!');
+      return data;
+    }
+  }
+
+  var placement = data.placement.split('-')[0];
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var isVertical = ['left', 'right'].indexOf(placement) !== -1;
+
+  var len = isVertical ? 'height' : 'width';
+  var sideCapitalized = isVertical ? 'Top' : 'Left';
+  var side = sideCapitalized.toLowerCase();
+  var altSide = isVertical ? 'left' : 'top';
+  var opSide = isVertical ? 'bottom' : 'right';
+  var arrowElementSize = getOuterSizes(arrowElement)[len];
+
+  //
+  // extends keepTogether behavior making sure the popper and its
+  // reference have enough pixels in conjuction
+  //
+
+  // top/left side
+  if (reference[opSide] - arrowElementSize < popper[side]) {
+    data.offsets.popper[side] -= popper[side] - (reference[opSide] - arrowElementSize);
+  }
+  // bottom/right side
+  if (reference[side] + arrowElementSize > popper[opSide]) {
+    data.offsets.popper[side] += reference[side] + arrowElementSize - popper[opSide];
+  }
+
+  // compute center of the popper
+  var center = reference[side] + reference[len] / 2 - arrowElementSize / 2;
+
+  // Compute the sideValue using the updated popper offsets
+  // take popper margin in account because we don't have this info available
+  var popperMarginSide = getStyleComputedProperty(data.instance.popper, 'margin' + sideCapitalized).replace('px', '');
+  var sideValue = center - getClientRect(data.offsets.popper)[side] - popperMarginSide;
+
+  // prevent arrowElement from being placed not contiguously to its popper
+  sideValue = Math.max(Math.min(popper[len] - arrowElementSize, sideValue), 0);
+
+  data.arrowElement = arrowElement;
+  data.offsets.arrow = {};
+  data.offsets.arrow[side] = Math.round(sideValue);
+  data.offsets.arrow[altSide] = ''; // make sure to unset any eventual altSide value from the DOM node
+
+  return data;
+}
+
+/**
+ * Get the opposite placement variation of the given one
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement variation
+ * @returns {String} flipped placement variation
+ */
+function getOppositeVariation(variation) {
+  if (variation === 'end') {
+    return 'start';
+  } else if (variation === 'start') {
+    return 'end';
+  }
+  return variation;
+}
+
+/**
+ * List of accepted placements to use as values of the `placement` option.<br />
+ * Valid placements are:
+ * - `auto`
+ * - `top`
+ * - `right`
+ * - `bottom`
+ * - `left`
+ *
+ * Each placement can have a variation from this list:
+ * - `-start`
+ * - `-end`
+ *
+ * Variations are interpreted easily if you think of them as the left to right
+ * written languages. Horizontally (`top` and `bottom`), `start` is left and `end`
+ * is right.<br />
+ * Vertically (`left` and `right`), `start` is top and `end` is bottom.
+ *
+ * Some valid examples are:
+ * - `top-end` (on top of reference, right aligned)
+ * - `right-start` (on right of reference, top aligned)
+ * - `bottom` (on bottom, centered)
+ * - `auto-right` (on the side with more space available, alignment depends by placement)
+ *
+ * @static
+ * @type {Array}
+ * @enum {String}
+ * @readonly
+ * @method placements
+ * @memberof Popper
+ */
+var placements = ['auto-start', 'auto', 'auto-end', 'top-start', 'top', 'top-end', 'right-start', 'right', 'right-end', 'bottom-end', 'bottom', 'bottom-start', 'left-end', 'left', 'left-start'];
+
+// Get rid of `auto` `auto-start` and `auto-end`
+var validPlacements = placements.slice(3);
+
+/**
+ * Given an initial placement, returns all the subsequent placements
+ * clockwise (or counter-clockwise).
+ *
+ * @method
+ * @memberof Popper.Utils
+ * @argument {String} placement - A valid placement (it accepts variations)
+ * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
+ * @returns {Array} placements including their variations
+ */
+function clockwise(placement) {
+  var counter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+
+  var index = validPlacements.indexOf(placement);
+  var arr = validPlacements.slice(index + 1).concat(validPlacements.slice(0, index));
+  return counter ? arr.reverse() : arr;
+}
+
+var BEHAVIORS = {
+  FLIP: 'flip',
+  CLOCKWISE: 'clockwise',
+  COUNTERCLOCKWISE: 'counterclockwise'
+};
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function flip(data, options) {
+  // if `inner` modifier is enabled, we can't use the `flip` modifier
+  if (isModifierEnabled(data.instance.modifiers, 'inner')) {
+    return data;
+  }
+
+  if (data.flipped && data.placement === data.originalPlacement) {
+    // seems like flip is trying to loop, probably there's not enough space on any of the flippable sides
+    return data;
+  }
+
+  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, options.boundariesElement);
+
+  var placement = data.placement.split('-')[0];
+  var placementOpposite = getOppositePlacement(placement);
+  var variation = data.placement.split('-')[1] || '';
+
+  var flipOrder = [];
+
+  switch (options.behavior) {
+    case BEHAVIORS.FLIP:
+      flipOrder = [placement, placementOpposite];
+      break;
+    case BEHAVIORS.CLOCKWISE:
+      flipOrder = clockwise(placement);
+      break;
+    case BEHAVIORS.COUNTERCLOCKWISE:
+      flipOrder = clockwise(placement, true);
+      break;
+    default:
+      flipOrder = options.behavior;
+  }
+
+  flipOrder.forEach(function (step, index) {
+    if (placement !== step || flipOrder.length === index + 1) {
+      return data;
+    }
+
+    placement = data.placement.split('-')[0];
+    placementOpposite = getOppositePlacement(placement);
+
+    var popperOffsets = data.offsets.popper;
+    var refOffsets = data.offsets.reference;
+
+    // using floor because the reference offsets may contain decimals we are not going to consider here
+    var floor = Math.floor;
+    var overlapsRef = placement === 'left' && floor(popperOffsets.right) > floor(refOffsets.left) || placement === 'right' && floor(popperOffsets.left) < floor(refOffsets.right) || placement === 'top' && floor(popperOffsets.bottom) > floor(refOffsets.top) || placement === 'bottom' && floor(popperOffsets.top) < floor(refOffsets.bottom);
+
+    var overflowsLeft = floor(popperOffsets.left) < floor(boundaries.left);
+    var overflowsRight = floor(popperOffsets.right) > floor(boundaries.right);
+    var overflowsTop = floor(popperOffsets.top) < floor(boundaries.top);
+    var overflowsBottom = floor(popperOffsets.bottom) > floor(boundaries.bottom);
+
+    var overflowsBoundaries = placement === 'left' && overflowsLeft || placement === 'right' && overflowsRight || placement === 'top' && overflowsTop || placement === 'bottom' && overflowsBottom;
+
+    // flip the variation if required
+    var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+    var flippedVariation = !!options.flipVariations && (isVertical && variation === 'start' && overflowsLeft || isVertical && variation === 'end' && overflowsRight || !isVertical && variation === 'start' && overflowsTop || !isVertical && variation === 'end' && overflowsBottom);
+
+    if (overlapsRef || overflowsBoundaries || flippedVariation) {
+      // this boolean to detect any flip loop
+      data.flipped = true;
+
+      if (overlapsRef || overflowsBoundaries) {
+        placement = flipOrder[index + 1];
+      }
+
+      if (flippedVariation) {
+        variation = getOppositeVariation(variation);
+      }
+
+      data.placement = placement + (variation ? '-' + variation : '');
+
+      // this object contains `position`, we want to preserve it along with
+      // any additional property we may add in the future
+      data.offsets.popper = _extends({}, data.offsets.popper, getPopperOffsets(data.instance.popper, data.offsets.reference, data.placement));
+
+      data = runModifiers(data.instance.modifiers, data, 'flip');
+    }
+  });
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function keepTogether(data) {
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var placement = data.placement.split('-')[0];
+  var floor = Math.floor;
+  var isVertical = ['top', 'bottom'].indexOf(placement) !== -1;
+  var side = isVertical ? 'right' : 'bottom';
+  var opSide = isVertical ? 'left' : 'top';
+  var measurement = isVertical ? 'width' : 'height';
+
+  if (popper[side] < floor(reference[opSide])) {
+    data.offsets.popper[opSide] = floor(reference[opSide]) - popper[measurement];
+  }
+  if (popper[opSide] > floor(reference[side])) {
+    data.offsets.popper[opSide] = floor(reference[side]);
+  }
+
+  return data;
+}
+
+/**
+ * Converts a string containing value + unit into a px value number
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} str - Value + unit string
+ * @argument {String} measurement - `height` or `width`
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @returns {Number|String}
+ * Value in pixels, or original string if no values were extracted
+ */
+function toValue(str, measurement, popperOffsets, referenceOffsets) {
+  // separate value from unit
+  var split = str.match(/((?:\-|\+)?\d*\.?\d*)(.*)/);
+  var value = +split[1];
+  var unit = split[2];
+
+  // If it's not a number it's an operator, I guess
+  if (!value) {
+    return str;
+  }
+
+  if (unit.indexOf('%') === 0) {
+    var element = void 0;
+    switch (unit) {
+      case '%p':
+        element = popperOffsets;
+        break;
+      case '%':
+      case '%r':
+      default:
+        element = referenceOffsets;
+    }
+
+    var rect = getClientRect(element);
+    return rect[measurement] / 100 * value;
+  } else if (unit === 'vh' || unit === 'vw') {
+    // if is a vh or vw, we calculate the size based on the viewport
+    var size = void 0;
+    if (unit === 'vh') {
+      size = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    } else {
+      size = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    }
+    return size / 100 * value;
+  } else {
+    // if is an explicit pixel unit, we get rid of the unit and keep the value
+    // if is an implicit unit, it's px, and we return just the value
+    return value;
+  }
+}
+
+/**
+ * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
+ * @function
+ * @memberof {modifiers~offset}
+ * @private
+ * @argument {String} offset
+ * @argument {Object} popperOffsets
+ * @argument {Object} referenceOffsets
+ * @argument {String} basePlacement
+ * @returns {Array} a two cells array with x and y offsets in numbers
+ */
+function parseOffset(offset, popperOffsets, referenceOffsets, basePlacement) {
+  var offsets = [0, 0];
+
+  // Use height if placement is left or right and index is 0 otherwise use width
+  // in this way the first offset will use an axis and the second one
+  // will use the other one
+  var useHeight = ['right', 'left'].indexOf(basePlacement) !== -1;
+
+  // Split the offset string to obtain a list of values and operands
+  // The regex addresses values with the plus or minus sign in front (+10, -20, etc)
+  var fragments = offset.split(/(\+|\-)/).map(function (frag) {
+    return frag.trim();
+  });
+
+  // Detect if the offset string contains a pair of values or a single one
+  // they could be separated by comma or space
+  var divider = fragments.indexOf(find(fragments, function (frag) {
+    return frag.search(/,|\s/) !== -1;
+  }));
+
+  if (fragments[divider] && fragments[divider].indexOf(',') === -1) {
+    console.warn('Offsets separated by white space(s) are deprecated, use a comma (,) instead.');
+  }
+
+  // If divider is found, we divide the list of values and operands to divide
+  // them by ofset X and Y.
+  var splitRegex = /\s*,\s*|\s+/;
+  var ops = divider !== -1 ? [fragments.slice(0, divider).concat([fragments[divider].split(splitRegex)[0]]), [fragments[divider].split(splitRegex)[1]].concat(fragments.slice(divider + 1))] : [fragments];
+
+  // Convert the values with units to absolute pixels to allow our computations
+  ops = ops.map(function (op, index) {
+    // Most of the units rely on the orientation of the popper
+    var measurement = (index === 1 ? !useHeight : useHeight) ? 'height' : 'width';
+    var mergeWithPrevious = false;
+    return op
+    // This aggregates any `+` or `-` sign that aren't considered operators
+    // e.g.: 10 + +5 => [10, +, +5]
+    .reduce(function (a, b) {
+      if (a[a.length - 1] === '' && ['+', '-'].indexOf(b) !== -1) {
+        a[a.length - 1] = b;
+        mergeWithPrevious = true;
+        return a;
+      } else if (mergeWithPrevious) {
+        a[a.length - 1] += b;
+        mergeWithPrevious = false;
+        return a;
+      } else {
+        return a.concat(b);
+      }
+    }, [])
+    // Here we convert the string values into number values (in px)
+    .map(function (str) {
+      return toValue(str, measurement, popperOffsets, referenceOffsets);
+    });
+  });
+
+  // Loop trough the offsets arrays and execute the operations
+  ops.forEach(function (op, index) {
+    op.forEach(function (frag, index2) {
+      if (isNumeric(frag)) {
+        offsets[index] += frag * (op[index2 - 1] === '-' ? -1 : 1);
+      }
+    });
+  });
+  return offsets;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @argument {Number|String} options.offset=0
+ * The offset value as described in the modifier description
+ * @returns {Object} The data object, properly modified
+ */
+function offset(data, _ref) {
+  var offset = _ref.offset;
+  var placement = data.placement,
+      _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var basePlacement = placement.split('-')[0];
+
+  var offsets = void 0;
+  if (isNumeric(+offset)) {
+    offsets = [+offset, 0];
+  } else {
+    offsets = parseOffset(offset, popper, reference, basePlacement);
+  }
+
+  if (basePlacement === 'left') {
+    popper.top += offsets[0];
+    popper.left -= offsets[1];
+  } else if (basePlacement === 'right') {
+    popper.top += offsets[0];
+    popper.left += offsets[1];
+  } else if (basePlacement === 'top') {
+    popper.left += offsets[0];
+    popper.top -= offsets[1];
+  } else if (basePlacement === 'bottom') {
+    popper.left += offsets[0];
+    popper.top += offsets[1];
+  }
+
+  data.popper = popper;
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function preventOverflow(data, options) {
+  var boundariesElement = options.boundariesElement || getOffsetParent(data.instance.popper);
+
+  // If offsetParent is the reference element, we really want to
+  // go one step up and use the next offsetParent as reference to
+  // avoid to make this modifier completely useless and look like broken
+  if (data.instance.reference === boundariesElement) {
+    boundariesElement = getOffsetParent(boundariesElement);
+  }
+
+  var boundaries = getBoundaries(data.instance.popper, data.instance.reference, options.padding, boundariesElement);
+  options.boundaries = boundaries;
+
+  var order = options.priority;
+  var popper = data.offsets.popper;
+
+  var check = {
+    primary: function primary(placement) {
+      var value = popper[placement];
+      if (popper[placement] < boundaries[placement] && !options.escapeWithReference) {
+        value = Math.max(popper[placement], boundaries[placement]);
+      }
+      return defineProperty({}, placement, value);
+    },
+    secondary: function secondary(placement) {
+      var mainSide = placement === 'right' ? 'left' : 'top';
+      var value = popper[mainSide];
+      if (popper[placement] > boundaries[placement] && !options.escapeWithReference) {
+        value = Math.min(popper[mainSide], boundaries[placement] - (placement === 'right' ? popper.width : popper.height));
+      }
+      return defineProperty({}, mainSide, value);
+    }
+  };
+
+  order.forEach(function (placement) {
+    var side = ['left', 'top'].indexOf(placement) !== -1 ? 'primary' : 'secondary';
+    popper = _extends({}, popper, check[side](placement));
+  });
+
+  data.offsets.popper = popper;
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function shift(data) {
+  var placement = data.placement;
+  var basePlacement = placement.split('-')[0];
+  var shiftvariation = placement.split('-')[1];
+
+  // if shift shiftvariation is specified, run the modifier
+  if (shiftvariation) {
+    var _data$offsets = data.offsets,
+        reference = _data$offsets.reference,
+        popper = _data$offsets.popper;
+
+    var isVertical = ['bottom', 'top'].indexOf(basePlacement) !== -1;
+    var side = isVertical ? 'left' : 'top';
+    var measurement = isVertical ? 'width' : 'height';
+
+    var shiftOffsets = {
+      start: defineProperty({}, side, reference[side]),
+      end: defineProperty({}, side, reference[side] + reference[measurement] - popper[measurement])
+    };
+
+    data.offsets.popper = _extends({}, popper, shiftOffsets[shiftvariation]);
+  }
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by update method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function hide(data) {
+  if (!isModifierRequired(data.instance.modifiers, 'hide', 'preventOverflow')) {
+    return data;
+  }
+
+  var refRect = data.offsets.reference;
+  var bound = find(data.instance.modifiers, function (modifier) {
+    return modifier.name === 'preventOverflow';
+  }).boundaries;
+
+  if (refRect.bottom < bound.top || refRect.left > bound.right || refRect.top > bound.bottom || refRect.right < bound.left) {
+    // Avoid unnecessary DOM access if visibility hasn't changed
+    if (data.hide === true) {
+      return data;
+    }
+
+    data.hide = true;
+    data.attributes['x-out-of-boundaries'] = '';
+  } else {
+    // Avoid unnecessary DOM access if visibility hasn't changed
+    if (data.hide === false) {
+      return data;
+    }
+
+    data.hide = false;
+    data.attributes['x-out-of-boundaries'] = false;
+  }
+
+  return data;
+}
+
+/**
+ * @function
+ * @memberof Modifiers
+ * @argument {Object} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {Object} The data object, properly modified
+ */
+function inner(data) {
+  var placement = data.placement;
+  var basePlacement = placement.split('-')[0];
+  var _data$offsets = data.offsets,
+      popper = _data$offsets.popper,
+      reference = _data$offsets.reference;
+
+  var isHoriz = ['left', 'right'].indexOf(basePlacement) !== -1;
+
+  var subtractLength = ['top', 'left'].indexOf(basePlacement) === -1;
+
+  popper[isHoriz ? 'left' : 'top'] = reference[basePlacement] - (subtractLength ? popper[isHoriz ? 'width' : 'height'] : 0);
+
+  data.placement = getOppositePlacement(placement);
+  data.offsets.popper = getClientRect(popper);
+
+  return data;
+}
+
+/**
+ * Modifier function, each modifier can have a function of this type assigned
+ * to its `fn` property.<br />
+ * These functions will be called on each update, this means that you must
+ * make sure they are performant enough to avoid performance bottlenecks.
+ *
+ * @function ModifierFn
+ * @argument {dataObject} data - The data object generated by `update` method
+ * @argument {Object} options - Modifiers configuration and options
+ * @returns {dataObject} The data object, properly modified
+ */
+
+/**
+ * Modifiers are plugins used to alter the behavior of your poppers.<br />
+ * Popper.js uses a set of 9 modifiers to provide all the basic functionalities
+ * needed by the library.
+ *
+ * Usually you don't want to override the `order`, `fn` and `onLoad` props.
+ * All the other properties are configurations that could be tweaked.
+ * @namespace modifiers
+ */
+var modifiers = {
+  /**
+   * Modifier used to shift the popper on the start or end of its reference
+   * element.<br />
+   * It will read the variation of the `placement` property.<br />
+   * It can be one either `-end` or `-start`.
+   * @memberof modifiers
+   * @inner
+   */
+  shift: {
+    /** @prop {number} order=100 - Index used to define the order of execution */
+    order: 100,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: shift
+  },
+
+  /**
+   * The `offset` modifier can shift your popper on both its axis.
+   *
+   * It accepts the following units:
+   * - `px` or unitless, interpreted as pixels
+   * - `%` or `%r`, percentage relative to the length of the reference element
+   * - `%p`, percentage relative to the length of the popper element
+   * - `vw`, CSS viewport width unit
+   * - `vh`, CSS viewport height unit
+   *
+   * For length is intended the main axis relative to the placement of the popper.<br />
+   * This means that if the placement is `top` or `bottom`, the length will be the
+   * `width`. In case of `left` or `right`, it will be the height.
+   *
+   * You can provide a single value (as `Number` or `String`), or a pair of values
+   * as `String` divided by a comma or one (or more) white spaces.<br />
+   * The latter is a deprecated method because it leads to confusion and will be
+   * removed in v2.<br />
+   * Additionally, it accepts additions and subtractions between different units.
+   * Note that multiplications and divisions aren't supported.
+   *
+   * Valid examples are:
+   * ```
+   * 10
+   * '10%'
+   * '10, 10'
+   * '10%, 10'
+   * '10 + 10%'
+   * '10 - 5vh + 3%'
+   * '-10px + 5vh, 5px - 6%'
+   * ```
+   * > **NB**: If you desire to apply offsets to your poppers in a way that may make them overlap
+   * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
+   * > More on this [reading this issue](https://github.com/FezVrasta/popper.js/issues/373)
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  offset: {
+    /** @prop {number} order=200 - Index used to define the order of execution */
+    order: 200,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: offset,
+    /** @prop {Number|String} offset=0
+     * The offset value as described in the modifier description
+     */
+    offset: 0
+  },
+
+  /**
+   * Modifier used to prevent the popper from being positioned outside the boundary.
+   *
+   * An scenario exists where the reference itself is not within the boundaries.<br />
+   * We can say it has "escaped the boundaries" — or just "escaped".<br />
+   * In this case we need to decide whether the popper should either:
+   *
+   * - detach from the reference and remain "trapped" in the boundaries, or
+   * - if it should ignore the boundary and "escape with its reference"
+   *
+   * When `escapeWithReference` is set to`true` and reference is completely
+   * outside its boundaries, the popper will overflow (or completely leave)
+   * the boundaries in order to remain attached to the edge of the reference.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  preventOverflow: {
+    /** @prop {number} order=300 - Index used to define the order of execution */
+    order: 300,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: preventOverflow,
+    /**
+     * @prop {Array} [priority=['left','right','top','bottom']]
+     * Popper will try to prevent overflow following these priorities by default,
+     * then, it could overflow on the left and on top of the `boundariesElement`
+     */
+    priority: ['left', 'right', 'top', 'bottom'],
+    /**
+     * @prop {number} padding=5
+     * Amount of pixel used to define a minimum distance between the boundaries
+     * and the popper this makes sure the popper has always a little padding
+     * between the edges of its container
+     */
+    padding: 5,
+    /**
+     * @prop {String|HTMLElement} boundariesElement='scrollParent'
+     * Boundaries used by the modifier, can be `scrollParent`, `window`,
+     * `viewport` or any DOM element.
+     */
+    boundariesElement: 'scrollParent'
+  },
+
+  /**
+   * Modifier used to make sure the reference and its popper stay near eachothers
+   * without leaving any gap between the two. Expecially useful when the arrow is
+   * enabled and you want to assure it to point to its reference element.
+   * It cares only about the first axis, you can still have poppers with margin
+   * between the popper and its reference element.
+   * @memberof modifiers
+   * @inner
+   */
+  keepTogether: {
+    /** @prop {number} order=400 - Index used to define the order of execution */
+    order: 400,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: keepTogether
+  },
+
+  /**
+   * This modifier is used to move the `arrowElement` of the popper to make
+   * sure it is positioned between the reference element and its popper element.
+   * It will read the outer size of the `arrowElement` node to detect how many
+   * pixels of conjuction are needed.
+   *
+   * It has no effect if no `arrowElement` is provided.
+   * @memberof modifiers
+   * @inner
+   */
+  arrow: {
+    /** @prop {number} order=500 - Index used to define the order of execution */
+    order: 500,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: arrow,
+    /** @prop {String|HTMLElement} element='[x-arrow]' - Selector or node used as arrow */
+    element: '[x-arrow]'
+  },
+
+  /**
+   * Modifier used to flip the popper's placement when it starts to overlap its
+   * reference element.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   *
+   * **NOTE:** this modifier will interrupt the current update cycle and will
+   * restart it if it detects the need to flip the placement.
+   * @memberof modifiers
+   * @inner
+   */
+  flip: {
+    /** @prop {number} order=600 - Index used to define the order of execution */
+    order: 600,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: flip,
+    /**
+     * @prop {String|Array} behavior='flip'
+     * The behavior used to change the popper's placement. It can be one of
+     * `flip`, `clockwise`, `counterclockwise` or an array with a list of valid
+     * placements (with optional variations).
+     */
+    behavior: 'flip',
+    /**
+     * @prop {number} padding=5
+     * The popper will flip if it hits the edges of the `boundariesElement`
+     */
+    padding: 5,
+    /**
+     * @prop {String|HTMLElement} boundariesElement='viewport'
+     * The element which will define the boundaries of the popper position,
+     * the popper will never be placed outside of the defined boundaries
+     * (except if keepTogether is enabled)
+     */
+    boundariesElement: 'viewport'
+  },
+
+  /**
+   * Modifier used to make the popper flow toward the inner of the reference element.
+   * By default, when this modifier is disabled, the popper will be placed outside
+   * the reference element.
+   * @memberof modifiers
+   * @inner
+   */
+  inner: {
+    /** @prop {number} order=700 - Index used to define the order of execution */
+    order: 700,
+    /** @prop {Boolean} enabled=false - Whether the modifier is enabled or not */
+    enabled: false,
+    /** @prop {ModifierFn} */
+    fn: inner
+  },
+
+  /**
+   * Modifier used to hide the popper when its reference element is outside of the
+   * popper boundaries. It will set a `x-out-of-boundaries` attribute which can
+   * be used to hide with a CSS selector the popper when its reference is
+   * out of boundaries.
+   *
+   * Requires the `preventOverflow` modifier before it in order to work.
+   * @memberof modifiers
+   * @inner
+   */
+  hide: {
+    /** @prop {number} order=800 - Index used to define the order of execution */
+    order: 800,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: hide
+  },
+
+  /**
+   * Computes the style that will be applied to the popper element to gets
+   * properly positioned.
+   *
+   * Note that this modifier will not touch the DOM, it just prepares the styles
+   * so that `applyStyle` modifier can apply it. This separation is useful
+   * in case you need to replace `applyStyle` with a custom implementation.
+   *
+   * This modifier has `850` as `order` value to maintain backward compatibility
+   * with previous versions of Popper.js. Expect the modifiers ordering method
+   * to change in future major versions of the library.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  computeStyle: {
+    /** @prop {number} order=850 - Index used to define the order of execution */
+    order: 850,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: computeStyle,
+    /**
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3d transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties.
+     */
+    gpuAcceleration: true,
+    /**
+     * @prop {string} [x='bottom']
+     * Where to anchor the X axis (`bottom` or `top`). AKA X offset origin.
+     * Change this if your popper should grow in a direction different from `bottom`
+     */
+    x: 'bottom',
+    /**
+     * @prop {string} [x='left']
+     * Where to anchor the Y axis (`left` or `right`). AKA Y offset origin.
+     * Change this if your popper should grow in a direction different from `right`
+     */
+    y: 'right'
+  },
+
+  /**
+   * Applies the computed styles to the popper element.
+   *
+   * All the DOM manipulations are limited to this modifier. This is useful in case
+   * you want to integrate Popper.js inside a framework or view library and you
+   * want to delegate all the DOM manipulations to it.
+   *
+   * Note that if you disable this modifier, you must make sure the popper element
+   * has its position set to `absolute` before Popper.js can do its work!
+   *
+   * Just disable this modifier and define you own to achieve the desired effect.
+   *
+   * @memberof modifiers
+   * @inner
+   */
+  applyStyle: {
+    /** @prop {number} order=900 - Index used to define the order of execution */
+    order: 900,
+    /** @prop {Boolean} enabled=true - Whether the modifier is enabled or not */
+    enabled: true,
+    /** @prop {ModifierFn} */
+    fn: applyStyle,
+    /** @prop {Function} */
+    onLoad: applyStyleOnLoad,
+    /**
+     * @deprecated since version 1.10.0, the property moved to `computeStyle` modifier
+     * @prop {Boolean} gpuAcceleration=true
+     * If true, it uses the CSS 3d transformation to position the popper.
+     * Otherwise, it will use the `top` and `left` properties.
+     */
+    gpuAcceleration: undefined
+  }
+};
+
+/**
+ * The `dataObject` is an object containing all the informations used by Popper.js
+ * this object get passed to modifiers and to the `onCreate` and `onUpdate` callbacks.
+ * @name dataObject
+ * @property {Object} data.instance The Popper.js instance
+ * @property {String} data.placement Placement applied to popper
+ * @property {String} data.originalPlacement Placement originally defined on init
+ * @property {Boolean} data.flipped True if popper has been flipped by flip modifier
+ * @property {Boolean} data.hide True if the reference element is out of boundaries, useful to know when to hide the popper.
+ * @property {HTMLElement} data.arrowElement Node used as arrow by arrow modifier
+ * @property {Object} data.styles Any CSS property defined here will be applied to the popper, it expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.arrowStyles Any CSS property defined here will be applied to the popper arrow, it expects the JavaScript nomenclature (eg. `marginBottom`)
+ * @property {Object} data.boundaries Offsets of the popper boundaries
+ * @property {Object} data.offsets The measurements of popper, reference and arrow elements.
+ * @property {Object} data.offsets.popper `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.reference `top`, `left`, `width`, `height` values
+ * @property {Object} data.offsets.arrow] `top` and `left` offsets, only one of them will be different from 0
+ */
+
+/**
+ * Default options provided to Popper.js constructor.<br />
+ * These can be overriden using the `options` argument of Popper.js.<br />
+ * To override an option, simply pass as 3rd argument an object with the same
+ * structure of this object, example:
+ * ```
+ * new Popper(ref, pop, {
+ *   modifiers: {
+ *     preventOverflow: { enabled: false }
+ *   }
+ * })
+ * ```
+ * @type {Object}
+ * @static
+ * @memberof Popper
+ */
+var Defaults = {
+  /**
+   * Popper's placement
+   * @prop {Popper.placements} placement='bottom'
+   */
+  placement: 'bottom',
+
+  /**
+   * Whether events (resize, scroll) are initially enabled
+   * @prop {Boolean} eventsEnabled=true
+   */
+  eventsEnabled: true,
+
+  /**
+   * Set to true if you want to automatically remove the popper when
+   * you call the `destroy` method.
+   * @prop {Boolean} removeOnDestroy=false
+   */
+  removeOnDestroy: false,
+
+  /**
+   * Callback called when the popper is created.<br />
+   * By default, is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onCreate}
+   */
+  onCreate: function onCreate() {},
+
+  /**
+   * Callback called when the popper is updated, this callback is not called
+   * on the initialization/creation of the popper, but only on subsequent
+   * updates.<br />
+   * By default, is set to no-op.<br />
+   * Access Popper.js instance with `data.instance`.
+   * @prop {onUpdate}
+   */
+  onUpdate: function onUpdate() {},
+
+  /**
+   * List of modifiers used to modify the offsets before they are applied to the popper.
+   * They provide most of the functionalities of Popper.js
+   * @prop {modifiers}
+   */
+  modifiers: modifiers
+};
+
+/**
+ * @callback onCreate
+ * @param {dataObject} data
+ */
+
+/**
+ * @callback onUpdate
+ * @param {dataObject} data
+ */
+
+// Utils
+// Methods
+var Popper = function () {
+  /**
+   * Create a new Popper.js instance
+   * @class Popper
+   * @param {HTMLElement|referenceObject} reference - The reference element used to position the popper
+   * @param {HTMLElement} popper - The HTML element used as popper.
+   * @param {Object} options - Your custom options to override the ones defined in [Defaults](#defaults)
+   * @return {Object} instance - The generated Popper.js instance
+   */
+  function Popper(reference, popper) {
+    var _this = this;
+
+    var options = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    classCallCheck(this, Popper);
+
+    this.scheduleUpdate = function () {
+      return requestAnimationFrame(_this.update);
+    };
+
+    // make update() debounced, so that it only runs at most once-per-tick
+    this.update = debounce(this.update.bind(this));
+
+    // with {} we create a new object with the options inside it
+    this.options = _extends({}, Popper.Defaults, options);
+
+    // init state
+    this.state = {
+      isDestroyed: false,
+      isCreated: false,
+      scrollParents: []
+    };
+
+    // get reference and popper elements (allow jQuery wrappers)
+    this.reference = reference && reference.jquery ? reference[0] : reference;
+    this.popper = popper && popper.jquery ? popper[0] : popper;
+
+    // Deep merge modifiers options
+    this.options.modifiers = {};
+    Object.keys(_extends({}, Popper.Defaults.modifiers, options.modifiers)).forEach(function (name) {
+      _this.options.modifiers[name] = _extends({}, Popper.Defaults.modifiers[name] || {}, options.modifiers ? options.modifiers[name] : {});
+    });
+
+    // Refactoring modifiers' list (Object => Array)
+    this.modifiers = Object.keys(this.options.modifiers).map(function (name) {
+      return _extends({
+        name: name
+      }, _this.options.modifiers[name]);
+    })
+    // sort the modifiers by order
+    .sort(function (a, b) {
+      return a.order - b.order;
+    });
+
+    // modifiers have the ability to execute arbitrary code when Popper.js get inited
+    // such code is executed in the same order of its modifier
+    // they could add new properties to their options configuration
+    // BE AWARE: don't add options to `options.modifiers.name` but to `modifierOptions`!
+    this.modifiers.forEach(function (modifierOptions) {
+      if (modifierOptions.enabled && isFunction(modifierOptions.onLoad)) {
+        modifierOptions.onLoad(_this.reference, _this.popper, _this.options, modifierOptions, _this.state);
+      }
+    });
+
+    // fire the first update to position the popper in the right place
+    this.update();
+
+    var eventsEnabled = this.options.eventsEnabled;
+    if (eventsEnabled) {
+      // setup event listeners, they will take care of update the position in specific situations
+      this.enableEventListeners();
+    }
+
+    this.state.eventsEnabled = eventsEnabled;
+  }
+
+  // We can't use class properties because they don't get listed in the
+  // class prototype and break stuff like Sinon stubs
+
+
+  createClass(Popper, [{
+    key: 'update',
+    value: function update$$1() {
+      return update.call(this);
+    }
+  }, {
+    key: 'destroy',
+    value: function destroy$$1() {
+      return destroy.call(this);
+    }
+  }, {
+    key: 'enableEventListeners',
+    value: function enableEventListeners$$1() {
+      return enableEventListeners.call(this);
+    }
+  }, {
+    key: 'disableEventListeners',
+    value: function disableEventListeners$$1() {
+      return disableEventListeners.call(this);
+    }
+
+    /**
+     * Schedule an update, it will run on the next UI update available
+     * @method scheduleUpdate
+     * @memberof Popper
+     */
+
+
+    /**
+     * Collection of utilities useful when writing custom modifiers.
+     * Starting from version 1.7, this method is available only if you
+     * include `popper-utils.js` before `popper.js`.
+     *
+     * **DEPRECATION**: This way to access PopperUtils is deprecated
+     * and will be removed in v2! Use the PopperUtils module directly instead.
+     * Due to the high instability of the methods contained in Utils, we can't
+     * guarantee them to follow semver. Use them at your own risk!
+     * @static
+     * @private
+     * @type {Object}
+     * @deprecated since version 1.8
+     * @member Utils
+     * @memberof Popper
+     */
+
+  }]);
+  return Popper;
+}();
+
+/**
+ * The `referenceObject` is an object that provides an interface compatible with Popper.js
+ * and lets you use it as replacement of a real DOM node.<br />
+ * You can use this method to position a popper relatively to a set of coordinates
+ * in case you don't have a DOM node to use as reference.
+ *
+ * ```
+ * new Popper(referenceObject, popperNode);
+ * ```
+ *
+ * NB: This feature isn't supported in Internet Explorer 10
+ * @name referenceObject
+ * @property {Function} data.getBoundingClientRect
+ * A function that returns a set of coordinates compatible with the native `getBoundingClientRect` method.
+ * @property {number} data.clientWidth
+ * An ES6 getter that will return the width of the virtual reference element.
+ * @property {number} data.clientHeight
+ * An ES6 getter that will return the height of the virtual reference element.
+ */
+
+
+Popper.Utils = (typeof window !== 'undefined' ? window : global).PopperUtils;
+Popper.placements = placements;
+Popper.Defaults = Defaults;
+
+/* harmony default export */ __webpack_exports__["a"] = (Popper);
+//# sourceMappingURL=popper.js.map
+
+/* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(/*! ./../../../webpack/buildin/global.js */ 10)))
 
 /***/ }),
 /* 13 */
@@ -14799,7 +14799,7 @@ module.exports = Vue$3;
 /* WEBPACK VAR INJECTION */(function(process) {
 
 var utils = __webpack_require__(/*! ./utils */ 6);
-var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ 67);
+var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ 68);
 
 var PROTECTION_PREFIX = /^\)\]\}',?\n/;
 var DEFAULT_CONTENT_TYPE = {
@@ -15297,11 +15297,11 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(/*! ./dropdown */ 147);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(/*! ./dropdown-item */ 151);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(/*! ./dropdown-item-button */ 152);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(/*! ./dropdown-header */ 153);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(/*! ./dropdown-divider */ 154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown__ = __webpack_require__(/*! ./dropdown */ 148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__dropdown_item__ = __webpack_require__(/*! ./dropdown-item */ 152);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dropdown_item_button__ = __webpack_require__(/*! ./dropdown-item-button */ 153);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dropdown_header__ = __webpack_require__(/*! ./dropdown-header */ 154);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dropdown_divider__ = __webpack_require__(/*! ./dropdown-divider */ 155);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -15347,7 +15347,7 @@ Object(__WEBPACK_IMPORTED_MODULE_5__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__object__ = __webpack_require__(/*! ./object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__array__ = __webpack_require__(/*! ./array */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__dom__ = __webpack_require__(/*! ./dom */ 5);
@@ -16564,12 +16564,12 @@ module.exports = function bind(fn, thisArg) {
 
 
 var utils = __webpack_require__(/*! ./../utils */ 6);
-var settle = __webpack_require__(/*! ./../core/settle */ 68);
-var buildURL = __webpack_require__(/*! ./../helpers/buildURL */ 70);
-var parseHeaders = __webpack_require__(/*! ./../helpers/parseHeaders */ 71);
-var isURLSameOrigin = __webpack_require__(/*! ./../helpers/isURLSameOrigin */ 72);
+var settle = __webpack_require__(/*! ./../core/settle */ 69);
+var buildURL = __webpack_require__(/*! ./../helpers/buildURL */ 71);
+var parseHeaders = __webpack_require__(/*! ./../helpers/parseHeaders */ 72);
+var isURLSameOrigin = __webpack_require__(/*! ./../helpers/isURLSameOrigin */ 73);
 var createError = __webpack_require__(/*! ../core/createError */ 25);
-var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(/*! ./../helpers/btoa */ 73);
+var btoa = (typeof window !== 'undefined' && window.btoa && window.btoa.bind(window)) || __webpack_require__(/*! ./../helpers/btoa */ 74);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -16665,7 +16665,7 @@ module.exports = function xhrAdapter(config) {
     // This is only done if running in a standard browser environment.
     // Specifically not if we're in a web worker, or react-native.
     if (utils.isStandardBrowserEnv()) {
-      var cookies = __webpack_require__(/*! ./../helpers/cookies */ 74);
+      var cookies = __webpack_require__(/*! ./../helpers/cookies */ 75);
 
       // Add xsrf header
       var xsrfValue = (config.withCredentials || isURLSameOrigin(config.url)) && config.xsrfCookieName ?
@@ -16752,7 +16752,7 @@ module.exports = function xhrAdapter(config) {
 "use strict";
 
 
-var enhanceError = __webpack_require__(/*! ./enhanceError */ 69);
+var enhanceError = __webpack_require__(/*! ./enhanceError */ 70);
 
 /**
  * Create an Error with the specified message, config, error code, and response.
@@ -17423,7 +17423,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(/*! ./collapse */ 142);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse__ = __webpack_require__(/*! ./collapse */ 143);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_toggle__ = __webpack_require__(/*! ../../directives/toggle */ 41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
@@ -17457,7 +17457,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(/*! ./toggle */ 146);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(/*! ./toggle */ 147);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -17694,9 +17694,9 @@ var props = {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-checkbox.vue */ 168)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-checkbox.vue */ 169)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-162f661c","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-checkbox.vue */ 169)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-162f661c","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-checkbox.vue */ 170)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -17747,9 +17747,9 @@ module.exports = Component.exports
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-radio.vue */ 176)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-radio.vue */ 177)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-5ec77750","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-radio.vue */ 177)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-5ec77750","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-radio.vue */ 178)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -17951,7 +17951,7 @@ var BvEvent = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(/*! ./modal */ 226);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(/*! ./modal */ 227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -17982,11 +17982,11 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(/*! ./nav */ 227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(/*! ./nav-item */ 228);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(/*! ./nav-text */ 229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(/*! ./nav-form */ 230);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue__ = __webpack_require__(/*! ./nav-item-dropdown.vue */ 231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__nav__ = __webpack_require__(/*! ./nav */ 228);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__nav_item__ = __webpack_require__(/*! ./nav-item */ 229);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__nav_text__ = __webpack_require__(/*! ./nav-text */ 230);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__nav_form__ = __webpack_require__(/*! ./nav-form */ 231);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue__ = __webpack_require__(/*! ./nav-item-dropdown.vue */ 232);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__nav_item_dropdown_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__dropdown__ = __webpack_require__(/*! ../dropdown */ 20);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils__ = __webpack_require__(/*! ../../utils */ 0);
@@ -18196,9 +18196,9 @@ var PopOver = function (_ToolTip) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./progress-bar.vue */ 267)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./progress-bar.vue */ 268)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-49ba283e","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./progress-bar.vue */ 268)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-49ba283e","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./progress-bar.vue */ 269)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -20874,6 +20874,25 @@ if (inBrowser && window.Vue) {
 
 /***/ }),
 /* 57 */
+/*!**********************************************!*\
+  !*** ./resources/assets/js/layouts/index.js ***!
+  \**********************************************/
+/*! exports provided: Auth, Default */
+/*! exports used: Auth, Default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Auth; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Default; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var Auth = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('auth', __webpack_require__(/*! ./Auth.vue */ 328));
+var Default = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('default', __webpack_require__(/*! ./Default.vue */ 330));
+
+/***/ }),
+/* 58 */
 /*!***************************************************************************!*\
   !*** multi ./resources/assets/js/app.js ./resources/assets/sass/app.scss ***!
   \***************************************************************************/
@@ -20881,12 +20900,12 @@ if (inBrowser && window.Vue) {
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/js/app.js */58);
-module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/sass/app.scss */327);
+__webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/js/app.js */59);
+module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources/assets/sass/app.scss */336);
 
 
 /***/ }),
-/* 58 */
+/* 59 */
 /*!************************************!*\
   !*** ./resources/assets/js/app.js ***!
   \************************************/
@@ -20896,20 +20915,20 @@ module.exports = __webpack_require__(/*! /Users/Kai/Code/Vulcan/vulcan/resources
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__(/*! ./bootstrap */ 59);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App_vue__ = __webpack_require__(/*! ./components/App.vue */ 301);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__bootstrap__ = __webpack_require__(/*! ./bootstrap */ 60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App_vue__ = __webpack_require__(/*! ./components/App.vue */ 302);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_App_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__components_App_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header_vue__ = __webpack_require__(/*! ./components/Header.vue */ 303);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header_vue__ = __webpack_require__(/*! ./components/Header.vue */ 304);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_Header_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__components_Header_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue__ = __webpack_require__(/*! ./components/Sidebar.vue */ 306);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue__ = __webpack_require__(/*! ./components/Sidebar.vue */ 307);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__components_Sidebar_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer_vue__ = __webpack_require__(/*! ./components/Footer.vue */ 309);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer_vue__ = __webpack_require__(/*! ./components/Footer.vue */ 310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_Footer_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4__components_Footer_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Banner_vue__ = __webpack_require__(/*! ./components/Banner.vue */ 312);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Banner_vue__ = __webpack_require__(/*! ./components/Banner.vue */ 313);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Banner_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__components_Banner_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Icon_vue__ = __webpack_require__(/*! ./components/Icon.vue */ 315);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Icon_vue__ = __webpack_require__(/*! ./components/Icon.vue */ 316);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_Icon_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6__components_Icon_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router__ = __webpack_require__(/*! ./router */ 318);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__router__ = __webpack_require__(/*! ./router */ 319);
 
 
 
@@ -20938,7 +20957,7 @@ window.app = new Vue({
 });
 
 /***/ }),
-/* 59 */
+/* 60 */
 /*!******************************************!*\
   !*** ./resources/assets/js/bootstrap.js ***!
   \******************************************/
@@ -20946,13 +20965,13 @@ window.app = new Vue({
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(/*! lodash */ 60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(/*! lodash */ 61);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(/*! vue */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(/*! vue */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(/*! axios */ 64);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios__ = __webpack_require__(/*! axios */ 65);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_axios___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_axios__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__ = __webpack_require__(/*! bootstrap-vue */ 82);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_bootstrap_vue__ = __webpack_require__(/*! bootstrap-vue */ 83);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_vue_router__ = __webpack_require__(/*! vue-router */ 56);
 
 
@@ -20969,7 +20988,7 @@ window.axios = __WEBPACK_IMPORTED_MODULE_2_axios___default.a;
 window.events = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a();
 
 /***/ }),
-/* 60 */
+/* 61 */
 /*!***************************************!*\
   !*** ./node_modules/lodash/lodash.js ***!
   \***************************************/
@@ -38063,10 +38082,10 @@ window.events = new __WEBPACK_IMPORTED_MODULE_1_vue___default.a();
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../webpack/buildin/module.js */ 61)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../webpack/buildin/module.js */ 62)(module)))
 
 /***/ }),
-/* 61 */
+/* 62 */
 /*!***********************************!*\
   !*** (webpack)/buildin/module.js ***!
   \***********************************/
@@ -38099,7 +38118,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 62 */
+/* 63 */
 /*!************************************************!*\
   !*** ./node_modules/timers-browserify/main.js ***!
   \************************************************/
@@ -38157,13 +38176,13 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(/*! setimmediate */ 63);
+__webpack_require__(/*! setimmediate */ 64);
 exports.setImmediate = setImmediate;
 exports.clearImmediate = clearImmediate;
 
 
 /***/ }),
-/* 63 */
+/* 64 */
 /*!***************************************************!*\
   !*** ./node_modules/setimmediate/setImmediate.js ***!
   \***************************************************/
@@ -38361,7 +38380,7 @@ exports.clearImmediate = clearImmediate;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/global.js */ 10), __webpack_require__(/*! ./../process/browser.js */ 22)))
 
 /***/ }),
-/* 64 */
+/* 65 */
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
   \*************************************/
@@ -38369,10 +38388,10 @@ exports.clearImmediate = clearImmediate;
 /*! exports used: default */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! ./lib/axios */ 65);
+module.exports = __webpack_require__(/*! ./lib/axios */ 66);
 
 /***/ }),
-/* 65 */
+/* 66 */
 /*!*****************************************!*\
   !*** ./node_modules/axios/lib/axios.js ***!
   \*****************************************/
@@ -38385,7 +38404,7 @@ module.exports = __webpack_require__(/*! ./lib/axios */ 65);
 
 var utils = __webpack_require__(/*! ./utils */ 6);
 var bind = __webpack_require__(/*! ./helpers/bind */ 23);
-var Axios = __webpack_require__(/*! ./core/Axios */ 66);
+var Axios = __webpack_require__(/*! ./core/Axios */ 67);
 var defaults = __webpack_require__(/*! ./defaults */ 13);
 
 /**
@@ -38420,14 +38439,14 @@ axios.create = function create(instanceConfig) {
 
 // Expose Cancel & CancelToken
 axios.Cancel = __webpack_require__(/*! ./cancel/Cancel */ 27);
-axios.CancelToken = __webpack_require__(/*! ./cancel/CancelToken */ 80);
+axios.CancelToken = __webpack_require__(/*! ./cancel/CancelToken */ 81);
 axios.isCancel = __webpack_require__(/*! ./cancel/isCancel */ 26);
 
 // Expose all/spread
 axios.all = function all(promises) {
   return Promise.all(promises);
 };
-axios.spread = __webpack_require__(/*! ./helpers/spread */ 81);
+axios.spread = __webpack_require__(/*! ./helpers/spread */ 82);
 
 module.exports = axios;
 
@@ -38436,7 +38455,7 @@ module.exports.default = axios;
 
 
 /***/ }),
-/* 66 */
+/* 67 */
 /*!**********************************************!*\
   !*** ./node_modules/axios/lib/core/Axios.js ***!
   \**********************************************/
@@ -38449,10 +38468,10 @@ module.exports.default = axios;
 
 var defaults = __webpack_require__(/*! ./../defaults */ 13);
 var utils = __webpack_require__(/*! ./../utils */ 6);
-var InterceptorManager = __webpack_require__(/*! ./InterceptorManager */ 75);
-var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ 76);
-var isAbsoluteURL = __webpack_require__(/*! ./../helpers/isAbsoluteURL */ 78);
-var combineURLs = __webpack_require__(/*! ./../helpers/combineURLs */ 79);
+var InterceptorManager = __webpack_require__(/*! ./InterceptorManager */ 76);
+var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ 77);
+var isAbsoluteURL = __webpack_require__(/*! ./../helpers/isAbsoluteURL */ 79);
+var combineURLs = __webpack_require__(/*! ./../helpers/combineURLs */ 80);
 
 /**
  * Create a new instance of Axios
@@ -38533,7 +38552,7 @@ module.exports = Axios;
 
 
 /***/ }),
-/* 67 */
+/* 68 */
 /*!***************************************************************!*\
   !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
   \***************************************************************/
@@ -38557,7 +38576,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 
 
 /***/ }),
-/* 68 */
+/* 69 */
 /*!***********************************************!*\
   !*** ./node_modules/axios/lib/core/settle.js ***!
   \***********************************************/
@@ -38594,7 +38613,7 @@ module.exports = function settle(resolve, reject, response) {
 
 
 /***/ }),
-/* 69 */
+/* 70 */
 /*!*****************************************************!*\
   !*** ./node_modules/axios/lib/core/enhanceError.js ***!
   \*****************************************************/
@@ -38625,7 +38644,7 @@ module.exports = function enhanceError(error, config, code, response) {
 
 
 /***/ }),
-/* 70 */
+/* 71 */
 /*!****************************************************!*\
   !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
   \****************************************************/
@@ -38705,7 +38724,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 
 
 /***/ }),
-/* 71 */
+/* 72 */
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
   \********************************************************/
@@ -38754,7 +38773,7 @@ module.exports = function parseHeaders(headers) {
 
 
 /***/ }),
-/* 72 */
+/* 73 */
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
   \***********************************************************/
@@ -38834,7 +38853,7 @@ module.exports = (
 
 
 /***/ }),
-/* 73 */
+/* 74 */
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/helpers/btoa.js ***!
   \************************************************/
@@ -38882,7 +38901,7 @@ module.exports = btoa;
 
 
 /***/ }),
-/* 74 */
+/* 75 */
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/helpers/cookies.js ***!
   \***************************************************/
@@ -38947,7 +38966,7 @@ module.exports = (
 
 
 /***/ }),
-/* 75 */
+/* 76 */
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
   \***********************************************************/
@@ -39011,7 +39030,7 @@ module.exports = InterceptorManager;
 
 
 /***/ }),
-/* 76 */
+/* 77 */
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
   \********************************************************/
@@ -39023,7 +39042,7 @@ module.exports = InterceptorManager;
 
 
 var utils = __webpack_require__(/*! ./../utils */ 6);
-var transformData = __webpack_require__(/*! ./transformData */ 77);
+var transformData = __webpack_require__(/*! ./transformData */ 78);
 var isCancel = __webpack_require__(/*! ../cancel/isCancel */ 26);
 var defaults = __webpack_require__(/*! ../defaults */ 13);
 
@@ -39102,7 +39121,7 @@ module.exports = function dispatchRequest(config) {
 
 
 /***/ }),
-/* 77 */
+/* 78 */
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/core/transformData.js ***!
   \******************************************************/
@@ -39134,7 +39153,7 @@ module.exports = function transformData(data, headers, fns) {
 
 
 /***/ }),
-/* 78 */
+/* 79 */
 /*!*********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
   \*********************************************************/
@@ -39160,7 +39179,7 @@ module.exports = function isAbsoluteURL(url) {
 
 
 /***/ }),
-/* 79 */
+/* 80 */
 /*!*******************************************************!*\
   !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
   \*******************************************************/
@@ -39184,7 +39203,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 
 
 /***/ }),
-/* 80 */
+/* 81 */
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
   \******************************************************/
@@ -39253,7 +39272,7 @@ module.exports = CancelToken;
 
 
 /***/ }),
-/* 81 */
+/* 82 */
 /*!**************************************************!*\
   !*** ./node_modules/axios/lib/helpers/spread.js ***!
   \**************************************************/
@@ -39292,7 +39311,7 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 82 */
+/* 83 */
 /*!************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/index.js ***!
   \************************************************/
@@ -39301,8 +39320,8 @@ module.exports = function spread(callback) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ./components */ 83);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(/*! ./directives */ 293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ./components */ 84);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(/*! ./directives */ 294);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ./utils */ 0);
 
 
@@ -39335,7 +39354,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 83 */
+/* 84 */
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/index.js ***!
   \***********************************************************/
@@ -39345,42 +39364,42 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(/*! ./alert */ 84);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(/*! ./badge */ 100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(/*! ./breadcrumb */ 102);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(/*! ./button */ 104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(/*! ./button-group */ 105);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(/*! ./button-toolbar */ 107);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(/*! ./input-group */ 112);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(/*! ./card */ 115);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(/*! ./carousel */ 130);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(/*! ./layout */ 139);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(/*! ./alert */ 85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__badge__ = __webpack_require__(/*! ./badge */ 101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb__ = __webpack_require__(/*! ./breadcrumb */ 103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__button__ = __webpack_require__(/*! ./button */ 105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__button_group__ = __webpack_require__(/*! ./button-group */ 106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__button_toolbar__ = __webpack_require__(/*! ./button-toolbar */ 108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__input_group__ = __webpack_require__(/*! ./input-group */ 113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__card__ = __webpack_require__(/*! ./card */ 116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel__ = __webpack_require__(/*! ./carousel */ 131);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__layout__ = __webpack_require__(/*! ./layout */ 140);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__collapse__ = __webpack_require__(/*! ./collapse */ 40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown__ = __webpack_require__(/*! ./dropdown */ 20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(/*! ./embed */ 155);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(/*! ./form */ 157);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(/*! ./form-group */ 158);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(/*! ./form-checkbox */ 166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(/*! ./form-radio */ 174);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(/*! ./form-input */ 182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(/*! ./form-textarea */ 189);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(/*! ./form-file */ 194);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(/*! ./form-select */ 201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(/*! ./image */ 206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(/*! ./jumbotron */ 211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(/*! ./link */ 213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(/*! ./list-group */ 214);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(/*! ./media */ 217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(/*! ./modal */ 219);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__embed__ = __webpack_require__(/*! ./embed */ 156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__form__ = __webpack_require__(/*! ./form */ 158);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__form_group__ = __webpack_require__(/*! ./form-group */ 159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__form_checkbox__ = __webpack_require__(/*! ./form-checkbox */ 167);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__form_radio__ = __webpack_require__(/*! ./form-radio */ 175);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__form_input__ = __webpack_require__(/*! ./form-input */ 183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__form_textarea__ = __webpack_require__(/*! ./form-textarea */ 190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__form_file__ = __webpack_require__(/*! ./form-file */ 195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__form_select__ = __webpack_require__(/*! ./form-select */ 202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__image__ = __webpack_require__(/*! ./image */ 207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__jumbotron__ = __webpack_require__(/*! ./jumbotron */ 212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__link__ = __webpack_require__(/*! ./link */ 214);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__list_group__ = __webpack_require__(/*! ./list-group */ 215);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__media__ = __webpack_require__(/*! ./media */ 218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__modal__ = __webpack_require__(/*! ./modal */ 220);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__nav__ = __webpack_require__(/*! ./nav */ 53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(/*! ./navbar */ 234);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(/*! ./pagination */ 242);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(/*! ./pagination-nav */ 249);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(/*! ./popover */ 256);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(/*! ./progress */ 261);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(/*! ./table */ 271);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(/*! ./tabs */ 279);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(/*! ./tooltip */ 288);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__navbar__ = __webpack_require__(/*! ./navbar */ 235);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pagination__ = __webpack_require__(/*! ./pagination */ 243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pagination_nav__ = __webpack_require__(/*! ./pagination-nav */ 250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__popover__ = __webpack_require__(/*! ./popover */ 257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__progress__ = __webpack_require__(/*! ./progress */ 262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__table__ = __webpack_require__(/*! ./table */ 272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__tabs__ = __webpack_require__(/*! ./tabs */ 280);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__tooltip__ = __webpack_require__(/*! ./tooltip */ 289);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Alert", function() { return __WEBPACK_IMPORTED_MODULE_0__alert__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Badge", function() { return __WEBPACK_IMPORTED_MODULE_1__badge__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Breadcrumb", function() { return __WEBPACK_IMPORTED_MODULE_2__breadcrumb__["a"]; });
@@ -39457,7 +39476,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 84 */
+/* 85 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/alert/index.js ***!
   \*****************************************************************/
@@ -39466,7 +39485,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(/*! ./alert */ 85);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert__ = __webpack_require__(/*! ./alert */ 86);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -39488,7 +39507,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 85 */
+/* 86 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/alert/alert.js ***!
   \*****************************************************************/
@@ -39497,14 +39516,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_vue__ = __webpack_require__(/*! ./alert.vue */ 86);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_vue__ = __webpack_require__(/*! ./alert.vue */ 87);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__alert_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__alert_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__alert_vue___default.a);
 
 /***/ }),
-/* 86 */
+/* 87 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/alert/alert.vue ***!
   \******************************************************************/
@@ -39515,9 +39534,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./alert.vue */ 87)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./alert.vue */ 88)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-0163fd52","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./alert.vue */ 99)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-0163fd52","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./alert.vue */ 100)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -39557,7 +39576,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 87 */
+/* 88 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/alert/alert.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -39690,7 +39709,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 88 */
+/* 89 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/addEventListenerOnce.js ***!
   \*********************************************************************/
@@ -39714,7 +39733,7 @@ function addEventListenerOnce(el, evtName, callback) {
 }
 
 /***/ }),
-/* 89 */
+/* 90 */
 /*!**********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/copyProps.js ***!
   \**********************************************************/
@@ -39760,7 +39779,7 @@ function copyProps(props) {
 }
 
 /***/ }),
-/* 90 */
+/* 91 */
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/loose-equal.js ***!
   \************************************************************/
@@ -39824,7 +39843,7 @@ function looseEqual(a, b) {
 /* harmony default export */ __webpack_exports__["a"] = (looseEqual);
 
 /***/ }),
-/* 91 */
+/* 92 */
 /*!*******************************************************************!*\
   !*** ./node_modules/vue-functional-data-merge/dist/lib.common.js ***!
   \*******************************************************************/
@@ -39838,7 +39857,7 @@ function concat(){return Array.prototype.concat.apply([],arguments)}function mer
 
 
 /***/ }),
-/* 92 */
+/* 93 */
 /*!********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/memoize.js ***!
   \********************************************************/
@@ -39861,7 +39880,7 @@ function memoize(fn) {
 }
 
 /***/ }),
-/* 93 */
+/* 94 */
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/observe-dom.js ***!
   \************************************************************/
@@ -39939,7 +39958,7 @@ function observeDOM(el, callback, opts) {
 }
 
 /***/ }),
-/* 94 */
+/* 95 */
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/pluckProps.js ***!
   \***********************************************************/
@@ -39973,7 +39992,7 @@ function pluckProps(keysToPluck, objToPluck) {
 }
 
 /***/ }),
-/* 95 */
+/* 96 */
 /*!***************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/prefixPropName.js ***!
   \***************************************************************/
@@ -39995,7 +40014,7 @@ function prefixPropName(prefix, value) {
 }
 
 /***/ }),
-/* 96 */
+/* 97 */
 /*!********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/plugins.js ***!
   \********************************************************/
@@ -40074,7 +40093,7 @@ function vueUse(VuePlugin) {
 }
 
 /***/ }),
-/* 97 */
+/* 98 */
 /*!***************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/suffixPropName.js ***!
   \***************************************************************/
@@ -40099,7 +40118,7 @@ function suffixPropName(suffix, str) {
 }
 
 /***/ }),
-/* 98 */
+/* 99 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/unPrefixPropName.js ***!
   \*****************************************************************/
@@ -40121,7 +40140,7 @@ function unPrefixPropName(prefix, value) {
 }
 
 /***/ }),
-/* 99 */
+/* 100 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-0163fd52","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/alert/alert.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -40170,7 +40189,7 @@ if (false) {
 }
 
 /***/ }),
-/* 100 */
+/* 101 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/badge/index.js ***!
   \*****************************************************************/
@@ -40179,7 +40198,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(/*! ./badge */ 101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__badge__ = __webpack_require__(/*! ./badge */ 102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -40201,7 +40220,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 101 */
+/* 102 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/badge/badge.js ***!
   \*****************************************************************/
@@ -40262,7 +40281,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 102 */
+/* 103 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/breadcrumb/index.js ***!
   \**********************************************************************/
@@ -40271,7 +40290,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(/*! ./breadcrumb */ 103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__breadcrumb__ = __webpack_require__(/*! ./breadcrumb */ 104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__breadcrumb_item__ = __webpack_require__(/*! ./breadcrumb-item */ 29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__breadcrumb_link__ = __webpack_require__(/*! ./breadcrumb-link */ 30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(/*! ../../utils */ 0);
@@ -40299,7 +40318,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 103 */
+/* 104 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/breadcrumb/breadcrumb.js ***!
   \***************************************************************************/
@@ -40362,7 +40381,7 @@ var props = {
 });
 
 /***/ }),
-/* 104 */
+/* 105 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button/index.js ***!
   \******************************************************************/
@@ -40398,7 +40417,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 105 */
+/* 106 */
 /*!************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button-group/index.js ***!
   \************************************************************************/
@@ -40407,7 +40426,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(/*! ./button-group */ 106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_group__ = __webpack_require__(/*! ./button-group */ 107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -40430,7 +40449,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 106 */
+/* 107 */
 /*!*******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button-group/button-group.js ***!
   \*******************************************************************************/
@@ -40488,7 +40507,7 @@ var props = {
 });
 
 /***/ }),
-/* 107 */
+/* 108 */
 /*!**************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button-toolbar/index.js ***!
   \**************************************************************************/
@@ -40497,7 +40516,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(/*! ./button-toolbar */ 108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar__ = __webpack_require__(/*! ./button-toolbar */ 109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -40520,7 +40539,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 108 */
+/* 109 */
 /*!***********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button-toolbar/button-toolbar.js ***!
   \***********************************************************************************/
@@ -40529,14 +40548,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar_vue__ = __webpack_require__(/*! ./button-toolbar.vue */ 109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar_vue__ = __webpack_require__(/*! ./button-toolbar.vue */ 110);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__button_toolbar_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__button_toolbar_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__button_toolbar_vue___default.a);
 
 /***/ }),
-/* 109 */
+/* 110 */
 /*!************************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/button-toolbar/button-toolbar.vue ***!
   \************************************************************************************/
@@ -40547,9 +40566,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./button-toolbar.vue */ 110)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./button-toolbar.vue */ 111)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-f2fc49d0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./button-toolbar.vue */ 111)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-f2fc49d0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./button-toolbar.vue */ 112)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -40589,7 +40608,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 110 */
+/* 111 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/button-toolbar/button-toolbar.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -40710,7 +40729,7 @@ var ITEM_SELECTOR = ['.btn:not(.disabled):not([disabled])', '.form-control:not(.
 });
 
 /***/ }),
-/* 111 */
+/* 112 */
 /*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-f2fc49d0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/button-toolbar/button-toolbar.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************************/
@@ -40849,7 +40868,7 @@ if (false) {
 }
 
 /***/ }),
-/* 112 */
+/* 113 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/input-group/index.js ***!
   \***********************************************************************/
@@ -40858,9 +40877,9 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_group__ = __webpack_require__(/*! ./input-group */ 113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__input_group__ = __webpack_require__(/*! ./input-group */ 114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__input_group_addon__ = __webpack_require__(/*! ./input-group-addon */ 31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__input_group_button__ = __webpack_require__(/*! ./input-group-button */ 114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__input_group_button__ = __webpack_require__(/*! ./input-group-button */ 115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -40887,7 +40906,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 113 */
+/* 114 */
 /*!*****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/input-group/input-group.js ***!
   \*****************************************************************************/
@@ -40966,7 +40985,7 @@ var props = {
 });
 
 /***/ }),
-/* 114 */
+/* 115 */
 /*!************************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/input-group/input-group-button.js ***!
   \************************************************************************************/
@@ -41008,7 +41027,7 @@ var props = {
 });
 
 /***/ }),
-/* 115 */
+/* 116 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/card/index.js ***!
   \****************************************************************/
@@ -41017,12 +41036,12 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(/*! ./card */ 116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__card__ = __webpack_require__(/*! ./card */ 117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__card_header__ = __webpack_require__(/*! ./card-header */ 35);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__card_body__ = __webpack_require__(/*! ./card-body */ 34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__card_footer__ = __webpack_require__(/*! ./card-footer */ 36);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__card_img__ = __webpack_require__(/*! ./card-img */ 37);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(/*! ./card-group */ 129);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__card_group__ = __webpack_require__(/*! ./card-group */ 130);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -41054,7 +41073,7 @@ Object(__WEBPACK_IMPORTED_MODULE_6__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 116 */
+/* 117 */
 /*!***************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/card/card.js ***!
   \***************************************************************/
@@ -41140,7 +41159,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 117 */
+/* 118 */
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/card-mixin.js ***!
   \************************************************************/
@@ -41171,7 +41190,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 118 */
+/* 119 */
 /*!**********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/dropdown.js ***!
   \**********************************************************/
@@ -41180,7 +41199,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__clickout__ = __webpack_require__(/*! ./clickout */ 32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listen_on_root__ = __webpack_require__(/*! ./listen-on-root */ 33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_array__ = __webpack_require__(/*! ../utils/array */ 4);
@@ -41527,7 +41546,7 @@ var AttachmentMap = {
 });
 
 /***/ }),
-/* 119 */
+/* 120 */
 /*!******************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form.js ***!
   \******************************************************/
@@ -41555,7 +41574,7 @@ var AttachmentMap = {
 });
 
 /***/ }),
-/* 120 */
+/* 121 */
 /*!*************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form-custom.js ***!
   \*************************************************************/
@@ -41579,7 +41598,7 @@ var AttachmentMap = {
 });
 
 /***/ }),
-/* 121 */
+/* 122 */
 /*!**************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form-options.js ***!
   \**************************************************************/
@@ -41669,7 +41688,7 @@ function isObject(obj) {
 });
 
 /***/ }),
-/* 122 */
+/* 123 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form-radio-check.js ***!
   \******************************************************************/
@@ -41803,7 +41822,7 @@ function isObject(obj) {
 });
 
 /***/ }),
-/* 123 */
+/* 124 */
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form-size.js ***!
   \***********************************************************/
@@ -41830,7 +41849,7 @@ function isObject(obj) {
 });
 
 /***/ }),
-/* 124 */
+/* 125 */
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/form-state.js ***!
   \************************************************************/
@@ -41879,7 +41898,7 @@ function isObject(obj) {
 });
 
 /***/ }),
-/* 125 */
+/* 126 */
 /*!****************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/id.js ***!
   \****************************************************/
@@ -41926,7 +41945,7 @@ function isObject(obj) {
 });
 
 /***/ }),
-/* 126 */
+/* 127 */
 /*!************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/pagination.js ***!
   \************************************************************/
@@ -41936,7 +41955,7 @@ function isObject(obj) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_array__ = __webpack_require__(/*! ../utils/array */ 4);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_range__ = __webpack_require__(/*! ../utils/range */ 127);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_range__ = __webpack_require__(/*! ../utils/range */ 128);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../utils/object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_dom__ = __webpack_require__(/*! ../utils/dom */ 5);
 /*
@@ -42211,7 +42230,7 @@ var props = {
 });
 
 /***/ }),
-/* 127 */
+/* 128 */
 /*!******************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/utils/range.js ***!
   \******************************************************/
@@ -42229,7 +42248,7 @@ var props = {
 });
 
 /***/ }),
-/* 128 */
+/* 129 */
 /*!*********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/mixins/toolpop.js ***!
   \*********************************************************/
@@ -42475,7 +42494,7 @@ var OBSERVER_CONFIG = {
 });
 
 /***/ }),
-/* 129 */
+/* 130 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/card/card-group.js ***!
   \*********************************************************************/
@@ -42524,7 +42543,7 @@ var props = {
 });
 
 /***/ }),
-/* 130 */
+/* 131 */
 /*!********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/carousel/index.js ***!
   \********************************************************************/
@@ -42533,8 +42552,8 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(/*! ./carousel */ 131);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(/*! ./carousel-slide */ 135);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel__ = __webpack_require__(/*! ./carousel */ 132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__carousel_slide__ = __webpack_require__(/*! ./carousel-slide */ 136);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -42558,7 +42577,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 131 */
+/* 132 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/carousel/carousel.js ***!
   \***********************************************************************/
@@ -42567,14 +42586,14 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_vue__ = __webpack_require__(/*! ./carousel.vue */ 132);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_vue__ = __webpack_require__(/*! ./carousel.vue */ 133);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__carousel_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__carousel_vue___default.a);
 
 /***/ }),
-/* 132 */
+/* 133 */
 /*!************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/carousel/carousel.vue ***!
   \************************************************************************/
@@ -42585,9 +42604,9 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./carousel.vue */ 133)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./carousel.vue */ 134)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2e0db3d8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./carousel.vue */ 134)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2e0db3d8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./carousel.vue */ 135)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -42627,7 +42646,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 133 */
+/* 134 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/carousel/carousel.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -43083,7 +43102,7 @@ function getTransisionEndEvent(el) {
 });
 
 /***/ }),
-/* 134 */
+/* 135 */
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2e0db3d8","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/carousel/carousel.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -43347,7 +43366,7 @@ if (false) {
 }
 
 /***/ }),
-/* 135 */
+/* 136 */
 /*!*****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/carousel/carousel-slide.js ***!
   \*****************************************************************************/
@@ -43356,14 +43375,14 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_slide_vue__ = __webpack_require__(/*! ./carousel-slide.vue */ 136);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_slide_vue__ = __webpack_require__(/*! ./carousel-slide.vue */ 137);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__carousel_slide_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__carousel_slide_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__carousel_slide_vue___default.a);
 
 /***/ }),
-/* 136 */
+/* 137 */
 /*!******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/carousel/carousel-slide.vue ***!
   \******************************************************************************/
@@ -43374,9 +43393,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./carousel-slide.vue */ 137)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./carousel-slide.vue */ 138)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-79dfa37c","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./carousel-slide.vue */ 138)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-79dfa37c","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./carousel-slide.vue */ 139)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -43416,7 +43435,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 137 */
+/* 138 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/carousel/carousel-slide.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -43536,7 +43555,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 138 */
+/* 139 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-79dfa37c","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/carousel/carousel-slide.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************/
@@ -43610,7 +43629,7 @@ if (false) {
 }
 
 /***/ }),
-/* 139 */
+/* 140 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/layout/index.js ***!
   \******************************************************************/
@@ -43620,8 +43639,8 @@ if (false) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__container__ = __webpack_require__(/*! ./container */ 38);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(/*! ./row */ 140);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(/*! ./col */ 141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__row__ = __webpack_require__(/*! ./row */ 141);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__col__ = __webpack_require__(/*! ./col */ 142);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__form_row__ = __webpack_require__(/*! ./form-row */ 39);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
@@ -43650,7 +43669,7 @@ Object(__WEBPACK_IMPORTED_MODULE_4__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 140 */
+/* 141 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/layout/row.js ***!
   \****************************************************************/
@@ -43721,7 +43740,7 @@ var props = {
 });
 
 /***/ }),
-/* 141 */
+/* 142 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/layout/col.js ***!
   \****************************************************************/
@@ -43869,7 +43888,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 142 */
+/* 143 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/collapse/collapse.js ***!
   \***********************************************************************/
@@ -43878,14 +43897,14 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_vue__ = __webpack_require__(/*! ./collapse.vue */ 143);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_vue__ = __webpack_require__(/*! ./collapse.vue */ 144);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__collapse_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__collapse_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__collapse_vue___default.a);
 
 /***/ }),
-/* 143 */
+/* 144 */
 /*!************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/collapse/collapse.vue ***!
   \************************************************************************/
@@ -43896,9 +43915,9 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./collapse.vue */ 144)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./collapse.vue */ 145)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-e54aab10","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./collapse.vue */ 145)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-e54aab10","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./collapse.vue */ 146)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -43938,7 +43957,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 144 */
+/* 145 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/collapse/collapse.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -44141,7 +44160,7 @@ var EVENT_TOGGLE = 'bv::toggle::collapse';
 });
 
 /***/ }),
-/* 145 */
+/* 146 */
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e54aab10","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/collapse/collapse.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -44206,7 +44225,7 @@ if (false) {
 }
 
 /***/ }),
-/* 146 */
+/* 147 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/toggle/toggle.js ***!
   \*******************************************************************/
@@ -44280,7 +44299,7 @@ var EVENT_STATE = 'bv::collapse::state';
 });
 
 /***/ }),
-/* 147 */
+/* 148 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown.js ***!
   \***********************************************************************/
@@ -44289,14 +44308,14 @@ var EVENT_STATE = 'bv::collapse::state';
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown_vue__ = __webpack_require__(/*! ./dropdown.vue */ 148);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown_vue__ = __webpack_require__(/*! ./dropdown.vue */ 149);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__dropdown_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__dropdown_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__dropdown_vue___default.a);
 
 /***/ }),
-/* 148 */
+/* 149 */
 /*!************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown.vue ***!
   \************************************************************************/
@@ -44307,9 +44326,9 @@ var EVENT_STATE = 'bv::collapse::state';
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./dropdown.vue */ 149)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./dropdown.vue */ 150)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-33229af8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./dropdown.vue */ 150)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-33229af8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./dropdown.vue */ 151)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -44349,7 +44368,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 149 */
+/* 150 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/dropdown/dropdown.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -44452,7 +44471,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 150 */
+/* 151 */
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-33229af8","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/dropdown/dropdown.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -44629,7 +44648,7 @@ if (false) {
 }
 
 /***/ }),
-/* 151 */
+/* 152 */
 /*!****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown-item.js ***!
   \****************************************************************************/
@@ -44663,7 +44682,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /* propsFactory 
 });
 
 /***/ }),
-/* 152 */
+/* 153 */
 /*!***********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown-item-button.js ***!
   \***********************************************************************************/
@@ -44706,7 +44725,7 @@ var props = {
 });
 
 /***/ }),
-/* 153 */
+/* 154 */
 /*!******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown-header.js ***!
   \******************************************************************************/
@@ -44746,7 +44765,7 @@ var props = {
 });
 
 /***/ }),
-/* 154 */
+/* 155 */
 /*!*******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/dropdown/dropdown-divider.js ***!
   \*******************************************************************************/
@@ -44781,7 +44800,7 @@ var props = {
 });
 
 /***/ }),
-/* 155 */
+/* 156 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/embed/index.js ***!
   \*****************************************************************/
@@ -44790,7 +44809,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(/*! ./embed */ 156);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__embed__ = __webpack_require__(/*! ./embed */ 157);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -44812,7 +44831,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 156 */
+/* 157 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/embed/embed.js ***!
   \*****************************************************************/
@@ -44864,7 +44883,7 @@ var props = {
 });
 
 /***/ }),
-/* 157 */
+/* 158 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form/index.js ***!
   \****************************************************************/
@@ -44904,7 +44923,7 @@ Object(__WEBPACK_IMPORTED_MODULE_4__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 158 */
+/* 159 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-group/index.js ***!
   \**********************************************************************/
@@ -44913,7 +44932,7 @@ Object(__WEBPACK_IMPORTED_MODULE_4__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(/*! ./form-group */ 159);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group__ = __webpack_require__(/*! ./form-group */ 160);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -44936,7 +44955,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 159 */
+/* 160 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-group/form-group.js ***!
   \***************************************************************************/
@@ -44945,14 +44964,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group_vue__ = __webpack_require__(/*! ./form-group.vue */ 160);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group_vue__ = __webpack_require__(/*! ./form-group.vue */ 161);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_group_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_group_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_group_vue___default.a);
 
 /***/ }),
-/* 160 */
+/* 161 */
 /*!****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-group/form-group.vue ***!
   \****************************************************************************/
@@ -44963,13 +44982,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-group.vue */ 161)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-group.vue */ 162)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-group.vue */ 164)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-group.vue */ 165)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-fb94ec50","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-group.vue */ 165)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-fb94ec50","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-group.vue */ 166)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -45009,7 +45028,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 161 */
+/* 162 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-group/form-group.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45020,7 +45039,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-group.vue */ 162);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-group.vue */ 163);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -45040,7 +45059,7 @@ if(false) {
 }
 
 /***/ }),
-/* 162 */
+/* 163 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-fb94ec50","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-group/form-group.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45059,7 +45078,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\
 
 
 /***/ }),
-/* 163 */
+/* 164 */
 /*!***********************************************************!*\
   !*** ./node_modules/vue-style-loader/lib/listToStyles.js ***!
   \***********************************************************/
@@ -45097,7 +45116,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 164 */
+/* 165 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-group/form-group.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45269,7 +45288,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 165 */
+/* 166 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-fb94ec50","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-group/form-group.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
@@ -45367,7 +45386,7 @@ if (false) {
 }
 
 /***/ }),
-/* 166 */
+/* 167 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-checkbox/index.js ***!
   \*************************************************************************/
@@ -45376,8 +45395,8 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox__ = __webpack_require__(/*! ./form-checkbox */ 167);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(/*! ./form-checkbox-group */ 170);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox__ = __webpack_require__(/*! ./form-checkbox */ 168);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_checkbox_group__ = __webpack_require__(/*! ./form-checkbox-group */ 171);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -45405,7 +45424,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 167 */
+/* 168 */
 /*!*********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox.js ***!
   \*********************************************************************************/
@@ -45421,7 +45440,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_checkbox_vue___default.a);
 
 /***/ }),
-/* 168 */
+/* 169 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45570,7 +45589,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 169 */
+/* 170 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-162f661c","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
@@ -45739,7 +45758,7 @@ if (false) {
 }
 
 /***/ }),
-/* 170 */
+/* 171 */
 /*!***************************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox-group.js ***!
   \***************************************************************************************/
@@ -45748,14 +45767,14 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox_group_vue__ = __webpack_require__(/*! ./form-checkbox-group.vue */ 171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox_group_vue__ = __webpack_require__(/*! ./form-checkbox-group.vue */ 172);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_checkbox_group_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_checkbox_group_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_checkbox_group_vue___default.a);
 
 /***/ }),
-/* 171 */
+/* 172 */
 /*!****************************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox-group.vue ***!
   \****************************************************************************************/
@@ -45766,9 +45785,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-checkbox-group.vue */ 172)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-checkbox-group.vue */ 173)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-051a22e4","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-checkbox-group.vue */ 173)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-051a22e4","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-checkbox-group.vue */ 174)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -45808,7 +45827,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 172 */
+/* 173 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox-group.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45928,7 +45947,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 173 */
+/* 174 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-051a22e4","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-checkbox/form-checkbox-group.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************/
@@ -45991,7 +46010,7 @@ if (false) {
 }
 
 /***/ }),
-/* 174 */
+/* 175 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-radio/index.js ***!
   \**********************************************************************/
@@ -46000,8 +46019,8 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio__ = __webpack_require__(/*! ./form-radio */ 175);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(/*! ./form-radio-group */ 178);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio__ = __webpack_require__(/*! ./form-radio */ 176);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__form_radio_group__ = __webpack_require__(/*! ./form-radio-group */ 179);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -46027,7 +46046,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 175 */
+/* 176 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-radio/form-radio.js ***!
   \***************************************************************************/
@@ -46043,7 +46062,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_radio_vue___default.a);
 
 /***/ }),
-/* 176 */
+/* 177 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-radio/form-radio.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -46137,7 +46156,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 177 */
+/* 178 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5ec77750","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-radio/form-radio.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
@@ -46265,7 +46284,7 @@ if (false) {
 }
 
 /***/ }),
-/* 178 */
+/* 179 */
 /*!*********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-radio/form-radio-group.js ***!
   \*********************************************************************************/
@@ -46274,14 +46293,14 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio_group_vue__ = __webpack_require__(/*! ./form-radio-group.vue */ 179);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio_group_vue__ = __webpack_require__(/*! ./form-radio-group.vue */ 180);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_radio_group_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_radio_group_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_radio_group_vue___default.a);
 
 /***/ }),
-/* 179 */
+/* 180 */
 /*!**********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-radio/form-radio-group.vue ***!
   \**********************************************************************************/
@@ -46292,9 +46311,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-radio-group.vue */ 180)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-radio-group.vue */ 181)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-457475ca","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-radio-group.vue */ 181)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-457475ca","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-radio-group.vue */ 182)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -46334,7 +46353,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 180 */
+/* 181 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-radio/form-radio-group.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -46454,7 +46473,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 181 */
+/* 182 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-457475ca","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-radio/form-radio-group.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
@@ -46517,7 +46536,7 @@ if (false) {
 }
 
 /***/ }),
-/* 182 */
+/* 183 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-input/index.js ***!
   \**********************************************************************/
@@ -46526,7 +46545,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(/*! ./form-input */ 183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input__ = __webpack_require__(/*! ./form-input */ 184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -46549,7 +46568,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 183 */
+/* 184 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-input/form-input.js ***!
   \***************************************************************************/
@@ -46558,14 +46577,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input_vue__ = __webpack_require__(/*! ./form-input.vue */ 184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input_vue__ = __webpack_require__(/*! ./form-input.vue */ 185);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_input_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_input_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_input_vue___default.a);
 
 /***/ }),
-/* 184 */
+/* 185 */
 /*!****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-input/form-input.vue ***!
   \****************************************************************************/
@@ -46576,13 +46595,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-input.vue */ 185)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-input.vue */ 186)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-input.vue */ 187)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-input.vue */ 188)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-23cbccf8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-input.vue */ 188)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-23cbccf8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-input.vue */ 189)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -46622,7 +46641,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 185 */
+/* 186 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-input/form-input.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -46633,7 +46652,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-input.vue */ 186);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-input.vue */ 187);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -46653,7 +46672,7 @@ if(false) {
 }
 
 /***/ }),
-/* 186 */
+/* 187 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23cbccf8","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-input/form-input.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -46672,7 +46691,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/* Special styling 
 
 
 /***/ }),
-/* 187 */
+/* 188 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-input/form-input.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -46849,7 +46868,7 @@ var TYPES = ['text', 'password', 'email', 'number', 'url', 'tel', 'search', 'ran
 });
 
 /***/ }),
-/* 188 */
+/* 189 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-23cbccf8","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-input/form-input.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
@@ -46897,7 +46916,7 @@ if (false) {
 }
 
 /***/ }),
-/* 189 */
+/* 190 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-textarea/index.js ***!
   \*************************************************************************/
@@ -46906,7 +46925,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(/*! ./form-textarea */ 190);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea__ = __webpack_require__(/*! ./form-textarea */ 191);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -46929,7 +46948,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 190 */
+/* 191 */
 /*!*********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-textarea/form-textarea.js ***!
   \*********************************************************************************/
@@ -46938,14 +46957,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea_vue__ = __webpack_require__(/*! ./form-textarea.vue */ 191);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea_vue__ = __webpack_require__(/*! ./form-textarea.vue */ 192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_textarea_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_textarea_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_textarea_vue___default.a);
 
 /***/ }),
-/* 191 */
+/* 192 */
 /*!**********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-textarea/form-textarea.vue ***!
   \**********************************************************************************/
@@ -46956,9 +46975,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-textarea.vue */ 192)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-textarea.vue */ 193)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-1643a0a0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-textarea.vue */ 193)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-1643a0a0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-textarea.vue */ 194)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -46998,7 +47017,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 192 */
+/* 193 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-textarea/form-textarea.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -47138,7 +47157,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 193 */
+/* 194 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1643a0a0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-textarea/form-textarea.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************/
@@ -47196,7 +47215,7 @@ if (false) {
 }
 
 /***/ }),
-/* 194 */
+/* 195 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-file/index.js ***!
   \*********************************************************************/
@@ -47205,7 +47224,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(/*! ./form-file */ 195);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file__ = __webpack_require__(/*! ./form-file */ 196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -47228,7 +47247,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 195 */
+/* 196 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-file/form-file.js ***!
   \*************************************************************************/
@@ -47237,14 +47256,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file_vue__ = __webpack_require__(/*! ./form-file.vue */ 196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file_vue__ = __webpack_require__(/*! ./form-file.vue */ 197);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_file_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_file_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_file_vue___default.a);
 
 /***/ }),
-/* 196 */
+/* 197 */
 /*!**************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-file/form-file.vue ***!
   \**************************************************************************/
@@ -47255,13 +47274,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-file.vue */ 197)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./form-file.vue */ 198)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-file.vue */ 199)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-file.vue */ 200)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-23b234a4","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-file.vue */ 200)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-23b234a4","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-file.vue */ 201)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -47301,7 +47320,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 197 */
+/* 198 */
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-file/form-file.vue ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -47312,7 +47331,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-file.vue */ 198);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./form-file.vue */ 199);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -47332,7 +47351,7 @@ if(false) {
 }
 
 /***/ }),
-/* 198 */
+/* 199 */
 /*!**************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-23b234a4","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-file/form-file.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -47351,7 +47370,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 199 */
+/* 200 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-file/form-file.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -47707,7 +47726,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 200 */
+/* 201 */
 /*!************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-23b234a4","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-file/form-file.vue ***!
   \************************************************************************************************************************************************************************************************************************************************************************/
@@ -47825,7 +47844,7 @@ if (false) {
 }
 
 /***/ }),
-/* 201 */
+/* 202 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-select/index.js ***!
   \***********************************************************************/
@@ -47834,7 +47853,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(/*! ./form-select */ 202);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select__ = __webpack_require__(/*! ./form-select */ 203);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -47857,7 +47876,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 202 */
+/* 203 */
 /*!*****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-select/form-select.js ***!
   \*****************************************************************************/
@@ -47866,14 +47885,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select_vue__ = __webpack_require__(/*! ./form-select.vue */ 203);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select_vue__ = __webpack_require__(/*! ./form-select.vue */ 204);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__form_select_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__form_select_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__form_select_vue___default.a);
 
 /***/ }),
-/* 203 */
+/* 204 */
 /*!******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/form-select/form-select.vue ***!
   \******************************************************************************/
@@ -47884,9 +47903,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-select.vue */ 204)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./form-select.vue */ 205)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-5c594db8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-select.vue */ 205)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-5c594db8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./form-select.vue */ 206)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -47926,7 +47945,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 204 */
+/* 205 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-select/form-select.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -48014,7 +48033,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 205 */
+/* 206 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-5c594db8","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/form-select/form-select.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************************/
@@ -48097,7 +48116,7 @@ if (false) {
 }
 
 /***/ }),
-/* 206 */
+/* 207 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/image/index.js ***!
   \*****************************************************************/
@@ -48107,7 +48126,7 @@ if (false) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img__ = __webpack_require__(/*! ./img */ 19);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(/*! ./img-lazy */ 207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__img_lazy__ = __webpack_require__(/*! ./img-lazy */ 208);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -48131,7 +48150,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 207 */
+/* 208 */
 /*!********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/image/img-lazy.js ***!
   \********************************************************************/
@@ -48140,14 +48159,14 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img_lazy_vue__ = __webpack_require__(/*! ./img-lazy.vue */ 208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img_lazy_vue__ = __webpack_require__(/*! ./img-lazy.vue */ 209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__img_lazy_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__img_lazy_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__img_lazy_vue___default.a);
 
 /***/ }),
-/* 208 */
+/* 209 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/image/img-lazy.vue ***!
   \*********************************************************************/
@@ -48158,9 +48177,9 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./img-lazy.vue */ 209)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./img-lazy.vue */ 210)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-8075f5ce","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./img-lazy.vue */ 210)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-8075f5ce","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./img-lazy.vue */ 211)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -48200,7 +48219,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 209 */
+/* 210 */
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/image/img-lazy.vue ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -48398,7 +48417,7 @@ var THROTTLE = 100;
 });
 
 /***/ }),
-/* 210 */
+/* 211 */
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-8075f5ce","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/image/img-lazy.vue ***!
   \********************************************************************************************************************************************************************************************************************************************************************/
@@ -48440,7 +48459,7 @@ if (false) {
 }
 
 /***/ }),
-/* 211 */
+/* 212 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/jumbotron/index.js ***!
   \*********************************************************************/
@@ -48449,7 +48468,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(/*! ./jumbotron */ 212);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__jumbotron__ = __webpack_require__(/*! ./jumbotron */ 213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -48471,7 +48490,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 212 */
+/* 213 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/jumbotron/jumbotron.js ***!
   \*************************************************************************/
@@ -48584,7 +48603,7 @@ var props = {
 });
 
 /***/ }),
-/* 213 */
+/* 214 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/link/index.js ***!
   \****************************************************************/
@@ -48615,7 +48634,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 214 */
+/* 215 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/list-group/index.js ***!
   \**********************************************************************/
@@ -48624,8 +48643,8 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(/*! ./list-group */ 215);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(/*! ./list-group-item */ 216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__list_group__ = __webpack_require__(/*! ./list-group */ 216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__list_group_item__ = __webpack_require__(/*! ./list-group-item */ 217);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -48649,7 +48668,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 215 */
+/* 216 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/list-group/list-group.js ***!
   \***************************************************************************/
@@ -48691,7 +48710,7 @@ var props = {
 });
 
 /***/ }),
-/* 216 */
+/* 217 */
 /*!********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/list-group/list-group-item.js ***!
   \********************************************************************************/
@@ -48757,7 +48776,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 217 */
+/* 218 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/media/index.js ***!
   \*****************************************************************/
@@ -48766,7 +48785,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__utils_object__["a" /* assign */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(/*! ./media */ 218);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__media__ = __webpack_require__(/*! ./media */ 219);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__media_aside__ = __webpack_require__(/*! ./media-aside */ 50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__media_body__ = __webpack_require__(/*! ./media-body */ 49);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils__ = __webpack_require__(/*! ../../utils */ 0);
@@ -48794,7 +48813,7 @@ Object(__WEBPACK_IMPORTED_MODULE_3__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 218 */
+/* 219 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/media/media.js ***!
   \*****************************************************************/
@@ -48858,7 +48877,7 @@ var props = {
 });
 
 /***/ }),
-/* 219 */
+/* 220 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/modal/index.js ***!
   \*****************************************************************/
@@ -48867,7 +48886,7 @@ var props = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(/*! ./modal */ 220);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal__ = __webpack_require__(/*! ./modal */ 221);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives_modal__ = __webpack_require__(/*! ../../directives/modal */ 52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
@@ -48892,7 +48911,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 220 */
+/* 221 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/modal/modal.js ***!
   \*****************************************************************/
@@ -48901,14 +48920,14 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(/*! ./modal.vue */ 221);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue__ = __webpack_require__(/*! ./modal.vue */ 222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__modal_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__modal_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__modal_vue___default.a);
 
 /***/ }),
-/* 221 */
+/* 222 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/modal/modal.vue ***!
   \******************************************************************/
@@ -48919,13 +48938,13 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./modal.vue */ 222)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./modal.vue */ 223)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./modal.vue */ 224)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./modal.vue */ 225)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-c55dc398","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./modal.vue */ 225)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-c55dc398","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./modal.vue */ 226)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -48965,7 +48984,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 222 */
+/* 223 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/modal/modal.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -48976,7 +48995,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./modal.vue */ 223);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./modal.vue */ 224);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -48996,7 +49015,7 @@ if(false) {
 }
 
 /***/ }),
-/* 223 */
+/* 224 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-c55dc398","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/modal/modal.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************/
@@ -49015,7 +49034,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 224 */
+/* 225 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/modal/modal.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -49702,7 +49721,7 @@ var OBSERVER_CONFIG = {
 });
 
 /***/ }),
-/* 225 */
+/* 226 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-c55dc398","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/modal/modal.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -49955,7 +49974,7 @@ if (false) {
 }
 
 /***/ }),
-/* 226 */
+/* 227 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/modal/modal.js ***!
   \*****************************************************************/
@@ -49984,7 +50003,7 @@ var listen_types = { click: true };
 });
 
 /***/ }),
-/* 227 */
+/* 228 */
 /*!*************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/nav/nav.js ***!
   \*************************************************************/
@@ -50054,7 +50073,7 @@ var props = {
 });
 
 /***/ }),
-/* 228 */
+/* 229 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/nav/nav-item.js ***!
   \******************************************************************/
@@ -50086,7 +50105,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_1__link_link__["c" /* propsFactory 
 });
 
 /***/ }),
-/* 229 */
+/* 230 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/nav/nav-text.js ***!
   \******************************************************************/
@@ -50119,7 +50138,7 @@ var props = {
 });
 
 /***/ }),
-/* 230 */
+/* 231 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/nav/nav-form.js ***!
   \******************************************************************/
@@ -50151,7 +50170,7 @@ var props = {
 });
 
 /***/ }),
-/* 231 */
+/* 232 */
 /*!****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/nav/nav-item-dropdown.vue ***!
   \****************************************************************************/
@@ -50162,9 +50181,9 @@ var props = {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./nav-item-dropdown.vue */ 232)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./nav-item-dropdown.vue */ 233)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2314bf9e","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./nav-item-dropdown.vue */ 233)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2314bf9e","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./nav-item-dropdown.vue */ 234)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -50204,7 +50223,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 232 */
+/* 233 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/nav/nav-item-dropdown.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -50282,7 +50301,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 233 */
+/* 234 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2314bf9e","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/nav/nav-item-dropdown.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
@@ -50423,7 +50442,7 @@ if (false) {
 }
 
 /***/ }),
-/* 234 */
+/* 235 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/index.js ***!
   \******************************************************************/
@@ -50432,10 +50451,10 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(/*! ./navbar */ 235);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(/*! ./navbar-nav */ 236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(/*! ./navbar-brand */ 237);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(/*! ./navbar-toggle */ 238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar__ = __webpack_require__(/*! ./navbar */ 236);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__navbar_nav__ = __webpack_require__(/*! ./navbar-nav */ 237);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__navbar_brand__ = __webpack_require__(/*! ./navbar-brand */ 238);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__navbar_toggle__ = __webpack_require__(/*! ./navbar-toggle */ 239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__nav__ = __webpack_require__(/*! ../nav */ 53);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__collapse__ = __webpack_require__(/*! ../collapse */ 40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__dropdown__ = __webpack_require__(/*! ../dropdown */ 20);
@@ -50473,7 +50492,7 @@ Object(__WEBPACK_IMPORTED_MODULE_7__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 235 */
+/* 236 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/navbar.js ***!
   \*******************************************************************/
@@ -50537,7 +50556,7 @@ var props = {
 });
 
 /***/ }),
-/* 236 */
+/* 237 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/navbar-nav.js ***!
   \***********************************************************************/
@@ -50584,7 +50603,7 @@ var props = {
 });
 
 /***/ }),
-/* 237 */
+/* 238 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/navbar-brand.js ***!
   \*************************************************************************/
@@ -50631,7 +50650,7 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */]
 });
 
 /***/ }),
-/* 238 */
+/* 239 */
 /*!**************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/navbar-toggle.js ***!
   \**************************************************************************/
@@ -50640,14 +50659,14 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */]
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar_toggle_vue__ = __webpack_require__(/*! ./navbar-toggle.vue */ 239);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar_toggle_vue__ = __webpack_require__(/*! ./navbar-toggle.vue */ 240);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__navbar_toggle_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__navbar_toggle_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__navbar_toggle_vue___default.a);
 
 /***/ }),
-/* 239 */
+/* 240 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/navbar/navbar-toggle.vue ***!
   \***************************************************************************/
@@ -50658,9 +50677,9 @@ var props = Object(__WEBPACK_IMPORTED_MODULE_2__utils_object__["a" /* assign */]
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./navbar-toggle.vue */ 240)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./navbar-toggle.vue */ 241)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-43b34c59","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./navbar-toggle.vue */ 241)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-43b34c59","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./navbar-toggle.vue */ 242)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -50700,7 +50719,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 240 */
+/* 241 */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/navbar/navbar-toggle.vue ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -50769,7 +50788,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 241 */
+/* 242 */
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-43b34c59","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/navbar/navbar-toggle.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
@@ -50808,7 +50827,7 @@ if (false) {
 }
 
 /***/ }),
-/* 242 */
+/* 243 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination/index.js ***!
   \**********************************************************************/
@@ -50817,7 +50836,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(/*! ./pagination */ 243);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination__ = __webpack_require__(/*! ./pagination */ 244);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -50839,7 +50858,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 243 */
+/* 244 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination/pagination.js ***!
   \***************************************************************************/
@@ -50848,14 +50867,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_vue__ = __webpack_require__(/*! ./pagination.vue */ 244);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_vue__ = __webpack_require__(/*! ./pagination.vue */ 245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pagination_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__pagination_vue___default.a);
 
 /***/ }),
-/* 244 */
+/* 245 */
 /*!****************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination/pagination.vue ***!
   \****************************************************************************/
@@ -50866,13 +50885,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./pagination.vue */ 245)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./pagination.vue */ 246)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./pagination.vue */ 247)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./pagination.vue */ 248)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-280cf950","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./pagination.vue */ 248)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-280cf950","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./pagination.vue */ 249)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -50912,7 +50931,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 245 */
+/* 246 */
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination/pagination.vue ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -50923,7 +50942,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./pagination.vue */ 246);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./pagination.vue */ 247);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -50943,7 +50962,7 @@ if(false) {
 }
 
 /***/ }),
-/* 246 */
+/* 247 */
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-280cf950","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination/pagination.vue ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -50962,7 +50981,7 @@ exports.push([module.i, "\n.page-item[data-v-280cf950] {\n    -webkit-user-selec
 
 
 /***/ }),
-/* 247 */
+/* 248 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination/pagination.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -51167,7 +51186,7 @@ var props = {
 });
 
 /***/ }),
-/* 248 */
+/* 249 */
 /*!**************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-280cf950","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination/pagination.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************************************/
@@ -51644,7 +51663,7 @@ if (false) {
 }
 
 /***/ }),
-/* 249 */
+/* 250 */
 /*!**************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination-nav/index.js ***!
   \**************************************************************************/
@@ -51653,7 +51672,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(/*! ./pagination-nav */ 250);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav__ = __webpack_require__(/*! ./pagination-nav */ 251);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -51675,7 +51694,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 250 */
+/* 251 */
 /*!***********************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.js ***!
   \***********************************************************************************/
@@ -51684,14 +51703,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav_vue__ = __webpack_require__(/*! ./pagination-nav.vue */ 251);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav_vue__ = __webpack_require__(/*! ./pagination-nav.vue */ 252);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pagination_nav_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__pagination_nav_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__pagination_nav_vue___default.a);
 
 /***/ }),
-/* 251 */
+/* 252 */
 /*!************************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.vue ***!
   \************************************************************************************/
@@ -51702,13 +51721,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./pagination-nav.vue */ 252)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./pagination-nav.vue */ 253)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./pagination-nav.vue */ 254)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./pagination-nav.vue */ 255)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-018dadd0","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./pagination-nav.vue */ 255)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-018dadd0","hasScoped":true,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./pagination-nav.vue */ 256)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -51748,7 +51767,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 252 */
+/* 253 */
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.vue ***!
   \********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -51759,7 +51778,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./pagination-nav.vue */ 253);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./pagination-nav.vue */ 254);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -51779,7 +51798,7 @@ if(false) {
 }
 
 /***/ }),
-/* 253 */
+/* 254 */
 /*!************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-018dadd0","scoped":true,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.vue ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -51798,7 +51817,7 @@ exports.push([module.i, "\n.page-item[data-v-018dadd0] {\n    -webkit-user-selec
 
 
 /***/ }),
-/* 254 */
+/* 255 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52020,7 +52039,7 @@ routerProps);
 });
 
 /***/ }),
-/* 255 */
+/* 256 */
 /*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-018dadd0","hasScoped":true,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/pagination-nav/pagination-nav.vue ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************/
@@ -52425,7 +52444,7 @@ if (false) {
 }
 
 /***/ }),
-/* 256 */
+/* 257 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/popover/index.js ***!
   \*******************************************************************/
@@ -52434,7 +52453,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(/*! ./popover */ 257);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(/*! ./popover */ 258);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -52456,7 +52475,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 257 */
+/* 258 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/popover/popover.js ***!
   \*********************************************************************/
@@ -52465,14 +52484,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover_vue__ = __webpack_require__(/*! ./popover.vue */ 258);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover_vue__ = __webpack_require__(/*! ./popover.vue */ 259);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__popover_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__popover_vue___default.a);
 
 /***/ }),
-/* 258 */
+/* 259 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/popover/popover.vue ***!
   \**********************************************************************/
@@ -52483,9 +52502,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./popover.vue */ 259)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./popover.vue */ 260)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-e34bd3b8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./popover.vue */ 260)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-e34bd3b8","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./popover.vue */ 261)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -52525,7 +52544,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 259 */
+/* 260 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/popover/popover.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52591,7 +52610,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 260 */
+/* 261 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-e34bd3b8","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/popover/popover.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
@@ -52630,7 +52649,7 @@ if (false) {
 }
 
 /***/ }),
-/* 261 */
+/* 262 */
 /*!********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/progress/index.js ***!
   \********************************************************************/
@@ -52639,8 +52658,8 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(/*! ./progress */ 262);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_bar__ = __webpack_require__(/*! ./progress-bar */ 270);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress__ = __webpack_require__(/*! ./progress */ 263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__progress_bar__ = __webpack_require__(/*! ./progress-bar */ 271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -52664,7 +52683,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 262 */
+/* 263 */
 /*!***********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/progress/progress.js ***!
   \***********************************************************************/
@@ -52673,14 +52692,14 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress_vue__ = __webpack_require__(/*! ./progress.vue */ 263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress_vue__ = __webpack_require__(/*! ./progress.vue */ 264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__progress_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__progress_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__progress_vue___default.a);
 
 /***/ }),
-/* 263 */
+/* 264 */
 /*!************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/progress/progress.vue ***!
   \************************************************************************/
@@ -52691,13 +52710,13 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./progress.vue */ 264)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./progress.vue */ 265)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./progress.vue */ 266)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./progress.vue */ 267)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-395cfa78","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./progress.vue */ 269)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-395cfa78","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./progress.vue */ 270)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -52737,7 +52756,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 264 */
+/* 265 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52748,7 +52767,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./progress.vue */ 265);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./progress.vue */ 266);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -52768,7 +52787,7 @@ if(false) {
 }
 
 /***/ }),
-/* 265 */
+/* 266 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-395cfa78","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52787,7 +52806,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n/*\n * Temporary fix,
 
 
 /***/ }),
-/* 266 */
+/* 267 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52878,7 +52897,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 267 */
+/* 268 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress-bar.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -52991,7 +53010,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 268 */
+/* 269 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-49ba283e","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress-bar.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************/
@@ -53044,7 +53063,7 @@ if (false) {
 }
 
 /***/ }),
-/* 269 */
+/* 270 */
 /*!***********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-395cfa78","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/progress/progress.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************************************/
@@ -53089,7 +53108,7 @@ if (false) {
 }
 
 /***/ }),
-/* 270 */
+/* 271 */
 /*!***************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/progress/progress-bar.js ***!
   \***************************************************************************/
@@ -53105,7 +53124,7 @@ if (false) {
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__progress_bar_vue___default.a);
 
 /***/ }),
-/* 271 */
+/* 272 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/table/index.js ***!
   \*****************************************************************/
@@ -53114,7 +53133,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(/*! ./table */ 272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table__ = __webpack_require__(/*! ./table */ 273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -53136,7 +53155,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 272 */
+/* 273 */
 /*!*****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/table/table.js ***!
   \*****************************************************************/
@@ -53145,14 +53164,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table_vue__ = __webpack_require__(/*! ./table.vue */ 273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table_vue__ = __webpack_require__(/*! ./table.vue */ 274);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__table_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__table_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__table_vue___default.a);
 
 /***/ }),
-/* 273 */
+/* 274 */
 /*!******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/table/table.vue ***!
   \******************************************************************/
@@ -53163,13 +53182,13 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./table.vue */ 274)
+  __webpack_require__(/*! !vue-style-loader!css-loader!../../../../vue-loader/lib/style-compiler/index?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector?type=styles&index=0&bustCache!./table.vue */ 275)
 }
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./table.vue */ 276)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./table.vue */ 277)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-25aff2b6","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./table.vue */ 278)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-25aff2b6","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./table.vue */ 279)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -53209,7 +53228,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 274 */
+/* 275 */
 /*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/table/table.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -53220,7 +53239,7 @@ module.exports = Component.exports
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./table.vue */ 275);
+var content = __webpack_require__(/*! !../../../../css-loader!../../../../vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!../../../../vue-loader/lib/selector.js?type=styles&index=0&bustCache!./table.vue */ 276);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -53240,7 +53259,7 @@ if(false) {
 }
 
 /***/ }),
-/* 275 */
+/* 276 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/style-compiler?{"vue":true,"id":"data-v-25aff2b6","scoped":false,"hasInlineConfig":true}!./node_modules/vue-loader/lib/selector.js?type=styles&index=0&bustCache!./node_modules/bootstrap-vue/es/components/table/table.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************/
@@ -53259,7 +53278,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 
 /***/ }),
-/* 276 */
+/* 277 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/table/table.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -53273,7 +53292,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_array__ = __webpack_require__(/*! ../../utils/array */ 4);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mixins__ = __webpack_require__(/*! ../../mixins */ 3);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash_startcase__ = __webpack_require__(/*! lodash.startcase */ 277);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash_startcase__ = __webpack_require__(/*! lodash.startcase */ 278);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_lodash_startcase___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_lodash_startcase__);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -53999,7 +54018,7 @@ function processField(key, value) {
 });
 
 /***/ }),
-/* 277 */
+/* 278 */
 /*!************************************************!*\
   !*** ./node_modules/lodash.startcase/index.js ***!
   \************************************************/
@@ -54591,7 +54610,7 @@ module.exports = startCase;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../webpack/buildin/global.js */ 10)))
 
 /***/ }),
-/* 278 */
+/* 279 */
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-25aff2b6","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/table/table.vue ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
@@ -54959,7 +54978,7 @@ if (false) {
 }
 
 /***/ }),
-/* 279 */
+/* 280 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tabs/index.js ***!
   \****************************************************************/
@@ -54968,8 +54987,8 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(/*! ./tabs */ 280);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(/*! ./tab */ 284);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs__ = __webpack_require__(/*! ./tabs */ 281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__tab__ = __webpack_require__(/*! ./tab */ 285);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -54993,7 +55012,7 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 280 */
+/* 281 */
 /*!***************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tabs/tabs.js ***!
   \***************************************************************/
@@ -55002,14 +55021,14 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs_vue__ = __webpack_require__(/*! ./tabs.vue */ 281);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs_vue__ = __webpack_require__(/*! ./tabs.vue */ 282);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tabs_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__tabs_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__tabs_vue___default.a);
 
 /***/ }),
-/* 281 */
+/* 282 */
 /*!****************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tabs/tabs.vue ***!
   \****************************************************************/
@@ -55020,9 +55039,9 @@ Object(__WEBPACK_IMPORTED_MODULE_2__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tabs.vue */ 282)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tabs.vue */ 283)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-ad86d1d0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tabs.vue */ 283)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-ad86d1d0","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tabs.vue */ 284)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -55062,7 +55081,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 282 */
+/* 283 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tabs/tabs.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -55334,7 +55353,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 283 */
+/* 284 */
 /*!***************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-ad86d1d0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tabs/tabs.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************************/
@@ -55593,7 +55612,7 @@ if (false) {
 }
 
 /***/ }),
-/* 284 */
+/* 285 */
 /*!**************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tabs/tab.js ***!
   \**************************************************************/
@@ -55602,14 +55621,14 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tab_vue__ = __webpack_require__(/*! ./tab.vue */ 285);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tab_vue__ = __webpack_require__(/*! ./tab.vue */ 286);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tab_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__tab_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__tab_vue___default.a);
 
 /***/ }),
-/* 285 */
+/* 286 */
 /*!***************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tabs/tab.vue ***!
   \***************************************************************/
@@ -55620,9 +55639,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tab.vue */ 286)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tab.vue */ 287)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-602df76b","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tab.vue */ 287)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-602df76b","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tab.vue */ 288)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -55662,7 +55681,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 286 */
+/* 287 */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tabs/tab.vue ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -55781,7 +55800,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 287 */
+/* 288 */
 /*!**************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-602df76b","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tabs/tab.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************************/
@@ -55846,7 +55865,7 @@ if (false) {
 }
 
 /***/ }),
-/* 288 */
+/* 289 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tooltip/index.js ***!
   \*******************************************************************/
@@ -55855,7 +55874,7 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(/*! ./tooltip */ 289);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(/*! ./tooltip */ 290);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -55877,7 +55896,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 289 */
+/* 290 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tooltip/tooltip.js ***!
   \*********************************************************************/
@@ -55886,14 +55905,14 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_vue__ = __webpack_require__(/*! ./tooltip.vue */ 290);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_vue__ = __webpack_require__(/*! ./tooltip.vue */ 291);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__tooltip_vue__);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__tooltip_vue___default.a);
 
 /***/ }),
-/* 290 */
+/* 291 */
 /*!**********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/components/tooltip/tooltip.vue ***!
   \**********************************************************************/
@@ -55904,9 +55923,9 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tooltip.vue */ 291)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../vue-loader/lib/selector?type=script&index=0&bustCache!./tooltip.vue */ 292)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2a180640","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tooltip.vue */ 292)
+var __vue_template__ = __webpack_require__(/*! !../../../../vue-loader/lib/template-compiler/index?{"id":"data-v-2a180640","hasScoped":false,"buble":{"transforms":{}}}!../../../../vue-loader/lib/selector?type=template&index=0&bustCache!./tooltip.vue */ 293)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -55946,7 +55965,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 291 */
+/* 292 */
 /*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tooltip/tooltip.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -56007,7 +56026,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 292 */
+/* 293 */
 /*!*********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-2a180640","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./node_modules/bootstrap-vue/es/components/tooltip/tooltip.vue ***!
   \*********************************************************************************************************************************************************************************************************************************************************************/
@@ -56042,7 +56061,7 @@ if (false) {
 }
 
 /***/ }),
-/* 293 */
+/* 294 */
 /*!***********************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/index.js ***!
   \***********************************************************/
@@ -56054,9 +56073,9 @@ if (false) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__toggle__ = __webpack_require__(/*! ./toggle */ 41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modal__ = __webpack_require__(/*! ./modal */ 52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(/*! ./scrollspy */ 294);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(/*! ./tooltip */ 297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(/*! ./popover */ 299);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__scrollspy__ = __webpack_require__(/*! ./scrollspy */ 295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tooltip__ = __webpack_require__(/*! ./tooltip */ 298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__popover__ = __webpack_require__(/*! ./popover */ 300);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Toggle", function() { return __WEBPACK_IMPORTED_MODULE_0__toggle__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Modal", function() { return __WEBPACK_IMPORTED_MODULE_1__modal__["a"]; });
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "Scrollspy", function() { return __WEBPACK_IMPORTED_MODULE_2__scrollspy__["a"]; });
@@ -56071,7 +56090,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 294 */
+/* 295 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/scrollspy/index.js ***!
   \*********************************************************************/
@@ -56080,7 +56099,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(/*! ./scrollspy */ 295);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy__ = __webpack_require__(/*! ./scrollspy */ 296);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -56102,7 +56121,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 295 */
+/* 296 */
 /*!*************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/scrollspy/scrollspy.js ***!
   \*************************************************************************/
@@ -56111,7 +56130,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(/*! ./scrollspy.class */ 296);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__scrollspy_class__ = __webpack_require__(/*! ./scrollspy.class */ 297);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
@@ -56216,7 +56235,7 @@ function removeBVSS(el) {
 });
 
 /***/ }),
-/* 296 */
+/* 297 */
 /*!*******************************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/scrollspy/scrollspy.class.js ***!
   \*******************************************************************************/
@@ -56707,7 +56726,7 @@ var ScrollSpy = function () {
 /* harmony default export */ __webpack_exports__["a"] = (ScrollSpy);
 
 /***/ }),
-/* 297 */
+/* 298 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/tooltip/index.js ***!
   \*******************************************************************/
@@ -56716,7 +56735,7 @@ var ScrollSpy = function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(/*! ./tooltip */ 298);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__tooltip__ = __webpack_require__(/*! ./tooltip */ 299);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -56738,7 +56757,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 298 */
+/* 299 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/tooltip/tooltip.js ***!
   \*********************************************************************/
@@ -56747,7 +56766,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_tooltip_class__ = __webpack_require__(/*! ../../utils/tooltip.class */ 21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 16);
@@ -56913,7 +56932,7 @@ function removeBVTT(el) {
 });
 
 /***/ }),
-/* 299 */
+/* 300 */
 /*!*******************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/popover/index.js ***!
   \*******************************************************************/
@@ -56922,7 +56941,7 @@ function removeBVTT(el) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(/*! ./popover */ 300);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__popover__ = __webpack_require__(/*! ./popover */ 301);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils__ = __webpack_require__(/*! ../../utils */ 0);
 
 
@@ -56944,7 +56963,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /* harmony default export */ __webpack_exports__["a"] = (VuePlugin);
 
 /***/ }),
-/* 300 */
+/* 301 */
 /*!*********************************************************************!*\
   !*** ./node_modules/bootstrap-vue/es/directives/popover/popover.js ***!
   \*********************************************************************/
@@ -56953,7 +56972,7 @@ Object(__WEBPACK_IMPORTED_MODULE_1__utils__["l" /* vueUse */])(VuePlugin);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(/*! popper.js */ 12);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__utils_popover_class__ = __webpack_require__(/*! ../../utils/popover.class */ 54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__utils_object__ = __webpack_require__(/*! ../../utils/object */ 2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__utils_warn__ = __webpack_require__(/*! ../../utils/warn */ 16);
@@ -57119,7 +57138,7 @@ function removeBVPO(el) {
 });
 
 /***/ }),
-/* 301 */
+/* 302 */
 /*!************************************************!*\
   !*** ./resources/assets/js/components/App.vue ***!
   \************************************************/
@@ -57132,7 +57151,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-lo
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-8142f38c","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./App.vue */ 302)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-8142f38c","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./App.vue */ 303)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57172,7 +57191,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 302 */
+/* 303 */
 /*!***********************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-8142f38c","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/App.vue ***!
   \***********************************************************************************************************************************************************************************************************************************************/
@@ -57197,7 +57216,7 @@ if (false) {
 }
 
 /***/ }),
-/* 303 */
+/* 304 */
 /*!***************************************************!*\
   !*** ./resources/assets/js/components/Header.vue ***!
   \***************************************************/
@@ -57208,9 +57227,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Header.vue */ 304)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Header.vue */ 305)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-1d126904","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Header.vue */ 305)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-1d126904","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Header.vue */ 306)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57250,7 +57269,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 304 */
+/* 305 */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./resources/assets/js/components/Header.vue ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -57278,7 +57297,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 305 */
+/* 306 */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-1d126904","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/Header.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -57323,7 +57342,7 @@ if (false) {
 }
 
 /***/ }),
-/* 306 */
+/* 307 */
 /*!****************************************************!*\
   !*** ./resources/assets/js/components/Sidebar.vue ***!
   \****************************************************/
@@ -57334,9 +57353,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Sidebar.vue */ 307)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Sidebar.vue */ 308)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-28cb1975","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Sidebar.vue */ 308)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-28cb1975","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Sidebar.vue */ 309)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57376,7 +57395,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 307 */
+/* 308 */
 /*!*******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./resources/assets/js/components/Sidebar.vue ***!
   \*******************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -57516,7 +57535,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 308 */
+/* 309 */
 /*!***************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-28cb1975","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/Sidebar.vue ***!
   \***************************************************************************************************************************************************************************************************************************************************/
@@ -57708,7 +57727,7 @@ if (false) {
 }
 
 /***/ }),
-/* 309 */
+/* 310 */
 /*!***************************************************!*\
   !*** ./resources/assets/js/components/Footer.vue ***!
   \***************************************************/
@@ -57719,9 +57738,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Footer.vue */ 310)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Footer.vue */ 311)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-083ff5dc","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Footer.vue */ 311)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-083ff5dc","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Footer.vue */ 312)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57761,7 +57780,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 310 */
+/* 311 */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./resources/assets/js/components/Footer.vue ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -57784,7 +57803,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 311 */
+/* 312 */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-083ff5dc","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/Footer.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -57805,7 +57824,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("footer", { staticClass: "page-content__footer" }, [
       _c("p", [
-        _vm._v("An experimental open source life embetterment personal cloud.")
+        _vm._v("An experimental open source life embetterment personal server.")
       ]),
       _vm._v(" "),
       _c("p", [_vm._v("v1.0")])
@@ -57822,7 +57841,7 @@ if (false) {
 }
 
 /***/ }),
-/* 312 */
+/* 313 */
 /*!***************************************************!*\
   !*** ./resources/assets/js/components/Banner.vue ***!
   \***************************************************/
@@ -57833,9 +57852,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Banner.vue */ 313)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Banner.vue */ 314)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-69b59e23","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Banner.vue */ 314)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-69b59e23","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Banner.vue */ 315)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57875,7 +57894,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 313 */
+/* 314 */
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./resources/assets/js/components/Banner.vue ***!
   \******************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -57897,7 +57916,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 314 */
+/* 315 */
 /*!**************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-69b59e23","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/Banner.vue ***!
   \**************************************************************************************************************************************************************************************************************************************************/
@@ -57931,7 +57950,7 @@ if (false) {
 }
 
 /***/ }),
-/* 315 */
+/* 316 */
 /*!*************************************************!*\
   !*** ./resources/assets/js/components/Icon.vue ***!
   \*************************************************/
@@ -57942,9 +57961,9 @@ if (false) {
 var disposed = false
 var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
-var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Icon.vue */ 316)
+var __vue_script__ = __webpack_require__(/*! !babel-loader?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!../../../../node_modules/vue-loader/lib/selector?type=script&index=0&bustCache!./Icon.vue */ 317)
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-850a0ea0","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Icon.vue */ 317)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-850a0ea0","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Icon.vue */ 318)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -57984,7 +58003,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 316 */
+/* 317 */
 /*!****************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib?{"cacheDirectory":true,"presets":[["env",{"modules":false,"targets":{"browsers":["> 2%"],"uglify":true}}]],"plugins":["transform-object-rest-spread"]}!./node_modules/vue-loader/lib/selector.js?type=script&index=0&bustCache!./resources/assets/js/components/Icon.vue ***!
   \****************************************************************************************************************************************************************************************************************************************************************************************************************/
@@ -58014,7 +58033,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 317 */
+/* 318 */
 /*!************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-850a0ea0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/components/Icon.vue ***!
   \************************************************************************************************************************************************************************************************************************************************/
@@ -58039,7 +58058,7 @@ if (false) {
 }
 
 /***/ }),
-/* 318 */
+/* 319 */
 /*!*********************************************!*\
   !*** ./resources/assets/js/router/index.js ***!
   \*********************************************/
@@ -58048,10 +58067,10 @@ if (false) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_router__ = __webpack_require__(/*! vue-router */ 56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_index__ = __webpack_require__(/*! ../app/index */ 319);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_index__ = __webpack_require__(/*! ../app/index */ 320);
 
 
 
@@ -58067,7 +58086,7 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /* harmony default export */ __webpack_exports__["a"] = (router);
 
 /***/ }),
-/* 319 */
+/* 320 */
 /*!******************************************!*\
   !*** ./resources/assets/js/app/index.js ***!
   \******************************************/
@@ -58076,12 +58095,12 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routes__ = __webpack_require__(/*! ./routes */ 320);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__routes__ = __webpack_require__(/*! ./routes */ 321);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__routes__["a"]; });
 
 
 /***/ }),
-/* 320 */
+/* 321 */
 /*!*******************************************!*\
   !*** ./resources/assets/js/app/routes.js ***!
   \*******************************************/
@@ -58090,8 +58109,8 @@ var router = new __WEBPACK_IMPORTED_MODULE_1_vue_router__["a" /* default */]({
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__auth_routes__ = __webpack_require__(/*! ./auth/routes */ 321);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_routes__ = __webpack_require__(/*! ./home/routes */ 340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__auth_routes__ = __webpack_require__(/*! ./auth/routes */ 322);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_routes__ = __webpack_require__(/*! ./home/routes */ 332);
 function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } else { return Array.from(arr); } }
 
 
@@ -58100,7 +58119,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 /* harmony default export */ __webpack_exports__["a"] = ([].concat(_toConsumableArray(__WEBPACK_IMPORTED_MODULE_0__auth_routes__["a" /* default */]), _toConsumableArray(__WEBPACK_IMPORTED_MODULE_1__home_routes__["a" /* default */])));
 
 /***/ }),
-/* 321 */
+/* 322 */
 /*!******************************************************!*\
   !*** ./resources/assets/js/app/auth/routes/index.js ***!
   \******************************************************/
@@ -58109,8 +58128,8 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 322);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 57);
 
 
 
@@ -58137,7 +58156,7 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 }]);
 
 /***/ }),
-/* 322 */
+/* 323 */
 /*!**********************************************************!*\
   !*** ./resources/assets/js/app/auth/components/index.js ***!
   \**********************************************************/
@@ -58148,15 +58167,15 @@ function _toConsumableArray(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Register; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
-var Login = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('login', __webpack_require__(/*! ./Login.vue */ 323));
-var Register = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('register', __webpack_require__(/*! ./Register.vue */ 325));
+var Login = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('login', __webpack_require__(/*! ./Login.vue */ 324));
+var Register = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('register', __webpack_require__(/*! ./Register.vue */ 326));
 
 /***/ }),
-/* 323 */
+/* 324 */
 /*!***********************************************************!*\
   !*** ./resources/assets/js/app/auth/components/Login.vue ***!
   \***********************************************************/
@@ -58169,7 +58188,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Login.vue */ 324)
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Login.vue */ 325)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58209,7 +58228,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 324 */
+/* 325 */
 /*!**********************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-b2af4e32","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/auth/components/Login.vue ***!
   \**********************************************************************************************************************************************************************************************************************************************************/
@@ -58233,6 +58252,10 @@ var staticRenderFns = [
       { staticClass: "container-fluid d-flex justify-content-center" },
       [
         _c("div", { staticClass: "col-6 text-center" }, [
+          _c("h4", { staticClass: "mb-4 text-white" }, [
+            _vm._v("Log in to your personal server")
+          ]),
+          _vm._v(" "),
           _c("div", { staticClass: "form-group" }, [
             _c("input", {
               staticClass: "form-control",
@@ -58272,7 +58295,7 @@ if (false) {
 }
 
 /***/ }),
-/* 325 */
+/* 326 */
 /*!**************************************************************!*\
   !*** ./resources/assets/js/app/auth/components/Register.vue ***!
   \**************************************************************/
@@ -58285,7 +58308,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Register.vue */ 326)
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Register.vue */ 327)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58325,7 +58348,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 326 */
+/* 327 */
 /*!*************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-41da7ad6","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/auth/components/Register.vue ***!
   \*************************************************************************************************************************************************************************************************************************************************************/
@@ -58350,85 +58373,20 @@ if (false) {
 }
 
 /***/ }),
-/* 327 */
-/*!****************************************!*\
-  !*** ./resources/assets/sass/app.scss ***!
-  \****************************************/
-/*! dynamic exports provided */
-/*! all exports used */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 328 */,
-/* 329 */,
-/* 330 */,
-/* 331 */,
-/* 332 */,
-/* 333 */,
-/* 334 */,
-/* 335 */,
-/* 336 */,
-/* 337 */,
-/* 338 */,
-/* 339 */,
-/* 340 */
-/*!******************************************************!*\
-  !*** ./resources/assets/js/app/home/routes/index.js ***!
-  \******************************************************/
-/*! exports provided: default */
-/*! exports used: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 344);
-
-
-
-/* harmony default export */ __webpack_exports__["a"] = ([{
-    path: '/',
-    component: __WEBPACK_IMPORTED_MODULE_1__layouts__["b" /* Default */],
-    children: [{
-        path: '/',
-        component: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* Home */],
-        name: 'home'
-    }]
-}]);
-
-/***/ }),
-/* 341 */
-/*!**********************************************************!*\
-  !*** ./resources/assets/js/app/home/components/index.js ***!
-  \**********************************************************/
-/*! exports provided: Home */
-/*! exports used: Home */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-
-
-var Home = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('home', __webpack_require__(/*! ./Home.vue */ 342));
-
-/***/ }),
-/* 342 */
-/*!**********************************************************!*\
-  !*** ./resources/assets/js/app/home/components/Home.vue ***!
-  \**********************************************************/
+/* 328 */
+/*!**********************************************!*\
+  !*** ./resources/assets/js/layouts/Auth.vue ***!
+  \**********************************************/
 /*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
+var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Home.vue */ 343)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Auth.vue */ 329)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58445,7 +58403,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/app/home/components/Home.vue"
+Component.options.__file = "resources/assets/js/layouts/Auth.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -58455,9 +58413,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-685bdd88", Component.options)
+    hotAPI.createRecord("data-v-37794fc0", Component.options)
   } else {
-    hotAPI.reload("data-v-685bdd88", Component.options)
+    hotAPI.reload("data-v-37794fc0", Component.options)
 ' + '  }
   module.hot.dispose(function (data) {
     disposed = true
@@ -58468,10 +58426,10 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 343 */
-/*!*********************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/home/components/Home.vue ***!
-  \*********************************************************************************************************************************************************************************************************************************************************/
+/* 329 */
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/layouts/Auth.vue ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
 /*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
@@ -58480,7 +58438,32 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("p", [_vm._v("Home")])
+  return _c("main", [
+    _c("div", { staticClass: "page-content column" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "page-content__auth container-fluid bg-primary text-white"
+        },
+        [
+          _c("h1", [_vm._v("Vulcan")]),
+          _vm._v(" "),
+          _c("app-icon", { attrs: { name: "handshake-1" } })
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "page-content column" }, [
+      _c(
+        "div",
+        { staticClass: "page-content__auth bg-info" },
+        [_c("router-view")],
+        1
+      )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -58488,31 +58471,12 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-685bdd88", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-37794fc0", module.exports)
   }
 }
 
 /***/ }),
-/* 344 */
-/*!**********************************************!*\
-  !*** ./resources/assets/js/layouts/index.js ***!
-  \**********************************************/
-/*! exports provided: Auth, Default */
-/*! exports used: Auth, Default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Auth; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return Default; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 12);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-
-
-var Auth = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('auth', __webpack_require__(/*! ./Auth.vue */ 348));
-var Default = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('default', __webpack_require__(/*! ./Default.vue */ 345));
-
-/***/ }),
-/* 345 */
+/* 330 */
 /*!*************************************************!*\
   !*** ./resources/assets/js/layouts/Default.vue ***!
   \*************************************************/
@@ -58525,7 +58489,7 @@ var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-lo
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-a006064e","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Default.vue */ 347)
+var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-a006064e","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Default.vue */ 331)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58565,8 +58529,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 346 */,
-/* 347 */
+/* 331 */
 /*!************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-a006064e","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/layouts/Default.vue ***!
   \************************************************************************************************************************************************************************************************************************************************/
@@ -58615,20 +58578,62 @@ if (false) {
 }
 
 /***/ }),
-/* 348 */
-/*!**********************************************!*\
-  !*** ./resources/assets/js/layouts/Auth.vue ***!
-  \**********************************************/
+/* 332 */
+/*!******************************************************!*\
+  !*** ./resources/assets/js/app/home/routes/index.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/*! exports used: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components__ = __webpack_require__(/*! ../components */ 333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__layouts__ = __webpack_require__(/*! ../../../layouts */ 57);
+
+
+
+/* harmony default export */ __webpack_exports__["a"] = ([{
+    path: '/',
+    component: __WEBPACK_IMPORTED_MODULE_1__layouts__["b" /* Default */],
+    children: [{
+        path: '/',
+        component: __WEBPACK_IMPORTED_MODULE_0__components__["a" /* Home */],
+        name: 'home'
+    }]
+}]);
+
+/***/ }),
+/* 333 */
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/app/home/components/index.js ***!
+  \**********************************************************/
+/*! exports provided: Home */
+/*! exports used: Home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return Home; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(/*! vue */ 11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+
+var Home = __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('home', __webpack_require__(/*! ./Home.vue */ 334));
+
+/***/ }),
+/* 334 */
+/*!**********************************************************!*\
+  !*** ./resources/assets/js/app/home/components/Home.vue ***!
+  \**********************************************************/
 /*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
-var normalizeComponent = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
+var normalizeComponent = __webpack_require__(/*! ../../../../../../node_modules/vue-loader/lib/component-normalizer */ 1)
 /* script */
 var __vue_script__ = null
 /* template */
-var __vue_template__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Auth.vue */ 350)
+var __vue_template__ = __webpack_require__(/*! !../../../../../../node_modules/vue-loader/lib/template-compiler/index?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!../../../../../../node_modules/vue-loader/lib/selector?type=template&index=0&bustCache!./Home.vue */ 335)
 /* template functional */
   var __vue_template_functional__ = false
 /* styles */
@@ -58645,7 +58650,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/layouts/Auth.vue"
+Component.options.__file = "resources/assets/js/app/home/components/Home.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {  return key !== "default" && key.substr(0, 2) !== "__"})) {  console.error("named exports are not supported in *.vue files.")}
 
 /* hot reload */
@@ -58655,9 +58660,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-37794fc0", Component.options)
+    hotAPI.createRecord("data-v-685bdd88", Component.options)
   } else {
-    hotAPI.reload("data-v-37794fc0", Component.options)
+    hotAPI.reload("data-v-685bdd88", Component.options)
 ' + '  }
   module.hot.dispose(function (data) {
     disposed = true
@@ -58668,11 +58673,10 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 349 */,
-/* 350 */
-/*!*********************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-37794fc0","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/layouts/Auth.vue ***!
-  \*********************************************************************************************************************************************************************************************************************************************/
+/* 335 */
+/*!*********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/template-compiler?{"id":"data-v-685bdd88","hasScoped":false,"buble":{"transforms":{}}}!./node_modules/vue-loader/lib/selector.js?type=template&index=0&bustCache!./resources/assets/js/app/home/components/Home.vue ***!
+  \*********************************************************************************************************************************************************************************************************************************************************/
 /*! dynamic exports provided */
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
@@ -58681,32 +58685,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("main", [
-    _c("div", { staticClass: "page-content column" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "page-content__auth container-fluid bg-primary text-white"
-        },
-        [
-          _c("h1", [_vm._v("Vulcan")]),
-          _vm._v(" "),
-          _c("app-icon", { attrs: { name: "handshake-1" } })
-        ],
-        1
-      )
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "page-content column" }, [
-      _c(
-        "div",
-        { staticClass: "page-content__auth bg-info" },
-        [_c("router-view")],
-        1
-      )
-    ])
-  ])
+  return _c("p", [_vm._v("Home")])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -58714,9 +58693,20 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-37794fc0", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-685bdd88", module.exports)
   }
 }
+
+/***/ }),
+/* 336 */
+/*!****************************************!*\
+  !*** ./resources/assets/sass/app.scss ***!
+  \****************************************/
+/*! dynamic exports provided */
+/*! all exports used */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);

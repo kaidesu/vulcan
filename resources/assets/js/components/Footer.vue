@@ -1,6 +1,6 @@
 <template>
     <footer class="page-content__footer">
-        <p>An experimental open source life embetterment personal cloud.</p>
+        <p>An experimental open source life embetterment personal server.</p>
         <p>v1.0</p>
     </footer>
 </template>
