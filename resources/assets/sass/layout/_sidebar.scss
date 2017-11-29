@@ -28,7 +28,7 @@
   
   &:after {
     background: $cyan;
-    background: linear-gradient(left, $cyan 0%, $teal 50%,$cyan 100%);
+    background: linear-gradient(to left, $cyan 0%, $teal 50%,$cyan 100%);
     content: '';
     position: absolute;
     bottom: 0;
@@ -80,7 +80,8 @@
   }
 }
 
-.sidebar__icon {
-  margin-right: 1rem;
-  font-size: 1.1rem !important;
+.sidebar__icon > svg {
+  margin-right: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }

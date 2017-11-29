@@ -8755,8 +8755,8 @@ main {
 
 .sidebar__header:after {
   background: #00bcd4;
-  background: -webkit-gradient(linear, left top, right top, from(#00bcd4), color-stop(50%, #20c997), to(#00bcd4));
-  background: linear-gradient(left, #00bcd4 0%, #20c997 50%, #00bcd4 100%);
+  background: -webkit-gradient(linear, right top, left top, from(#00bcd4), color-stop(50%, #20c997), to(#00bcd4));
+  background: linear-gradient(to left, #00bcd4 0%, #20c997 50%, #00bcd4 100%);
   content: '';
   position: absolute;
   bottom: 0;
@@ -8827,8 +8827,9 @@ main {
   text-decoration: none;
 }
 
-.sidebar__icon {
-  margin-right: 1rem;
-  font-size: 1.1rem !important;
+.sidebar__icon > svg {
+  margin-right: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 

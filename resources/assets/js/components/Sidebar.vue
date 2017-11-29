@@ -10,85 +10,118 @@
             <nav>
                 <ul class="sidebar__menu">
                     <li class="sidebar__item">
+                        <router-link :to="{ name: 'login' }" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <app-icon name="property-1"></app-icon>
+                            </span>
+                            Login
+                        </router-link>
+                    </li>
+                    
+                    <li class="sidebar__item">
                         <a href="/" class="sidebar__link">
-                            <span class="fas fa-home fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="property-1"></app-icon>
+                            </span>
                             Home
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-heartbeat fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="heart-1"></app-icon>
+                            </span>
                             Health
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-folder fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="folder-1"></app-icon>
+                            </span>
                             Files
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-file-alt fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="guide-1"></app-icon>
+                            </span>
                             Notes
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-users fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="conference-1"></app-icon>
+                            </span>
                             People
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-envelope fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="read-email-1"></app-icon>
+                            </span>
                             Email
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-paper-plane fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="message-bubble-1"></app-icon>
+                            </span>
                             Chat
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-music fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="headphones-1"></app-icon>
+                            </span>
                             Music
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-tv fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="tv-display-1"></app-icon>
+                            </span>
                             Movies & TV
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-newspaper fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="newspaper-1"></app-icon>
+                            </span>
                             News
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-hand-spock fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="handshake-1"></app-icon>
+                            </span>
                             Companion
                         </a>
                     </li>
                     
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
-                            <span class="fas fa-cog fa-fw sidebar__icon"></span>
+                            <span class="sidebar__icon">
+                                <app-icon name="gear-1"></app-icon>
+                            </span>
                             Settings
                         </a>
                     </li>

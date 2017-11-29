@@ -9,6 +9,8 @@
         
         {{-- Styles --}}
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        
+        @include('partials._icons')
     </head>
     
     <body>
