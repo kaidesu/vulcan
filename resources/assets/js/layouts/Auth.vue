@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main v-cloak>
         <div class="page-content column">
             <div class="page-content__auth container-fluid bg-primary text-white">
                 <h1>Vulcan</h1>

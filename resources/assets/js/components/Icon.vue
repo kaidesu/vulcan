@@ -9,9 +9,7 @@
         props: ['name'],
         
         computed: {
-            icon() {
-                console.log('icon called:' + this.name)
-                
+            icon() {                
                 return '#' + this.name
             }
         }
