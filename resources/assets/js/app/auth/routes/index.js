@@ -5,9 +5,9 @@ export default [
     {
         path: '/login',
         component: Auth,
-        name: 'login',
         children: [
             {
+                name: 'login',
                 path: '/',
                 component: Login,
             }

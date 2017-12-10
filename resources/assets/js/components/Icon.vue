@@ -1,5 +1,6 @@
 <template>
-    <svg><use v-bind:xlink:href="icon"></use></svg>
+    <span class="fal fa-fw" :class="this.icon"></span>
+    <!-- <svg><use v-bind:xlink:href="icon"></use></svg> -->
 </template>
 
 <script>
@@ -9,8 +10,8 @@
         props: ['name'],
         
         computed: {
-            icon() {                
-                return '#' + this.name
+            icon() {
+                return 'fa-' + this.name
             }
         }
     }

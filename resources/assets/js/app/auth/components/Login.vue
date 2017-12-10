@@ -34,6 +34,8 @@
 
 <script>
     import { mapActions } from 'vuex'
+    import { isEmpty } from 'lodash'
+    import localforage from 'localforage'
     
     export default {
         data() {
@@ -58,7 +60,16 @@
                     
                     context: this
                 }).then(() => {
-                    this.$router.replace({ name: 'home' })
+                    localforage.getItem('intended').then((name) => {
+                        if (isEmpty(name)) {
+                            this.$router.replace({ name: 'home' })
+                            return
+                        }
+                        
+                        this.$router.replace({ name: name })
+                    }).catch(() => {
+                        this.$router.replace({ name: 'home' })
+                    })
                 })
             }
         }

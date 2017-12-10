@@ -12,7 +12,7 @@
                     <li class="sidebar__item">
                         <a href="/" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="property-1"></app-icon>
+                                <app-icon name="home"></app-icon>
                             </span>
                             Home
                         </a>
@@ -21,7 +21,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="heart-1"></app-icon>
+                                <app-icon name="heart"></app-icon>
                             </span>
                             Health
                         </a>
@@ -30,7 +30,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="folder-1"></app-icon>
+                                <app-icon name="folder"></app-icon>
                             </span>
                             Files
                         </a>
@@ -39,7 +39,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="guide-1"></app-icon>
+                                <app-icon name="book"></app-icon>
                             </span>
                             Notes
                         </a>
@@ -48,7 +48,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="conference-1"></app-icon>
+                                <app-icon name="address-book"></app-icon>
                             </span>
                             People
                         </a>
@@ -57,7 +57,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="read-email-1"></app-icon>
+                                <app-icon name="envelope"></app-icon>
                             </span>
                             Email
                         </a>
@@ -66,7 +66,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="message-bubble-1"></app-icon>
+                                <app-icon name="comments"></app-icon>
                             </span>
                             Chat
                         </a>
@@ -75,7 +75,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="headphones-1"></app-icon>
+                                <app-icon name="headphones"></app-icon>
                             </span>
                             Music
                         </a>
@@ -84,7 +84,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="tv-display-1"></app-icon>
+                                <app-icon name="tv"></app-icon>
                             </span>
                             Movies & TV
                         </a>
@@ -93,7 +93,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="newspaper-1"></app-icon>
+                                <app-icon name="newspaper"></app-icon>
                             </span>
                             News
                         </a>
@@ -102,7 +102,7 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="handshake-1"></app-icon>
+                                <app-icon name="hand-spock"></app-icon>
                             </span>
                             Companion
                         </a>
@@ -111,7 +111,16 @@
                     <li class="sidebar__item">
                         <a href="#" class="sidebar__link">
                             <span class="sidebar__icon">
-                                <app-icon name="gear-1"></app-icon>
+                                <app-icon name="globe"></app-icon>
+                            </span>
+                            Federation
+                        </a>
+                    </li>
+                    
+                    <li class="sidebar__item">
+                        <a href="#" class="sidebar__link">
+                            <span class="sidebar__icon">
+                                <app-icon name="cog"></app-icon>
                             </span>
                             Settings
                         </a>

@@ -1,4 +1,5 @@
 import store from '../vuex'
+import localforage from 'localforage'
 
 const beforeEach = ((to, from, next) => {
     store.dispatch('auth/checkTokenExists').then(() => {
@@ -10,6 +11,8 @@ const beforeEach = ((to, from, next) => {
         next()
     }).catch(() => {
         if (to.meta.needsAuth) {
+            localforage.setItem('intended', to.name)
+            
             next({ replace: true, name: 'login' })
             return
         }

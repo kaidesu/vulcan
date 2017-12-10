@@ -3,7 +3,7 @@
         <div class="page-content column">
             <div class="page-content__auth container-fluid bg-primary text-white">
                 <h1>Vulcan</h1>
-                <app-icon name="handshake-1"></app-icon>
+                <app-icon name="hand-spock fa-3x"></app-icon>
             </div>
         </div>
         
