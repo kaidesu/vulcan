@@ -60714,6 +60714,8 @@ module.exports = Component.exports
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(/*! vuex */ 24);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
 //
 //
 //
@@ -60736,6 +60738,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     computed: Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["c" /* mapGetters */])({
         user: 'auth/user'
+    }),
+
+    methods: _extends({}, Object(__WEBPACK_IMPORTED_MODULE_0_vuex__["b" /* mapActions */])({
+        logout: 'auth/logout'
+    }), {
+        signout: function signout() {
+            var _this = this;
+
+            this.logout().then(function () {
+                _this.$router.replace({ name: 'login' });
+            });
+        }
     })
 });
 
@@ -60772,9 +60786,19 @@ var render = function() {
                     "b-nav-item-dropdown",
                     { attrs: { text: _vm.user.data.name, right: "" } },
                     [
-                      _c("b-dropdown-item", { attrs: { href: "#" } }, [
-                        _vm._v("Logout")
-                      ])
+                      _c(
+                        "b-dropdown-item",
+                        {
+                          attrs: { href: "#" },
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.signout($event)
+                            }
+                          }
+                        },
+                        [_vm._v("Logout")]
+                      )
                     ],
                     1
                   )
@@ -62495,7 +62519,7 @@ var setUserData = function setUserData(state, data) {
 /*!******************************************************!*\
   !*** ./resources/assets/js/app/auth/vuex/actions.js ***!
   \******************************************************/
-/*! exports provided: login, fetchUser, setToken, checkTokenExists, clearAuth */
+/*! exports provided: login, fetchUser, logout, setToken, checkTokenExists, clearAuth */
 /*! all exports used */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -62503,6 +62527,7 @@ var setUserData = function setUserData(state, data) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "login", function() { return login; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fetchUser", function() { return fetchUser; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "logout", function() { return logout; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setToken", function() { return setToken; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "checkTokenExists", function() { return checkTokenExists; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "clearAuth", function() { return clearAuth; });
@@ -62538,9 +62563,17 @@ var fetchUser = function fetchUser(_ref3) {
     });
 };
 
-var setToken = function setToken(_ref4, token) {
-    var commit = _ref4.commit,
-        dispatch = _ref4.dispatch;
+var logout = function logout(_ref4) {
+    var dispatch = _ref4.dispatch;
+
+    return axios.post('/api/logout').then(function (response) {
+        dispatch('clearAuth');
+    });
+};
+
+var setToken = function setToken(_ref5, token) {
+    var commit = _ref5.commit,
+        dispatch = _ref5.dispatch;
 
     if (Object(__WEBPACK_IMPORTED_MODULE_0_lodash__["isEmpty"])(token)) {
         return dispatch('checkTokenExists').then(function (token) {
@@ -62552,9 +62585,9 @@ var setToken = function setToken(_ref4, token) {
     Object(__WEBPACK_IMPORTED_MODULE_1__helpers__["a" /* setHttpToken */])(token);
 };
 
-var checkTokenExists = function checkTokenExists(_ref5, token) {
-    var commit = _ref5.commit,
-        dispatch = _ref5.dispatch;
+var checkTokenExists = function checkTokenExists(_ref6, token) {
+    var commit = _ref6.commit,
+        dispatch = _ref6.dispatch;
 
     return __WEBPACK_IMPORTED_MODULE_2_localforage___default.a.getItem('authtoken').then(function (token) {
         if (Object(__WEBPACK_IMPORTED_MODULE_0_lodash__["isEmpty"])(token)) {
@@ -62565,8 +62598,8 @@ var checkTokenExists = function checkTokenExists(_ref5, token) {
     });
 };
 
-var clearAuth = function clearAuth(_ref6) {
-    var commit = _ref6.commit;
+var clearAuth = function clearAuth(_ref7) {
+    var commit = _ref7.commit;
 
     commit('setAuthenticated', false);
     commit('setUserData', null);
