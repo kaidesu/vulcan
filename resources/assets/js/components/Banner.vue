@@ -1,6 +1,6 @@
 <template>
     <div class="page-content__banner">
-        <h2>Hello Universe</h2>
+        <h2></h2>
     </div>
 </template>
 

@@ -2,8 +2,8 @@
     <main v-cloak>
         <div class="page-content column">
             <div class="page-content__auth container-fluid bg-primary text-white">
-                <h1>Vulcan</h1>
-                <app-icon name="hand-spock fa-3x"></app-icon>
+                <h1 class="mb-4">VULCAN</h1>
+                <app-icon name="microchip fa-3x"></app-icon>
             </div>
         </div>
         

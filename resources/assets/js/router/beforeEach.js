@@ -13,7 +13,7 @@ const beforeEach = ((to, from, next) => {
         if (to.meta.needsAuth) {
             localforage.setItem('intended', to.name)
             
-            next({ replace: true, name: 'login' })
+            next('/login')
             return
         }
         

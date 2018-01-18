@@ -1,5 +1,5 @@
 <template>
-    <span class="fal fa-fw" :class="this.icon"></span>
+    <span class="fas fa-fw" :class="this.icon"></span>
     <!-- <svg><use v-bind:xlink:href="icon"></use></svg> -->
 </template>
 

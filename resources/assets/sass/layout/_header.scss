@@ -1,13 +1,10 @@
-.bg-gradient {
-  background: linear-gradient(to right, theme-color("primary"), theme-color("info"));
+.page-content__header {
+  .navbar {
+    border-bottom: 1px solid $gray-300;
+  }
 }
 
 .page-content__banner {
-  border-top-left-radius: 2px;
-  border-color: transparent;
-  border-width: thick;
-  border-style: solid;
-  
   background: $gray-200;
   padding-left: 1rem;
   height: 54px;
