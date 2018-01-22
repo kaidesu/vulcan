@@ -1,0 +1,55 @@
+/*
+ *
+	- Folder Table of Content -
+	
+	Components: Stand alone styles for specific html structures & elements.
+  Helpers:    Includes Sass functions & extends/placeholders.
+	Layout:     Containers & structures that make up the site's general layout.
+	Page:       Styles unique and specific to page templates or modules (eg. blog, services, homepage, etc...)
+	Vendor:     Styles that override or replace JS plugin stylesheets (eg. We provide our own slick theme file to start with)
+
+	- Other Files -
+	
+	_framework.scss:  Our build of bootstrap. Customize bootstrap build as needed.
+	_fonts.scss:      Include custom fonts here.
+	_globals.scss:    Global site styles.
+	_typography.scss: Header and text styles.
+	_variables.scss:  Override bootstarap variables here.
+
+	NOTES:
+	Included image & font paths are relative to scss folder. For Example:
+
+ 	background: url('../images/galaxy.png');
+
+ 	@font-face {
+		font-famly: 'Roboto';
+		src: url('../fonts/Roboto.eot');
+	}
+ *
+ */
+
+
+// Required
+@import "framework"; // Bootstrap 4 Framework
+
+// Helpers
+@import "helpers/extends";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+// Globals
+@import "fonts";
+@import "globals";
+@import "typography";
+
+// Components
+@import "components/buttons";
+@import "components/forms";
+@import "components/navbar";
+@import "components/tables";
+
+// Layout
+
+// Utilities
+
+// Vendor

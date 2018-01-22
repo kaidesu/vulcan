@@ -1,0 +1,10 @@
+th {
+  font-size: $font-size-sm;
+  text-transform: uppercase;
+}
+
+.table {
+  th, td {
+    padding: 1.5rem;
+  }
+}
