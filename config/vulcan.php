@@ -12,11 +12,11 @@ return [
      | to a specific email domain (e.g. @yourcompany.com).
      */
     'registration' => [
-        
+
         'enabled' => true,
-        
-        'domain' => 'caffeinted.ninja'
-        
-    ]
-    
+
+        'domain' => 'caffeinted.ninja',
+
+    ],
+
 ];

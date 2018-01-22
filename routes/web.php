@@ -24,7 +24,5 @@ Route::middleware(['auth', 'auth.email'])->group(function () {
     Route::get('/settings/tokens', 'Settings\TokensController@index')->name('settings.tokens');
 });
 
-
-
 Route::get('/messages', 'MessageController@index');
 Route::post('/messages', 'MessageController@store');
