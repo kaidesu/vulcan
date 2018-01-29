@@ -11,17 +11,17 @@ class MessageController extends Controller
     {
         return Message::with(['user'])->orderBy('id', 'desc')->get()->toJson();
     }
-    
+
     public function store(Request $request)
     {
         $this->validate($request, [
-            'body' => 'required'
+            'body' => 'required',
         ]);
-        
+
         $message = $request->user()->messages()->create([
-            'body' => $request->body
+            'body' => $request->body,
         ])->load('user');
-        
+
         return $message;
     }
 }

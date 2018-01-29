@@ -18,16 +18,16 @@ class RedirectIfEmailNotConfirmed
         if (! $request->user()->confirmed) {
             // User has not confirmed their email, log them out and redirect them back
             auth()->logout();
-            
+
             return redirect('/login')
                 ->with([
                     'flash' => [
                         'level'   => 'warning',
-                        'message' => 'You must first confirm your email address.'
-                    ]
+                        'message' => 'You must first confirm your email address.',
+                    ],
                 ]);
         }
-        
+
         return $next($request);
     }
 }
