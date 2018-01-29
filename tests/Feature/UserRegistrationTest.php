@@ -76,7 +76,7 @@ class UserRegistrationTest extends TestCase
     {
         $this->signIn(create('App\User', ['confirmed' => false]));
         
-        $this->get('/home')
+        $this->get('/')
             ->assertRedirect('/login')
             ->assertSessionHas('flash');
     }
@@ -86,7 +86,7 @@ class UserRegistrationTest extends TestCase
     {
         $this->signIn();
         
-        $this->get('/home')
+        $this->get('/')
             ->assertStatus(200);
     }
     

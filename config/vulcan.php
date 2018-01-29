@@ -15,7 +15,7 @@ return [
         
         'enabled' => true,
         
-        'domain' => 'caffeinted.ninja'
+        'domain' => ''
         
     ]
     

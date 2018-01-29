@@ -3,11 +3,14 @@ require('feather-icons')
 import _ from 'lodash'
 import Vue from 'vue'
 import axios from 'axios'
+import BootstrapVue from 'bootstrap-vue'
 
 window._ = _
 window.Vue = Vue
 window.axios = axios
 window.events = new Vue()
+
+window.Vue.use(BootstrapVue);
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

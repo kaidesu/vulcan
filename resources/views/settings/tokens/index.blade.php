@@ -13,13 +13,7 @@
                 Tokens you have generated that can be used to access the <a href="#">Vulcan AI API</a>.
             </p>
             
-            <table class="table table-dark">
-                <tr>
-                    <td><strong>Test</strong></td>
-                    <td class="text-right"><small>Never used</small></td>
-                    <td class="text-right"><a href="#" class="btn btn-sm btn-primary">Edit</a> <a href="#" class="btn btn-sm btn-danger">Delete</a></td>
-                </tr>
-            </table>
+            <passport-personal-access-tokens></passport-personal-access-tokens>
         </div>
     </div>
 @endsection
