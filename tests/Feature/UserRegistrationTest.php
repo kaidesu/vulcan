@@ -75,7 +75,7 @@ class UserRegistrationTest extends TestCase
     public function users_must_first_authenticate_their_account_before_being_able_to_log_in()
     {
         $this->signIn(create('App\User', ['confirmed' => false]));
-        
+
         $this->get('/')
             ->assertRedirect('/login')
             ->assertSessionHas('flash');
@@ -85,7 +85,7 @@ class UserRegistrationTest extends TestCase
     public function confirmed_users_are_able_to_log_in()
     {
         $this->signIn();
-        
+
         $this->get('/')
             ->assertStatus(200);
     }

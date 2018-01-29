@@ -14,9 +14,9 @@ return [
     'registration' => [
 
         'enabled' => true,
-        
-        'domain' => ''
-        
-    ]
-    
+
+        'domain' => '',
+
+    ],
+
 ];
