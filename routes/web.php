@@ -24,5 +24,10 @@ Route::middleware(['auth', 'auth.email'])->group(function () {
     Route::get('/settings/tokens', 'Settings\TokensController@index')->name('settings.tokens');
 });
 
-Route::get('/messages', 'MessageController@index');
-Route::post('/messages', 'MessageController@store');
+// Fake the API route for testing purposes
+Route::prefix('api')->group(function () {
+    Route::prefix('messages')->group(function () {
+        Route::get('/', 'API\MessageController@index');
+        Route::post('/', 'API\MessageController@store');
+    });
+});
