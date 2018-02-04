@@ -1,49 +1,37 @@
 <template>
     <div>
-        <div>
-            <div class="card bg-dark text-white">
-                <div class="card-header">
-                    <div class="flex">
-                        <a class="btn btn-link" v-b-modal.modal-create-token>
-                            Create New Token
-                        </a>
-                    </div>
-                </div>
-
-                <div class="card-body">
-                    <!-- No Tokens Notice -->
-                    <p class="mb-0" v-if="tokens.length === 0">
-                        You have not created any personal access tokens.
-                    </p>
-
-                    <!-- Personal Access Tokens -->
-                    <table class="table table-borderless mb-0" v-if="tokens.length > 0">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr v-for="token in tokens">
-                                <!-- Client Name -->
-                                <td style="vertical-align: middle;">
-                                    {{ token.name }}
-                                </td>
-
-                                <!-- Delete Button -->
-                                <td style="vertical-align: middle;">
-                                    <a class="action-link text-danger" @click="revoke(token)">
-                                        Delete
-                                    </a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+        <div class="card">
+            <div class="card-body" v-if="tokens.length === 0">
+                <p class="mb-0">
+                    You have not created any personal access tokens.
+                </p>
             </div>
+
+            <table class="table table-borderless mb-0" v-if="tokens.length > 0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr v-for="token in tokens">
+                        <td class="align-middle">{{ token.name }}</td>
+
+                        <td class="text-right align-middle">
+                            <button class="btn btn-sm btn-danger" @click="revoke(token)">
+                                Delete
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
+        <a class="btn btn-primary text-white mt-3" v-b-modal.modal-create-token>
+            Create New Token
+        </a>
 
         <!-- Create Token Modal -->
         <b-modal id="modal-create-token" title="Create Token" v-model="show.createTokenForm">
@@ -98,41 +86,29 @@
         </b-modal>
 
         <!-- Access Token Modal -->
-        <div class="modal fade" id="modal-access-token" tabindex="-1" role="dialog">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <b-modal id="modal-access-token" title="Personal Access Token" size="lg" v-model="show.accessToken">
+            <p>
+                Here is your new personal access token. This is the only time it will be shown so don't lose it!
+                You may now use this token to make API requests.
+            </p>
 
-                        <h4 class="modal-title">
-                            Personal Access Token
-                        </h4>
-                    </div>
-
-                    <div class="modal-body">
-                        <p>
-                            Here is your new personal access token. This is the only time it will be shown so don't lose it!
-                            You may now use this token to make API requests.
-                        </p>
-
-                        <pre><code>{{ accessToken }}</code></pre>
-                    </div>
-
-                    <!-- Modal Actions -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
+            <div class="card bg-light">
+                <div class="card-body">
+                    <pre>{{ accessToken }}</pre>
                 </div>
             </div>
-        </div>
+            
+            <!-- Modal Actions -->
+            <div slot="modal-footer" class="w-100">
+                <button type="button" class="btn btn-default" @click="show.accessToken=false">Close</button>
+            </div>
+        </b-modal>
     </div>
 </template>
 
 <script>
     export default {
-        /*
-         * The component's data.
-         */
+
         data() {
             return {
                 accessToken: null,
@@ -153,36 +129,16 @@
             };
         },
 
-        /**
-         * Prepare the component (Vue 1.x).
-         */
-        ready() {
-            this.prepareComponent();
-        },
-
-        /**
-         * Prepare the component (Vue 2.x).
-         */
         mounted() {
             this.prepareComponent();
         },
 
         methods: {
-            /**
-             * Prepare the component.
-             */
             prepareComponent() {
                 this.getTokens();
                 this.getScopes();
-
-                // $('#modal-create-token').on('shown.bs.modal', () => {
-                //     $('#create-token-name').focus();
-                // });
             },
 
-            /**
-             * Get all of the personal access tokens for the user.
-             */
             getTokens() {
                 axios.get('/oauth/personal-access-tokens')
                         .then(response => {
@@ -190,9 +146,6 @@
                         });
             },
 
-            /**
-             * Get all of the available scopes.
-             */
             getScopes() {
                 axios.get('/oauth/scopes')
                         .then(response => {
@@ -200,16 +153,6 @@
                         });
             },
 
-            /**
-             * Show the form for creating new tokens.
-             */
-            showCreateTokenForm() {
-                // $('#modal-create-token').modal('show');
-            },
-
-            /**
-             * Create a new personal access token.
-             */
             store() {
                 this.accessToken = null;
 
@@ -234,9 +177,6 @@
                         });
             },
 
-            /**
-             * Toggle the given scope in the list of assigned scopes.
-             */
             toggleScope(scope) {
                 if (this.scopeIsAssigned(scope)) {
                     this.form.scopes = _.reject(this.form.scopes, s => s == scope);
@@ -245,27 +185,15 @@
                 }
             },
 
-            /**
-             * Determine if the given scope has been assigned to the token.
-             */
             scopeIsAssigned(scope) {
                 return _.indexOf(this.form.scopes, scope) >= 0;
             },
 
-            /**
-             * Show the given access token to the user.
-             */
             showAccessToken(accessToken) {
-                // $('#modal-create-token').modal('hide');
-
-                this.accessToken = accessToken;
-
-                // $('#modal-access-token').modal('show');
+                this.accessToken = accessToken
+                this.show.accessToken = true
             },
 
-            /**
-             * Revoke the given token.
-             */
             revoke(token) {
                 axios.delete('/oauth/personal-access-tokens/' + token.id)
                         .then(response => {

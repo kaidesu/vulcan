@@ -3,7 +3,7 @@
         <div class="input-group mb-5">
             <input type="text" class="form-control" placeholder="What's on your mind?" autofocus v-model="body">
             <div class="input-group-append">
-                <button type="submit" class="btn btn-primary"><i data-feather="send"></i></button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </div>
         </div>
     </form>
@@ -27,10 +27,11 @@
             post() {
                 let vm = this
                 
-                axios.post('/messages', {
+                axios.post('/api/message', {
                     'body': this.body
                 }).then((response) => {
-                    vm.messages.unshift(response.data)
+                    console.log(response.data)
+                    
                     vm.body = null
                 })
             }

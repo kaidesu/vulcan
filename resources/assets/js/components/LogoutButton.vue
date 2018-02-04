@@ -1,7 +1,7 @@
 <template>
     
-    <a class="btn btn-outline-secondary btn-sm" href="#" @click.prevent="logout">
-        <i data-feather="log-out"></i> Logout
+    <a class="btn btn-outline-danger" href="#" @click.prevent="logout">
+        Logout
     
         <form id="logout-form" action="/logout" method="POST" style="display: none;">
             <input type="hidden" name="_token" :value="csrf_token">

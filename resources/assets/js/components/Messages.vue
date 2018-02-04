@@ -33,7 +33,7 @@
         mounted() {
             let vm = this
             
-            axios.get('/messages')
+            axios.get('/api/message')
                 .then(function(response) {
                     vm.messages = response.data
                 })
